@@ -1,0 +1,46 @@
+﻿<Module>
+  <Name value="TOW Core"/>
+  <Id value="TOW_Core"/>
+  <Version value="v1.0.0"/>
+  <SingleplayerModule value="true"/>
+  <MultiplayerModule value="false"/>
+  <DependedModules>
+    <DependedModule Id="Native"/>
+    <DependedModule Id="SandBoxCore"/>
+    <DependedModule Id="Sandbox"/>
+    <DependedModule Id="StoryMode" />
+	<DependedModule Id="TOW_Armory" />
+	<DependedModule Id="TOW_Environment" />
+  </DependedModules>
+  <SubModules>
+    <SubModule>
+      <Name value="TOW_Core"/>
+      <DLLName value="TOW_Core.dll"/>
+      <SubModuleClassType value="TOW_Core.SubModule"/>
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+  </SubModules>
+	<Xmls>
+		<XmlNode>
+			<XmlName id="SPCultures" path="tow_cultures"/>
+			<IncludedGameTypes>
+				<GameType value = "Campaign"/>
+				<GameType value = "CampaignStoryMode"/>
+				<GameType value = "CustomGame"/>
+				<GameType value = "EditorGame"/>
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="NPCCharacters" path="tow_troopdefinitions"/>
+			<IncludedGameTypes>
+				<GameType value = "Campaign"/>
+				<GameType value = "CampaignStoryMode"/>
+				<GameType value = "CustomGame"/>
+				<GameType value = "EditorGame"/>
+			</IncludedGameTypes>
+		</XmlNode>
+	</Xmls>
+</Module>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0"?>
+<ArrayOfTOWTextOverride xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<TOWTextOverride StringID="str_culture_rich_name.khuzait" TextOverride="Vampire Counts" />
+	<TOWTextOverride StringID="str_culture_rich_name.empire" TextOverride="Empire of Men" />
+	<TOWTextOverride StringID="str_culture_rich_name.vlandia" TextOverride="Bretonnia" />
+	<TOWTextOverride StringID="str_culture_rich_name.battania" TextOverride="Wood Elves" />
+	<TOWTextOverride StringID="str_culture_rich_name.aserai" TextOverride="Greenskins" />
+	<TOWTextOverride StringID="str_culture_rich_name.sturgia" TextOverride="Dwarves" />	
+</ArrayOfTOWTextOverride>

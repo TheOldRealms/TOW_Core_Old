@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<NPCCharacters>
+	<!-- Empire Basic troop tree-->
+	<!-- Empire Greatsword-->
+	<NPCCharacter id="empire_greatsword"
+                default_group="Infantry"
+                level="6"
+                name="{=!}Empire Greatsword"
+                occupation="Soldier"
+				is_basic_troop="true"
+                culture="Culture.empire">
+		<face>
+			<face_key_template value="BodyProperty.fighter_aserai" />
+		</face>
+		<skills>
+			<skill id="Athletics"
+				   value="70" />
+			<skill id="Riding"
+				   value="30" />
+			<skill id="OneHanded"
+				   value="70" />
+			<skill id="TwoHanded"
+				   value="30" />
+			<skill id="Polearm"
+				   value="70" />
+			<skill id="Bow"
+				   value="40" />
+			<skill id="Crossbow"
+				   value="10" />
+			<skill id="Throwing"
+				   value="40" />
+		</skills>
+		<upgrade_targets>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0"
+						   id="Item.empire_greatsword_002" />
+				<equipment slot="Head"
+						   id="Item.militia_helmet_feather" />
+				<equipment slot="Body"
+						   id="Item.statetroop_uniform_001_body" />
+				<equipment slot="Leg"
+						   id="Item.statetroop_uniform_001_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment slot="Item0"
+						   id="Item.empire_greatsword_001" />
+				<equipment slot="Head"
+						   id="Item.militia_helmet" />
+				<equipment slot="Body"
+						   id="Item.statetroop_uniform_001_body" />
+				<equipment slot="Leg"
+						   id="Item.statetroop_uniform_001_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment slot="Item0"
+						   id="Item.empire_greatsword_002" />
+				<equipment slot="Head"
+						   id="Item.worn_militia_helmet_feather" />
+				<equipment slot="Body"
+						   id="Item.statetroop_uniform_001_body" />
+				<equipment slot="Leg"
+						   id="Item.statetroop_uniform_001_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment slot="Item0"
+						   id="Item.empire_greatsword_001" />
+				<equipment slot="Head"
+						   id="Item.worn_militia_helmet" />
+				<equipment slot="Body"
+						   id="Item.statetroop_uniform_001_body" />
+				<equipment slot="Leg"
+						   id="Item.statetroop_uniform_001_leg" />
+			</EquipmentRoster>
+			<EquipmentSet id="aserai_troop_civilian_template_t2"
+						  civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+
+	<NPCCharacter id="skeleton_warrior"
+                default_group="Infantry"
+                level="6"
+                name="Skeleton Warrior"
+                occupation="Soldier"
+				is_basic_troop="true"
+                culture="Culture.khuzait">
+		<face>
+			<face_key_template value="BodyProperty.fighter_vlandia" />
+		</face>
+		<skills>
+			<skill id="Athletics"
+			  value="40" />
+			<skill id="Riding"
+			  value="15" />
+			<skill id="OneHanded"
+			  value="40" />
+			<skill id="TwoHanded"
+			  value="20" />
+			<skill id="Polearm"
+			  value="40" />
+			<skill id="Bow"
+			  value="5" />
+			<skill id="Crossbow"
+			  value="20" />
+			<skill id="Throwing"
+			  value="15" />
+		</skills>
+		<upgrade_targets>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0"
+						   id="Item.skeleton_warrior_sword_002" />
+				<equipment slot="Body"
+						   id="Item.skeleton_body_full" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment slot="Item0"
+						   id="Item.skeleton_warrior_sword_001" />
+				<equipment slot="Body"
+						   id="Item.skeleton_body_glowing_full" />
+			</EquipmentRoster>
+			<EquipmentSet id="vlandia_troop_civilian_template_t1"
+						  civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+</NPCCharacters>

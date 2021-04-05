@@ -1,0 +1,41 @@
+﻿<Module>
+  <Name value="TOW Armory"/>
+  <Id value="TOW_Armory"/>
+  <Version value="v1.0.0"/>
+  <SingleplayerModule value="true"/>
+  <MultiplayerModule value="false"/>
+  <DependedModules>
+    <DependedModule Id="Native" DependentVersion="e1.5.8"/>
+    <DependedModule Id="SandBoxCore"  DependentVersion="e1.5.8"/>
+    <DependedModule Id="Sandbox" DependentVersion="e1.5.8"/>
+    <DependedModule Id="StoryMode" DependentVersion="e1.5.8"/>
+  </DependedModules>
+  <SubModules />
+	<Xmls>
+		<XmlNode>
+			<XmlName id="Items" path="tow_items"/>
+			<IncludedGameTypes>
+				<GameType value = "Campaign"/>
+				<GameType value = "CampaignStoryMode"/>
+				<GameType value = "CustomGame"/>
+				<GameType value = "EditorGame"/>
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="CraftingPieces" path="tow_crafting_pieces"/>
+			<IncludedGameTypes>
+				<GameType value = "Campaign"/>
+				<GameType value = "CampaignStoryMode"/>
+				<GameType value = "CustomGame"/>
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="CraftingTemplates" path="tow_crafting_templates"/>
+			<IncludedGameTypes>
+				<GameType value = "Campaign"/>
+				<GameType value = "CampaignStoryMode"/>
+				<GameType value = "CustomGame"/>
+			</IncludedGameTypes>
+		</XmlNode>
+	</Xmls>
+</Module>

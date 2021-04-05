@@ -1,0 +1,14 @@
+13
+mesh editor_plane_low
+mesh vlandia_onehanded_sword_scabbard_b_drawn
+prefab bd_barrel_a
+prefab bd_wheelbarrow_a
+prefab camera_icon
+prefab camera_static
+prefab vlandia_onehanded_sword_scabbard_b_drawn
+prefab weapon_heap_sword_a
+texture cg_50c_5b
+texture lens_dirt
+texture lens_star
+texture semi_cloudy_2
+texture sun_core2

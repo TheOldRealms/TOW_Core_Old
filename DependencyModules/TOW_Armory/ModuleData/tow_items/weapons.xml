@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+	<!-- Empire Weapons TOW -->
+	<CraftedItem id="empire_greatsword_002" name="{=!}Empire Greatsword 002" crafting_template="tow_greatswords_template">
+		<Pieces>
+			<Piece id="empire_greatsword_002_blade" Type="Blade" scale_factor="100" />
+			<Piece id="empire_greatsword_002_hilt" Type="Handle" scale_factor="100" />
+			<Piece id="empire_greatsword_002_guard" Type="Guard" />
+			<Piece id="empire_greatsword_002_pommel" Type="Pommel" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem id="empire_greatsword_001" name="{=!}Empire Greatsword 001" crafting_template="tow_greatswords_template">
+		<Pieces>
+			<Piece id="empire_greatsword_001_blade" Type="Blade" scale_factor="100" />
+			<Piece id="empire_greatsword_001_hilt" Type="Handle" scale_factor="100" />
+			<Piece id="empire_greatsword_001_guard" Type="Guard" />
+			<Piece id="empire_greatsword_001_pommel" Type="Pommel" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem id="skeleton_warrior_sword_002" name="Skeleton Warrior Sword 002" crafting_template="tow_longsword_template">
+		<Pieces>
+			<Piece id="skeleton_warrior_sword_002_blade" Type="Blade" scale_factor="100" />
+			<Piece id="skeleton_warrior_sword_002_hilt" Type="Handle" scale_factor="100" />
+			<Piece id="skeleton_warrior_sword_002_guard" Type="Guard" />
+			<Piece id="skeleton_warrior_sword_002_pommel" Type="Pommel" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem id="skeleton_warrior_sword_001" name="Skeleton Warrior Sword 001" crafting_template="tow_longsword_template">
+		<Pieces>
+			<Piece id="skeleton_warrior_sword_001_blade" Type="Blade" scale_factor="100" />
+			<Piece id="skeleton_warrior_sword_001_hilt" Type="Handle" scale_factor="100" />
+			<Piece id="skeleton_warrior_sword_001_guard" Type="Guard" />
+			<Piece id="skeleton_warrior_sword_001_pommel" Type="Pommel" />
+		</Pieces>
+	</CraftedItem>
+</Items>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+	<!-- Empire Armor TOW-->
+	<Item id="statetroop_uniform_001_body" name="{=!}Empire State Troop Uniform 001 Body" mesh="statetroop_uniform_001_body" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="14" leg_armor="7" arm_armor="2" has_gender_variations="false" covers_body="true" modifier_group="cloth" material_type="Cloth" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	
+	<!-- Vampire Armor TOW-->
+	<Item id="skeleton_body_glowing_full" name="Skeleton Body Glowing Full" mesh="skeleton_body_glowing_full" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="20" leg_armor="12" arm_armor="12" has_gender_variations="false" covers_body="true" covers_head="true" covers_legs="true" covers_hands="true" modifier_group="leather" material_type="Leather" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="skeleton_body_full" name="Skeleton Body Full" mesh="skeleton_body_full" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="20" leg_armor="12" arm_armor="12" has_gender_variations="false" covers_body="true" covers_head="true" covers_legs="true" covers_hands="true" modifier_group="leather" material_type="Leather" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+</Items>
