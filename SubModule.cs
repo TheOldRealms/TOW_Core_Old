@@ -21,6 +21,10 @@ namespace TOW_Core
             harmony.PatchAll();
         }
 
+        /// <summary>
+        /// This is the main game start.
+        /// </summary>
+        /// <param name="game"></param>
         public override void BeginGameStart(Game game)
         {
             //TOWTextManager.WriteSampleOverrideXml();
