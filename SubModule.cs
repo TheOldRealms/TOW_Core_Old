@@ -14,7 +14,6 @@ namespace TOW_Core
 {
     public class SubModule : MBSubModuleBase
     {
-        private static readonly ILogger Log = LogManager.GetCurrentClassLogger();
         protected override void OnBeforeInitialModuleScreenSetAsRoot()
         {
             InformationManager.DisplayMessage(new InformationMessage("TOW Core loaded."));

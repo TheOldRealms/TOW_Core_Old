@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Items>
+	<Item id="vampire_lord_shoulders_001" name="Vampire Lord Shoulders 001" mesh="vampire_lord_shoulders_001" culture="Culture.khuzait" weight="5.0" appearance="2" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="30" arm_armor="15" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+</Items>

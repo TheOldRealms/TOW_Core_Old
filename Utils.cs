@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NLog;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -10,6 +11,12 @@ namespace TOW_Core
 {
     public class Utils
     {
+		public static void Log(string message, LogLevel severity)
+        {
+			var logger = LogManager.GetCurrentClassLogger();
+			logger.Log(severity, message);
+        }
+
 		public static string GetRandomScene()
 		{
 			var filterednames = new List<string>();

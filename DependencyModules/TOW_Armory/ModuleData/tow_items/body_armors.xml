@@ -21,4 +21,10 @@
 		</ItemComponent>
 		<Flags />
 	</Item>
+	<Item id="vampire_lord_body_001" name="Vampire Lord Body 001" mesh="vampire_lord_body_001" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="60" leg_armor="25" arm_armor="25" has_gender_variations="false" covers_body="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
 </Items>

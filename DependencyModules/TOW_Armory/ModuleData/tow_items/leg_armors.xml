@@ -1,10 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
-  <!-- Empire Leg Armor TOW-->
-  <Item id="statetroop_uniform_001_leg" name="{=!}Empire State Troop Uniform 001 Boots" mesh="statetroop_uniform_001_leg" weight="0.9" difficulty="0" appearance="1" Type="LegArmor">
-    <ItemComponent>
-      <Armor leg_armor="6" covers_legs="true" modifier_group="leather" material_type="Leather" />
-    </ItemComponent>
-    <Flags />
-  </Item>
+	<!-- Empire Leg Armor TOW-->
+	<Item id="statetroop_uniform_001_leg" name="{=!}Empire State Troop Uniform 001 Boots" mesh="statetroop_uniform_001_leg" weight="0.9" difficulty="0" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="6" covers_legs="true" modifier_group="leather" material_type="Leather" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+
+	<!-- Vampire Leg Armor TOW-->
+	<Item id="vampire_lord_boots_001" name="Vampire Lord Boots 001" mesh="vampire_lord_boots_001" weight="0.9" difficulty="0" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="40" covers_legs="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
 </Items>

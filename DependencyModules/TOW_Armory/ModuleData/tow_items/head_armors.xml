@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Items>
+	<Item id="vampire_lord_helmet_001" name="Vampire Lord Helmet 001" mesh="vampire_lord_helmet_001"  subtype="head_armor" weight="2" difficulty="0" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="50" has_gender_variations="false" hair_cover_type="all" beard_cover_type="type2" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+</Items>

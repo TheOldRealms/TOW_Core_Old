@@ -15,7 +15,6 @@ namespace TOW_Core.Texts
     public static class TOWTextManager
     {
         private static Dictionary<string, TextObject> _overrides = new Dictionary<string, TextObject>();
-        private static readonly ILogger Log = LogManager.GetCurrentClassLogger();
 
         /// <summary>
         /// Loads TOW specific strings from XML.
@@ -29,7 +28,7 @@ namespace TOW_Core.Texts
             }
             catch (Exception e)
             {
-                Log.Error(e.ToString());
+                Utils.Log(e.ToString(), LogLevel.Error);
                 throw e; //TODO handle this more gracefully.
             }
         }
@@ -56,7 +55,7 @@ namespace TOW_Core.Texts
             }
             catch (Exception e)
             {
-                Log.Error(e.ToString());
+                Utils.Log(e.ToString(), LogLevel.Error);
                 throw e; //TODO handle this more gracefully.
             }
         }
@@ -102,9 +101,10 @@ namespace TOW_Core.Texts
                 text = new TextObject();
                 return false;
             }
-            catch (Exception)
+            catch (Exception e)
             {
                 //keynotfoundexception is expected, anything else is not
+                Utils.Log(e.ToString(), LogLevel.Error);
                 text = new TextObject();
                 return false;
             }

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Items>
+	<Item id="vc_skeleton_horse" name="Skeleton Horse" mesh="skeleton_horse_001" subtype="horse" item_category="horse" culture="Culture.vlandia" weight="462" difficulty="10" appearance="0.7" Type="Horse">
+		<ItemComponent>
+			<Horse monster="Monster.horse" maneuver="55" speed="48" charge_damage="12" body_length="109" is_mountable="true" skeleton_scale="vlandia_horse">
+				<AdditionalMeshes>
+				</AdditionalMeshes>
+				<Materials>
+					<Material name="skeleton_horse_mat_001">
+					</Material>
+				</Materials>
+			</Horse>
+		</ItemComponent>
+		<Flags Civilian="true" />
+	</Item>
+</Items>

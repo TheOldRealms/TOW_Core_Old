@@ -49,6 +49,9 @@
     <Reference Include="0Harmony, Version=2.0.4.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\Lib.Harmony.2.0.4\lib\net472\0Harmony.dll</HintPath>
     </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>packages\NLog.4.7.9\lib\net45\NLog.dll</HintPath>
+    </Reference>
     <Reference Include="$(GameDir)\bin\Win64_Shipping_Client\TaleWorlds.AchievementSystem.dll">
       <HintPath>$(GameDir)\bin\Win64_Shipping_Client\TaleWorlds.AchievementSystem.dll</HintPath>
       <Private>False</Private>
@@ -263,9 +266,6 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
-      <HintPath>packages\NLog.4.7.9\lib\net45\NLog.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
@@ -286,7 +286,7 @@
     <Compile Include="CustomBattles\CustomBattleTroopManager.cs" />
     <Compile Include="GameTexts\TOWTextManager.cs" />
     <Compile Include="GameTexts\TOWTextOverride.cs" />
-    <Compile Include="HarmonyPatches\CustomBattleTroopsPatch.cs" />
+    <Compile Include="HarmonyPatches\CustomBattlePatches.cs" />
     <Compile Include="HarmonyPatches\FindGameTextPatch.cs" />
     <Compile Include="HarmonyPatches\RotatingMainMenuPatch.cs" />
     <Compile Include="SubModule.cs" />
@@ -297,8 +297,12 @@
     <Content Include="DependencyModules\TOW_Armory\ModuleData\tow_crafting_templates.xml" />
     <Content Include="DependencyModules\TOW_Armory\ModuleData\Languages\std_crafting_pieces_xml.xml" />
     <Content Include="DependencyModules\TOW_Armory\ModuleData\Languages\std_spitems_xml.xml" />
+    <Content Include="DependencyModules\TOW_Armory\ModuleData\tow_items\arm_armors.xml" />
     <Content Include="DependencyModules\TOW_Armory\ModuleData\tow_items\body_armors.xml" />
+    <Content Include="DependencyModules\TOW_Armory\ModuleData\tow_items\head_armors.xml" />
+    <Content Include="DependencyModules\TOW_Armory\ModuleData\tow_items\horseandharness.xml" />
     <Content Include="DependencyModules\TOW_Armory\ModuleData\tow_items\leg_armors.xml" />
+    <Content Include="DependencyModules\TOW_Armory\ModuleData\tow_items\shoulder_armors.xml" />
     <Content Include="DependencyModules\TOW_Armory\ModuleData\tow_items\weapons.xml" />
     <Content Include="DependencyModules\TOW_Armory\SubModule.xml" />
     <Content Include="DependencyModules\TOW_Environment\SceneObj\towmm_menuscene_01\atmosphere.xml" />
@@ -310,6 +314,7 @@
     <Content Include="DependencyModules\TOW_Environment\SubModule.xml" />
     <Content Include="ModuleData\tow_cultures.xml" />
     <Content Include="ModuleData\tow_custombattletemplates.xml" />
+    <Content Include="ModuleData\tow_lords.xml" />
     <Content Include="ModuleData\tow_module_strings.xml" />
     <Content Include="ModuleData\tow_override_strings.xml" />
     <Content Include="ModuleData\tow_troopdefinitions.xml" />
