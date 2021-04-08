@@ -340,4 +340,4 @@ ASALocalRun/
 healthchecksdb
 
 # TOW Logs
-*/Logs/*
+Logs/*
