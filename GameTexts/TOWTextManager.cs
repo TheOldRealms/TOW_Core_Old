@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NLog;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -14,6 +15,7 @@ namespace TOW_Core.Texts
     public static class TOWTextManager
     {
         private static Dictionary<string, TextObject> _overrides = new Dictionary<string, TextObject>();
+        private static readonly ILogger Log = LogManager.GetCurrentClassLogger();
 
         /// <summary>
         /// Loads TOW specific strings from XML.
@@ -27,6 +29,7 @@ namespace TOW_Core.Texts
             }
             catch (Exception e)
             {
+                Log.Error(e.ToString());
                 throw e; //TODO handle this more gracefully.
             }
         }
@@ -53,6 +56,7 @@ namespace TOW_Core.Texts
             }
             catch (Exception e)
             {
+                Log.Error(e.ToString());
                 throw e; //TODO handle this more gracefully.
             }
         }
