@@ -25,7 +25,6 @@ namespace TOW_Core
             Harmony harmony = new Harmony("mod.harmony.theoldworld");
             harmony.PatchAll();
             ConfigureLogging();
-            Log.Info("Logged");
         }
 
         /// <summary>
