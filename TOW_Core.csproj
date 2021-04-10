@@ -328,6 +328,7 @@
     <None Include="DependencyModules\TOW_Environment\SceneObj\towmm_menuscene_03\scene.xscene" />
     <None Include="DependencyModules\TOW_Environment\SceneObj\towmm_menuscene_03\terrain.bin" />
     <None Include="packages.config" />
+    <None Include="Readme.md" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DependencyModules\TOW_Armory\AssetPackages\" />
