@@ -1,5 +1,4 @@
 ﻿using HarmonyLib;
-using StoryMode.ViewModelCollection.CharacterCreationContent;
 using System;
 using System.Collections.Generic;
 using System.Linq;
