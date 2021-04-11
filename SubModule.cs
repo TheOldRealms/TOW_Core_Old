@@ -48,10 +48,10 @@ namespace TOW_Core
         {
             base.OnMissionBehaviourInitialize(mission);
 
-            InitializeAttributeSystem(mission);
+            InitializeAttributeSystemForMission(mission);
         }
 
-        private void InitializeAttributeSystem(Mission mission)
+        private void InitializeAttributeSystemForMission(Mission mission)
         {
             mission.AddMissionBehaviour(new AttributeSystemMissionLogic());
 
