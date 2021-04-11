@@ -9,6 +9,10 @@ using NLog;
 using System;
 using NLog.Targets;
 using NLog.Config;
+using TOW_Core.Battle.AttributeSystem;
+using TOW_Core.Battle.AttributeSystem.CustomMissionLogic;
+using TaleWorlds.MountAndBlade.Source.Missions.Handlers.Logic;
+using TOW_Core.Utilities.Extensions;
 
 namespace TOW_Core
 {
@@ -37,6 +41,23 @@ namespace TOW_Core
             TOWTextManager.LoadAdditionalTexts();
             TOWTextManager.LoadTextOverrides();
             CustomBattleTroopManager.LoadCustomBattleTroops();
+            AttributeManager.Instance.LoadAttributes();
+        }
+
+        public override void OnMissionBehaviourInitialize(Mission mission)
+        {
+            base.OnMissionBehaviourInitialize(mission);
+
+            InitializeAttributeSystem(mission);
+        }
+
+        private void InitializeAttributeSystem(Mission mission)
+        {
+            mission.AddMissionBehaviour(new AttributeSystemMissionLogic());
+
+            // Replace the default morale interaction logic with our new custom morale logic
+            mission.RemoveMissionBehaviourIfNotNull(mission.GetMissionBehaviour<AgentMoraleInteractionLogic>());
+            mission.AddMissionBehaviour(new TOWAgentMoraleInteractionLogic());
         }
 
         private static void ConfigureLogging()
