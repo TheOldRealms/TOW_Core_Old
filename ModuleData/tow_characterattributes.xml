@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Characters>
+  <Character name="zombie">
+		<Attribute id="Undead"/>
+		<Attribute id="Expendable"/>
+  </Character>
+  <Character name="skeleton_warrior">
+		<Attribute id="Undead"/>
+  </Character>
+  <Character name="c_skeleton_spearman">
+		<Attribute id="Undead"/>
+  </Character>
+</Characters>

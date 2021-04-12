@@ -9,6 +9,7 @@ using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.ObjectSystem;
 using NLog;
+using TOW_Core.Utilities;
 
 namespace TOW_Core.CustomBattles
 {
@@ -36,7 +37,7 @@ namespace TOW_Core.CustomBattles
             }
             catch (Exception e)
             {
-                Utils.Log(e.ToString(), LogLevel.Error);
+                TOWCommon.Log(e.ToString(), LogLevel.Error);
                 throw e; //TODO handle this more gracefully.
             }
         }
@@ -59,7 +60,7 @@ namespace TOW_Core.CustomBattles
                 }
                 catch (Exception e)
                 {
-                    Utils.Log(e.ToString(), LogLevel.Error);
+                    TOWCommon.Log(e.ToString(), LogLevel.Error);
                     return null;
                 }
             }
