@@ -90,21 +90,15 @@ namespace TOW_Core.Texts
             }
             try
             {
-                var match = TOWTextManager._overrides[localid];
-                if (match != null && match.Length > 0)
+                var match = new TextObject();
+                if (TOWTextManager._overrides.TryGetValue(localid, out match) && match != null && match.Length > 0)
                 {
                     text = match;
                     return true;
                 }
             }
-            catch (KeyNotFoundException)
-            {
-                text = new TextObject();
-                return false;
-            }
             catch (Exception e)
             {
-                //keynotfoundexception is expected, anything else is not
                 TOWCommon.Log(e.ToString(), LogLevel.Error);
                 text = new TextObject();
                 return false;
