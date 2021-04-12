@@ -20,20 +20,33 @@ namespace TOW_Core.Utilities
         /// can modify and manage the added particles.
         /// </summary>
         /// <param name="agent">The agent receiving the particle system.</param>
-        /// <param name="particleId">The Id of the particle system.</param>
+        /// <param name="particleId">The ID of the particle system.</param>
         /// <returns>A List of ParticleSystems attached to the agent</returns>
         public static List<ParticleSystem> ApplyParticleToAgent(Agent agent, string particleId)
         {
             List<ParticleSystem> particleList = new List<ParticleSystem>();
             int[] boneIndexes = { 0, 1, 2, 3, 5, 6, 7, 9, 12, 13, 15, 17, 22, 24 };
-            Skeleton skeleton = agent.AgentVisuals.GetSkeleton();
             for (byte i = 0; i < boneIndexes.Length; i++)
             {
-                MatrixFrame localFrame = new MatrixFrame(Mat3.Identity, new Vec3(0, 0, 0));
-                ParticleSystem particle = ParticleSystem.CreateParticleSystemAttachedToBone(particleId, skeleton, (sbyte)boneIndexes[i], ref localFrame);
+                ParticleSystem particle = ApplyParticleToAgentBone(agent, particleId, (sbyte)boneIndexes[i]);
                 particleList.Add(particle);
             }
             return particleList;
+        }
+
+        /// <summary>
+        /// Attach a particle to an agent's bone at the given index.
+        /// </summary>
+        /// <param name="agent">The agent receiving the particle system.</param>
+        /// <param name="particleId">The ID of the particle system.</param>
+        /// <param name="boneIndex">The index of the bone on the agent's skeleton that the particle should be attached to.</param>
+        /// <returns>The ParticleSystem that was attached to the agent's bone.</returns>
+        public static ParticleSystem ApplyParticleToAgentBone(Agent agent, string particleId, sbyte boneIndex)
+        {
+            Skeleton skeleton = agent.AgentVisuals.GetSkeleton();
+            MatrixFrame localFrame = new MatrixFrame(Mat3.Identity, new Vec3(0, 0, 0));
+            ParticleSystem particle = ParticleSystem.CreateParticleSystemAttachedToBone(particleId, skeleton, boneIndex, ref localFrame);
+            return particle;
         }
     }
 }
