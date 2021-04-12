@@ -1,15 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using HarmonyLib;
-using TaleWorlds.CampaignSystem;
 using TaleWorlds.Core;
-using TaleWorlds.MountAndBlade;
 using TaleWorlds.MountAndBlade.CustomBattle;
 using TaleWorlds.MountAndBlade.CustomBattle.CustomBattle;
-using TaleWorlds.ObjectSystem;
 using TOW_Core.CustomBattles;
 
 namespace TOW_Core.HarmonyPatches
@@ -33,8 +27,27 @@ namespace TOW_Core.HarmonyPatches
             var list = new List<BasicCharacterObject>();
             try
             {
+                //Ideally this should not be hardcoded. Maybe create a custombattlelords xml template and load that?
                 list.Add(Game.Current.ObjectManager.GetObject<BasicCharacterObject>("karlfranz"));
                 list.Add(Game.Current.ObjectManager.GetObject<BasicCharacterObject>("mannfred"));
+            }
+            catch (Exception e)
+            {
+                Utils.Log(e.Message, NLog.LogLevel.Error);
+            }
+            if (list.Count > 1) __result = list;
+        }
+
+        [HarmonyPostfix]
+        [HarmonyPatch(typeof(CustomBattleData), "Factions", MethodType.Getter)]
+        public static void Postfix3(ref IEnumerable<BasicCultureObject> __result)
+        {
+            var list = new List<BasicCultureObject>();
+            try
+            {
+                //Ideally this should not be hardcoded. Maybe create a custombattlecultures xml template and load that?
+                list.Add(Game.Current.ObjectManager.GetObject<BasicCultureObject>("empire"));
+                list.Add(Game.Current.ObjectManager.GetObject<BasicCultureObject>("khuzait"));
             }
             catch (Exception e)
             {
