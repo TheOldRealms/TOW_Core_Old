@@ -41,7 +41,7 @@ namespace TOW_Core
             TOWTextManager.LoadAdditionalTexts();
             TOWTextManager.LoadTextOverrides();
             CustomBattleTroopManager.LoadCustomBattleTroops();
-            AttributeManager.Instance.LoadAttributes();
+            LoadAttributes();
         }
 
         public override void OnMissionBehaviourInitialize(Mission mission)
@@ -58,6 +58,12 @@ namespace TOW_Core
             // Replace the default morale interaction logic with our new custom morale logic
             mission.RemoveMissionBehaviourIfNotNull(mission.GetMissionBehaviour<AgentMoraleInteractionLogic>());
             mission.AddMissionBehaviour(new TOWAgentMoraleInteractionLogic());
+        }
+
+        private void LoadAttributes()
+        {
+            AttributeManager attributeManager = new AttributeManager();
+            attributeManager.LoadAttributes();
         }
 
         private static void ConfigureLogging()

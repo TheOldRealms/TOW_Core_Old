@@ -1,16 +1,32 @@
-﻿using System;
+﻿using NLog;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TaleWorlds.MountAndBlade;
-using TOW_Core.Battle.AttributeSystem;
+using TOW_Core.Utilities;
 using TOW_Core.Utilities.Extensions;
 
-namespace TOW_Core.Battle.Utilities
+namespace TOW_Core.Battle.Extensions
 {
-    public static class AgentExtensions
+    public static class AgentAttributeExtensions
     {
+        /// <summary>
+        /// Maps all character IDs to a list of attributes for that character. For example, <"skeleton_warrior" <=> {"Expendable", "Undead"}>
+        /// </summary>
+        private static Dictionary<string, List<string>> CharacterIDToAttributeMap = new Dictionary<string, List<string>>();
+        private static bool _attributesAreInitialized = false;
+
+        public static bool IsExpendable(this Agent agent)
+        {
+            return agent.GetAttributes().Contains("Expendable");
+        }
+
+        /// <summary>
+        /// Return all MoraleAgentComponents attached to the agent that are not of the base TaleWorlds implementation.
+        /// </summary>
+        /// <returns>A List of objects that subclass MoraleAgentComponent.</returns>
         public static List<MoraleAgentComponent> GetCustomMoraleComponents(this Agent agent)
         {
             List<MoraleAgentComponent> components = new List<MoraleAgentComponent>();
@@ -21,6 +37,33 @@ namespace TOW_Core.Battle.Utilities
             agentComponents.ForEach(component => components.AddIfNotNull(component as MoraleAgentComponent));
 
             return components;
+        }
+
+        public static List<string> GetAttributes(this Agent agent)
+        {
+            if (agent != null && agent.Character != null)
+            {
+                string characterName = agent.Character.StringId;
+
+                List<string> attributeList;
+                if (CharacterIDToAttributeMap.TryGetValue(characterName, out attributeList))
+                {
+                    return attributeList;
+                }
+            }
+            return new List<string>();
+        }
+
+        public static void SetAttributesDictionary(Dictionary<string, List<string>> dict)
+        {
+            if(_attributesAreInitialized)
+            {
+                TOWCommon.Log("Attempted to set agent attributes dictionary, but it was already initialized.", LogLevel.Warn);
+                return;
+            }
+
+            CharacterIDToAttributeMap = dict;
+            _attributesAreInitialized = true;
         }
 
         public static void RemoveComponentIfNotNull(this Agent agent, AgentComponent component)
@@ -51,11 +94,6 @@ namespace TOW_Core.Battle.Utilities
         {
             //Cap healing at the agent's max hit points
             agent.Health = Math.Min(agent.Health + healingAmount, agent.HealthLimit);
-        }
-
-        public static List<string> GetAttributes(this Agent agent)
-        {
-            return AttributeManager.Instance.GetAttributes(agent);
         }
     }
 }

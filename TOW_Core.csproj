@@ -286,7 +286,7 @@
     <Compile Include="Battle\AttributeSystem\CustomAgentComponents\UndeadMoraleAgentComponent.cs" />
     <Compile Include="Battle\AttributeSystem\CustomMissionLogic\AttributeSystemMissionLogic.cs" />
     <Compile Include="Battle\AttributeSystem\CustomMissionLogic\TOWAgentMoraleInteractionLogic.cs" />
-    <Compile Include="Battle\Utilities\AgentExtensions.cs" />
+    <Compile Include="Battle\Extensions\AgentExtensions.cs" />
     <Compile Include="CustomBattles\CustomBattleFormationTemplate.cs" />
     <Compile Include="CustomBattles\CustomBattleTroopManager.cs" />
     <Compile Include="GameTexts\TOWTextManager.cs" />

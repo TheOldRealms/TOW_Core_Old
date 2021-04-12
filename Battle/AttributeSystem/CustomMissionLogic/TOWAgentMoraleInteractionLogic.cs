@@ -7,7 +7,7 @@ using TaleWorlds.Core;
 using TaleWorlds.Engine;
 using TaleWorlds.MountAndBlade;
 using TOW_Core.Battle.AttributeSystem.CustomAgentComponents;
-using TOW_Core.Battle.Utilities;
+using TOW_Core.Battle.Extensions;
 
 namespace TOW_Core.Battle.AttributeSystem.CustomMissionLogic
 {
@@ -82,7 +82,7 @@ namespace TOW_Core.Battle.AttributeSystem.CustomMissionLogic
         {
             if (agent != null)
             {
-                if (AttributeManager.Instance.GetAttributes(agent).Contains("Expendable"))
+                if (agent.GetAttributes().Contains("Expendable"))
                 {
                     return true;
                 }

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TaleWorlds.MountAndBlade;
 using TOW_Core.Battle.AttributeSystem.CustomAgentComponents;
+using TOW_Core.Battle.Extensions;
 
 namespace TOW_Core.Battle.AttributeSystem.CustomMissionLogic
 {
@@ -18,7 +19,7 @@ namespace TOW_Core.Battle.AttributeSystem.CustomMissionLogic
         {
             base.OnAgentCreated(agent);
 
-            List<string> attributeList = AttributeManager.Instance.GetAttributes(agent);
+            List<string> attributeList = agent.GetAttributes();
             attributeList.ForEach(attribute => ApplyAgentComponentsForAttribute(attribute, agent));
         }
 
