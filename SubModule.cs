@@ -9,6 +9,11 @@ using NLog;
 using System;
 using NLog.Targets;
 using NLog.Config;
+using TOW_Core.Battle.AttributeSystem;
+using TOW_Core.Battle.AttributeSystem.CustomMissionLogic;
+using TaleWorlds.MountAndBlade.Source.Missions.Handlers.Logic;
+using TOW_Core.Utilities.Extensions;
+using TOW_Core.Utilities;
 
 namespace TOW_Core
 {
@@ -16,7 +21,7 @@ namespace TOW_Core
     {
         protected override void OnBeforeInitialModuleScreenSetAsRoot()
         {
-            InformationManager.DisplayMessage(new InformationMessage("TOW Core loaded."));
+            TOWCommon.Say("TOW Core loaded.");
         }
 
         protected override void OnSubModuleLoad()
@@ -37,6 +42,29 @@ namespace TOW_Core
             TOWTextManager.LoadAdditionalTexts();
             TOWTextManager.LoadTextOverrides();
             CustomBattleTroopManager.LoadCustomBattleTroops();
+            LoadAttributes();
+        }
+
+        public override void OnMissionBehaviourInitialize(Mission mission)
+        {
+            base.OnMissionBehaviourInitialize(mission);
+
+            InitializeAttributeSystemForMission(mission);
+        }
+
+        private void InitializeAttributeSystemForMission(Mission mission)
+        {
+            mission.AddMissionBehaviour(new AttributeSystemMissionLogic());
+
+            // Replace the default morale interaction logic with our new custom morale logic
+            mission.RemoveMissionBehaviourIfNotNull(mission.GetMissionBehaviour<AgentMoraleInteractionLogic>());
+            mission.AddMissionBehaviour(new TOWAgentMoraleInteractionLogic());
+        }
+
+        private void LoadAttributes()
+        {
+            AttributeManager attributeManager = new AttributeManager();
+            attributeManager.LoadAttributes();
         }
 
         private static void ConfigureLogging()

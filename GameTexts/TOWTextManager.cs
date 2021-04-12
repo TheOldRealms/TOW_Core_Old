@@ -9,6 +9,7 @@ using System.Xml.Serialization;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
+using TOW_Core.Utilities;
 
 namespace TOW_Core.Texts
 {
@@ -28,7 +29,7 @@ namespace TOW_Core.Texts
             }
             catch (Exception e)
             {
-                Utils.Log(e.ToString(), LogLevel.Error);
+                TOWCommon.Log(e.ToString(), LogLevel.Error);
                 throw e; //TODO handle this more gracefully.
             }
         }
@@ -55,7 +56,7 @@ namespace TOW_Core.Texts
             }
             catch (Exception e)
             {
-                Utils.Log(e.ToString(), LogLevel.Error);
+                TOWCommon.Log(e.ToString(), LogLevel.Error);
                 throw e; //TODO handle this more gracefully.
             }
         }
@@ -104,7 +105,7 @@ namespace TOW_Core.Texts
             catch (Exception e)
             {
                 //keynotfoundexception is expected, anything else is not
-                Utils.Log(e.ToString(), LogLevel.Error);
+                TOWCommon.Log(e.ToString(), LogLevel.Error);
                 text = new TextObject();
                 return false;
             }

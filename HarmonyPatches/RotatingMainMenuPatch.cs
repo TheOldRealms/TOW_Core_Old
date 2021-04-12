@@ -10,6 +10,7 @@ using TaleWorlds.Engine;
 using TaleWorlds.Engine.Screens;
 using TaleWorlds.Library;
 using TaleWorlds.MountAndBlade;
+using TOW_Core.Utilities;
 
 namespace TOW_Core.HarmonyPatches
 {
@@ -26,7 +27,7 @@ namespace TOW_Core.HarmonyPatches
 				____scene = Scene.CreateNewScene(true);
 				____scene.SetName("MBInitialScreenBase");
 				____scene.SetPlaySoundEventsAfterReadyToRender(true);
-				____scene.Read(Utils.GetRandomScene());
+				____scene.Read(TOWCommon.GetRandomScene());
 				for (int i = 0; i < 40; i++)
 				{
 					____scene.Tick(0.1f);
