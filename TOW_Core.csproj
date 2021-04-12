@@ -321,6 +321,7 @@
     <Content Include="DependencyModules\TOW_Environment\SceneObj\towmm_menuscene_03\atmosphere.xml" />
     <Content Include="DependencyModules\TOW_Environment\SceneObj\towmm_menuscene_03\references.txt" />
     <Content Include="DependencyModules\TOW_Environment\SubModule.xml" />
+    <Content Include="ModuleData\tow_characterattributes.xml" />
     <Content Include="ModuleData\tow_cultures.xml" />
     <Content Include="ModuleData\tow_custombattletemplates.xml" />
     <Content Include="ModuleData\tow_lords.xml" />
