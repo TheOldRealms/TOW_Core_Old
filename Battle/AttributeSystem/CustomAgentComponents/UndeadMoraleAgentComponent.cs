@@ -7,7 +7,7 @@ using TaleWorlds.Core;
 using TaleWorlds.Engine;
 using TaleWorlds.Library;
 using TaleWorlds.MountAndBlade;
-using TOW_Core.Battle.Utilities;
+using TOW_Core.Battle.Extensions;
 using TOW_Core.Utilities;
 
 namespace TOW_Core.Battle.AttributeSystem.CustomAgentComponents
@@ -30,7 +30,6 @@ namespace TOW_Core.Battle.AttributeSystem.CustomAgentComponents
         {
             base.Initialize();
             crumbleTimer = new Timer(GetDistributedTime(crumbleFrequencyInSeconds), crumbleFrequencyInSeconds, true);
-            InitializeMorale();
         }
 
         protected override void OnTickAsAI(float dt)
@@ -81,16 +80,6 @@ namespace TOW_Core.Battle.AttributeSystem.CustomAgentComponents
         private void ApplyMoraleRegen()
         {
             Agent.Heal(regenAmount);
-        }
-
-        private void InitializeMorale()
-        {
-            float num = 35f;
-            int num2 = MBRandom.RandomInt(30);
-            float num3 = num + num2;
-            num3 = MissionGameModels.Current.BattleMoraleModel.GetEffectiveInitialMorale(Agent, num3);
-            num3 = MBMath.ClampFloat(num3, 15f, 100f);
-            Morale = num3;
         }
 
         private float GetDistributedTime(float deviation)
