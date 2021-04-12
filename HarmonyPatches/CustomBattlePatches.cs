@@ -11,6 +11,7 @@ using TaleWorlds.MountAndBlade.CustomBattle;
 using TaleWorlds.MountAndBlade.CustomBattle.CustomBattle;
 using TaleWorlds.ObjectSystem;
 using TOW_Core.CustomBattles;
+using TOW_Core.Utilities;
 
 namespace TOW_Core.HarmonyPatches
 {
@@ -38,7 +39,7 @@ namespace TOW_Core.HarmonyPatches
             }
             catch (Exception e)
             {
-                Utils.Log(e.Message, NLog.LogLevel.Error);
+                TOWCommon.Log(e.Message, NLog.LogLevel.Error);
             }
             if (list.Count > 1) __result = list;
         }

@@ -301,7 +301,6 @@
     <Compile Include="Utilities\TOWCommon.cs" />
     <Compile Include="Utilities\TOWMath.cs" />
     <Compile Include="Utilities\TOWParticleSystem.cs" />
-    <Compile Include="Utils.cs" />
     <Content Include="DependencyModules\TOW_Armory\ModuleData\tow_cloth_bodies.xml" />
     <Content Include="DependencyModules\TOW_Armory\ModuleData\tow_crafting_pieces.xml" />
     <Content Include="DependencyModules\TOW_Armory\ModuleData\tow_crafting_templates.xml" />

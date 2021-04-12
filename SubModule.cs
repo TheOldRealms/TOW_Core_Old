@@ -13,6 +13,7 @@ using TOW_Core.Battle.AttributeSystem;
 using TOW_Core.Battle.AttributeSystem.CustomMissionLogic;
 using TaleWorlds.MountAndBlade.Source.Missions.Handlers.Logic;
 using TOW_Core.Utilities.Extensions;
+using TOW_Core.Utilities;
 
 namespace TOW_Core
 {
@@ -20,7 +21,7 @@ namespace TOW_Core
     {
         protected override void OnBeforeInitialModuleScreenSetAsRoot()
         {
-            InformationManager.DisplayMessage(new InformationMessage("TOW Core loaded."));
+            TOWCommon.Say("TOW Core loaded.");
         }
 
         protected override void OnSubModuleLoad()
