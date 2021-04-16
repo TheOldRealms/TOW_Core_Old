@@ -1,8 +1,59 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Items>
-	<Item id="vampire_lord_shoulders_001" name="Vampire Lord Shoulders 001" mesh="vampire_lord_shoulders_001" culture="Culture.khuzait" weight="5.0" appearance="2" Type="Cape">
+	<!-- Vampire Shoulder Armor TOW-->
+	<Item id="vampire_lord_shoulders_001" name="{=!}Vampire Lord Cape" mesh="vampire_lord_shoulders_001" culture="Culture.khuzait" weight="5.0" appearance="2" Type="Cape">
 		<ItemComponent>
-			<Armor body_armor="30" arm_armor="15" modifier_group="plate" material_type="Plate" />
+			<Armor body_armor="30" arm_armor="5" modifier_group="cloth" material_type="Cloth" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="krell_cape" name="{=!}Krell's Cape" mesh="krell_cape" culture="Culture.khuzait" weight="5.0" appearance="2" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="20" arm_armor="5" modifier_group="cloth" material_type="Cloth" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="grave_guard_shoulder_002" name="{=!}Grave Guard Shoulders" mesh="grave_guard_shoulder_002" culture="Culture.khuzait" weight="5.0" appearance="2" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="15" arm_armor="5" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="grave_guard_shoulders_001" name="{=!}Grave Guard Shoulders" mesh="grave_guard_shoulders_001" culture="Culture.khuzait" weight="5.0" appearance="2" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="12" arm_armor="3" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+
+	<Item id="cairn_wraith_shoulders_001" name="{=!}Cairn Wraith Shoulders" mesh="vc_cairn_wraith_shoulders_001" culture="Culture.khuzait" weight="5.0" appearance="2" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="20" arm_armor="10" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="cairn_wraith_shoulders_002" name="Cairn Wraith Shoulders" mesh="vc_cairn_wraith_shoulders_002" culture="Culture.khuzait" weight="5.0" appearance="2" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="20" arm_armor="10" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="cairn_wraith_shoulders_003" name="{=!}Cairn Wraith Shoulders" mesh="vc_cairn_wraith_shoulders_003" culture="Culture.khuzait" weight="5.0" appearance="2" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="20" arm_armor="10" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="cairn_wraith_shoulders_004" name="{=!}Cairn Wraith Shoulders" mesh="vc_cairn_wraith_shoulders_004" culture="Culture.khuzait" weight="5.0" appearance="2" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="20" arm_armor="10" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<!-- Empire Shoulder Armor TOW-->
+	<Item id="empire_halberdier_shoulders_001" name="{=!}Empire Halberdier Shoulder" mesh="empire_halberdier_shoulders_001" culture="Culture.empire" weight="5.0" appearance="2" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="20" arm_armor="10" modifier_group="plate" material_type="Plate" />
 		</ItemComponent>
 		<Flags />
 	</Item>

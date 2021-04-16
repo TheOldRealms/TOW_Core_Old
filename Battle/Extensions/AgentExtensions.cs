@@ -81,8 +81,9 @@ namespace TOW_Core.Battle.Extensions
         /// <param name="damageAmount">How much damage the agent will receive.</param>
         public static void ApplyDamage(this Agent agent, float damageAmount)
         {
-            //Prevent reduction below 0 health (possibly unnecessary)
-            agent.Health = Math.Max(agent.Health - damageAmount, 0);
+            var blow = new Blow();
+            blow.InflictedDamage = (int)damageAmount;
+            agent.RegisterBlow(blow);
         }
 
         /// <summary>

@@ -1,30 +1,253 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
 	<!-- Empire Armor TOW-->
-	<Item id="statetroop_uniform_001_body" name="{=!}Empire State Troop Uniform 001 Body" mesh="statetroop_uniform_001_body" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+	<Item id="statetroop_uniform_001_body" name="{=!}Empire State Troop Uniform" mesh="statetroop_uniform_001_body" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
 		<ItemComponent>
 			<Armor body_armor="14" leg_armor="7" arm_armor="2" has_gender_variations="false" covers_body="true" modifier_group="cloth" material_type="Cloth" />
 		</ItemComponent>
 		<Flags />
 	</Item>
+	<Item id="empire_halberdier_body_001" name="{=!}Empire Halberdier Cuirass" mesh="empire_halberdier_001" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="40" leg_armor="10" arm_armor="10" has_gender_variations="true" covers_body="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_001_averland_01" name="{=!}Averland Breastplate" mesh="empire_free_company_armor_001" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="20" leg_armor="6" arm_armor="6" has_gender_variations="false" covers_body="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_002_averland_02" name="{=!}Averland Breastplate" mesh="empire_free_company_armor_002" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="20" leg_armor="6" arm_armor="6" has_gender_variations="false" covers_body="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_003_altdorf_01" name="{=!}Altdorf Breastplate" mesh="empire_free_company_armor_003" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="20" leg_armor="6" arm_armor="6" has_gender_variations="false" covers_body="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_004_middenheim_01" name="{=!}Middenheim Breastplate" mesh="empire_free_company_armor_004" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="20" leg_armor="6" arm_armor="6" has_gender_variations="false" covers_body="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_005_nuln_01" name="{=!}Nuln Breastplate" mesh="empire_free_company_armor_005" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="20" leg_armor="6" arm_armor="6" has_gender_variations="false" covers_body="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_006_hochland_01" name="{=!}Hochland Breastplate" mesh="empire_free_company_armor_006" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="20" leg_armor="6" arm_armor="6" has_gender_variations="false" covers_body="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_007_hochland_02" name="{=!}Hochland Breastplate" mesh="empire_free_company_armor_007" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="20" leg_armor="6" arm_armor="6" has_gender_variations="false" covers_body="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_008_marienburg_01" name="{=!}Marienburg Breastplate" mesh="empire_free_company_armor_008" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="20" leg_armor="6" arm_armor="6" has_gender_variations="false" covers_body="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_009_marienburg_02" name="{=!}Marienburg Breastplate" mesh="empire_free_company_armor_009" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="20" leg_armor="6" arm_armor="6" has_gender_variations="false" covers_body="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_010_middenland_01" name="{=!}Middenland Breastplate" mesh="empire_free_company_armor_010" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="20" leg_armor="6" arm_armor="6" has_gender_variations="false" covers_body="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_011_nordland_01" name="{=!}Nordland Breastplate" mesh="empire_free_company_armor_011" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="20" leg_armor="6" arm_armor="6" has_gender_variations="false" covers_body="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_012_nordland_02" name="{=!}Nordland Breastplate" mesh="empire_free_company_armor_012" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="20" leg_armor="6" arm_armor="6" has_gender_variations="false" covers_body="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_013_ostermark_01" name="{=!}Ostermark Breastplate" mesh="empire_free_company_armor_013" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="20" leg_armor="6" arm_armor="6" has_gender_variations="false" covers_body="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_014_ostermark_02" name="{=!}Ostermark Breastplate" mesh="empire_free_company_armor_014" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="20" leg_armor="6" arm_armor="6" has_gender_variations="false" covers_body="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_015_ostland_01" name="{=!}Ostland Breastplate" mesh="empire_free_company_armor_015" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="20" leg_armor="6" arm_armor="6" has_gender_variations="false" covers_body="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_016_ostland_02" name="{=!}Ostland Breastplate" mesh="empire_free_company_armor_016" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="20" leg_armor="6" arm_armor="6" has_gender_variations="false" covers_body="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_017_reikland_01" name="{=!}Reikland Breastplate" mesh="empire_free_company_armor_017" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="20" leg_armor="6" arm_armor="6" has_gender_variations="false" covers_body="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_018_stirland_01" name="{=!}Stirland Breastplate" mesh="empire_free_company_armor_018" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="20" leg_armor="6" arm_armor="6" has_gender_variations="false" covers_body="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_019_talabecland_01" name="{=!}Talabecland Breastplate" mesh="empire_free_company_armor_019" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="20" leg_armor="6" arm_armor="6" has_gender_variations="false" covers_body="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_020_talabecland_02" name="{=!}Talabecland Breastplate" mesh="empire_free_company_armor_020" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="20" leg_armor="6" arm_armor="6" has_gender_variations="false" covers_body="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_021_wissenland_01" name="{=!}Wissenland Breastplate" mesh="empire_free_company_armor_021" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="20" leg_armor="6" arm_armor="6" has_gender_variations="false" covers_body="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_022_wissenland_02" name="{=!}Wissenland Breastplate" mesh="empire_free_company_armor_022" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="20" leg_armor="6" arm_armor="6" has_gender_variations="false" covers_body="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_023_wissenland_03" name="{=!}Wissenland Breastplate" mesh="empire_free_company_armor_023" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="20" leg_armor="6" arm_armor="6" has_gender_variations="false" covers_body="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
 	
 	<!-- Vampire Armor TOW-->
-	<Item id="skeleton_body_glowing_full" name="Skeleton Body Glowing Full" mesh="skeleton_body_glowing_full" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+	<Item id="skeleton_body_glowing_full" name="{=!}Skeleton Body" mesh="skeleton_body_glowing_full" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
 		<ItemComponent>
 			<Armor body_armor="20" leg_armor="12" arm_armor="12" has_gender_variations="false" covers_body="true" covers_head="true" covers_legs="true" covers_hands="true" modifier_group="leather" material_type="Leather" />
 		</ItemComponent>
 		<Flags />
 	</Item>
-	<Item id="skeleton_body_full" name="Skeleton Body Full" mesh="skeleton_body_full" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+	<Item id="skeleton_body_full" name="{=!}Skeleton Body" mesh="skeleton_body_full" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
 		<ItemComponent>
 			<Armor body_armor="20" leg_armor="12" arm_armor="12" has_gender_variations="false" covers_body="true" covers_head="true" covers_legs="true" covers_hands="true" modifier_group="leather" material_type="Leather" />
 		</ItemComponent>
 		<Flags />
 	</Item>
-	<Item id="vampire_lord_body_001" name="Vampire Lord Body 001" mesh="vampire_lord_body_001" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+	<Item id="vampire_lord_body_001" name="{=!}Vampire Lord Armor" mesh="vampire_lord_body_001" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
 		<ItemComponent>
 			<Armor body_armor="60" leg_armor="25" arm_armor="25" has_gender_variations="false" covers_body="true" modifier_group="plate" material_type="Plate" />
 		</ItemComponent>
 		<Flags />
 	</Item>
+	<Item id="krell_body" name="{=!}Krell's Armor" mesh="krell_body" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="60" leg_armor="20" arm_armor="20" has_gender_variations="false" covers_body="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="krell_body_with_head" name="{=!}Krell's Armor" mesh="krell_body_with_head" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="60" leg_armor="20" arm_armor="20" has_gender_variations="false" covers_body="true" covers_head="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="grave_guard_body_002" name="{=!}Grave Guard Armor" mesh="grave_guard_body_002" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="40" leg_armor="10" arm_armor="10" has_gender_variations="false" covers_body="false" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="grave_guard_body_001" name="{=!}Grave Guard Armor" mesh="grave_guard_body_001" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="40" leg_armor="10" arm_armor="10" has_gender_variations="false" covers_body="true" covers_head="true" covers_legs="true" covers_hands="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="skeleton_body" name="{=!}Skeleton Body" mesh="skeleton_body" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="20" leg_armor="1" arm_armor="1" has_gender_variations="false" covers_body="true" covers_head="true" modifier_group="leather" material_type="Leather" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="grave_guard_body_002_full" name="{=!}Grave Guard Armor" mesh="grave_guard_body_002_full" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="40" leg_armor="10" arm_armor="10" has_gender_variations="false" covers_body="true" covers_head="true" covers_legs="true" covers_hands="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="grave_guard_body_001_full" name="{=!}Grave Guard Armor" mesh="grave_guard_body_001_full" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="40" leg_armor="10" arm_armor="10" has_gender_variations="false" covers_body="true" covers_head="true" covers_legs="true" covers_hands="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="cairn_wraith_body_001" name="{=!}Cairn Wraith Body" mesh="vc_cairn_wraith_body_001" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="50" leg_armor="30" arm_armor="30" has_gender_variations="false" covers_body="true" covers_head="true" covers_legs="true" covers_hands="true" modifier_group="cloth" material_type="Cloth" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="cairn_wraith_body_002" name="{=!}Cairn Wraith Body" mesh="vc_cairn_wraith_body_002" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="50" leg_armor="30" arm_armor="30" has_gender_variations="false" covers_body="true" covers_head="true" covers_legs="true" covers_hands="true" modifier_group="cloth" material_type="Cloth" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="cairn_wraith_body_003" name="{=!}Cairn Wraith Body" mesh="vc_cairn_wraith_body_003" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="50" leg_armor="30" arm_armor="30" has_gender_variations="false" covers_body="true" covers_head="true" covers_legs="true" covers_hands="true" modifier_group="cloth" material_type="Cloth" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="cairn_wraith_body_004" name="{=!}Cairn Wraith Body" mesh="vc_cairn_wraith_body_004" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="50" leg_armor="30" arm_armor="30" has_gender_variations="false" covers_body="true" covers_head="true" covers_legs="true" covers_hands="true" modifier_group="cloth" material_type="Cloth" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="cairn_wraith_body_005" name="{=!}Cairn Wraith Body" mesh="vc_cairn_wraith_body_005" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="50" leg_armor="30" arm_armor="30" has_gender_variations="false" covers_body="true" covers_head="true" covers_legs="true" covers_hands="true" modifier_group="cloth" material_type="Cloth" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="cairn_wraith_body_006" name="{=!}Cairn Wraith Body" mesh="vc_cairn_wraith_body_006" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="50" leg_armor="30" arm_armor="30" has_gender_variations="false" covers_body="true" covers_head="true" covers_legs="true" covers_hands="true" modifier_group="cloth" material_type="Cloth" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+
 </Items>

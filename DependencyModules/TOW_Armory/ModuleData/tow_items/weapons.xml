@@ -17,7 +17,15 @@
 			<Piece id="empire_greatsword_001_pommel" Type="Pommel" />
 		</Pieces>
 	</CraftedItem>
-	<CraftedItem id="skeleton_warrior_sword_002" name="Skeleton Warrior Sword 002" crafting_template="tow_longsword_template">
+	<CraftedItem id="empire_halberd" name="{=!}Empire Halberd" crafting_template="tow_halberd_template">
+		<Pieces>
+			<Piece id="empire_halberd_head" Type="Blade" scale_factor="100" />
+			<Piece id="empire_halberd_shaft" Type="Handle" scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+
+	<!-- Vampire Weapons TOW -->
+	<CraftedItem id="skeleton_warrior_sword_002" name="{=!}Skeleton Warrior Sword 002" crafting_template="tow_longsword_template">
 		<Pieces>
 			<Piece id="skeleton_warrior_sword_002_blade" Type="Blade" scale_factor="100" />
 			<Piece id="skeleton_warrior_sword_002_hilt" Type="Handle" scale_factor="100" />
@@ -25,7 +33,7 @@
 			<Piece id="skeleton_warrior_sword_002_pommel" Type="Pommel" />
 		</Pieces>
 	</CraftedItem>
-	<CraftedItem id="skeleton_warrior_sword_001" name="Skeleton Warrior Sword 001" crafting_template="tow_longsword_template">
+	<CraftedItem id="skeleton_warrior_sword_001" name="{=!}Skeleton Warrior Sword 001" crafting_template="tow_longsword_template">
 		<Pieces>
 			<Piece id="skeleton_warrior_sword_001_blade" Type="Blade" scale_factor="100" />
 			<Piece id="skeleton_warrior_sword_001_hilt" Type="Handle" scale_factor="100" />

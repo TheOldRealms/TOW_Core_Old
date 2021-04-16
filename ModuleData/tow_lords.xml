@@ -19,7 +19,7 @@
         <equipment slot="Item1" id="Item.heavy_horsemans_kite_shield" />
         <equipment slot="Head" id="Item.vampire_lord_helmet_001" />
         <equipment slot="Body" id="Item.vampire_lord_body_001" />
-        <!--<equipment slot="Cape" id="Item.studded_imperial_neckguard" />-->
+        <equipment slot="Cape" id="Item.vampire_lord_shoulders_001" />
         <equipment slot="Gloves" id="Item.vampire_lord_braces_001" />
         <equipment slot="Leg" id="Item.vampire_lord_boots_001" />
         <equipment slot="Horse" id="Item.vc_skeleton_horse" />
@@ -46,7 +46,7 @@
 		  <equipment slot="Item1" id="Item.heavy_horsemans_kite_shield" />
 		  <equipment slot="Head" id="Item.vampire_lord_helmet_001" />
 		  <equipment slot="Body" id="Item.vampire_lord_body_001" />
-		  <!--<equipment slot="Cape" id="Item.studded_imperial_neckguard" />-->
+		  <equipment slot="Cape" id="Item.vampire_lord_shoulders_001" />
 		  <equipment slot="Gloves" id="Item.vampire_lord_braces_001" />
 		  <equipment slot="Leg" id="Item.vampire_lord_boots_001" />
 		  <equipment slot="Horse" id="Item.vc_skeleton_horse" />

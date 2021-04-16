@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Items>
+	<!-- Vampire Shields TOW-->
+	<Item id="skeleton_warrior_shield_001" name="{=!}Skeleton Warrior Shield" body_name="bo_cap_skele_warr_shield_001" shield_body_name="bo_skele_warr_shield_001" recalculate_body="false" mesh="skele_warr_shield_001" using_tableau="true" weight="4.6" appearance="0.6" Type="Shield" item_holsters="shield_kite:shield_2:shield_3:shield_4" has_lower_holster_priority="true" holster_position_shift="-0.1,-0.0,0.025">
+		<ItemComponent>
+			<Weapon weapon_class="LargeShield" body_armor="3" thrust_speed="82" thrust_damage_type="Blunt" speed_rating="82" item_usage="hand_shield" position="0.25, 0.00, 0.00" rotation="0.0,10.0,30.00" physics_material="wood_shield" weapon_length="110" center_of_mass="0.0,0.0,0.0" hit_points="150">
+				<WeaponFlags CanBlockRanged="true" HasHitPoints="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags WoodenParry="true" HeldInOffHand="true" ForceAttachOffHandSecondaryItemBone="true" />
+	</Item>
+	<Item id="skeleton_warrior_shield_002" name="{=!}Skeleton Warrior Shield" body_name="bo_cap_skele_warr_shield_002" shield_body_name="bo_skele_warr_shield_002" recalculate_body="false" mesh="skele_warr_shield_002" using_tableau="true" weight="4.6" appearance="0.6" Type="Shield" item_holsters="shield_kite:shield_2:shield_3:shield_4" has_lower_holster_priority="true" holster_position_shift="-0.1,-0.0,0.025">
+		<ItemComponent>
+			<Weapon weapon_class="LargeShield" body_armor="3" thrust_speed="82" thrust_damage_type="Blunt" speed_rating="82" item_usage="hand_shield" position="0.25, 0.00, 0.00" rotation="0.0,10.0,30.00" physics_material="wood_shield" weapon_length="110" center_of_mass="0.0,0.0,0.0" hit_points="150">
+				<WeaponFlags CanBlockRanged="true" HasHitPoints="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags WoodenParry="true" HeldInOffHand="true" ForceAttachOffHandSecondaryItemBone="true" />
+	</Item>
+
+	<Item id="skeleton_warrior_shield_003" name="{=!}Skeleton Warrior Shield" body_name="bo_cap_skele_warr_shield_003" shield_body_name="bo_skele_warr_shield_003" recalculate_body="false" mesh="skele_warr_shield_003" using_tableau="true" weight="4.6" appearance="0.6" Type="Shield" item_holsters="shield_kite:shield_2:shield_3:shield_4" has_lower_holster_priority="true" holster_position_shift="-0.1,-0.0,0.025">
+		<ItemComponent>
+			<Weapon weapon_class="LargeShield" body_armor="3" thrust_speed="82" thrust_damage_type="Blunt" speed_rating="82" item_usage="shield" position="0.00, -0.05, 0.00" rotation="-5.0,10.0,45.00" physics_material="wood_shield" weapon_length="110" center_of_mass="0.0,0.0,0.0" hit_points="150">
+				<WeaponFlags CanBlockRanged="true" HasHitPoints="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags WoodenParry="true" HeldInOffHand="true" ForceAttachOffHandSecondaryItemBone="true" />
+	</Item>
+
+	<Item id="skeleton_warrior_shield_004" name="{=!}Skeleton Warrior Shield" body_name="bo_cap_skele_warr_shield_004" shield_body_name="bo_skele_warr_shield_004" recalculate_body="false" mesh="skele_warr_shield_004" using_tableau="true" weight="4.6" appearance="0.6" Type="Shield" item_holsters="shield_kite:shield_2:shield_3:shield_4" has_lower_holster_priority="true" holster_position_shift="-0.1,-0.0,0.025">
+		<ItemComponent>
+			<Weapon weapon_class="LargeShield" body_armor="3" thrust_speed="82" thrust_damage_type="Blunt" speed_rating="82" item_usage="shield" position="0.00, -0.05, 0.00" rotation="0.0,10.0,45.00" physics_material="wood_shield" weapon_length="110" center_of_mass="0.0,0.0,0.0" hit_points="150">
+				<WeaponFlags CanBlockRanged="true" HasHitPoints="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags WoodenParry="true" HeldInOffHand="true" ForceAttachOffHandSecondaryItemBone="true" />
+	</Item>
+
+	<Item id="skeleton_warrior_shield_005" name="{=!}Skeleton Warrior Shield" body_name="bo_cap_skele_warr_shield_005" shield_body_name="bo_skele_warr_shield_005" recalculate_body="false" mesh="skele_warr_shield_005" using_tableau="true" weight="4.6" appearance="0.6" Type="Shield" item_holsters="shield_kite:shield_2:shield_3:shield_4" has_lower_holster_priority="true" holster_position_shift="-0.1,-0.0,0.025">
+		<ItemComponent>
+			<Weapon weapon_class="LargeShield" body_armor="3" thrust_speed="82" thrust_damage_type="Blunt" speed_rating="82" item_usage="shield" position="0.00, -0.05, 0.00" rotation="0.0,10.0,45.00" physics_material="wood_shield" weapon_length="110" center_of_mass="0.0,0.0,0.0" hit_points="150">
+				<WeaponFlags CanBlockRanged="true" HasHitPoints="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags WoodenParry="true" HeldInOffHand="true" ForceAttachOffHandSecondaryItemBone="true" />
+	</Item>
+
+	<Item id="skeleton_warrior_shield_006" name="{=!}Skeleton Warrior Shield" body_name="bo_cap_skele_warr_shield_006" shield_body_name="bo_skele_warr_shield_006" recalculate_body="false" mesh="skele_warr_shield_006" using_tableau="true" weight="4.6" appearance="0.6" Type="Shield" item_holsters="shield_kite:shield_2:shield_3:shield_4" has_lower_holster_priority="true" holster_position_shift="-0.1,-0.0,0.025">
+		<ItemComponent>
+			<Weapon weapon_class="LargeShield" body_armor="3" thrust_speed="82" thrust_damage_type="Blunt" speed_rating="82" item_usage="shield" position="10.00, -0.05, 0.00" rotation="-5.0,5.0,45.00" physics_material="wood_shield" weapon_length="110" center_of_mass="0.0,0.0,0.0" hit_points="150">
+				<WeaponFlags CanBlockRanged="true" HasHitPoints="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags WoodenParry="true" HeldInOffHand="true" ForceAttachOffHandSecondaryItemBone="true" />
+	</Item>
+
+	<Item id="skeleton_warrior_shield_007" name="{=!}Skeleton Warrior Shield" body_name="bo_cap_skele_warr_shield_007" shield_body_name="bo_skele_warr_shield_007" recalculate_body="false" mesh="skele_warr_shield_007" using_tableau="true" weight="4.6" appearance="0.6" Type="Shield" item_holsters="shield_kite:shield_2:shield_3:shield_4" has_lower_holster_priority="true" holster_position_shift="-0.1,-0.0,0.025">
+		<ItemComponent>
+			<Weapon weapon_class="LargeShield" body_armor="3" thrust_speed="82" thrust_damage_type="Blunt" speed_rating="82" item_usage="shield" position="0.00, -0.05, 0.00" rotation="-5.0,5.0,45.00" physics_material="wood_shield" weapon_length="110" center_of_mass="0.0,0.0,0.0" hit_points="150">
+				<WeaponFlags CanBlockRanged="true" HasHitPoints="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags WoodenParry="true" HeldInOffHand="true" ForceAttachOffHandSecondaryItemBone="true" />
+	</Item>
+
+	<Item id="grave_guard_shield_002" name="{=!}Grave Guard Shield" body_name="bo_cap_grave_guard_shield_002" shield_body_name="bo_grave_guard_shield_002" recalculate_body="false" mesh="grave_guard_shield_002" using_tableau="true" weight="4.6" appearance="0.6" Type="Shield" item_holsters="shield_kite:shield_2:shield_3:shield_4" has_lower_holster_priority="true" holster_position_shift="-0.1,-0.0,0.025">
+		<ItemComponent>
+			<Weapon weapon_class="LargeShield" body_armor="3" thrust_speed="82" thrust_damage_type="Blunt" speed_rating="82" item_usage="shield" position="0.0, 0.00, 0.00" rotation="0.0,10.0,45.00" physics_material="wood_shield" weapon_length="110" center_of_mass="0.0,0.0,0.0" hit_points="280">
+				<WeaponFlags CanBlockRanged="true" HasHitPoints="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags WoodenParry="true" HeldInOffHand="true" ForceAttachOffHandSecondaryItemBone="true" />
+	</Item>
+	<Item id="grave_guard_shield_001" name="{=!}Grave Guard Shield" body_name="bo_cap_grave_guard_shield_001" shield_body_name="bo_grave_guard_shield_001" recalculate_body="false" mesh="grave_guard_shield_001" using_tableau="true" weight="4.6" appearance="0.6" Type="Shield" item_holsters="shield_kite:shield_2:shield_3:shield_4" has_lower_holster_priority="true" holster_position_shift="-0.1,-0.0,0.025">
+		<ItemComponent>
+			<Weapon weapon_class="LargeShield" body_armor="3" thrust_speed="82" thrust_damage_type="Blunt" speed_rating="82" item_usage="shield" position="0.0, 0.00, 0.00" rotation="0.0,10.0,45.00" physics_material="wood_shield" weapon_length="110" center_of_mass="0.0,0.0,0.0" hit_points="280">
+				<WeaponFlags CanBlockRanged="true" HasHitPoints="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags WoodenParry="true" HeldInOffHand="true" ForceAttachOffHandSecondaryItemBone="true" />
+	</Item>
+
+	<!-- Empire Shields TOW-->
+	<Item id="emp_shield_stirland_001" name="{=!}Stirland Shield" body_name="bo_cap_emp_shield_001" shield_body_name="bo_emp_shield_001" recalculate_body="false" mesh="emp_shield_stirland_001" using_tableau="true" weight="4.2" appearance="0.3" Type="Shield" item_holsters="shield_kite:shield_2:shield_3:shield_4" has_lower_holster_priority="true" holster_position_shift="-0.1,0,-0.025">
+		<ItemComponent>
+			<Weapon weapon_class="LargeShield" body_armor="1" thrust_speed="82" thrust_damage_type="Blunt" speed_rating="82" item_usage="shield" position="0.0, 0.00, 0.00" rotation="5.0,0.0,40.00" physics_material="wood_shield" weapon_length="67" center_of_mass="0.0,0.00,0.00" hit_points="170">
+				<WeaponFlags CanBlockRanged="true" HasHitPoints="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags WoodenParry="true" HeldInOffHand="true" ForceAttachOffHandSecondaryItemBone="true" />
+	</Item>
+	<Item id="emp_shield_stirland_002" name="{=!}Stirland Shield" body_name="bo_cap_emp_shield_002" shield_body_name="bo_emp_shield_002" recalculate_body="false" mesh="emp_shield_stirland_002" using_tableau="true" weight="4.2" appearance="0.3" Type="Shield" item_holsters="shield_kite:shield_2:shield_3:shield_4" has_lower_holster_priority="true" holster_position_shift="-0.1,0,-0.025">
+		<ItemComponent>
+			<Weapon weapon_class="LargeShield" body_armor="1" thrust_speed="82" thrust_damage_type="Blunt" speed_rating="82" item_usage="shield" position="0.0, 0.00, 0.00" rotation="5.0,0.0,40.00" physics_material="wood_shield" weapon_length="67" center_of_mass="0.0,0.00,0.00" hit_points="170">
+				<WeaponFlags CanBlockRanged="true" HasHitPoints="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags WoodenParry="true" HeldInOffHand="true" ForceAttachOffHandSecondaryItemBone="true" />
+	</Item>
+	<Item id="emp_shield_stirland_003" name="{=!}Stirland Shield" body_name="bo_cap_emp_shield_003" shield_body_name="bo_emp_shield_003" recalculate_body="false" mesh="emp_shield_stirland_003" using_tableau="true" weight="4.2" appearance="0.3" Type="Shield" item_holsters="shield_kite:shield_2:shield_3:shield_4" has_lower_holster_priority="true" holster_position_shift="-0.1,0,-0.025">
+		<ItemComponent>
+			<Weapon weapon_class="LargeShield" body_armor="1" thrust_speed="82" thrust_damage_type="Blunt" speed_rating="82" item_usage="shield" position="0.0, 0.00, 0.00" rotation="5.0,0.0,40.00" physics_material="wood_shield" weapon_length="67" center_of_mass="0.0,0.00,0.00" hit_points="170">
+				<WeaponFlags CanBlockRanged="true" HasHitPoints="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags WoodenParry="true" HeldInOffHand="true" ForceAttachOffHandSecondaryItemBone="true" />
+	</Item>
+	<Item id="emp_shield_stirland_004" name="{=!}Stirland Shield" body_name="bo_cap_emp_shield_004" shield_body_name="bo_emp_shield_004" recalculate_body="false" mesh="emp_shield_stirland_004" using_tableau="true" weight="4.2" appearance="0.3" Type="Shield" item_holsters="shield_kite:shield_2:shield_3:shield_4" has_lower_holster_priority="true" holster_position_shift="-0.1,0,-0.025">
+		<ItemComponent>
+			<Weapon weapon_class="LargeShield" body_armor="1" thrust_speed="82" thrust_damage_type="Blunt" speed_rating="82" item_usage="shield" position="0.0, 0.00, 0.00" rotation="5.0,0.0,40.00" physics_material="wood_shield" weapon_length="67" center_of_mass="0.0,0.00,0.00" hit_points="170">
+				<WeaponFlags CanBlockRanged="true" HasHitPoints="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags WoodenParry="true" HeldInOffHand="true" ForceAttachOffHandSecondaryItemBone="true" />
+	</Item>
+	<Item id="emp_shield_stirland_005" name="{=!}Stirland Shield" body_name="bo_cap_emp_shield_005" shield_body_name="bo_emp_shield_005" recalculate_body="false" mesh="emp_shield_stirland_005" using_tableau="true" weight="4.2" appearance="0.3" Type="Shield" item_holsters="shield_kite:shield_2:shield_3:shield_4" has_lower_holster_priority="true" holster_position_shift="-0.1,0,-0.025">
+		<ItemComponent>
+			<Weapon weapon_class="LargeShield" body_armor="1" thrust_speed="82" thrust_damage_type="Blunt" speed_rating="82" item_usage="shield" position="0.0, 0.00, 0.00" rotation="5.0,0.0,40.00" physics_material="wood_shield" weapon_length="67" center_of_mass="0.0,0.00,0.00" hit_points="170">
+				<WeaponFlags CanBlockRanged="true" HasHitPoints="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags WoodenParry="true" HeldInOffHand="true" ForceAttachOffHandSecondaryItemBone="true" />
+	</Item>
+	<Item id="emp_shield_stirland_006" name="{=!}Stirland Shield" body_name="bo_cap_emp_shield_006" shield_body_name="bo_emp_shield_006" recalculate_body="false" mesh="emp_shield_stirland_006" using_tableau="true" weight="4.2" appearance="0.3" Type="Shield" item_holsters="shield_kite:shield_2:shield_3:shield_4" has_lower_holster_priority="true" holster_position_shift="-0.1,0,-0.025">
+		<ItemComponent>
+			<Weapon weapon_class="LargeShield" body_armor="1" thrust_speed="82" thrust_damage_type="Blunt" speed_rating="82" item_usage="shield" position="0.0, 0.00, 0.00" rotation="5.0,0.0,40.00" physics_material="wood_shield" weapon_length="67" center_of_mass="0.0,0.00,0.00" hit_points="170">
+				<WeaponFlags CanBlockRanged="true" HasHitPoints="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags WoodenParry="true" HeldInOffHand="true" ForceAttachOffHandSecondaryItemBone="true" />
+	</Item>
+	<Item id="emp_shield_stirland_007" name="{=!}Stirland Shield" body_name="bo_cap_emp_shield_007" shield_body_name="bo_emp_shield_001" recalculate_body="false" mesh="emp_shield_stirland_007" using_tableau="true" weight="4.2" appearance="0.3" Type="Shield" item_holsters="shield_kite:shield_2:shield_3:shield_4" has_lower_holster_priority="true" holster_position_shift="-0.1,0,-0.025">
+		<ItemComponent>
+			<Weapon weapon_class="LargeShield" body_armor="1" thrust_speed="82" thrust_damage_type="Blunt" speed_rating="82" item_usage="shield" position="0.0, 0.00, 0.00" rotation="5.0,0.0,40.00" physics_material="wood_shield" weapon_length="67" center_of_mass="0.0,0.00,0.00" hit_points="170">
+				<WeaponFlags CanBlockRanged="true" HasHitPoints="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags WoodenParry="true" HeldInOffHand="true" ForceAttachOffHandSecondaryItemBone="true" />
+	</Item>
+	<Item id="emp_shield_stirland_008" name="{=!}Stirland Shield" body_name="bo_cap_emp_shield_008" shield_body_name="bo_emp_shield_008" recalculate_body="false" mesh="emp_shield_stirland_008" using_tableau="true" weight="4.2" appearance="0.3" Type="Shield" item_holsters="shield_kite:shield_2:shield_3:shield_4" has_lower_holster_priority="true" holster_position_shift="-0.1,0,-0.025">
+		<ItemComponent>
+			<Weapon weapon_class="LargeShield" body_armor="1" thrust_speed="82" thrust_damage_type="Blunt" speed_rating="82" item_usage="shield" position="0.0, 0.00, 0.00" rotation="5.0,0.0,40.00" physics_material="wood_shield" weapon_length="67" center_of_mass="0.0,0.00,0.00" hit_points="170">
+				<WeaponFlags CanBlockRanged="true" HasHitPoints="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags WoodenParry="true" HeldInOffHand="true" ForceAttachOffHandSecondaryItemBone="true" />
+	</Item>
+	<Item id="emp_shield_stirland_009" name="{=!}Stirland Shield" body_name="bo_cap_emp_shield_009" shield_body_name="bo_emp_shield_009" recalculate_body="false" mesh="emp_shield_stirland_009" using_tableau="true" weight="4.2" appearance="0.3" Type="Shield" item_holsters="shield_kite:shield_2:shield_3:shield_4" has_lower_holster_priority="true" holster_position_shift="-0.1,0,-0.025">
+		<ItemComponent>
+			<Weapon weapon_class="LargeShield" body_armor="1" thrust_speed="82" thrust_damage_type="Blunt" speed_rating="82" item_usage="shield" position="0.0, 0.00, 0.00" rotation="5.0,0.0,40.00" physics_material="wood_shield" weapon_length="67" center_of_mass="0.0,0.00,0.00" hit_points="170">
+				<WeaponFlags CanBlockRanged="true" HasHitPoints="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags WoodenParry="true" HeldInOffHand="true" ForceAttachOffHandSecondaryItemBone="true" />
+	</Item>
+	<Item id="emp_shield_stirland_010" name="{=!}Stirland Shield" body_name="bo_cap_emp_shield_010" shield_body_name="bo_emp_shield_010" recalculate_body="false" mesh="emp_shield_stirland_010" using_tableau="true" weight="4.2" appearance="0.3" Type="Shield" item_holsters="shield_kite:shield_2:shield_3:shield_4" has_lower_holster_priority="true" holster_position_shift="-0.1,0,-0.025">
+		<ItemComponent>
+			<Weapon weapon_class="LargeShield" body_armor="1" thrust_speed="82" thrust_damage_type="Blunt" speed_rating="82" item_usage="shield" position="0.0, 0.00, 0.00" rotation="5.0,0.0,40.00" physics_material="wood_shield" weapon_length="67" center_of_mass="0.0,0.00,0.00" hit_points="170">
+				<WeaponFlags CanBlockRanged="true" HasHitPoints="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags WoodenParry="true" HeldInOffHand="true" ForceAttachOffHandSecondaryItemBone="true" />
+	</Item>
+	<Item id="emp_shield_stirland_011" name="{=!}Stirland Shield" body_name="bo_cap_emp_shield_011" shield_body_name="bo_emp_shield_011" recalculate_body="false" mesh="emp_shield_stirland_011" using_tableau="true" weight="4.2" appearance="0.3" Type="Shield" item_holsters="shield_kite:shield_2:shield_3:shield_4" has_lower_holster_priority="true" holster_position_shift="-0.1,0,-0.025">
+		<ItemComponent>
+			<Weapon weapon_class="LargeShield" body_armor="1" thrust_speed="82" thrust_damage_type="Blunt" speed_rating="82" item_usage="shield" position="0.0, 0.00, 0.00" rotation="5.0,0.0,40.00" physics_material="wood_shield" weapon_length="67" center_of_mass="0.0,0.00,0.00" hit_points="170">
+				<WeaponFlags CanBlockRanged="true" HasHitPoints="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags WoodenParry="true" HeldInOffHand="true" ForceAttachOffHandSecondaryItemBone="true" />
+	</Item>
+	<Item id="emp_shield_stirland_011_metal_egde" name="{=!}Stirland Shield" body_name="bo_cap_emp_shield_011" shield_body_name="bo_emp_shield_011" recalculate_body="false" mesh="emp_shield_stirland_011r" using_tableau="true" weight="4.2" appearance="0.3" Type="Shield" item_holsters="shield_kite:shield_2:shield_3:shield_4" has_lower_holster_priority="true" holster_position_shift="-0.1,0,-0.025">
+		<ItemComponent>
+			<Weapon weapon_class="LargeShield" body_armor="1" thrust_speed="82" thrust_damage_type="Blunt" speed_rating="82" item_usage="shield" position="0.0, 0.00, 0.00" rotation="5.0,0.0,40.00" physics_material="wood_shield" weapon_length="67" center_of_mass="0.0,0.00,0.00" hit_points="170">
+				<WeaponFlags CanBlockRanged="true" HasHitPoints="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags WoodenParry="true" HeldInOffHand="true" ForceAttachOffHandSecondaryItemBone="true" />
+	</Item>
+	<Item id="emp_shield_stirland_012" name="{=!}Stirland Shield" body_name="bo_cap_emp_shield_012" shield_body_name="bo_emp_shield_012" recalculate_body="false" mesh="emp_shield_stirland_012" using_tableau="true" weight="4.2" appearance="0.3" Type="Shield" item_holsters="shield_kite:shield_2:shield_3:shield_4" has_lower_holster_priority="true" holster_position_shift="-0.1,0,-0.025">
+		<ItemComponent>
+			<Weapon weapon_class="LargeShield" body_armor="1" thrust_speed="82" thrust_damage_type="Blunt" speed_rating="82" item_usage="shield" position="0.0, 0.00, 0.00" rotation="5.0,0.0,40.00" physics_material="wood_shield" weapon_length="67" center_of_mass="0.0,0.00,0.00" hit_points="170">
+				<WeaponFlags CanBlockRanged="true" HasHitPoints="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags WoodenParry="true" HeldInOffHand="true" ForceAttachOffHandSecondaryItemBone="true" />
+	</Item>
+	<Item id="emp_shield_stirland_012_metal_egde" name="{=!}Stirland Shield" body_name="bo_cap_emp_shield_012" shield_body_name="bo_emp_shield_012" recalculate_body="false" mesh="emp_shield_stirland_012r" using_tableau="true" weight="4.2" appearance="0.3" Type="Shield" item_holsters="shield_kite:shield_2:shield_3:shield_4" has_lower_holster_priority="true" holster_position_shift="-0.1,0,-0.025">
+		<ItemComponent>
+			<Weapon weapon_class="LargeShield" body_armor="1" thrust_speed="82" thrust_damage_type="Blunt" speed_rating="82" item_usage="shield" position="0.0, 0.00, 0.00" rotation="5.0,0.0,40.00" physics_material="wood_shield" weapon_length="67" center_of_mass="0.0,0.00,0.00" hit_points="170">
+				<WeaponFlags CanBlockRanged="true" HasHitPoints="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags WoodenParry="true" HeldInOffHand="true" ForceAttachOffHandSecondaryItemBone="true" />
+	</Item>
+	<Item id="emp_shield_stirland_013" name="{=!}Stirland Shield" body_name="bo_cap_emp_shield_013" shield_body_name="bo_emp_shield_013" recalculate_body="false" mesh="emp_shield_stirland_013" using_tableau="true" weight="4.2" appearance="0.3" Type="Shield" item_holsters="shield_kite:shield_2:shield_3:shield_4" has_lower_holster_priority="true" holster_position_shift="-0.1,0,-0.025">
+		<ItemComponent>
+			<Weapon weapon_class="LargeShield" body_armor="1" thrust_speed="82" thrust_damage_type="Blunt" speed_rating="82" item_usage="shield" position="0.0, 0.00, 0.00" rotation="5.0,0.0,40.00" physics_material="wood_shield" weapon_length="67" center_of_mass="0.0,0.00,0.00" hit_points="170">
+				<WeaponFlags CanBlockRanged="true" HasHitPoints="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags WoodenParry="true" HeldInOffHand="true" ForceAttachOffHandSecondaryItemBone="true" />
+	</Item>
+	<Item id="emp_shield_stirland_013_metal_egde" name="{=!}Stirland Shield" body_name="bo_cap_emp_shield_013" shield_body_name="bo_emp_shield_013" recalculate_body="false" mesh="emp_shield_stirland_013r" using_tableau="true" weight="4.2" appearance="0.3" Type="Shield" item_holsters="shield_kite:shield_2:shield_3:shield_4" has_lower_holster_priority="true" holster_position_shift="-0.1,0,-0.025">
+		<ItemComponent>
+			<Weapon weapon_class="LargeShield" body_armor="1" thrust_speed="82" thrust_damage_type="Blunt" speed_rating="82" item_usage="shield" position="0.0, 0.00, 0.00" rotation="5.0,0.0,40.00" physics_material="wood_shield" weapon_length="67" center_of_mass="0.0,0.00,0.00" hit_points="170">
+				<WeaponFlags CanBlockRanged="true" HasHitPoints="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags WoodenParry="true" HeldInOffHand="true" ForceAttachOffHandSecondaryItemBone="true" />
+	</Item>
+</Items>

@@ -65,6 +65,27 @@
 		</Materials>
 	</CraftingPiece>
 
+	<CraftingPiece id="empire_halberd_head" name="{=!}Empire Halberd Head" tier="5" piece_type="Blade" mesh="empire_halberd_001_blade" length="50.864" culture="Culture.empire" weight="0.5592">
+		<PieceUsages unavailable_usages="TwoHandedPolearm_Couchable:Javelin" />
+		<BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_empire_halberd_001_blade">
+			<Thrust damage_type="Pierce" damage_factor="3.5" />
+			<Swing damage_type="Cut" damage_factor="3.5" />
+		</BladeData>
+		<Materials>
+			<Material id="Iron5" count="2" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="empire_halberd_shaft" name="{=!}Empire Halberd Shaft" tier="5" piece_type="Handle" mesh="empire_halberd_001_pole" length="180" culture="Culture.empire" weight="1.7">
+		<PieceUsages unavailable_usages="TwoHandedPolearm_Couchable:Javelin" />
+		<BuildData piece_offset="0" />
+		<Materials>
+			<Material id="Wood" count="1" />
+		</Materials>
+	</CraftingPiece>
+	
+	
+
 	<!-- Vampire Crafting Pieces TOW-->
 	<CraftingPiece id="skeleton_warrior_sword_002_blade" name="Skeleton Warrior Sword Blade 002" tier="1" piece_type="Blade" mesh="skele_warr_sword_002_blade" culture="Culture.khuzait" length="73.5" weight="0.9">
 		<PieceUsages unavailable_usages="" />
