@@ -57,4 +57,10 @@
 		</ItemComponent>
 		<Flags />
 	</Item>
+	<Item id="generic_empire_lord_cape" name="{=!}Vanilla Cape" mesh="pauldron_cape_a" culture="Culture.empire" weight="3.5" appearance="4" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="16" arm_armor="4" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" />
+	</Item>
 </Items>

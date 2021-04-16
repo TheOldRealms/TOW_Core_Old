@@ -173,7 +173,7 @@
 	</Item>
 	<Item id="krell_body" name="{=!}Krell's Armor" mesh="krell_body" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
 		<ItemComponent>
-			<Armor body_armor="60" leg_armor="20" arm_armor="20" has_gender_variations="false" covers_body="true" modifier_group="plate" material_type="Plate" />
+			<Armor body_armor="60" leg_armor="20" arm_armor="20" has_gender_variations="false" covers_body="true" covers_head="true" modifier_group="plate" material_type="Plate" />
 		</ItemComponent>
 		<Flags />
 	</Item>
@@ -203,13 +203,13 @@
 	</Item>
 	<Item id="grave_guard_body_002_full" name="{=!}Grave Guard Armor" mesh="grave_guard_body_002_full" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
 		<ItemComponent>
-			<Armor body_armor="40" leg_armor="10" arm_armor="10" has_gender_variations="false" covers_body="true" covers_head="true" covers_legs="true" covers_hands="true" modifier_group="plate" material_type="Plate" />
+			<Armor body_armor="60" leg_armor="25" arm_armor="25" has_gender_variations="false" covers_body="true" covers_head="true" covers_legs="true" covers_hands="true" modifier_group="plate" material_type="Plate" />
 		</ItemComponent>
 		<Flags />
 	</Item>
 	<Item id="grave_guard_body_001_full" name="{=!}Grave Guard Armor" mesh="grave_guard_body_001_full" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
 		<ItemComponent>
-			<Armor body_armor="40" leg_armor="10" arm_armor="10" has_gender_variations="false" covers_body="true" covers_head="true" covers_legs="true" covers_hands="true" modifier_group="plate" material_type="Plate" />
+			<Armor body_armor="60" leg_armor="25" arm_armor="25" has_gender_variations="false" covers_body="true" covers_head="true" covers_legs="true" covers_hands="true" modifier_group="plate" material_type="Plate" />
 		</ItemComponent>
 		<Flags />
 	</Item>

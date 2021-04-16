@@ -7,6 +7,7 @@
 		</ItemComponent>
 		<Flags />
 	</Item>
+	<!-- this mesh is somehow bugged. It crashed the game when loading into battle. DO NOT USE THIS ITEM. DO NOT REFERENCE IT FROM ANY EQUIPMENTROSTER-->
 	<Item id="krell_head" name="{=!}Krell's Helm" mesh="krell_head"  subtype="head_armor" weight="2" difficulty="0" appearance="1" Type="HeadArmor">
 		<ItemComponent>
 			<Armor head_armor="50" has_gender_variations="false" modifier_group="plate" material_type="Plate" />

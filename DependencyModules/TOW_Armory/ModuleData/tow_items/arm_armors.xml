@@ -1,5 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Items>
+	<Item id="louen_hands" name="{=!}Ornate Plate Gloves" mesh="louen_hands" weight="1.5" difficulty="0" appearance="3" Type="HandArmor">
+		<ItemComponent>
+			<Armor arm_armor="40" covers_hands="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+
 	<Item id="vampire_lord_braces_001" name="{=!}Vampire Lord Bracers" mesh="vampire_lord_braces_001" weight="1.5" difficulty="0" appearance="3" Type="HandArmor">
 		<ItemComponent>
 			<Armor arm_armor="30" covers_hands="true" modifier_group="plate" material_type="Plate" />

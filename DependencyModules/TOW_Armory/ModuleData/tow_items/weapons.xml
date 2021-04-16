@@ -41,4 +41,62 @@
 			<Piece id="skeleton_warrior_sword_001_pommel" Type="Pommel" />
 		</Pieces>
 	</CraftedItem>
+	<CraftedItem id="skeleton_warrior_spear_001" name="{=!}Old Spear" crafting_template="tow_spear_template">
+		<Pieces>
+			<Piece id="skeleton_spear_head" Type="Blade" scale_factor="100" />
+			<Piece id="skeleton_spear_shaft" Type="Handle" scale_factor="100" />
+			<Piece id="skeleton_spear_guard" Type="Guard" />
+			<Piece id="skeleton_spear_pommel" Type="Pommel" />
+		</Pieces>
+	</CraftedItem>
+
+	<CraftedItem id="black_axe_of_krell" name="{=!}Black Axe of Krell" crafting_template="tow_halberd_template">
+		<Pieces>
+			<Piece id="black_axe_of_krell_head" Type="Blade" scale_factor="100" />
+			<Piece id="black_axe_of_krell_handle" Type="Handle" scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+
+	<CraftedItem id="skeleton_warrior_sword_005" name="{=!}Skeleton Warrior Sword 005" crafting_template="tow_longsword_template">
+		<Pieces>
+			<Piece id="skeleton_warrior_sword_005_blade" Type="Blade" scale_factor="100" />
+			<Piece id="skeleton_warrior_sword_005_hilt" Type="Handle" scale_factor="100" />
+			<Piece id="skeleton_warrior_sword_005_pommel" Type="Pommel" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem id="skeleton_warrior_sword_004" name="{=!}Skeleton Warrior Sword 004" crafting_template="tow_longsword_template">
+		<Pieces>
+			<Piece id="skeleton_warrior_sword_004_blade" Type="Blade" scale_factor="100" />
+			<Piece id="skeleton_warrior_sword_004_hilt" Type="Handle" scale_factor="100" />
+			<Piece id="skeleton_warrior_sword_004_guard" Type="Guard" />
+			<Piece id="skeleton_warrior_sword_004_pommel" Type="Pommel" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem id="skeleton_warrior_sword_003" name="{=!}Skeleton Warrior Sword 003" crafting_template="tow_longsword_template">
+		<Pieces>
+			<Piece id="skeleton_warrior_sword_003_blade" Type="Blade" scale_factor="100" />
+			<Piece id="skeleton_warrior_sword_003_hilt" Type="Handle" scale_factor="100" />
+			<Piece id="skeleton_warrior_sword_003_guard" Type="Guard" />
+			<Piece id="skeleton_warrior_sword_003_pommel" Type="Pommel" />
+		</Pieces>
+	</CraftedItem>	
+
+	<CraftedItem id="grave_guard_sword_001" name="{=!}Grave Guard Sword 001" crafting_template="tow_longsword_template">
+		<Pieces>
+			<Piece id="grave_guard_sword_001_blade" Type="Blade" scale_factor="100" />
+			<Piece id="grave_guard_sword_001_hilt" Type="Handle" scale_factor="100" />
+			<Piece id="grave_guard_sword_001_guard" Type="Guard" />
+			<Piece id="grave_guard_sword_001_pommel" Type="Pommel" />
+		</Pieces>
+	</CraftedItem>
+
+	<CraftedItem id="vampire_greatsword_002" name="{=!}Vampire Greatsword 002" crafting_template="tow_greatswords_template">
+		<Pieces>
+			<Piece id="vampire_greatsword_002_blade" Type="Blade" scale_factor="100" />
+			<Piece id="vampire_greatsword_002_hilt" Type="Handle" scale_factor="100" />
+			<Piece id="vampire_greatsword_002_guard" Type="Guard" />
+			<Piece id="vampire_greatsword_002_pommel" Type="Pommel" />
+		</Pieces>
+	</CraftedItem>
+	
 </Items>

@@ -72,9 +72,29 @@
 			<UsablePiece piece_id="skeleton_warrior_sword_002_pommel"/>
 			<UsablePiece piece_id="skeleton_warrior_sword_002_hilt"/>
 
+			<UsablePiece piece_id="skeleton_warrior_sword_003_blade"/>
+			<UsablePiece piece_id="skeleton_warrior_sword_003_guard"/>
+			<UsablePiece piece_id="skeleton_warrior_sword_003_pommel"/>
+			<UsablePiece piece_id="skeleton_warrior_sword_003_hilt"/>
+
+			<UsablePiece piece_id="skeleton_warrior_sword_004_blade"/>
+			<UsablePiece piece_id="skeleton_warrior_sword_004_guard"/>
+			<UsablePiece piece_id="skeleton_warrior_sword_004_pommel"/>
+			<UsablePiece piece_id="skeleton_warrior_sword_004_hilt"/>
+
+			<UsablePiece piece_id="skeleton_warrior_sword_005_blade"/>
+			<UsablePiece piece_id="skeleton_warrior_sword_005_guard"/>
+			<UsablePiece piece_id="skeleton_warrior_sword_005_pommel"/>
+			<UsablePiece piece_id="skeleton_warrior_sword_005_hilt"/>
+
+			<UsablePiece piece_id="grave_guard_sword_001_blade"/>
+			<UsablePiece piece_id="grave_guard_sword_001_hilt"/>
+			<UsablePiece piece_id="grave_guard_sword_001_pommel"/>
+			<UsablePiece piece_id="grave_guard_sword_001_guard"/>
+
 		</UsablePieces>
 	</CraftingTemplate>
-<!--
+
 	<CraftingTemplate id="tow_spear_template" 
 					  item_modifier_group="polearm" 
 					  item_holsters="polearm_back:polearm_back_2:polearm_back_3:polearm_back_4"
@@ -100,14 +120,14 @@
 		</StatsData>
 		<UsablePieces>
 
-			<UsablePiece piece_id="skeleton_warrior_sword_001_blade"/>
-			<UsablePiece piece_id="skeleton_warrior_sword_001_guard"/>
-			<UsablePiece piece_id="skeleton_warrior_sword_001_pommel"/>
-			<UsablePiece piece_id="skeleton_warrior_sword_001_hilt"/>
+			<UsablePiece piece_id="skeleton_spear_head"/>
+			<UsablePiece piece_id="skeleton_spear_guard"/>
+			<UsablePiece piece_id="skeleton_spear_shaft"/>
+			<UsablePiece piece_id="skeleton_spear_pommel"/>
 
 		</UsablePieces>
 	</CraftingTemplate>
--->
+
 	<CraftingTemplate id="tow_halberd_template"
 					  item_modifier_group="polearm"
 					  item_holsters="polearm_back:polearm_back_2:polearm_back_3:polearm_back_4"
@@ -134,6 +154,9 @@
 
 			<UsablePiece piece_id="empire_halberd_head"/>
 			<UsablePiece piece_id="empire_halberd_shaft"/>
+
+			<UsablePiece piece_id="black_axe_of_krell_head"/>
+			<UsablePiece piece_id="black_axe_of_krell_handle"/>
 
 		</UsablePieces>
 	</CraftingTemplate>
