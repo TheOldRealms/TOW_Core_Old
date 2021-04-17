@@ -47,21 +47,6 @@ namespace TOW_Core.Battle.AttributeSystem.CustomAgentComponents
                     ApplyMoraleRegen();
                 }
             }
-            if (Morale < crumbleThreshold)
-            {
-                if (effectReady)
-                {
-                    float damageTaken = 5f;
-                    damageTaken = MBMath.ClampFloat(damageTaken, 0, 5);
-                    Agent.ApplyDamage(damageTaken);
-                    crumbleTimer.Reset(MBCommon.GetTime(MBCommon.TimeType.Mission));
-                    if (Agent.Health <= 0)
-                    {
-                        this.Agent.Die(new Blow());
-                        this.Agent.FadeOut(false, false);
-                    }
-                }
-            }
         }
 
         private void ApplyCrumbleDamage()
@@ -70,16 +55,12 @@ namespace TOW_Core.Battle.AttributeSystem.CustomAgentComponents
             damageTaken = MBMath.ClampFloat(damageTaken, 0, 5);
             Agent.ApplyDamage(damageTaken);
             crumbleTimer.Reset(MBCommon.GetTime(MBCommon.TimeType.Mission));
-            if (Agent.Health <= 0)
-            {
-                Agent.Die(new Blow());
-                Agent.FadeOut(false, false);
-            }
         }
 
         private void ApplyMoraleRegen()
         {
             Agent.Heal(regenAmount);
+            crumbleTimer.Reset(MBCommon.GetTime(MBCommon.TimeType.Mission));
         }
 
         private float GetDistributedTime(float deviation)
@@ -87,4 +68,4 @@ namespace TOW_Core.Battle.AttributeSystem.CustomAgentComponents
             return MBCommon.GetTime(MBCommon.TimeType.Mission) - (float)TOWMath.GetRandomDouble(0, deviation);
         }
     }
-}
+} 

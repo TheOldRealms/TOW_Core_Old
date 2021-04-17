@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NPCCharacters>
+	<!-- Vampire Counts Basic troop tree-->
+	<!-- Vampire Counts animated skeleton-->
+	<NPCCharacter id="tow_skeleton_recruit"
+			default_group="Infantry"
+			level="6"
+			name="{=!}Animated Skeleton"
+			occupation="Soldier"
+			is_basic_troop="true"
+			culture="Culture.khuzait"
+			skill_template="SkillSet.tow_skills_level6">
+		<face>
+			<face_key_template value="BodyProperty.fighter_khuzait" />
+		</face>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.tow_skeleton_warrior" />
+			<upgrade_target id="NPCCharacter.tow_skeleton_spearmen" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0"
+						   id="Item.skeleton_warrior_sword_002" />
+				<equipment slot="Body"
+						   id="Item.skeleton_body_full" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment slot="Item0"
+						   id="Item.skeleton_warrior_sword_001" />
+				<equipment slot="Body"
+						   id="Item.skeleton_body_glowing_full" />
+			</EquipmentRoster>
+		</Equipments>
+	</NPCCharacter>
+	<!-- Vampire Counts skeleton warrior-->
+	<NPCCharacter id="tow_skeleton_warrior"
+			default_group="Infantry"
+			level="11"
+			name="{=!}Skeleton Warrior"
+			occupation="Soldier"
+			is_basic_troop="true"
+			culture="Culture.khuzait"
+			skill_template="SkillSet.tow_skills_level11">
+		<face>
+			<face_key_template value="BodyProperty.fighter_khuzait" />
+		</face>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.tow_grave_guard" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0"
+						   id="Item.skeleton_warrior_sword_002" />
+				<equipment slot="Item1"
+						   id="Item.skeleton_warrior_shield_002" />
+				<equipment slot="Body"
+						   id="Item.skeleton_body_glowing_full" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment slot="Item0"
+						   id="Item.skeleton_warrior_sword_001" />
+				<equipment slot="Item1"
+						   id="Item.skeleton_warrior_shield_001" />
+				<equipment slot="Body"
+						   id="Item.skeleton_body_glowing_full" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment slot="Item0"
+						   id="Item.skeleton_warrior_sword_002" />
+				<equipment slot="Item1"
+						   id="Item.skeleton_warrior_shield_003" />
+				<equipment slot="Body"
+						   id="Item.skeleton_body_glowing_full" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment slot="Item0"
+						   id="Item.skeleton_warrior_sword_001" />
+				<equipment slot="Item1"
+						   id="Item.skeleton_warrior_shield_004" />
+				<equipment slot="Body"
+						   id="Item.skeleton_body_glowing_full" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment slot="Item0"
+						   id="Item.skeleton_warrior_sword_002" />
+				<equipment slot="Item1"
+						   id="Item.skeleton_warrior_shield_005" />
+				<equipment slot="Body"
+						   id="Item.skeleton_body_glowing_full" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment slot="Item0"
+						   id="Item.skeleton_warrior_sword_001" />
+				<equipment slot="Item1"
+						   id="Item.skeleton_warrior_shield_007" />
+				<equipment slot="Body"
+						   id="Item.skeleton_body_glowing_full" />
+			</EquipmentRoster>
+		</Equipments>
+	</NPCCharacter>
+	<!-- Vampire Counts skeleton spearman-->
+	<NPCCharacter id="tow_skeleton_spearman"
+			default_group="Infantry"
+			level="11"
+			name="{=!}Skeleton Spearman"
+			occupation="Soldier"
+			is_basic_troop="true"
+			culture="Culture.khuzait"
+			skill_template="SkillSet.tow_skills_level11">
+		<face>
+			<face_key_template value="BodyProperty.fighter_khuzait" />
+		</face>
+		<upgrade_targets>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0"
+						   id="Item.skeleton_warrior_spear_001" />
+				<equipment slot="Item1"
+						   id="Item.skeleton_warrior_shield_002" />
+				<equipment slot="Body"
+						   id="Item.skeleton_body_glowing_full" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment slot="Item0"
+						   id="Item.skeleton_warrior_spear_001" />
+				<equipment slot="Item1"
+						   id="Item.skeleton_warrior_shield_001" />
+				<equipment slot="Body"
+						   id="Item.skeleton_body_glowing_full" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment slot="Item0"
+						   id="Item.skeleton_warrior_spear_001" />
+				<equipment slot="Item1"
+						   id="Item.skeleton_warrior_shield_003" />
+				<equipment slot="Body"
+						   id="Item.skeleton_body_glowing_full" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment slot="Item0"
+						   id="Item.skeleton_warrior_spear_001" />
+				<equipment slot="Item1"
+						   id="Item.skeleton_warrior_shield_004" />
+				<equipment slot="Body"
+						   id="Item.skeleton_body_glowing_full" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment slot="Item0"
+						   id="Item.skeleton_warrior_spear_001" />
+				<equipment slot="Item1"
+						   id="Item.skeleton_warrior_shield_005" />
+				<equipment slot="Body"
+						   id="Item.skeleton_body_glowing_full" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment slot="Item0"
+						   id="Item.skeleton_warrior_spear_001" />
+				<equipment slot="Item1"
+						   id="Item.skeleton_warrior_shield_007" />
+				<equipment slot="Body"
+						   id="Item.skeleton_body_glowing_full" />
+			</EquipmentRoster>
+		</Equipments>
+	</NPCCharacter>
+	<!-- Vampire Counts grave guard-->
+	<NPCCharacter id="tow_grave_guard"
+			default_group="Infantry"
+			level="16"
+			name="{=!}Grave Guard"
+			occupation="Soldier"
+			is_basic_troop="true"
+			culture="Culture.khuzait"
+			skill_template="SkillSet.tow_skills_level16">
+		<face>
+			<face_key_template value="BodyProperty.fighter_khuzait" />
+		</face>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.tow_grave_guard_greatsword" />
+			<upgrade_target id="NPCCharacter.tow_cairn_wraith" />
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0"
+						   id="Item.grave_guard_sword_001" />
+				<equipment slot="Item1"
+						   id="Item.grave_guard_shield_001" />
+				<equipment slot="Body"
+						   id="Item.grave_guard_body_001_full" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment slot="Item0"
+						   id="Item.grave_guard_sword_001" />
+				<equipment slot="Item1"
+						   id="Item.grave_guard_shield_002" />
+				<equipment slot="Body"
+						   id="Item.grave_guard_body_002_full" />
+			</EquipmentRoster>
+		</Equipments>
+	</NPCCharacter>
+	<!-- Vampire Counts grave guard with greatsword-->
+	<NPCCharacter id="tow_grave_guard_greatsword"
+			default_group="Infantry"
+			level="21"
+			name="{=!}Grave Guard with GreatSword"
+			occupation="Soldier"
+			is_basic_troop="true"
+			culture="Culture.khuzait"
+			skill_template="SkillSet.tow_skills_level21">
+		<face>
+			<face_key_template value="BodyProperty.fighter_khuzait" />
+		</face>
+		<upgrade_targets>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0"
+						   id="Item.vampire_greatsword_002" />
+				<equipment slot="Body"
+						   id="Item.grave_guard_body_001_full" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment slot="Item0"
+						   id="Item.vampire_greatsword_002" />
+				<equipment slot="Body"
+						   id="Item.grave_guard_body_002_full" />
+			</EquipmentRoster>
+		</Equipments>
+	</NPCCharacter>
+	<!-- Vampire Counts cairn wraith-->
+	<NPCCharacter id="tow_cairn_wraith"
+			default_group="Infantry"
+			level="21"
+			name="{=!}Cairn Wraith"
+			occupation="Soldier"
+			is_basic_troop="true"
+			culture="Culture.khuzait"
+			skill_template="SkillSet.tow_skills_level21">
+		<face>
+			<face_key_template value="BodyProperty.fighter_khuzait" />
+		</face>
+		<upgrade_targets>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0"
+						   id="Item.peasant_polearm_1_t1" />
+				<equipment slot="Body"
+						   id="Item.cairn_wraith_body_001" />
+				<equipment slot="Gloves"
+						   id="Item.cairn_wraith_helmet_001" />
+				<equipment slot="Leg"
+						   id="Item.cairn_wraith_lowerbody_001" />
+				<equipment slot="Cape"
+						   id="Item.cairn_wraith_shoulders_001" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment slot="Item0"
+						   id="Item.peasant_polearm_1_t1" />
+				<equipment slot="Body"
+						   id="Item.cairn_wraith_body_002" />
+				<equipment slot="Gloves"
+						   id="Item.cairn_wraith_helmet_002" />
+				<equipment slot="Leg"
+						   id="Item.cairn_wraith_lowerbody_001" />
+				<equipment slot="Cape"
+						   id="Item.cairn_wraith_shoulders_001" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment slot="Item0"
+						   id="Item.peasant_polearm_1_t1" />
+				<equipment slot="Body"
+						   id="Item.cairn_wraith_body_003" />
+				<equipment slot="Gloves"
+						   id="Item.cairn_wraith_helmet_003" />
+				<equipment slot="Leg"
+						   id="Item.cairn_wraith_lowerbody_003" />
+				<equipment slot="Cape"
+						   id="Item.cairn_wraith_shoulders_002" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment slot="Item0"
+						   id="Item.peasant_polearm_1_t1" />
+				<equipment slot="Body"
+						   id="Item.cairn_wraith_body_004" />
+				<equipment slot="Gloves"
+						   id="Item.cairn_wraith_helmet_004" />
+				<equipment slot="Leg"
+						   id="Item.cairn_wraith_lowerbody_003" />
+				<equipment slot="Cape"
+						   id="Item.cairn_wraith_shoulders_002" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment slot="Item0"
+						   id="Item.peasant_polearm_1_t1" />
+				<equipment slot="Body"
+						   id="Item.cairn_wraith_body_005" />
+				<equipment slot="Gloves"
+						   id="Item.cairn_wraith_helmet_005" />
+				<equipment slot="Leg"
+						   id="Item.cairn_wraith_lowerbody_005" />
+				<equipment slot="Cape"
+						   id="Item.cairn_wraith_shoulders_003" />
+			</EquipmentRoster>
+			<EquipmentRoster>
+				<equipment slot="Item0"
+						   id="Item.peasant_polearm_1_t1" />
+				<equipment slot="Body"
+						   id="Item.cairn_wraith_body_006" />
+				<equipment slot="Gloves"
+						   id="Item.cairn_wraith_helmet_006" />
+				<equipment slot="Leg"
+						   id="Item.cairn_wraith_lowerbody_005" />
+				<equipment slot="Cape"
+						   id="Item.cairn_wraith_shoulders_004" />
+			</EquipmentRoster>
+		</Equipments>
+	</NPCCharacter>
+</NPCCharacters>

@@ -1,9 +1,105 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Items>
-	<Item id="vampire_lord_helmet_001" name="Vampire Lord Helmet 001" mesh="vampire_lord_helmet_001"  subtype="head_armor" weight="2" difficulty="0" appearance="1" Type="HeadArmor">
+	<!-- Vampire Head Armor TOW-->
+	<Item id="vampire_lord_helmet_001" name="{=!}Vampire Lord Helmet" mesh="vampire_lord_helmet_001"  subtype="head_armor" weight="2" difficulty="0" appearance="1" Type="HeadArmor">
 		<ItemComponent>
 			<Armor head_armor="50" has_gender_variations="false" hair_cover_type="all" beard_cover_type="type2" modifier_group="plate" material_type="Plate" />
 		</ItemComponent>
 		<Flags />
 	</Item>
+	<!-- this mesh is somehow bugged. It crashed the game when loading into battle. DO NOT USE THIS ITEM. DO NOT REFERENCE IT FROM ANY EQUIPMENTROSTER-->
+	<Item id="krell_head" name="{=!}Krell's Helm" mesh="krell_head"  subtype="head_armor" weight="2" difficulty="0" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="50" has_gender_variations="false" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="skeleton_head" name="{=!}Skeleton Head" mesh="skeleton_head"  subtype="head_armor" weight="2" difficulty="0" appearance="1" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="15" has_gender_variations="false" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="grave_guard_helm_002" name="{=!}Grave Guard Helmet" mesh="grave_guard_helm_002"  subtype="head_armor" weight="2" difficulty="0" appearance="3.6" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="25" has_gender_variations="false" hair_cover_type="type2" beard_cover_type="none" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="grave_guard_helm_001" name="{=!}Grave Guard Helmet" mesh="grave_guard_helm_001"  subtype="head_armor" weight="2" difficulty="0" appearance="3.6" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="25" has_gender_variations="false" hair_cover_type="type2" beard_cover_type="none" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+
+	<Item id="cairn_wraith_helmet_001" name="{=!}Cairn Wraith Helmet" mesh="vc_cairn_wraith_helmet_001" weight="2" difficulty="0" appearance="3.6" Type="HandArmor">
+		<ItemComponent>
+			<Armor head_armor="30" has_gender_variations="false" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="cairn_wraith_helmet_002" name="{=!}Cairn Wraith Helmet" mesh="vc_cairn_wraith_helmet_002" weight="2" difficulty="0" appearance="3.6" Type="HandArmor">
+		<ItemComponent>
+			<Armor head_armor="30" has_gender_variations="false" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="cairn_wraith_helmet_003" name="{=!}Cairn Wraith Helmet" mesh="vc_cairn_wraith_helmet_003" weight="2" difficulty="0" appearance="3.6" Type="HandArmor">
+		<ItemComponent>
+			<Armor head_armor="30" has_gender_variations="false" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="cairn_wraith_helmet_004" name="{=!}Cairn Wraith Helmet" mesh="vc_cairn_wraith_helmet_004" weight="2" difficulty="0" appearance="3.6" Type="HandArmor">
+		<ItemComponent>
+			<Armor head_armor="30" has_gender_variations="false" modifier_group="cloth" material_type="Cloth" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="cairn_wraith_helmet_005" name="{=!}Cairn Wraith Helmet" mesh="vc_cairn_wraith_helmet_005" weight="2" difficulty="0" appearance="3.6" Type="HandArmor">
+		<ItemComponent>
+			<Armor head_armor="30" has_gender_variations="false" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="cairn_wraith_helmet_006" name="{=!}Cairn Wraith Helmet" mesh="vc_cairn_wraith_helmet_006" weight="2" difficulty="0" appearance="3.6" Type="HandArmor">
+		<ItemComponent>
+			<Armor head_armor="30" has_gender_variations="false" modifier_group="cloth" material_type="Cloth" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	
+	<!-- Empire Head Armor TOW-->
+	<Item id="militia_helmet_feather" name="{=!}Militia Helmet with Feather" mesh="emp_militiahelmet_a"  subtype="head_armor" weight="2" difficulty="0" appearance="3.6" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="25" has_gender_variations="false" hair_cover_type="type2" beard_cover_type="type2" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="militia_helmet" name="{=!}Militia Helmet" mesh="emp_militiahelmet_b"  subtype="head_armor" weight="2" difficulty="0" appearance="3.6" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="25" has_gender_variations="false" hair_cover_type="type2" beard_cover_type="type2" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="worn_militia_helmet_feather" name="{=!}Worn Militia Helmet with Feather" mesh="emp_militiahelmet_c"  subtype="head_armor" weight="2" difficulty="0" appearance="3.6" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="20" has_gender_variations="false" hair_cover_type="type2" beard_cover_type="type2" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="worn_militia_helmet" name="{=!}Worn Militia Helmet" mesh="emp_militiahelmet_d"  subtype="head_armor" weight="2" difficulty="0" appearance="3.6" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="20" has_gender_variations="false" hair_cover_type="type2" beard_cover_type="type2" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_halberdier_hat_001" name="Empire Feathered Hat" mesh="empire_halberdier_hat_001"  subtype="head_armor" weight="2" difficulty="0" appearance="3.6" Type="HeadArmor">
+		<ItemComponent>
+			<Armor head_armor="18" has_gender_variations="false" hair_cover_type="type1" modifier_group="leather" material_type="Leather" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+
 </Items>

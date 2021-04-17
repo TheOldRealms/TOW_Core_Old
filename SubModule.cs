@@ -6,7 +6,6 @@ using TaleWorlds.MountAndBlade;
 using TOW_Core.Texts;
 using TOW_Core.CustomBattles;
 using NLog;
-using System;
 using NLog.Targets;
 using NLog.Config;
 using TOW_Core.Battle.AttributeSystem;
@@ -22,6 +21,7 @@ namespace TOW_Core
         protected override void OnBeforeInitialModuleScreenSetAsRoot()
         {
             TOWCommon.Say("TOW Core loaded.");
+
         }
 
         protected override void OnSubModuleLoad()

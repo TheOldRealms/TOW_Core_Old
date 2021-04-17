@@ -30,11 +30,19 @@
 				<GameType value = "Campaign"/>
 				<GameType value = "CampaignStoryMode"/>
 				<GameType value = "CustomGame"/>
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="NPCCharacters" path="tow_troopdefinitions_empire"/>
+			<IncludedGameTypes>
+				<GameType value = "Campaign"/>
+				<GameType value = "CampaignStoryMode"/>
+				<GameType value = "CustomGame"/>
 				<GameType value = "EditorGame"/>
 			</IncludedGameTypes>
 		</XmlNode>
 		<XmlNode>
-			<XmlName id="NPCCharacters" path="tow_troopdefinitions"/>
+			<XmlName id="NPCCharacters" path="tow_troopdefinitions_vc"/>
 			<IncludedGameTypes>
 				<GameType value = "Campaign"/>
 				<GameType value = "CampaignStoryMode"/>
@@ -44,6 +52,12 @@
 		</XmlNode>
 		<XmlNode>
 			<XmlName id="NPCCharacters" path="tow_lords"/>
+			<IncludedGameTypes>
+				<GameType value = "CustomGame"/>
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="SkillSets" path="tow_skillsets"/>
 			<IncludedGameTypes>
 				<GameType value = "Campaign"/>
 				<GameType value = "CampaignStoryMode"/>

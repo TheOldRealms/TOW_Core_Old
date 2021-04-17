@@ -1,8 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Items>
-	<Item id="vampire_lord_braces_001" name="Vampire Lord Braces 001" mesh="vampire_lord_braces_001" weight="1.5" difficulty="0" appearance="3" Type="HandArmor">
+	<Item id="louen_hands" name="{=!}Ornate Plate Gloves" mesh="louen_hands" weight="1.5" difficulty="0" appearance="3" Type="HandArmor">
 		<ItemComponent>
 			<Armor arm_armor="40" covers_hands="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+
+	<Item id="vampire_lord_braces_001" name="{=!}Vampire Lord Bracers" mesh="vampire_lord_braces_001" weight="1.5" difficulty="0" appearance="3" Type="HandArmor">
+		<ItemComponent>
+			<Armor arm_armor="30" covers_hands="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="krell_arms" name="{=!}Krell Arms" mesh="krell_arms" weight="1.5" difficulty="0" appearance="3" Type="HandArmor">
+		<ItemComponent>
+			<Armor arm_armor="25" covers_hands="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="grave_guard_braces_002" name="{=!}Grave Guard Armguards" mesh="grave_guard_braces_002" weight="1.5" difficulty="0" appearance="3" Type="HandArmor">
+		<ItemComponent>
+			<Armor arm_armor="15" covers_hands="false" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="grave_guard_braces_001" name="{=!}Grave Guard Armguards" mesh="grave_guard_braces_001" weight="1.5" difficulty="0" appearance="3" Type="HandArmor">
+		<ItemComponent>
+			<Armor arm_armor="15" covers_hands="false" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="skeleton_hands" name="{=!}Skeleton Hands" mesh="skeleton_hands" weight="1.5" difficulty="0" appearance="3" Type="HandArmor">
+		<ItemComponent>
+			<Armor arm_armor="7" covers_hands="true" modifier_group="plate" material_type="Plate" />
 		</ItemComponent>
 		<Flags />
 	</Item>

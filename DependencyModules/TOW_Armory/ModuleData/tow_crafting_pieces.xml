@@ -65,7 +65,148 @@
 		</Materials>
 	</CraftingPiece>
 
+	<CraftingPiece id="empire_halberd_head" name="{=!}Empire Halberd Head" tier="5" piece_type="Blade" mesh="empire_halberd_001_blade" length="50.864" culture="Culture.empire" weight="0.5592">
+		<PieceUsages unavailable_usages="TwoHandedPolearm_Couchable:Javelin" />
+		<BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_empire_halberd_001_blade">
+			<Thrust damage_type="Pierce" damage_factor="3.5" />
+			<Swing damage_type="Cut" damage_factor="3.5" />
+		</BladeData>
+		<Materials>
+			<Material id="Iron5" count="2" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="empire_halberd_shaft" name="{=!}Empire Halberd Shaft" tier="5" piece_type="Handle" mesh="empire_halberd_001_pole" length="180" culture="Culture.empire" weight="1.7">
+		<PieceUsages unavailable_usages="TwoHandedPolearm_Couchable:Javelin" />
+		<BuildData piece_offset="0" />
+		<Materials>
+			<Material id="Wood" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+
+
 	<!-- Vampire Crafting Pieces TOW-->
+	<CraftingPiece id="vampire_greatsword_002_blade" name="Vampire Greatsword 002 Blade" tier="5" piece_type="Blade" mesh="vampire_sword_002_blade" culture="Culture.khuzait" length="117" weight="1.35">
+		<PieceUsages unavailable_usages="" />
+		<BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_vampire_sword_002_blade" >
+			<Thrust damage_type="Pierce" damage_factor="3.2" />
+			<Swing damage_type="Cut" damage_factor="4.1" />
+		</BladeData>
+		<Materials>
+			<Material id="Iron4" count="4" />
+		</Materials>
+	</CraftingPiece>
+	<CraftingPiece id="vampire_greatsword_002_hilt" name="Vampire Greatsword 002 Hilt" tier="3" piece_type="Handle" mesh="vampire_sword_002_handle" culture="Culture.khuzait" length="38.6" weight="0.13">
+		<PieceUsages unavailable_usages="" />
+		<BuildData piece_offset="0" next_piece_offset="0" previous_piece_offset="0" />
+		<Materials>
+			<Material id="Iron3" count="1" />
+		</Materials>
+	</CraftingPiece>
+	<CraftingPiece id="vampire_greatsword_002_pommel" name="Vampire Greatsword 002 Pommel" tier="2" piece_type="Pommel" mesh="vampire_sword_002_pommel" culture="Culture.khuzait" length="22.7" weight="0.2">
+		<PieceUsages unavailable_usages="" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+	<CraftingPiece id="vampire_greatsword_002_guard" name="Vampire Greatsword 002 Guard" tier="5" piece_type="Guard" mesh="vampire_sword_002_guard" culture="Culture.khuzait" length="11.6" weight="0.15">
+		<PieceUsages unavailable_usages="" />
+		<BuildData next_piece_offset="10" previous_piece_offset="12" />
+		<StatContributions armor_bonus="5" />
+		<Materials>
+			<Material id="Iron5" count="2" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="skeleton_warrior_sword_005_blade" name="Skeleton Warrior Sword Blade 005" tier="1" piece_type="Blade" mesh="skele_warr_sword_005_blade" culture="Culture.khuzait" length="73.5" weight="0.9">
+		<PieceUsages unavailable_usages="" />
+		<BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_skele_warr_sword_005_blade" >
+			<Thrust damage_type="Pierce" damage_factor="2.8" />
+			<Swing damage_type="Cut" damage_factor="3.9" />
+		</BladeData>
+		<Materials>
+			<Material id="Iron5" count="3" />
+		</Materials>
+	</CraftingPiece>
+	<CraftingPiece id="skeleton_warrior_sword_005_hilt" name="Skeleton Warrior Sword Hilt 005" tier="1" piece_type="Handle" mesh="skele_warr_sword_005_hilt" culture="Culture.khuzait" length="19.9" weight="0.1">
+		<PieceUsages unavailable_usages="TwoHandedSword" />
+		<BuildData next_piece_offset="5" previous_piece_offset="-5" />
+		<Materials>
+			<Material id="Iron4" count="1" />
+		</Materials>
+	</CraftingPiece>
+	<CraftingPiece id="skeleton_warrior_sword_005_pommel" name="Skeleton Warrior Sword Pommel 005" tier="1" piece_type="Pommel" mesh="skele_warr_sword_005_pommel" culture="Culture.khuzait" length="1.83" weight="0.2">
+		<PieceUsages unavailable_usages="" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="skeleton_warrior_sword_004_blade" name="Skeleton Warrior Sword Blade 004" tier="1" piece_type="Blade" mesh="skele_warr_sword_004_blade" culture="Culture.khuzait" length="73.5" weight="0.9">
+		<PieceUsages unavailable_usages="" />
+		<BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_skele_warr_sword_004_blade" >
+			<Thrust damage_type="Pierce" damage_factor="2.8" />
+			<Swing damage_type="Cut" damage_factor="3.9" />
+		</BladeData>
+		<Materials>
+			<Material id="Iron5" count="3" />
+		</Materials>
+	</CraftingPiece>
+	<CraftingPiece id="skeleton_warrior_sword_004_hilt" name="Skeleton Warrior Sword Hilt 004" tier="1" piece_type="Handle" mesh="skele_warr_sword_004_hilt" culture="Culture.khuzait" length="19.9" weight="0.1">
+		<PieceUsages unavailable_usages="TwoHandedSword" />
+		<BuildData piece_offset="0" previous_piece_offset="1" />
+		<Materials>
+			<Material id="Iron4" count="1" />
+		</Materials>
+	</CraftingPiece>
+	<CraftingPiece id="skeleton_warrior_sword_004_pommel" name="Skeleton Warrior Sword Pommel 004" tier="1" piece_type="Pommel" mesh="skele_warr_sword_004_pommel" culture="Culture.khuzait" length="1.83" weight="0.2">
+		<PieceUsages unavailable_usages="" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+	<CraftingPiece id="skeleton_warrior_sword_004_guard" name="Skeleton Warrior Sword Guard 004" tier="1" piece_type="Guard" mesh="skele_warr_sword_004_guard" culture="Culture.khuzait" length="3.336" weight="0.15">
+		<PieceUsages unavailable_usages="" />
+		<BuildData next_piece_offset="21" previous_piece_offset="2.5" />
+		<StatContributions armor_bonus="5" />
+		<Materials>
+			<Material id="Iron5" count="2" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="skeleton_warrior_sword_003_blade" name="Skeleton Warrior Sword Blade 003" tier="1" piece_type="Blade" mesh="skele_warr_sword_003_blade" culture="Culture.khuzait" length="73.5" weight="0.9">
+		<PieceUsages unavailable_usages="" />
+		<BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_skele_warr_sword_003_blade" >
+			<Thrust damage_type="Pierce" damage_factor="2.8" />
+			<Swing damage_type="Cut" damage_factor="3.9" />
+		</BladeData>
+		<Materials>
+			<Material id="Iron5" count="3" />
+		</Materials>
+	</CraftingPiece>
+	<CraftingPiece id="skeleton_warrior_sword_003_hilt" name="Skeleton Warrior Sword Hilt 003" tier="1" piece_type="Handle" mesh="skele_warr_sword_003_hilt" culture="Culture.khuzait" length="19.9" weight="0.1">
+		<PieceUsages unavailable_usages="TwoHandedSword" />
+		<BuildData piece_offset="0" next_piece_offset="-4.5" previous_piece_offset="0" />
+		<Materials>
+			<Material id="Iron4" count="1" />
+		</Materials>
+	</CraftingPiece>
+	<CraftingPiece id="skeleton_warrior_sword_003_pommel" name="Skeleton Warrior Sword Pommel 003" tier="1" piece_type="Pommel" mesh="skele_warr_sword_003_pommel" culture="Culture.khuzait" length="1.83" weight="0.2">
+		<PieceUsages unavailable_usages="" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+	<CraftingPiece id="skeleton_warrior_sword_003_guard" name="Skeleton Warrior Sword Guard 003" tier="1" piece_type="Guard" mesh="skele_warr_sword_003_guard" culture="Culture.khuzait" length="3.336" weight="0.15">
+		<PieceUsages unavailable_usages="" />
+		<BuildData next_piece_offset="-2" previous_piece_offset="15" />
+		<StatContributions armor_bonus="5" />
+		<Materials>
+			<Material id="Iron5" count="2" />
+		</Materials>
+	</CraftingPiece>
+
 	<CraftingPiece id="skeleton_warrior_sword_002_blade" name="Skeleton Warrior Sword Blade 002" tier="1" piece_type="Blade" mesh="skele_warr_sword_002_blade" culture="Culture.khuzait" length="73.5" weight="0.9">
 		<PieceUsages unavailable_usages="" />
 		<BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_skele_warr_sword_002_blade" >
@@ -129,4 +270,130 @@
 			<Material id="Iron5" count="2" />
 		</Materials>
 	</CraftingPiece>
+
+	<CraftingPiece id="grave_guard_sword_001_blade" name="Grave Guard Blade 001" tier="4" piece_type="Blade" mesh="grave_guard_sword_001_blade" culture="Culture.khuzait" length="89.1" weight="0.9">
+		<PieceUsages unavailable_usages="" />
+		<BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_sword_one_handed" >
+			<Thrust damage_type="Pierce" damage_factor="2.8" />
+			<Swing damage_type="Cut" damage_factor="3.9" />
+		</BladeData>
+		<Materials>
+			<Material id="Iron5" count="3" />
+		</Materials>
+	</CraftingPiece>
+	<CraftingPiece id="grave_guard_sword_001_hilt" name="Grave Guard Hilt 001" tier="4" piece_type="Handle" mesh="grave_guard_sword_001_hilt" culture="Culture.khuzait" length="15.2" weight="0.1">
+		<PieceUsages unavailable_usages="TwoHandedSword" />
+		<BuildData piece_offset="0" previous_piece_offset="2" />
+		<Materials>
+			<Material id="Iron4" count="1" />
+		</Materials>
+	</CraftingPiece>
+	<CraftingPiece id="grave_guard_sword_001_pommel" name="Grave Guard Pommel 001" tier="2" piece_type="Pommel" mesh="grave_guard_sword_001_pommel" culture="Culture.khuzait" length="10.5" weight="0.2">
+		<PieceUsages unavailable_usages="" />
+		<Materials>
+			<Material id="Iron2" count="1" />
+		</Materials>
+	</CraftingPiece>
+	<CraftingPiece id="grave_guard_sword_001_guard" name="Grave Guard Guard 001" tier="5" piece_type="Guard" mesh="grave_guard_sword_001_guard" culture="Culture.khuzait" length="5.63" weight="0.15">
+		<PieceUsages unavailable_usages="" />
+		<BuildData next_piece_offset="6" previous_piece_offset="-0.5" />
+		<StatContributions armor_bonus="5" />
+		<Materials>
+			<Material id="Iron5" count="2" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="skeleton_spear_head"
+                 name="{=!}Old Spearhead"
+                 tier="2"
+                 piece_type="Blade"
+                 mesh="skele_warr_spear_blade_001"
+                 length="48"
+                 weight="0.3384"
+				   culture="Culture.khuzait"
+                 excluded_item_usage_features="swing">
+		<PieceUsages unavailable_usages="TwoHandedPolearm_Couchable:Javelin" />
+		<BladeData stack_amount="1"
+				   physics_material="wood_weapon"
+				   body_name="bo_spear_b">
+			<Thrust damage_type="Pierce"
+					damage_factor="2.2" />
+		</BladeData>
+		<Materials>
+			<Material id="Iron2"
+					  count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="skeleton_spear_guard"
+                 name="{=!}Old Spearguard"
+                 tier="3"
+                 piece_type="Guard"
+                 mesh="skele_warr_spear_guard_001"
+                 culture="Culture.khuzait"
+                 length="12.5"
+                 weight="0">
+		<PieceUsages unavailable_usages="" />
+		<BuildData piece_offset="0" next_piece_offset="18" />
+		<Materials>
+			<Material id="Iron4"
+					  count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="skeleton_spear_shaft"
+                 name="{=!}Old Spearshaft"
+                 tier="2"
+                 piece_type="Handle"
+                 mesh="skele_warr_spear_handle_001"
+                 length="179"
+                 weight="1.3"
+				   culture="Culture.khuzait"
+                 excluded_item_usage_features="long"
+                 CraftingCost="100">
+		<PieceUsages unavailable_usages="TwoHandedPolearm_Couchable:TwoHandedPolearm_Bracing:Javelin" />
+		<BuildData piece_offset="0" next_piece_offset="15" previous_piece_offset="10" />
+		<Materials>
+			<Material id="Wood"
+					  count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="skeleton_spear_pommel"
+			   name="{=!}Old Spearpommel"
+			   tier="2"
+			   piece_type="Pommel"
+			   mesh="skele_warr_spear_pommel_001"
+			   culture="Culture.khuzait"
+			   length="14.8"
+			   weight="0">
+		<PieceUsages unavailable_usages="" />
+		<Materials>
+			<Material id="Iron5"
+					  count="1" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="black_axe_of_krell_head" name="{=!}Black Axe Blade" tier="1" piece_type="Blade" mesh="black_axe_of_krell_head" distance_to_next_piece="27.02" distance_to_previous_piece="28.11" weight="1.750">
+		<PieceUsages unavailable_usages="" />
+		<BuildData piece_offset="-16.25" />
+		<BladeData stack_amount="3" blade_length="56.94" blade_width="59.66" physics_material="metal_weapon" body_name="bo_black_axe_of_krell_head">
+			<Swing damage_type="Cut" damage_factor="10.00" />
+		</BladeData>
+		<Flags>
+			<Flag name="CanBePickedUpFromCorpse" type="ItemFlags"/>
+		</Flags>
+		<Materials>
+			<Material id="Iron2" count="3" />
+		</Materials>
+	</CraftingPiece>
+
+	<CraftingPiece id="black_axe_of_krell_handle" name="{=!}Black Axe of Krell Handle" tier="1" piece_type="Handle" mesh="black_axe_of_krell_handle" length="124.75" weight="1.100" excluded_item_usage_features="widegrip">
+		<PieceUsages unavailable_usages="OneHandedAxe" />
+		<BuildData piece_offset="11.00" next_piece_offset="0.01" />
+		<Materials>
+			<Material id="Iron2" count="3" />
+		</Materials>
+	</CraftingPiece>
+	
 </CraftingPieces>

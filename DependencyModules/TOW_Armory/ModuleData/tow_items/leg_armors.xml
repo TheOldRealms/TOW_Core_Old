@@ -1,18 +1,206 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
 	<!-- Empire Leg Armor TOW-->
-	<Item id="statetroop_uniform_001_leg" name="{=!}Empire State Troop Uniform 001 Boots" mesh="statetroop_uniform_001_leg" weight="0.9" difficulty="0" appearance="1" Type="LegArmor">
+	<Item id="statetroop_uniform_001_leg" name="{=!}Empire State Trooper Boots" mesh="statetroop_uniform_001_leg" weight="0.9" difficulty="0" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="12" covers_legs="true" modifier_group="leather" material_type="Leather" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_female_soldier_boots_001" name="{=!}Empire Leather Boots" mesh="empire_female_soldier_boots_001" weight="0.9" difficulty="0" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="20" covers_legs="true" modifier_group="leather" material_type="Leather" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_leg_001_averland_01" name="{=!}Empire Free Company Boots" mesh="empire_free_company_armor_leg_001" weight="0.9" difficulty="0" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="20" covers_legs="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_leg_002_averland_02" name="{=!}Empire Free Company Boots" mesh="empire_free_company_armor_leg_002" weight="0.9" difficulty="0" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="20" covers_legs="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_leg_003_altdorf_01" name="{=!}Empire Free Company Boots" mesh="empire_free_company_armor_leg_003" weight="0.9" difficulty="0" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="20" covers_legs="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_leg_004_middenheim_01" name="{=!}Empire Free Company Boots" mesh="empire_free_company_armor_leg_004" weight="0.9" difficulty="0" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="20" covers_legs="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_leg_005_nuln_01" name="{=!}Empire Free Company Boots" mesh="empire_free_company_armor_leg_005" weight="0.9" difficulty="0" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="20" covers_legs="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_leg_006_hochland_01" name="{=!}Empire Free Company Boots" mesh="empire_free_company_armor_leg_006" weight="0.9" difficulty="0" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="20" covers_legs="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_leg_007_hochland_02" name="{=!}Empire Free Company Boots" mesh="empire_free_company_armor_leg_007" weight="0.9" difficulty="0" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="20" covers_legs="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_leg_008_marienburg_01" name="{=!}Empire Free Company Boots" mesh="empire_free_company_armor_leg_008" weight="0.9" difficulty="0" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="20" covers_legs="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_leg_009_marienburg_02" name="{=!}Empire Free Company Boots" mesh="empire_free_company_armor_leg_009" weight="0.9" difficulty="0" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="20" covers_legs="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_leg_010_middenland_01" name="{=!}Empire Free Company Boots" mesh="empire_free_company_armor_leg_010" weight="0.9" difficulty="0" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="20" covers_legs="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_leg_011_nordland_01" name="{=!}Empire Free Company Boots" mesh="empire_free_company_armor_leg_011" weight="0.9" difficulty="0" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="20" covers_legs="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_leg_012_nordland_02" name="{=!}Empire Free Company Boots" mesh="empire_free_company_armor_leg_012" weight="0.9" difficulty="0" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="20" covers_legs="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_leg_013_ostermark_01" name="{=!}Empire Free Company Boots" mesh="empire_free_company_armor_leg_013" weight="0.9" difficulty="0" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="20" covers_legs="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_leg_014_ostermark_02" name="{=!}Empire Free Company Boots" mesh="empire_free_company_armor_leg_014" weight="0.9" difficulty="0" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="20" covers_legs="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_leg_015_ostland_01" name="{=!}Empire Free Company Boots" mesh="empire_free_company_armor_leg_015" weight="0.9" difficulty="0" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="20" covers_legs="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_leg_016_ostland_02" name="{=!}Empire Free Company Boots" mesh="empire_free_company_armor_leg_016" weight="0.9" difficulty="0" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="20" covers_legs="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_leg_017_reikland_01" name="{=!}Empire Free Company Boots" mesh="empire_free_company_armor_leg_017" weight="0.9" difficulty="0" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="20" covers_legs="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_leg_018_stirland_01" name="{=!}Empire Free Company Boots" mesh="empire_free_company_armor_leg_018" weight="0.9" difficulty="0" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="20" covers_legs="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_leg_019_talabecland_01" name="{=!}Empire Free Company Boots" mesh="empire_free_company_armor_leg_019" weight="0.9" difficulty="0" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="20" covers_legs="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_leg_020_talabecland_02" name="{=!}Empire Free Company Boots" mesh="empire_free_company_armor_leg_020" weight="0.9" difficulty="0" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="20" covers_legs="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_leg_021_wissenland_01" name="{=!}Empire Free Company Boots" mesh="empire_free_company_armor_leg_021" weight="0.9" difficulty="0" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="20" covers_legs="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_leg_022_wissenland_02" name="{=!}Empire Free Company Boots" mesh="empire_free_company_armor_leg_022" weight="0.9" difficulty="0" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="20" covers_legs="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="empire_free_company_armor_leg_023_wissenland_03" name="{=!}Empire Free Company Boots" mesh="empire_free_company_armor_leg_023" weight="0.9" difficulty="0" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="20" covers_legs="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+
+	<!-- Vampire Leg Armor TOW-->
+	<Item id="vampire_lord_boots_001" name="{=!}Vampire Lord Boots" mesh="vampire_lord_boots_001" weight="0.9" difficulty="0" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="40" covers_legs="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="krell_legs" name="{=!}Krell's Leg Armor " mesh="krell_legs" weight="0.9" difficulty="0" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="40" covers_legs="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="grave_guard_boots_002" name="{=!}Grave Guard Boots" mesh="grave_guard_boots_002" weight="0.9" difficulty="0" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="17" covers_legs="false" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="grave_guard_boots_001" name="{=!}Grave Guard Boots" mesh="grave_guard_boots_001" weight="0.9" difficulty="0" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="15" covers_legs="false" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="skeleton_feet" name="{=!}Skeleton Feet" mesh="skeleton_feet" weight="0.9" difficulty="0" appearance="1" Type="LegArmor">
 		<ItemComponent>
 			<Armor leg_armor="6" covers_legs="true" modifier_group="leather" material_type="Leather" />
 		</ItemComponent>
 		<Flags />
 	</Item>
 
-	<!-- Vampire Leg Armor TOW-->
-	<Item id="vampire_lord_boots_001" name="Vampire Lord Boots 001" mesh="vampire_lord_boots_001" weight="0.9" difficulty="0" appearance="1" Type="LegArmor">
+	<Item id="cairn_wraith_lowerbody_001" name="{=!}Cairn Wraith Chains" mesh="vc_cairn_wraith_lowerbody_001" weight="0.9" difficulty="0" appearance="1" Type="LegArmor">
 		<ItemComponent>
-			<Armor leg_armor="40" covers_legs="true" modifier_group="plate" material_type="Plate" />
+			<Armor leg_armor="20" modifier_group="cloth" material_type="Cloth" />
 		</ItemComponent>
 		<Flags />
 	</Item>
+	<Item id="cairn_wraith_lowerbody_003" name="{=!}Cairn Wraith Chains" mesh="vc_cairn_wraith_lowerbody_003" weight="0.9" difficulty="0" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="20" modifier_group="cloth" material_type="Cloth" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item id="cairn_wraith_lowerbody_005" name="{=!}Cairn Wraith Chains" mesh="vc_cairn_wraith_lowerbody_005" weight="0.9" difficulty="0" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="20" modifier_group="cloth" material_type="Cloth" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+	
 </Items>

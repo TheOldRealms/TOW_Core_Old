@@ -15,6 +15,6 @@ namespace TOW_Core.CustomBattles
         [XmlAttribute]
         public FormationClass formation { get; set; } = FormationClass.Infantry;
         [XmlAttribute]
-        public string troopId { get; set; } = "empire_greatsword";
+        public string troopId { get; set; } = "tow_empire_recruit";
     }
 }

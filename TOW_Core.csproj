@@ -293,6 +293,7 @@
     <Compile Include="GameTexts\TOWTextOverride.cs" />
     <Compile Include="HarmonyPatches\CustomBattlePatches.cs" />
     <Compile Include="HarmonyPatches\FindGameTextPatch.cs" />
+    <Compile Include="HarmonyPatches\LoadingScreenTempPatch.cs" />
     <Compile Include="HarmonyPatches\RotatingMainMenuPatch.cs" />
     <Compile Include="SubModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -311,33 +312,26 @@
     <Content Include="DependencyModules\TOW_Armory\ModuleData\tow_items\head_armors.xml" />
     <Content Include="DependencyModules\TOW_Armory\ModuleData\tow_items\horseandharness.xml" />
     <Content Include="DependencyModules\TOW_Armory\ModuleData\tow_items\leg_armors.xml" />
+    <Content Include="DependencyModules\TOW_Armory\ModuleData\tow_items\shields.xml" />
     <Content Include="DependencyModules\TOW_Armory\ModuleData\tow_items\shoulder_armors.xml" />
     <Content Include="DependencyModules\TOW_Armory\ModuleData\tow_items\weapons.xml" />
     <Content Include="DependencyModules\TOW_Armory\SubModule.xml" />
     <Content Include="DependencyModules\TOW_Environment\SceneObj\towmm_menuscene_01\atmosphere.xml" />
     <Content Include="DependencyModules\TOW_Environment\SceneObj\towmm_menuscene_01\references.txt" />
-    <Content Include="DependencyModules\TOW_Environment\SceneObj\towmm_menuscene_02\atmosphere.xml" />
-    <Content Include="DependencyModules\TOW_Environment\SceneObj\towmm_menuscene_02\references.txt" />
-    <Content Include="DependencyModules\TOW_Environment\SceneObj\towmm_menuscene_03\atmosphere.xml" />
-    <Content Include="DependencyModules\TOW_Environment\SceneObj\towmm_menuscene_03\references.txt" />
     <Content Include="DependencyModules\TOW_Environment\SubModule.xml" />
     <Content Include="ModuleData\*.xml" />
     <Content Include="SubModule.xml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="DependencyModules\TOW_Environment\AssetPackages\pack0.tpac" />
+    <None Include="DependencyModules\TOW_Environment\SceneObj\towmm_menuscene_01\flora.bin" />
     <None Include="DependencyModules\TOW_Environment\SceneObj\towmm_menuscene_01\scene.xscene" />
-    <None Include="DependencyModules\TOW_Environment\SceneObj\towmm_menuscene_02\scene.xscene" />
-    <None Include="DependencyModules\TOW_Environment\SceneObj\towmm_menuscene_03\flora.bin" />
-    <None Include="DependencyModules\TOW_Environment\SceneObj\towmm_menuscene_03\scene.xscene" />
-    <None Include="DependencyModules\TOW_Environment\SceneObj\towmm_menuscene_03\terrain.bin" />
+    <None Include="DependencyModules\TOW_Environment\SceneObj\towmm_menuscene_01\terrain.bin" />
     <None Include="packages.config" />
     <None Include="Readme.md" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DependencyModules\TOW_Armory\AssetPackages\" />
-    <Folder Include="DependencyModules\TOW_Armory\EmAssetPackages\" />
-    <Folder Include="DependencyModules\TOW_Environment\EmAssetPackages\" />
+    <Folder Include="DependencyModules\TOW_Environment\AssetPackages\" />
     <Folder Include="DependencyModules\TOW_Environment\ModuleData\" />
   </ItemGroup>
   <!-- Post-Build -->
