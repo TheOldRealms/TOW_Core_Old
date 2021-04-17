@@ -21,7 +21,6 @@ namespace TOW_Core
         protected override void OnBeforeInitialModuleScreenSetAsRoot()
         {
             TOWCommon.Say("TOW Core loaded.");
-
         }
 
         protected override void OnSubModuleLoad()
