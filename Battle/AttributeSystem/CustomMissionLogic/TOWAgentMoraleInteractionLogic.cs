@@ -51,7 +51,7 @@ namespace TOW_Core.Battle.AttributeSystem.CustomMissionLogic
                             if (num > 0 && (affectorCondition == null || affectorCondition(agent)))
                             {
                                 float delta = MissionGameModels.Current.BattleMoraleModel.CalculateMoraleChangeToCharacter(agent, moraleChangeAffector, num3);
-                                agent.GetCustomMoraleComponents().ForEach(component =>
+                                agent.GetMoraleComponents().ForEach(component =>
                                 {
                                     if (component != null)
                                     {
@@ -64,7 +64,7 @@ namespace TOW_Core.Battle.AttributeSystem.CustomMissionLogic
                         else if (num2 > 0 && (affectedCondition == null || affectedCondition(agent)))
                         {
                             float delta2 = MissionGameModels.Current.BattleMoraleModel.CalculateMoraleChangeToCharacter(agent, moraleChangeAffected, num3);
-                            agent.GetCustomMoraleComponents().ForEach(component =>
+                            agent.GetMoraleComponents().ForEach(component =>
                             {
                                 if (component != null)
                                 {
