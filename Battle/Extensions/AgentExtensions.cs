@@ -42,7 +42,7 @@ namespace TOW_Core.Battle.Extensions
         public static List<MoraleAgentComponent> GetMoraleComponents(this Agent agent)
         {
             List<MoraleAgentComponent> components = agent.GetCustomMoraleComponents();
-            components.Add(agent.GetComponent<MoraleAgentComponent>());
+            components.AddIfNotNull(agent.GetComponent<MoraleAgentComponent>());
             return components;
         }
 
