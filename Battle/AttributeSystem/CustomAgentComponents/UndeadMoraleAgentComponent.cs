@@ -12,39 +12,61 @@ using TOW_Core.Utilities;
 
 namespace TOW_Core.Battle.AttributeSystem.CustomAgentComponents
 {
-    public class UndeadMoraleAgentComponent : MoraleAgentComponent
+    public class UndeadMoraleAgentComponent : AgentComponent
     {
         private Timer crumbleTimer;
         private bool effectReady = false;
         private float crumbleFrequencyInSeconds = 1f;
-        private float regenAmount = 1f;
-        private float crumbleThreshold = 10f;
+        private float regenAmount = 5f;
+        private float crumbleThreshold = 15f;
         private float regenThreshold = 30f;
+        private bool _iscrumbling = false;
+        private MoraleAgentComponent _moraleComponent;
 
-        public UndeadMoraleAgentComponent(Agent agent) : base(agent)
-        {
-            agent.RemoveComponentIfNotNull(agent.GetComponent<MoraleAgentComponent>());
+        public UndeadMoraleAgentComponent(Agent agent) : base(agent) { }
+
+        private delegate void StartedCrumblingEventHandler();
+        private event StartedCrumblingEventHandler StartedCrumbling;
+        private bool IsCrumbling {
+            get
+            {
+                return _iscrumbling;
+            }
+            set
+            {
+                _iscrumbling = value;
+                if (value == true) StartedCrumbling?.Invoke();
+            }
         }
 
         protected override void Initialize()
         {
             base.Initialize();
+            this._moraleComponent = Agent.GetComponent<MoraleAgentComponent>();
             crumbleTimer = new Timer(GetDistributedTime(crumbleFrequencyInSeconds), crumbleFrequencyInSeconds, true);
+            this.StartedCrumbling += UndeadMoraleAgentComponent_StartedCrumbling;
+        }
+
+        private void UndeadMoraleAgentComponent_StartedCrumbling()
+        {
+            TOWParticleSystem.ApplyParticleToAgent(this.Agent, "undead_crumbling");
         }
 
         protected override void OnTickAsAI(float dt)
         {
+            base.OnTickAsAI(dt);
             effectReady = crumbleTimer.Check(MBCommon.GetTime(MBCommon.TimeType.Mission));
 
             if (effectReady)
             {
-                if (Morale < crumbleThreshold)
+                if (_moraleComponent.Morale < crumbleThreshold)
                 {
+                    if (!IsCrumbling) IsCrumbling = true;
                     ApplyCrumbleDamage();
                 }
-                else if (Morale > regenThreshold)
+                else if (_moraleComponent.Morale > regenThreshold)
                 {
-                    ApplyMoraleRegen();
+                    ApplyRegenerationHealing();
                 }
             }
         }
@@ -57,7 +79,7 @@ namespace TOW_Core.Battle.AttributeSystem.CustomAgentComponents
             crumbleTimer.Reset(MBCommon.GetTime(MBCommon.TimeType.Mission));
         }
 
-        private void ApplyMoraleRegen()
+        private void ApplyRegenerationHealing()
         {
             Agent.Heal(regenAmount);
             crumbleTimer.Reset(MBCommon.GetTime(MBCommon.TimeType.Mission));

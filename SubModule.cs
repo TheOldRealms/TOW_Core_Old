@@ -13,6 +13,8 @@ using TOW_Core.Battle.AttributeSystem.CustomMissionLogic;
 using TaleWorlds.MountAndBlade.Source.Missions.Handlers.Logic;
 using TOW_Core.Utilities.Extensions;
 using TOW_Core.Utilities;
+using TOW_Core.Battle.AttributeSystem.CustomBattleMoralModel;
+using TaleWorlds.MountAndBlade.CustomBattle;
 
 namespace TOW_Core
 {
@@ -44,6 +46,16 @@ namespace TOW_Core
             LoadAttributes();
         }
 
+        protected override void OnGameStart(Game game, IGameStarter gameStarterObject)
+        {
+            base.OnGameStart(game, gameStarterObject);
+            if(game.GameType is CustomGame)
+            {
+                gameStarterObject.Models.RemoveAllOfType(typeof(CustomBattleMoraleModel));
+                gameStarterObject.AddModel(new TOWBattleMoraleModel());
+            }
+        }
+
         public override void OnMissionBehaviourInitialize(Mission mission)
         {
             base.OnMissionBehaviourInitialize(mission);
@@ -54,10 +66,7 @@ namespace TOW_Core
         private void InitializeAttributeSystemForMission(Mission mission)
         {
             mission.AddMissionBehaviour(new AttributeSystemMissionLogic());
-
-            // Replace the default morale interaction logic with our new custom morale logic
-            mission.RemoveMissionBehaviourIfNotNull(mission.GetMissionBehaviour<AgentMoraleInteractionLogic>());
-            mission.AddMissionBehaviour(new TOWAgentMoraleInteractionLogic());
+            mission.AddMissionBehaviour(new Abilities.AbilityManagerMissionLogic());
         }
 
         private void LoadAttributes()

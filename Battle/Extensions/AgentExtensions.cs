@@ -5,12 +5,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TaleWorlds.MountAndBlade;
+using TOW_Core.Abilities;
 using TOW_Core.Utilities;
 using TOW_Core.Utilities.Extensions;
 
 namespace TOW_Core.Battle.Extensions
 {
-    public static class AgentAttributeExtensions
+    public static class AgentExtensions
     {
         /// <summary>
         /// Maps all character IDs to a list of attributes for that character. For example, <"skeleton_warrior" <=> {"Expendable", "Undead"}>
@@ -21,6 +22,25 @@ namespace TOW_Core.Battle.Extensions
         public static bool IsExpendable(this Agent agent)
         {
             return agent.GetAttributes().Contains("Expendable");
+        }
+
+        public static bool IsUndead(this Agent agent)
+        {
+            return agent.GetAttributes().Contains("Undead");
+        }
+
+        public static bool IsAbilityUser(this Agent agent)
+        {
+            return agent.GetAttributes().Contains("AbilityUser");
+        }
+
+        public static void CastCurrentAbility(this Agent agent)
+        {
+            var abilitycomponent = agent.GetComponent<AbilityComponent>();
+            if(abilitycomponent != null)
+            {
+                abilitycomponent.CurrentAbility.Use(agent);
+            }
         }
 
         /// <summary>

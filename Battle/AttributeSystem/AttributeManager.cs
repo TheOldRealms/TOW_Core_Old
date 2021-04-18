@@ -46,7 +46,7 @@ namespace TOW_Core.Battle.AttributeSystem
                 }
             }
 
-            AgentAttributeExtensions.SetAttributesDictionary(attributesDictionary);
+            AgentExtensions.SetAttributesDictionary(attributesDictionary);
         }
     }
 }
