@@ -22,6 +22,10 @@ namespace TOW_Core.Abilities
                 {
                     Agent.Main.CastCurrentAbility();
                 }
+                if (Input.IsKeyPressed(InputKey.E))
+                {
+                    Agent.Main.SelectNextAbility();
+                }
             }
         }
 
@@ -31,7 +35,7 @@ namespace TOW_Core.Abilities
             //always add it for the main agent
             if(agent == Agent.Main) agent.AddComponent(new AbilityComponent(agent));
             //add it to all other units (like heroes, lords) that we can define in the attributes xml
-            if (agent.IsAbilityUser()) agent.AddComponent(new AbilityComponent(agent));
+            else if (agent.IsAbilityUser()) agent.AddComponent(new AbilityComponent(agent));
         }
     }
 }

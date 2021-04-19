@@ -283,10 +283,15 @@
   <!-- Files & Classes -->
   <ItemGroup>
     <Compile Include="Abilities\AbilityComponent.cs" />
+    <Compile Include="Abilities\AbilityHUDMissionView.cs" />
+    <Compile Include="Abilities\AbilityHUD_VM.cs" />
     <Compile Include="Abilities\AbilityManagerMissionLogic.cs" />
     <Compile Include="Abilities\BaseAbility.cs" />
     <Compile Include="Abilities\FireBallAbilityScript.cs" />
     <Compile Include="Abilities\FireBallAbility.cs" />
+    <Compile Include="Abilities\FlameStormAbility.cs" />
+    <Compile Include="Abilities\FlameStormAbilityScript.cs" />
+    <Compile Include="Abilities\XMLAbilityLoader.cs" />
     <Compile Include="Battle\AttributeSystem\AttributeManager.cs" />
     <Compile Include="Battle\AttributeSystem\CustomAgentComponents\UndeadMoraleAgentComponent.cs" />
     <Compile Include="Battle\AttributeSystem\CustomBattleMoralModel\TOWBattleMoraleModel.cs" />
@@ -321,6 +326,7 @@
     <Content Include="DependencyModules\TOW_Armory\ModuleData\tow_items\shoulder_armors.xml" />
     <Content Include="DependencyModules\TOW_Armory\ModuleData\tow_items\weapons.xml" />
     <Content Include="DependencyModules\TOW_Armory\SubModule.xml" />
+    <Content Include="DependencyModules\TOW_Environment\GUI\Prefabs\AbilityHUD.xml" />
     <Content Include="DependencyModules\TOW_Environment\Prefabs\spelleffects_prefab.xml" />
     <Content Include="DependencyModules\TOW_Environment\SceneObj\towmm_menuscene_01\atmosphere.xml" />
     <Content Include="DependencyModules\TOW_Environment\SceneObj\towmm_menuscene_01\references.txt" />

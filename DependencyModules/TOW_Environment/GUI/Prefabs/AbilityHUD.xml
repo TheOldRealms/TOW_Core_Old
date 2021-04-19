@@ -1,0 +1,26 @@
+﻿<Prefab>
+	<Constants>
+	</Constants>
+	<Window>
+		<Widget WidthSizePolicy="Fixed"
+				HeightSizePolicy="Fixed"
+				SuggestedWidth="128"
+				SuggestedHeight="192"
+				VerticalAlignment="Bottom"
+				HorizontalAlignment="Left"
+				MarginBottom="25"
+				MarginLeft="25"
+				IsVisible="@HasAnyAbility" >
+			<Children>
+				<TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="32" HorizontalAlignment="Center" VerticalAlignment="Top" Text="Press Q" />
+				<Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="128" SuggestedHeight="128" Sprite="@SpriteName"  HorizontalAlignment="Center" VerticalAlignment="Center">
+					<Children>
+						<Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="BlankWhiteSquare_9" Color="#000000FF" AlphaFactor="0.5" IsVisible="@IsOnCoolDown"/>
+						<TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="32" HorizontalAlignment="Center" VerticalAlignment="Center" Text="@CoolDownLeft" IsVisible="@IsOnCoolDown"/>
+					</Children>
+				</Widget>
+				<TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="32" HorizontalAlignment="Center" VerticalAlignment="Bottom" Text="@Name" />
+			</Children>
+		</Widget>
+	</Window>
+</Prefab>

@@ -39,8 +39,41 @@ namespace TOW_Core.Battle.Extensions
             var abilitycomponent = agent.GetComponent<AbilityComponent>();
             if(abilitycomponent != null)
             {
-                abilitycomponent.CurrentAbility.Use(agent);
+                if(abilitycomponent.CurrentAbility != null) abilitycomponent.CurrentAbility.Use(agent);
             }
+        }
+
+        public static BaseAbility GetCurrentAbility(this Agent agent)
+        {
+            var abilitycomponent = agent.GetComponent<AbilityComponent>();
+            if (abilitycomponent != null)
+            {
+                return abilitycomponent.CurrentAbility;
+            }
+            else return null;
+        }
+
+        public static void SelectNextAbility(this Agent agent)
+        {
+            var abilitycomponent = agent.GetComponent<AbilityComponent>();
+            if (abilitycomponent != null)
+            {
+                abilitycomponent.SelectNextAbility();
+            }
+        }
+
+        public static void SelectAbility(this Agent agent, int abilityindex)
+        {
+            var abilitycomponent = agent.GetComponent<AbilityComponent>();
+            if (abilitycomponent != null)
+            {
+                abilitycomponent.SelectAbility(abilityindex);
+            }
+        }
+
+        public static List<string> GetAbilitiesFromXML(this Agent agent)
+        {
+            return XMLAbilityLoader.GetAbilitesForCharacter(agent.Character.StringId);
         }
 
         /// <summary>

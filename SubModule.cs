@@ -40,9 +40,11 @@ namespace TOW_Core
         {
             //TOWTextManager.WriteSampleOverrideXml();
             //CustomBattleTroopManager.WriteSampleOverrideXml();
+            //Abilities.XMLAbilityLoader.WriteSampleXML();
             TOWTextManager.LoadAdditionalTexts();
             TOWTextManager.LoadTextOverrides();
             CustomBattleTroopManager.LoadCustomBattleTroops();
+            Abilities.XMLAbilityLoader.LoadAbilities();
             LoadAttributes();
         }
 
@@ -67,6 +69,7 @@ namespace TOW_Core
         {
             mission.AddMissionBehaviour(new AttributeSystemMissionLogic());
             mission.AddMissionBehaviour(new Abilities.AbilityManagerMissionLogic());
+            mission.AddMissionBehaviour(new Abilities.AbilityHUDMissionView());
         }
 
         private void LoadAttributes()
