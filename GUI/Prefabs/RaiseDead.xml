@@ -1,0 +1,264 @@
+<Prefab>
+	<Constants>
+		<Constant Name="Encyclopedia.Frame.Width" BrushLayer="Default" BrushName="Encyclopedia.Frame" BrushValueType="Width" />
+		<Constant Name="Encyclopedia.Frame.Height" BrushLayer="Default" BrushName="Encyclopedia.Frame" BrushValueType="Height" />
+
+		<Constant Name="Top.Height" Value="240" />
+		<Constant Name="Top.VerticalDivider.Height" Value="!Top.Height" />
+		<Constant Name="Top.VerticalDivider.Width" Value="15" />
+		<Constant Name="Top.VerticalDivider.Thin.Width" Value="7" />
+
+		<Constant Name="Reference.AlphaFactor" Value="0" />
+	</Constants>
+	<Window>
+		<Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="BlankWhiteSquare_9" Color="#000000CC">
+			<Standard.PopupCloseButton HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="940" Command.Click="Close" Parameter.ButtonText="Leave" />
+			<Children>
+
+				<!--Background-->
+				<BrushWidget Id="TownManagementPopup" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Encyclopedia.Frame.Width" SuggestedHeight="!Encyclopedia.Frame.Height" HorizontalAlignment="Center" VerticalAlignment="Center" MarginBottom="35" Brush="Encyclopedia.Frame" ReserveManagementPopup="ReservePopup">
+					<Children>
+						<!--title-->
+						<Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="590" SuggestedHeight="155" HorizontalAlignment="Center" VerticalAlignment="Top" PositionXOffset="6" PositionYOffset="-18" Sprite="StdAssets\tabbar_popup" IsDisabled="true">
+							<Children>
+								<RichTextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" PositionYOffset="-25" Brush="Recruitment.Popup.Title.Text" Brush.FontSize="46" IsDisabled="true" Text="Raise Dead" />
+							</Children>
+						</Widget>
+						
+						<ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" HorizontalAlignment="Center" VerticalAlignment="Center" SuggestedHeight="480">
+							<Children>
+								<Widget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed"  SuggestedHeight="480" SuggestedWidth="226" VerticalAlignment="Top">
+									<Children>
+										<Widget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed"				SuggestedHeight="350" SuggestedWidth="226" VerticalAlignment="Top">
+											<Children>
+												<RichTextWidget WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren"						SuggestedWidth="176" HorizontalAlignment="Center" VerticalAlignment="Top"					Brush="Recruitment.Popup.Title.Text" Brush.FontSize="32" IsDisabled="true"					Text="Animated Skeleton" />
+												<CharacterTableauWidget DataSource="{UnitCharacter}" WidthSizePolicy="Fixed"					HeightSizePolicy="Fixed" SuggestedWidth="176" SuggestedHeight="300"							HorizontalAlignment="Center" VerticalAlignment="Bottom"										BodyProperties="@BodyProperties" IsFemale="@IsFemale"										EquipmentCode="@EquipmentCode" CharStringId="@CharStringId"									StanceIndex="@StanceIndex" BannerCodeText="@BannerCodeText"									MountCreationKey="@MountCreationKey" IsEnabled="false"										ArmorColor1="@ArmorColor1"			ArmorColor2="@ArmorColor2"/>
+												<ButtonWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren"					HorizontalAlignment="Center" VerticalAlignment="Bottom"										Brush="ButtonBrush1" Command.Click="RecuritUnit1" IsEnabled="true">
+													<Children>
+														<RichTextWidget DoNotAcceptEvents="true"														WidthSizePolicy="CoverChildren"																HeightSizePolicy="CoverChildren" HorizontalAlignment="Center"								VerticalAlignment="Center" Brush="OverlayPopup.ButtonText"									Brush.FontSize="20" Text="Recruit" />
+													</Children>
+												</ButtonWidget>
+												<ListPanel DataSource="{ArmorsList}" WidthSizePolicy="CoverChildren"							HeightSizePolicy="CoverChildren" VerticalAlignment="Bottom"									HorizontalAlignment="Left"																	StackLayout.LayoutMethod="VerticalBottomToTop ">
+													<ItemTemplate>
+														<EquipmentTypeVisualWidget WidthSizePolicy="Fixed"												HeightSizePolicy="Fixed" SuggestedWidth="35" SuggestedHeight="35"							HorizontalAlignment="Left" MarginLeft="15" MarginBottom="5"									Brush="EquipmentType.Image" Command.HoverBegin="ExecuteBeginHint"							Command.HoverEnd="ExecuteEndHint" IsVisible="@HasItem"										Type="@Type" />
+													</ItemTemplate>
+												</ListPanel>
+												<ListPanel DataSource="{WeaponsList}" WidthSizePolicy="CoverChildren"							HeightSizePolicy="CoverChildren" VerticalAlignment="Bottom"									HorizontalAlignment="Right"																	StackLayout.LayoutMethod="VerticalBottomToTop">
+													<ItemTemplate>
+														<EquipmentTypeVisualWidget WidthSizePolicy="Fixed"												HeightSizePolicy="Fixed" SuggestedWidth="35" SuggestedHeight="35"							HorizontalAlignment="Right" MarginRight="15" MarginBottom="5"								Brush="EquipmentType.Image" Command.HoverBegin="ExecuteBeginHint"							Command.HoverEnd="ExecuteEndHint" IsVisible="@HasItem"										Type="@Type" />
+													</ItemTemplate>
+												</ListPanel>
+											</Children>
+										</Widget>
+										<GridWidget DataSource="{Skills}" WidthSizePolicy = "CoverChildren" HeightSizePolicy =			"CoverChildren" DefaultCellWidth="45" HorizontalAlignment="Center"							VerticalAlignment="Bottom"	DefaultCellHeight="60" ColumnCount="4"								StackLayout.LayoutMethod="BottomToTop">
+											<ItemTemplate>
+												<SkillIconVisualWidget WidthSizePolicy = "StretchToParent" HeightSizePolicy =					"StretchToParent" SkillId="@SkillId" MarginBottom="20"										UseSmallestVariation="true" MarginLeft="5">
+													<Children>
+														<TextWidget WidthSizePolicy = "StretchToParent" HeightSizePolicy =								"Fixed"	SuggestedHeight="20" IntText="@SkillValue"											VerticalAlignment="Bottom" HorizontalAlignment="Center"										Brush="Encyclopedia.Skill.Text"																Brush.FontSize="20" PositionYOffset="20"  ClipContents="false"/>
+													</Children>
+												</SkillIconVisualWidget>
+											</ItemTemplate>
+										</GridWidget>
+									</Children>
+								</Widget>
+								<Widget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed"  SuggestedHeight="480" SuggestedWidth="226" VerticalAlignment="Top">
+									<Children>
+										<Widget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed"				SuggestedHeight="350" SuggestedWidth="226" VerticalAlignment="Top">
+											<Children>
+												<RichTextWidget WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren"						SuggestedWidth="176" HorizontalAlignment="Center" VerticalAlignment="Top"					Brush="Recruitment.Popup.Title.Text" Brush.FontSize="32" IsDisabled="true"					Text="Skeleton Warrior" />
+												<CharacterTableauWidget DataSource="{UnitCharacter2}" WidthSizePolicy="Fixed"					HeightSizePolicy="Fixed" SuggestedWidth="176" SuggestedHeight="300"							HorizontalAlignment="Center" VerticalAlignment="Bottom"										BodyProperties="@BodyProperties" IsFemale="@IsFemale"										EquipmentCode="@EquipmentCode" CharStringId="@CharStringId"									StanceIndex="@StanceIndex" BannerCodeText="@BannerCodeText"									MountCreationKey="@MountCreationKey" IsEnabled="false"										ArmorColor1="@ArmorColor1"			ArmorColor2="@ArmorColor2"/>
+												<ButtonWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren"					HorizontalAlignment="Center" VerticalAlignment="Bottom"										Brush="ButtonBrush1" Command.Click="RecuritUnit2" IsEnabled="true">
+													<Children>
+														<RichTextWidget DoNotAcceptEvents="true"														WidthSizePolicy="CoverChildren"																HeightSizePolicy="CoverChildren" HorizontalAlignment="Center"								VerticalAlignment="Center" Brush="OverlayPopup.ButtonText"									Brush.FontSize="20" Text="Recruit" />
+													</Children>
+												</ButtonWidget>
+												<ListPanel DataSource="{ArmorsList2}" WidthSizePolicy="CoverChildren"							HeightSizePolicy="CoverChildren" VerticalAlignment="Bottom"									HorizontalAlignment="Left"																	StackLayout.LayoutMethod="VerticalBottomToTop ">
+													<ItemTemplate>
+														<EquipmentTypeVisualWidget WidthSizePolicy="Fixed"												HeightSizePolicy="Fixed" SuggestedWidth="35" SuggestedHeight="35"							HorizontalAlignment="Left" MarginLeft="15" MarginBottom="5"									Brush="EquipmentType.Image" Command.HoverBegin="ExecuteBeginHint"							Command.HoverEnd="ExecuteEndHint" IsVisible="@HasItem"										Type="@Type" />
+													</ItemTemplate>
+												</ListPanel>
+												<ListPanel DataSource="{WeaponsList2}" WidthSizePolicy="CoverChildren"							HeightSizePolicy="CoverChildren" VerticalAlignment="Bottom"									HorizontalAlignment="Right"																	StackLayout.LayoutMethod="VerticalBottomToTop">
+													<ItemTemplate>
+														<EquipmentTypeVisualWidget WidthSizePolicy="Fixed"												HeightSizePolicy="Fixed" SuggestedWidth="35" SuggestedHeight="35"							HorizontalAlignment="Right" MarginRight="15" MarginBottom="5"								Brush="EquipmentType.Image" Command.HoverBegin="ExecuteBeginHint"							Command.HoverEnd="ExecuteEndHint" IsVisible="@HasItem"										Type="@Type" />
+													</ItemTemplate>
+												</ListPanel>
+											</Children>
+										</Widget>
+										<GridWidget DataSource="{Skills2}" WidthSizePolicy = "CoverChildren" HeightSizePolicy =			"CoverChildren" DefaultCellWidth="45" HorizontalAlignment="Center"							VerticalAlignment="Bottom"	DefaultCellHeight="60" ColumnCount="4"								StackLayout.LayoutMethod="BottomToTop">
+											<ItemTemplate>
+												<SkillIconVisualWidget WidthSizePolicy = "StretchToParent" HeightSizePolicy =					"StretchToParent" SkillId="@SkillId" MarginBottom="20"										UseSmallestVariation="true" MarginLeft="5">
+													<Children>
+														<TextWidget WidthSizePolicy = "StretchToParent" HeightSizePolicy =								"Fixed"	SuggestedHeight="20" IntText="@SkillValue"											VerticalAlignment="Bottom" HorizontalAlignment="Center"										Brush="Encyclopedia.Skill.Text"																Brush.FontSize="20" PositionYOffset="20"  ClipContents="false"/>
+													</Children>
+												</SkillIconVisualWidget>
+											</ItemTemplate>
+										</GridWidget>
+									</Children>
+								</Widget>
+								<Widget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed"  SuggestedHeight="480" SuggestedWidth="226" VerticalAlignment="Top">
+									<Children>
+										<Widget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed"				SuggestedHeight="350" SuggestedWidth="226" VerticalAlignment="Top">
+											<Children>
+												<RichTextWidget WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren"						SuggestedWidth="176" HorizontalAlignment="Center" VerticalAlignment="Top"					Brush="Recruitment.Popup.Title.Text" Brush.FontSize="32" IsDisabled="true"					Text="Skeleton Spearman" />
+												<CharacterTableauWidget DataSource="{UnitCharacter3}" WidthSizePolicy="Fixed"					HeightSizePolicy="Fixed" SuggestedWidth="176" SuggestedHeight="300"							HorizontalAlignment="Center" VerticalAlignment="Bottom"										BodyProperties="@BodyProperties" IsFemale="@IsFemale"										EquipmentCode="@EquipmentCode" CharStringId="@CharStringId"									StanceIndex="@StanceIndex" BannerCodeText="@BannerCodeText"									MountCreationKey="@MountCreationKey" IsEnabled="false"										ArmorColor1="@ArmorColor1"			ArmorColor2="@ArmorColor2"/>
+												<ButtonWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren"					HorizontalAlignment="Center" VerticalAlignment="Bottom"										Brush="ButtonBrush1" Command.Click="RecuritUnit3" IsEnabled="true">
+													<Children>
+														<RichTextWidget DoNotAcceptEvents="true"														WidthSizePolicy="CoverChildren"																HeightSizePolicy="CoverChildren" HorizontalAlignment="Center"								VerticalAlignment="Center" Brush="OverlayPopup.ButtonText"									Brush.FontSize="20" Text="Recruit" />
+													</Children>
+												</ButtonWidget>
+												<ListPanel DataSource="{ArmorsList3}" WidthSizePolicy="CoverChildren"							HeightSizePolicy="CoverChildren" VerticalAlignment="Bottom"									HorizontalAlignment="Left"																	StackLayout.LayoutMethod="VerticalBottomToTop ">
+													<ItemTemplate>
+														<EquipmentTypeVisualWidget WidthSizePolicy="Fixed"												HeightSizePolicy="Fixed" SuggestedWidth="35" SuggestedHeight="35"							HorizontalAlignment="Left" MarginLeft="15" MarginBottom="5"									Brush="EquipmentType.Image" Command.HoverBegin="ExecuteBeginHint"							Command.HoverEnd="ExecuteEndHint" IsVisible="@HasItem"										Type="@Type" />
+													</ItemTemplate>
+												</ListPanel>
+												<ListPanel DataSource="{WeaponsList3}" WidthSizePolicy="CoverChildren"							HeightSizePolicy="CoverChildren" VerticalAlignment="Bottom"									HorizontalAlignment="Right"																	StackLayout.LayoutMethod="VerticalBottomToTop">
+													<ItemTemplate>
+														<EquipmentTypeVisualWidget WidthSizePolicy="Fixed"												HeightSizePolicy="Fixed" SuggestedWidth="35" SuggestedHeight="35"							HorizontalAlignment="Right" MarginRight="15" MarginBottom="5"								Brush="EquipmentType.Image" Command.HoverBegin="ExecuteBeginHint"							Command.HoverEnd="ExecuteEndHint" IsVisible="@HasItem"										Type="@Type" />
+													</ItemTemplate>
+												</ListPanel>
+											</Children>
+										</Widget>
+										<GridWidget DataSource="{Skills3}" WidthSizePolicy = "CoverChildren" HeightSizePolicy =			"CoverChildren" DefaultCellWidth="45" HorizontalAlignment="Center"							VerticalAlignment="Bottom"	DefaultCellHeight="60" ColumnCount="4"								StackLayout.LayoutMethod="BottomToTop">
+											<ItemTemplate>
+												<SkillIconVisualWidget WidthSizePolicy = "StretchToParent" HeightSizePolicy =					"StretchToParent" SkillId="@SkillId" MarginBottom="20"										UseSmallestVariation="true" MarginLeft="5">
+													<Children>
+														<TextWidget WidthSizePolicy = "StretchToParent" HeightSizePolicy =								"Fixed"	SuggestedHeight="20" IntText="@SkillValue"											VerticalAlignment="Bottom" HorizontalAlignment="Center"										Brush="Encyclopedia.Skill.Text"																Brush.FontSize="20" PositionYOffset="20"  ClipContents="false"/>
+													</Children>
+												</SkillIconVisualWidget>
+											</ItemTemplate>
+										</GridWidget>
+									</Children>
+								</Widget>
+								<Widget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed"  SuggestedHeight="480" SuggestedWidth="226" VerticalAlignment="Top">
+									<Children>
+										<Widget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed"				SuggestedHeight="350" SuggestedWidth="226" VerticalAlignment="Top">
+											<Children>
+												<RichTextWidget WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren"						SuggestedWidth="176" HorizontalAlignment="Center" VerticalAlignment="Top"					Brush="Recruitment.Popup.Title.Text" Brush.FontSize="32" IsDisabled="true"					Text="Grave Guard" />
+												<CharacterTableauWidget DataSource="{UnitCharacter4}" WidthSizePolicy="Fixed"					HeightSizePolicy="Fixed" SuggestedWidth="176" SuggestedHeight="300"							HorizontalAlignment="Center" VerticalAlignment="Bottom"										BodyProperties="@BodyProperties" IsFemale="@IsFemale"										EquipmentCode="@EquipmentCode" CharStringId="@CharStringId"									StanceIndex="@StanceIndex" BannerCodeText="@BannerCodeText"									MountCreationKey="@MountCreationKey" IsEnabled="false"										ArmorColor1="@ArmorColor1"			ArmorColor2="@ArmorColor2"/>
+												<ButtonWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren"					HorizontalAlignment="Center" VerticalAlignment="Bottom"										Brush="ButtonBrush1" Command.Click="RecuritUnit4" IsEnabled="true">
+													<Children>
+														<RichTextWidget DoNotAcceptEvents="true"														WidthSizePolicy="CoverChildren"																HeightSizePolicy="CoverChildren" HorizontalAlignment="Center"								VerticalAlignment="Center" Brush="OverlayPopup.ButtonText"									Brush.FontSize="20" Text="Recruit" />
+													</Children>
+												</ButtonWidget>
+												<ListPanel DataSource="{ArmorsList4}" WidthSizePolicy="CoverChildren"							HeightSizePolicy="CoverChildren" VerticalAlignment="Bottom"									HorizontalAlignment="Left"																	StackLayout.LayoutMethod="VerticalBottomToTop ">
+													<ItemTemplate>
+														<EquipmentTypeVisualWidget WidthSizePolicy="Fixed"												HeightSizePolicy="Fixed" SuggestedWidth="35" SuggestedHeight="35"							HorizontalAlignment="Left" MarginLeft="15" MarginBottom="5"									Brush="EquipmentType.Image" Command.HoverBegin="ExecuteBeginHint"							Command.HoverEnd="ExecuteEndHint" IsVisible="@HasItem"										Type="@Type" />
+													</ItemTemplate>
+												</ListPanel>
+												<ListPanel DataSource="{WeaponsList4}" WidthSizePolicy="CoverChildren"							HeightSizePolicy="CoverChildren" VerticalAlignment="Bottom"									HorizontalAlignment="Right"																	StackLayout.LayoutMethod="VerticalBottomToTop">
+													<ItemTemplate>
+														<EquipmentTypeVisualWidget WidthSizePolicy="Fixed"												HeightSizePolicy="Fixed" SuggestedWidth="35" SuggestedHeight="35"							HorizontalAlignment="Right" MarginRight="15" MarginBottom="5"								Brush="EquipmentType.Image" Command.HoverBegin="ExecuteBeginHint"							Command.HoverEnd="ExecuteEndHint" IsVisible="@HasItem"										Type="@Type" />
+													</ItemTemplate>
+												</ListPanel>
+											</Children>
+										</Widget>
+										<GridWidget DataSource="{Skills4}" WidthSizePolicy = "CoverChildren" HeightSizePolicy =			"CoverChildren" DefaultCellWidth="45" HorizontalAlignment="Center"							VerticalAlignment="Bottom"	DefaultCellHeight="60" ColumnCount="4"								StackLayout.LayoutMethod="BottomToTop">
+											<ItemTemplate>
+												<SkillIconVisualWidget WidthSizePolicy = "StretchToParent" HeightSizePolicy =					"StretchToParent" SkillId="@SkillId" MarginBottom="20"										UseSmallestVariation="true" MarginLeft="5">
+													<Children>
+														<TextWidget WidthSizePolicy = "StretchToParent" HeightSizePolicy =								"Fixed"	SuggestedHeight="20" IntText="@SkillValue"											VerticalAlignment="Bottom" HorizontalAlignment="Center"										Brush="Encyclopedia.Skill.Text"																Brush.FontSize="20" PositionYOffset="20"  ClipContents="false"/>
+													</Children>
+												</SkillIconVisualWidget>
+											</ItemTemplate>
+										</GridWidget>
+									</Children>
+								</Widget>
+								<Widget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed"  SuggestedHeight="480" SuggestedWidth="226" VerticalAlignment="Top">
+									<Children>
+										<Widget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed"				SuggestedHeight="350" SuggestedWidth="226" VerticalAlignment="Top">
+											<Children>
+												<RichTextWidget WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren"						SuggestedWidth="176" HorizontalAlignment="Center" VerticalAlignment="Top"					Brush="Recruitment.Popup.Title.Text" Brush.FontSize="32" IsDisabled="true"					Text="Grave Guard with GreatSword" />
+												<CharacterTableauWidget DataSource="{UnitCharacter5}" WidthSizePolicy="Fixed"					HeightSizePolicy="Fixed" SuggestedWidth="176" SuggestedHeight="300"							HorizontalAlignment="Center" VerticalAlignment="Bottom"										BodyProperties="@BodyProperties" IsFemale="@IsFemale"										EquipmentCode="@EquipmentCode" CharStringId="@CharStringId"									StanceIndex="@StanceIndex" BannerCodeText="@BannerCodeText"									MountCreationKey="@MountCreationKey" IsEnabled="false"										ArmorColor1="@ArmorColor1"			ArmorColor2="@ArmorColor2"/>
+												<ButtonWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren"					HorizontalAlignment="Center" VerticalAlignment="Bottom"										Brush="ButtonBrush1" Command.Click="RecuritUnit5" IsEnabled="true">
+													<Children>
+														<RichTextWidget DoNotAcceptEvents="true"														WidthSizePolicy="CoverChildren"																HeightSizePolicy="CoverChildren" HorizontalAlignment="Center"								VerticalAlignment="Center" Brush="OverlayPopup.ButtonText"									Brush.FontSize="20" Text="Recruit" />
+													</Children>
+												</ButtonWidget>
+												<ListPanel DataSource="{ArmorsList5}" WidthSizePolicy="CoverChildren"							HeightSizePolicy="CoverChildren" VerticalAlignment="Bottom"									HorizontalAlignment="Left"																	StackLayout.LayoutMethod="VerticalBottomToTop ">
+													<ItemTemplate>
+														<EquipmentTypeVisualWidget WidthSizePolicy="Fixed"												HeightSizePolicy="Fixed" SuggestedWidth="35" SuggestedHeight="35"							HorizontalAlignment="Left" MarginLeft="15" MarginBottom="5"									Brush="EquipmentType.Image" Command.HoverBegin="ExecuteBeginHint"							Command.HoverEnd="ExecuteEndHint" IsVisible="@HasItem"										Type="@Type" />
+													</ItemTemplate>
+												</ListPanel>
+												<ListPanel DataSource="{WeaponsList5}" WidthSizePolicy="CoverChildren"							HeightSizePolicy="CoverChildren" VerticalAlignment="Bottom"									HorizontalAlignment="Right"																	StackLayout.LayoutMethod="VerticalBottomToTop">
+													<ItemTemplate>
+														<EquipmentTypeVisualWidget WidthSizePolicy="Fixed"												HeightSizePolicy="Fixed" SuggestedWidth="35" SuggestedHeight="35"							HorizontalAlignment="Right" MarginRight="15" MarginBottom="5"								Brush="EquipmentType.Image" Command.HoverBegin="ExecuteBeginHint"							Command.HoverEnd="ExecuteEndHint" IsVisible="@HasItem"										Type="@Type" />
+													</ItemTemplate>
+												</ListPanel>
+											</Children>
+										</Widget>
+										<GridWidget DataSource="{Skills5}" WidthSizePolicy = "CoverChildren" HeightSizePolicy =			"CoverChildren" DefaultCellWidth="45" HorizontalAlignment="Center"							VerticalAlignment="Bottom"	DefaultCellHeight="60" ColumnCount="4"								StackLayout.LayoutMethod="BottomToTop">
+											<ItemTemplate>
+												<SkillIconVisualWidget WidthSizePolicy = "StretchToParent" HeightSizePolicy =					"StretchToParent" SkillId="@SkillId" MarginBottom="20"										UseSmallestVariation="true" MarginLeft="5">
+													<Children>
+														<TextWidget WidthSizePolicy = "StretchToParent" HeightSizePolicy =								"Fixed"	SuggestedHeight="20" IntText="@SkillValue"											VerticalAlignment="Bottom" HorizontalAlignment="Center"										Brush="Encyclopedia.Skill.Text"																Brush.FontSize="20" PositionYOffset="20"  ClipContents="false"/>
+													</Children>
+												</SkillIconVisualWidget>
+											</ItemTemplate>
+										</GridWidget>
+									</Children>
+								</Widget>
+								<Widget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed"  SuggestedHeight="480" SuggestedWidth="226" VerticalAlignment="Top">
+									<Children>
+										<Widget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed"				SuggestedHeight="350" SuggestedWidth="226" VerticalAlignment="Top">
+											<Children>
+												<RichTextWidget WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren"						SuggestedWidth="176" HorizontalAlignment="Center" VerticalAlignment="Top"					Brush="Recruitment.Popup.Title.Text" Brush.FontSize="32" IsDisabled="true"					Text="Cairn Wraith" />
+												<CharacterTableauWidget DataSource="{UnitCharacter6}" WidthSizePolicy="Fixed"					HeightSizePolicy="Fixed" SuggestedWidth="176" SuggestedHeight="300"							HorizontalAlignment="Center" VerticalAlignment="Bottom"										BodyProperties="@BodyProperties" IsFemale="@IsFemale"										EquipmentCode="@EquipmentCode" CharStringId="@CharStringId"									StanceIndex="@StanceIndex" BannerCodeText="@BannerCodeText"									MountCreationKey="@MountCreationKey" IsEnabled="false"										ArmorColor1="@ArmorColor1"			ArmorColor2="@ArmorColor2"/>
+												<ButtonWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren"					HorizontalAlignment="Center" VerticalAlignment="Bottom"										Brush="ButtonBrush1" Command.Click="RecuritUnit6" IsEnabled="true">
+													<Children>
+														<RichTextWidget DoNotAcceptEvents="true"														WidthSizePolicy="CoverChildren"																HeightSizePolicy="CoverChildren" HorizontalAlignment="Center"								VerticalAlignment="Center" Brush="OverlayPopup.ButtonText"									Brush.FontSize="20" Text="Recruit" />
+													</Children>
+												</ButtonWidget>
+												<ListPanel DataSource="{ArmorsList6}" WidthSizePolicy="CoverChildren"							HeightSizePolicy="CoverChildren" VerticalAlignment="Bottom"									HorizontalAlignment="Left"																	StackLayout.LayoutMethod="VerticalBottomToTop ">
+													<ItemTemplate>
+														<EquipmentTypeVisualWidget WidthSizePolicy="Fixed"												HeightSizePolicy="Fixed" SuggestedWidth="35" SuggestedHeight="35"							HorizontalAlignment="Left" MarginLeft="15" MarginBottom="5"									Brush="EquipmentType.Image" Command.HoverBegin="ExecuteBeginHint"							Command.HoverEnd="ExecuteEndHint" IsVisible="@HasItem"										Type="@Type" />
+													</ItemTemplate>
+												</ListPanel>
+												<ListPanel DataSource="{WeaponsList6}" WidthSizePolicy="CoverChildren"							HeightSizePolicy="CoverChildren" VerticalAlignment="Bottom"									HorizontalAlignment="Right"																	StackLayout.LayoutMethod="VerticalBottomToTop">
+													<ItemTemplate>
+														<EquipmentTypeVisualWidget WidthSizePolicy="Fixed"												HeightSizePolicy="Fixed" SuggestedWidth="35" SuggestedHeight="35"							HorizontalAlignment="Right" MarginRight="15" MarginBottom="5"								Brush="EquipmentType.Image" Command.HoverBegin="ExecuteBeginHint"							Command.HoverEnd="ExecuteEndHint" IsVisible="@HasItem"										Type="@Type" />
+													</ItemTemplate>
+												</ListPanel>
+											</Children>
+										</Widget>
+										<GridWidget DataSource="{Skills6}" WidthSizePolicy = "CoverChildren" HeightSizePolicy =			"CoverChildren" DefaultCellWidth="45" HorizontalAlignment="Center"							VerticalAlignment="Bottom"	DefaultCellHeight="60" ColumnCount="4"								StackLayout.LayoutMethod="BottomToTop">
+											<ItemTemplate>
+												<SkillIconVisualWidget WidthSizePolicy = "StretchToParent" HeightSizePolicy =					"StretchToParent" SkillId="@SkillId" MarginBottom="20"										UseSmallestVariation="true" MarginLeft="5">
+													<Children>
+														<TextWidget WidthSizePolicy = "StretchToParent" HeightSizePolicy =								"Fixed"	SuggestedHeight="20" IntText="@SkillValue"											VerticalAlignment="Bottom" HorizontalAlignment="Center"										Brush="Encyclopedia.Skill.Text"																Brush.FontSize="20" PositionYOffset="20"  ClipContents="false"/>
+													</Children>
+												</SkillIconVisualWidget>
+											</ItemTemplate>
+										</GridWidget>
+									</Children>
+								</Widget>
+							</Children>
+						</ListPanel>
+
+						<ListPanel WidthSizePolicy = "StretchToParent" HeightSizePolicy = "CoverChildren" VerticalAlignment="Bottom" MarginLeft="10" StackLayout.LayoutMethod="VerticalBottomToTop">
+							<Children>
+
+								<!--<TextWidget HeightSizePolicy="CoverChildren" WidthSizePolicy="StretchToParent" Text="@TraitsText" HorizontalAlignment="Center"/>-->
+
+								<TextWidget HeightSizePolicy="CoverChildren" WidthSizePolicy="StretchToParent" Text="@SkillsText" HorizontalAlignment="Center" ClipContents="false"/>
+
+							</Children>
+						</ListPanel>
+
+					</Children>
+				</BrushWidget>
+
+				<!--button-->
+				<ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginTop="950">
+					<Children>
+						<ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedHeight="48" SuggestedWidth="240" HorizontalAlignment="Center" VerticalAlignment="Bottom" Brush="ButtonBrush1" Command.Click="Close" IsEnabled="true">
+							<Children>
+								<RichTextWidget DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="OverlayPopup.ButtonText" Brush.FontSize="20" Text="Close" />
+							</Children>
+						</ButtonWidget>
+					</Children>
+				</ListPanel>
+
+			</Children>
+		</Widget>
+	</Window>
+</Prefab>

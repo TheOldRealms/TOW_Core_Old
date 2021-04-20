@@ -1,11 +1,11 @@
-﻿using HarmonyLib;
-using System.IO;
+using HarmonyLib;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.MountAndBlade;
 using TOW_Core.Texts;
 using TOW_Core.CustomBattles;
 using NLog;
+using System;
 using NLog.Targets;
 using NLog.Config;
 using TOW_Core.Battle.AttributeSystem;
@@ -44,6 +44,20 @@ namespace TOW_Core
             LoadAttributes();
         }
 
+
+        protected override void OnApplicationTick(float dt)
+        {
+            try
+            {
+                base.OnApplicationTick(dt);
+                RaiseDeadBehavior.CreateRaiseDeadButton();
+            }
+            catch(Exception ex)
+            {
+
+            }
+        }
+
         public override void OnMissionBehaviourInitialize(Mission mission)
         {
             base.OnMissionBehaviourInitialize(mission);
@@ -51,7 +65,7 @@ namespace TOW_Core
             InitializeAttributeSystemForMission(mission);
         }
 
-        private void InitializeAttributeSystemForMission(Mission mission)
+            private void InitializeAttributeSystemForMission(Mission mission)
         {
             mission.AddMissionBehaviour(new AttributeSystemMissionLogic());
 
@@ -68,7 +82,7 @@ namespace TOW_Core
 
         private static void ConfigureLogging()
         {
-            var path = Path.Combine(BasePath.Name, "Modules/TOW_Core/Logs/${LogHome}${date:format=yyyy}/${date:format=MMMM}/${date:format=dd}/TOW_log${shortdate}.txt");
+            var path = System.IO.Path.Combine(BasePath.Name, "Modules/TOW_Core/Logs/${LogHome}${date:format=yyyy}/${date:format=MMMM}/${date:format=dd}/TOW_log${shortdate}.txt");
             var config = new LoggingConfiguration();
 
             // Log debug/exception info to the log file
@@ -79,7 +93,6 @@ namespace TOW_Core
             var logdebugger = new DebuggerTarget("logdebugger");
             config.AddRule(LogLevel.Info, LogLevel.Fatal, logdebugger);
 
-            LogManager.Configuration = config;
         }
     }
 }
