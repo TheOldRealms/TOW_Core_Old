@@ -1,0 +1,17 @@
+<Prefab>
+	<Window>
+		<Widget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" VerticalAlignment="Center" HorizontalAlignment="Right" Sprite="BlankWhiteSquare_9" Color="#999999FF" AlphaFactor="0.0">
+			<Children>
+				<ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Right" VerticalAlignment="Center">
+					<Children>
+						<ButtonWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Right" VerticalAlignment="Bottom" Brush="ButtonBrush1" Command.Click="Click" IsEnabled="true">
+							<Children>
+								<RichTextWidget DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Right" VerticalAlignment="Center" Brush="OverlayPopup.ButtonText" Brush.FontSize="20" Text="Raise Dead" />
+							</Children>
+						</ButtonWidget>
+					</Children>
+				</ListPanel>
+			</Children>
+		</Widget>
+	</Window>
+</Prefab>
