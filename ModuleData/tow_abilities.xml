@@ -2,6 +2,6 @@
 <ArrayOfCharacterAbilityTuple xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<CharacterAbilityTuple CharacterID="karlfranz">
 		<Abilities>TOW_Core.Abilities.FireBallAbility</Abilities>
-		<Abilities>TOW_Core.Abilities.FlameStormAbility</Abilities>
+		<Abilities>TOW_Core.Abilities.WindOfDeathAbility</Abilities>
 	</CharacterAbilityTuple>
 </ArrayOfCharacterAbilityTuple>

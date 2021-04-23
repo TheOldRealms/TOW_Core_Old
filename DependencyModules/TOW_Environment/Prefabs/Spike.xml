@@ -1,0 +1,124 @@
+<prefabs>
+	<game_entity season_mask="255" old_prefab_name="" name="VC_Spike">
+		<children>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_cross_piece">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_cross_piece"/>
+				</components>
+				<physics mass="1.000" override_material="metal"/>
+				<transform rotation_euler="0.327, -0.138, -0.098" position="2.085, -0.347, 0.324"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_001">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_001"/>
+				</components>
+				<physics mass="1.000" override_material="metal"/>
+				<transform scale="0.247, 0.247, 0.247" rotation_euler="1.052, -0.231, 0.008" position="2.382, -0.210, 0.250"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_001">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_001"/>
+				</components>
+				<physics mass="1.000" override_material="metal"/>
+				<transform scale="0.247, 0.247, 0.247" rotation_euler="0.403, -0.123, -0.144" position="1.981, -0.182, 0.237"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_001">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_001"/>
+				</components>
+				<physics mass="1.000" override_material="metal"/>
+				<transform scale="0.247, 0.247, 0.247" rotation_euler="0.403, -0.123, -0.144" position="1.386, -0.102, 0.140"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_001">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_001"/>
+				</components>
+				<physics mass="1.000" override_material="metal"/>
+				<transform scale="0.247, 0.247, 0.247" rotation_euler="0.403, -0.123, -0.144" position="0.664, 0.030, 0.022"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_001">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_001"/>
+				</components>
+				<physics mass="1.000" override_material="metal"/>
+				<transform scale="0.247, 0.247, 0.247" rotation_euler="1.240, -0.356, 0.145" position="-0.131, 0.120, -0.083"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_001">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_001"/>
+				</components>
+				<physics mass="1.000" override_material="metal"/>
+				<transform scale="0.247, 0.247, 0.247" rotation_euler="0.873, -0.177, -0.056" position="-0.517, 0.153, -0.130"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_002">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_002"/>
+				</components>
+				<physics mass="1.000" override_material="metal"/>
+				<transform scale="1.306, 1.306, 1.306" rotation_euler="0.366, -1.402, 1.362" position="2.284, -0.096, 0.235"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_002">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_002"/>
+				</components>
+				<physics mass="1.000" override_material="metal"/>
+				<transform scale="1.306, 1.306, 1.306" rotation_euler="0.348, -0.894, 1.261" position="2.518, -0.207, 0.230"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_002">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_002"/>
+				</components>
+				<physics mass="1.000" override_material="metal"/>
+				<transform scale="1.306, 1.306, 1.306" rotation_euler="0.287, -0.870, 1.183" position="1.624, -0.060, 0.084"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_002">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_002"/>
+				</components>
+				<physics mass="1.000" override_material="metal"/>
+				<transform scale="0.835, 0.835, 0.835" rotation_euler="0.005, -1.105, 1.463" position="1.248, -0.080, 0.062"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_002">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_002"/>
+				</components>
+				<physics mass="1.000" override_material="metal"/>
+				<transform scale="0.835, 0.835, 0.835" rotation_euler="0.034, -0.848, 1.497" position="1.000, -0.012, 0.065"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_002">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_002"/>
+				</components>
+				<physics mass="1.000" override_material="metal"/>
+				<transform scale="0.835, 0.835, 0.835" rotation_euler="-0.095, -1.050, 1.274" position="0.297, 0.071, -0.043"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_002">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_002"/>
+				</components>
+				<physics mass="1.000" override_material="metal"/>
+				<transform scale="0.835, 0.835, 0.835" rotation_euler="-0.156, -0.900, 1.165" position="0.055, 0.182, -0.126"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_002">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_002"/>
+				</components>
+				<physics mass="1.000" override_material="metal"/>
+				<transform scale="0.835, 0.835, 0.835" rotation_euler="-0.036, -0.885, 1.314" position="-0.313, 0.201, -0.171"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_002">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_002"/>
+				</components>
+				<physics mass="1.000" override_material="metal"/>
+				<transform scale="0.835, 0.835, 0.835" rotation_euler="0.873, -0.177, -0.056" position="-0.694, 0.188, -0.152"/>
+			</game_entity>
+		</children>
+		<components>
+			<meta_mesh_component name="roof_long_spikes_cross_piece"/>
+		</components>
+		<physics mass="1.000" override_material="metal"/>
+		<transform scale="6.244, 6.244, 6.244" rotation_euler="-0.838, 0.333, 0.288" position="625.212, 489.083, 62.682"/>
+	</game_entity>
+</prefabs>
+

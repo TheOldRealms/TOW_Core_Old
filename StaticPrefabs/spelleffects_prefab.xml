@@ -93,6 +93,23 @@
 		</components>
 	</game_entity>
 
+	<game_entity name="wind_of_death_vfx" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<particle_system_instanced_component>
+				<effect base_effect="{1E1495D4-BC75-47F7-BB81-56C4BEAD3E4A}">
+					<emitter_overrides>
+						<emitter guid="{178590E9-F9CF-4580-8983-6A54DE328A3E}">
+							<parameters>
+								<parameter name="quad_scale" value="0.080, 0.080"/>
+							</parameters>
+						</emitter>
+					</emitter_overrides>
+				</effect>
+			</particle_system_instanced_component>
+		</components>
+	</game_entity>
 
 </prefabs>
 

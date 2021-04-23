@@ -1,0 +1,179 @@
+<prefabs>
+	<!-- Empire Building Details -->
+	<!-- Skulls -->
+	<game_entity name="skull_002" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_skull_002" override_material="stone" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="skull_002"/>
+		</components>
+	</game_entity>
+	<game_entity name="skull_002_jaw" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics override_material="stone" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="skull_002_jaw"/>
+		</components>
+	</game_entity>
+	<game_entity name="skull_002_top" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_skull_002_top" override_material="stone" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="skull_002_top"/>
+		</components>
+	</game_entity>
+	<game_entity name="skull_002_mountain" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_skull_002_mountain" override_material="stone" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="skull_002_mountain"/>
+		</components>
+	</game_entity>
+	<game_entity name="skull_002_top_mountain" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_skull_002_top_mountain" override_material="stone" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="skull_002_top_mountain"/>
+		</components>
+	</game_entity>
+
+	<!-- roof_stuff -->
+	<!-- chimneys -->
+	<game_entity name="chimney_001" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics override_material="metal" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="chimney_001"/>
+		</components>
+	</game_entity>
+	<game_entity name="chimney_002" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics override_material="metal" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="chimney_002"/>
+		</components>
+	</game_entity>
+	<game_entity name="chimney_003" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics override_material="metal" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="chimney_003"/>
+		</components>
+	</game_entity>
+	<game_entity name="chimney_connector_001" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics override_material="metal" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="chimney_connector_001"/>
+		</components>
+	</game_entity>
+	<game_entity name="chimney_connector_002" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics override_material="metal" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="chimney_connector_002"/>
+		</components>
+	</game_entity>
+	<game_entity name="chimney_connector_003" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics override_material="metal" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="chimney_connector_003"/>
+		</components>
+	</game_entity>
+	<game_entity name="chimney_connector_004" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics override_material="metal" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="chimney_connector_004"/>
+		</components>
+	</game_entity>
+	<game_entity name="chimney_roof_001" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics override_material="metal" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="chimney_roof_001"/>
+		</components>
+	</game_entity>
+	<game_entity name="chimney_roof_002" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics override_material="metal" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="chimney_roof_002"/>
+		</components>
+	</game_entity>
+	<game_entity name="chimney_roof_003" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics override_material="metal" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="chimney_roof_003"/>
+		</components>
+	</game_entity>
+	<game_entity name="chimney_roof_004" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics override_material="metal" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="chimney_roof_004"/>
+		</components>
+	</game_entity>
+	<!-- roof_spikes -->
+	<game_entity name="roof_spikes_001" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics override_material="metal" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="roof_spikes_001"/>
+		</components>
+	</game_entity>
+	<game_entity name="roof_spikes_002" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics override_material="metal" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="roof_spikes_002"/>
+		</components>
+	</game_entity>
+	<game_entity name="roof_spikes_003" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics override_material="metal" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="roof_spikes_003"/>
+		</components>
+	</game_entity>
+	<game_entity name="roof_spikes_004" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics override_material="metal" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="roof_spikes_004"/>
+		</components>
+	</game_entity>
+	<game_entity name="roof_spikes_005" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics override_material="metal" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="roof_spikes_005"/>
+		</components>
+	</game_entity>
+	<game_entity name="roof_long_spikes_001" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_roof_long_spikes_001" override_material="metal" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="roof_long_spikes_001"/>
+		</components>
+	</game_entity>
+	<game_entity name="roof_long_spikes_002" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_roof_long_spikes_002" override_material="metal" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="roof_long_spikes_002"/>
+		</components>
+	</game_entity>
+	<game_entity name="roof_long_spikes_cross_piece" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_roof_long_spikes_cross_piece" override_material="metal" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="roof_long_spikes_cross_piece"/>
+		</components>
+	</game_entity>
+
+	
+</prefabs>
+

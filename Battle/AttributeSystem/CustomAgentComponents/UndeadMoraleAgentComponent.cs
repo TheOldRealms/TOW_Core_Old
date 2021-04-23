@@ -34,8 +34,8 @@ namespace TOW_Core.Battle.AttributeSystem.CustomAgentComponents
             }
             set
             {
-                _iscrumbling = value;
                 if (value == true) StartedCrumbling?.Invoke();
+                _iscrumbling = value;
             }
         }
 

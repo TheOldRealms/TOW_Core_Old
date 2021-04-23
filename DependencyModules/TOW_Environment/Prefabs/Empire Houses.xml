@@ -1,0 +1,900 @@
+<prefabs>
+	<game_entity season_mask="255" old_prefab_name="" name="EMP01">
+		<additional_features>
+			<feature value="true" name="apply_factor_color_to_all_components">
+				<factor value="1.000, 1.000, 1.000, 1.000"/>
+			</feature>
+		</additional_features>
+		<children>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_plank_a">
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_a"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_plank_a"/>
+				<transform scale="0.930, 0.930, 0.930" rotation_euler="0.984, 0.237, -1.908" position="-19.222, 3.639, 16.053"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="module_european_floor_e">
+				<components>
+					<meta_mesh_component name="module_european_floor_e"/>
+				</components>
+				<physics mass="1.000" shape="bo_module_european_floor_e"/>
+				<transform scale="0.421, 0.421, 0.421" rotation_euler="-0.063, 0.950, -3.026" position="-19.902, 4.518, 15.905"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="european_city_part_h_door">
+				<components>
+					<meta_mesh_component name="european_city_part_h_door"/>
+				</components>
+				<physics mass="1.000" shape="bo_european_city_part_h_door"/>
+				<transform scale="0.930, 0.930, 0.930" rotation_euler="0.000, 0.000, -0.053" position="-11.982, -1.824, 9.113"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="module_wall_plank_a">
+				<components>
+					<meta_mesh_component name="module_wall_plank_a"/>
+				</components>
+				<physics mass="1.000" shape="bo_module_wall_plank_a"/>
+				<transform scale="0.809, 0.809, 0.809" rotation_euler="-1.193, -1.637, -0.012" position="-15.445, 20.481, 4.076"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="european_castle_keep_part_b">
+				<components>
+					<meta_mesh_component name="european_castle_keep_part_b"/>
+				</components>
+				<physics mass="1.000" override_material="wood" shape="bo_european_castle_keep_part_b"/>
+				<transform scale="0.660, 0.660, 0.603" rotation_euler="0.000, 0.000, 3.035" position="-14.637, 20.546, 6.573"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_heap_a">
+				<components>
+					<meta_mesh_component name="wooden_platform_heap_a"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_heap_a"/>
+				<transform scale="1.786, 1.786, 1.786" rotation_euler="0.893, 0.974, 2.959" position="-3.122, 18.319, 11.270"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="khuzait_platform_wooden_c">
+				<components>
+					<meta_mesh_component name="khuzait_platform_wooden_c"/>
+				</components>
+				<physics mass="1.000" override_material="wood" shape="bo_khuzait_platform_wooden_c"/>
+				<transform scale="1.133, 1.133, 1.133" rotation_euler="0.003, -1.556, -1.626" position="-8.870, 20.491, 12.082"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="khuzait_platform_wooden_c">
+				<components>
+					<meta_mesh_component name="khuzait_platform_wooden_c"/>
+				</components>
+				<physics mass="1.000" override_material="wood" shape="bo_khuzait_platform_wooden_c"/>
+				<transform scale="1.098, 1.098, 1.098" rotation_euler="0.003, -1.556, -1.626" position="-5.121, 20.285, 12.094"/>
+			</game_entity>
+			<game_entity occlusion_body_name="bo_occ_house_f" season_mask="255" old_prefab_name="" name="european_city_house_f">
+				<components>
+					<meta_mesh_component name="house_f"/>
+				</components>
+				<physics mass="1.000" shape="bo_house_f"/>
+				<transform scale="0.673, 0.673, 1.180" rotation_euler="0.000, 0.000, -3.135" position="-5.014, 14.605, 7.655"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_plank_a">
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_a"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_plank_a"/>
+				<transform scale="0.930, 0.930, 0.930" rotation_euler="1.173, -0.042, -1.531" position="-20.974, 8.653, 11.262"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_plank_a">
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_a"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_plank_a"/>
+				<transform scale="0.930, 0.930, 0.930" rotation_euler="1.173, -0.042, -1.531" position="-20.971, 6.585, 11.296"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_plank_a">
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_a"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_plank_a"/>
+				<transform scale="0.930, 0.930, 0.930" rotation_euler="1.026, -0.017, -1.580" position="-21.041, 2.701, 11.362"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_plank_a">
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_a"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_plank_a"/>
+				<transform scale="0.930, 0.930, 0.930" rotation_euler="0.000, 1.517, 3.125" position="-20.839, 4.614, 12.337"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_heap_a">
+				<components>
+					<meta_mesh_component name="wooden_platform_heap_a"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_heap_a"/>
+				<transform scale="0.930, 0.930, 0.930" rotation_euler="0.074, -0.082, -2.014" position="-20.881, -1.515, 11.006"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="arabian_platform_wooden_c">
+				<components>
+					<meta_mesh_component name="arabian_platform_wooden_c"/>
+				</components>
+				<physics mass="1.000" override_material="wood" shape="bo_arabian_platform_wooden_c"/>
+				<transform scale="0.930, 0.930, 0.930" rotation_euler="0.000, 0.000, -1.573" position="-16.728, 6.543, 17.730"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="arabian_platform_wooden_c">
+				<components>
+					<meta_mesh_component name="arabian_platform_wooden_c"/>
+				</components>
+				<physics mass="1.000" override_material="wood" shape="bo_arabian_platform_wooden_c"/>
+				<transform scale="0.930, 0.930, 0.930" rotation_euler="0.000, 0.000, -1.573" position="-16.734, 3.816, 17.730"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="ambient_sound_emitter">
+				<scripts>
+					<script name="AmbientSoundEmitter">
+						<variables>
+							<variable value="Box" name="Trigger Shape"/>
+							<variable value="true" name="Is Triggered"/>
+							<variable value="false" name="Is Master Supressor"/>
+							<variable value="false" name="Is Master Sound"/>
+							<variable value="" name="Overrided Event Path (Siege)"/>
+							<variable value="" name="Overrided Event Path (Winter)"/>
+							<variable value="" name="Overrided Event Path (Fall)"/>
+							<variable value="" name="Overrided Event Path (Summer)"/>
+							<variable value="" name="Overrided Event Path (Spring)"/>
+							<variable value="1.000000" name="Overrided Pitch"/>
+							<variable value="0.000000" name="Overrided Volume"/>
+							<variable value="0.000000" name="Overrided Min Distance"/>
+							<variable value="0.000000" name="Overrided Max Distance"/>
+							<variable value="false" name="Is Static"/>
+							<variable value="true" name="Play On Startup"/>
+							<variable value="false" name="Overrided Parameters"/>
+							<variable value="event:/mission/ambient/reverb/wood_interior" name="Event Path"/>
+						</variables>
+					</script>
+				</scripts>
+				<physics mass="1.000"/>
+				<transform scale="5.363, 4.145, 2.220" rotation_euler="0.000, 0.000, 3.116" position="-14.674, 8.170, 9.407"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="european_city_part_b">
+				<components>
+					<meta_mesh_component name="european_city_part_b"/>
+				</components>
+				<physics mass="1.000" shape="bo_european_city_part_a"/>
+				<transform scale="0.930, 0.930, 0.930" rotation_euler="0.000, 0.000, 1.591" position="4.898, 12.784, 0.000"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="castle_scaffold_b">
+				<children>
+					<game_entity season_mask="255" old_prefab_name="" name="castle_scaffold_b_03">
+						<components>
+							<meta_mesh_component name="castle_scaffold_b_03"/>
+						</components>
+						<physics mass="1.000" shape="bo_castle_scaffold_b_03"/>
+					</game_entity>
+					<game_entity season_mask="255" old_prefab_name="" name="castle_scaffold_b_02">
+						<components>
+							<meta_mesh_component name="castle_scaffold_b_02"/>
+						</components>
+						<physics mass="1.000" shape="bo_castle_scaffold_b_02"/>
+					</game_entity>
+					<game_entity season_mask="255" old_prefab_name="" name="castle_scaffold_b_01">
+						<components>
+							<meta_mesh_component name="castle_scaffold_b_01"/>
+						</components>
+						<physics mass="1.000" shape="bo_castle_scaffold_b_01"/>
+					</game_entity>
+					<game_entity season_mask="255" old_prefab_name="" name="castle_scaffold_b_00">
+						<components>
+							<meta_mesh_component name="castle_scaffold_b_00"/>
+						</components>
+						<physics mass="1.000" shape="bo_castle_scaffold_b_00"/>
+					</game_entity>
+				</children>
+				<components>
+					<meta_mesh_component name="castle_scaffold_b"/>
+				</components>
+				<physics mass="1.000" shape="bo_castle_scaffold_b"/>
+				<transform scale="0.930, 0.930, 0.930" rotation_euler="0.035, -0.048, -1.642" position="-12.086, -3.100, 9.290"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_plank_a">
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_a"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_plank_a"/>
+				<transform scale="1.643, 1.643, 1.643" rotation_euler="0.000, 0.686, 2.430" position="-16.886, 9.579, 15.583"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_plank_a">
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_a"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_plank_a"/>
+				<transform scale="1.638, 1.638, 1.638" rotation_euler="-0.255, 0.709, -2.232" position="-16.950, 1.264, 15.624"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_2_plank_a">
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_a"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_2_plank_a"/>
+				<transform scale="1.113, 1.113, 1.113" rotation_euler="0.448, -0.911, -2.731" position="0.469, 16.717, 13.993"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_2_plank_a">
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_a"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_2_plank_a"/>
+				<transform scale="1.756, 1.756, 1.756" rotation_euler="-0.084, -0.681, -2.443" position="2.545, 19.128, 11.582"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_2_plank_a">
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_a"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_2_plank_a"/>
+				<transform scale="1.756, 1.756, 1.756" rotation_euler="0.268, -0.787, -2.007" position="-12.784, 17.600, 13.749"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_2_plank_a">
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_a"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_2_plank_a"/>
+				<transform scale="0.930, 0.930, 0.930" rotation_euler="-0.360, -0.791, -1.429" position="-11.742, 18.774, 12.246"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_2_plank_a">
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_a"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_2_plank_a"/>
+				<transform scale="0.930, 0.930, 0.930" rotation_euler="0.183, -0.761, -2.010" position="-11.512, 19.563, 11.310"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="module_european_floor_g">
+				<components>
+					<meta_mesh_component name="module_european_floor_g"/>
+				</components>
+				<physics mass="1.000" shape="bo_module_european_floor_g"/>
+				<transform scale="0.930, 0.930, 0.930" rotation_euler="-0.002, -0.050, -1.581" position="-15.039, 4.334, 17.336"/>
+			</game_entity>
+			<game_entity occlusion_body_name="bo_occ_module_building_stone_vlandia_corner_90_degrees" season_mask="255" old_prefab_name="" name="module_building_stone_vlandia_corner_90_degrees">
+				<components>
+					<meta_mesh_component name="module_building_stone_vlandia_corner_90_degrees"/>
+				</components>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<physics mass="1.000" shape="bo_module_building_stone_vlandia_corner_90_degrees"/>
+				<transform scale="0.532, 0.532, 0.532" rotation_euler="0.000, 0.000, 1.557" position="-18.104, 3.005, 11.930"/>
+			</game_entity>
+			<game_entity occlusion_body_name="bo_occ_module_building_stone_vlandia_corner_90_degrees" season_mask="255" old_prefab_name="" name="module_building_stone_vlandia_corner_90_degrees">
+				<components>
+					<meta_mesh_component name="module_building_stone_vlandia_corner_90_degrees"/>
+				</components>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<physics mass="1.000" shape="bo_module_building_stone_vlandia_corner_90_degrees"/>
+				<transform scale="0.532, 0.532, 0.532" rotation_euler="0.000, 0.000, -0.048" position="-17.951, 7.664, 11.957"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="vlandia_keep_door_a_case">
+				<children>
+					<game_entity season_mask="255" old_prefab_name="" name="vlandia_keep_door_a">
+						<components>
+							<meta_mesh_component name="vlandia_keep_door_a"/>
+						</components>
+						<physics mass="1.000" shape="bo_vlandia_keep_door_a"/>
+						<transform position="0.713, 0.000, 0.000"/>
+					</game_entity>
+				</children>
+				<components>
+					<meta_mesh_component name="vlandia_keep_door_a_case"/>
+				</components>
+				<physics mass="1.000" shape="bo_vlandia_keep_door_a_case"/>
+				<transform scale="1.132, 1.132, 1.132" rotation_euler="0.000, 0.000, -1.517" position="3.916, 16.335, 0.068"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="module_wall_plank_a">
+				<components>
+					<meta_mesh_component name="module_wall_plank_a"/>
+				</components>
+				<physics mass="1.000" shape="bo_module_wall_plank_a"/>
+				<transform scale="0.930, 0.930, 0.930" rotation_euler="0.000, 0.000, -0.881" position="3.890, 18.106, 3.825"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="module_wall_plank_a">
+				<components>
+					<meta_mesh_component name="module_wall_plank_a"/>
+				</components>
+				<physics mass="1.000" shape="bo_module_wall_plank_a"/>
+				<transform scale="0.930, 0.930, 0.930" rotation_euler="0.000, 0.000, -2.850" position="3.939, 14.696, 3.751"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="european_city_part_c">
+				<components>
+					<meta_mesh_component name="european_city_part_c"/>
+				</components>
+				<physics mass="1.000" shape="bo_european_city_part_c"/>
+				<transform scale="0.930, 0.930, 0.930" rotation_euler="0.000, 0.000, 1.645" position="3.908, 16.316, 5.597"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="arabian_house_new_detail_window_a">
+				<components>
+					<meta_mesh_component name="arabian_house_new_detail_window_a"/>
+				</components>
+				<physics mass="1.000" shape="bo_arabian_house_new_detail_window_a"/>
+				<transform scale="1.225, 1.225, 1.225" rotation_euler="0.000, 0.000, -1.598" position="-21.062, 18.263, 5.604"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="arabian_house_new_detail_window_b">
+				<components>
+					<meta_mesh_component name="arabian_house_new_detail_window_b"/>
+				</components>
+				<physics mass="1.000" shape="bo_arabian_house_new_detail_window_b"/>
+				<transform scale="0.930, 0.930, 0.930" rotation_euler="0.000, 0.000, -1.643" position="-20.692, 0.608, 7.191"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="chimney_connector_004">
+				<components>
+					<meta_mesh_component name="chimney_connector_004"/>
+				</components>
+				<physics mass="1.000" override_material="metal"/>
+				<transform scale="3.690, 3.690, 3.690" rotation_euler="0.000, 0.000, 2.449" position="-13.220, 13.270, 17.373"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="chimney_connector_001">
+				<components>
+					<meta_mesh_component name="chimney_connector_001"/>
+				</components>
+				<physics mass="1.000" override_material="metal"/>
+				<transform scale="2.704, 2.704, 2.704" rotation_euler="0.000, 0.000, -2.850" position="-2.413, 13.443, 17.373"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="chimney_001">
+				<components>
+					<meta_mesh_component name="chimney_001"/>
+				</components>
+				<physics mass="1.000" override_material="metal"/>
+				<transform scale="3.492, 3.492, 3.492" rotation_euler="0.153, 0.063, -2.856" position="-14.369, 12.980, 17.671"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="chimney_003">
+				<components>
+					<meta_mesh_component name="chimney_003"/>
+				</components>
+				<physics mass="1.000" override_material="metal"/>
+				<transform scale="3.190, 3.190, 3.190" rotation_euler="0.000, 0.000, -2.850" position="-13.586, 14.159, 16.934"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_2_c">
+				<components>
+					<meta_mesh_component name="wooden_platform_2_c"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_2_c"/>
+				<transform scale="0.930, 0.930, 0.930" rotation_euler="0.014, 1.360, 3.102" position="-20.967, 6.669, 10.130"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_2_c">
+				<components>
+					<meta_mesh_component name="wooden_platform_2_c"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_2_c"/>
+				<transform scale="0.930, 0.930, 0.930" rotation_euler="0.018, 1.360, 3.103" position="-20.843, 11.045, 10.086"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_2_plank_c">
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_c"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_2_plank_a"/>
+				<transform scale="0.930, 0.930, 0.930" rotation_euler="0.033, -0.911, 1.474" position="-3.243, 9.065, 15.505"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_2_plank_c">
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_c"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_2_plank_a"/>
+				<transform scale="0.930, 0.930, 0.930" rotation_euler="-0.068, -0.825, 1.585" position="-3.307, 6.881, 12.836"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_2_plank_c">
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_c"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_2_plank_a"/>
+				<transform scale="0.930, 0.930, 0.930" rotation_euler="-0.041, -0.807, 1.560" position="-3.178, 4.514, 10.293"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_2_plank_b">
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_b"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_2_plank_a"/>
+				<transform scale="0.930, 0.930, 0.930" rotation_euler="0.004, -0.668, 2.415" position="-13.397, 9.580, 16.631"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_2_plank_b">
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_b"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_2_plank_a"/>
+				<transform scale="1.160, 1.160, 1.160" rotation_euler="-0.045, -0.692, 2.473" position="-11.450, 7.903, 14.688"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_2_plank_b">
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_b"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_2_plank_a"/>
+				<transform scale="0.930, 0.930, 0.930" rotation_euler="-0.007, -0.693, 2.428" position="-9.278, 6.205, 12.429"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_2_plank_a">
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_a"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_2_plank_a"/>
+				<transform scale="0.930, 0.930, 0.930" rotation_euler="0.024, 0.849, 1.507" position="-13.357, 16.934, 14.012"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_2_plank_f_column">
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_f_column"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_2_plank_f_column"/>
+				<transform scale="0.930, 0.930, 0.930" rotation_euler="0.000, 0.000, 3.134" position="-14.688, 14.513, 15.158"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_2_plank_f_column">
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_f_column"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_2_plank_f_column"/>
+				<transform scale="0.930, 0.930, 0.930" rotation_euler="0.000, 0.000, -2.850" position="-14.599, 13.333, 17.305"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_c">
+				<components>
+					<meta_mesh_component name="wooden_platform_c"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_c"/>
+				<transform scale="0.930, 0.930, 0.930" rotation_euler="0.793, -0.296, -1.619" position="-16.146, 14.073, 15.437"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_c">
+				<components>
+					<meta_mesh_component name="wooden_platform_c"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_c"/>
+				<transform scale="0.930, 0.930, 0.930" rotation_euler="0.793, -0.296, -1.619" position="-19.022, 14.206, 12.482"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_2_b">
+				<components>
+					<meta_mesh_component name="wooden_platform_2_b"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_2_a"/>
+				<transform scale="0.792, 0.792, 0.792" rotation_euler="0.000, 0.000, 3.124" position="-12.514, 12.559, 17.081"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_2_b">
+				<components>
+					<meta_mesh_component name="wooden_platform_2_b"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_2_a"/>
+				<transform scale="0.792, 0.792, 0.792" rotation_euler="0.000, 0.000, 3.124" position="-8.363, 12.484, 17.081"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_2_b">
+				<components>
+					<meta_mesh_component name="wooden_platform_2_b"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_2_a"/>
+				<transform scale="0.792, 0.792, 0.792" rotation_euler="0.000, 0.000, 3.124" position="-4.168, 12.408, 17.081"/>
+			</game_entity>
+			<game_entity occlusion_body_name="bo_occ_vlandia_arena_main_building" season_mask="255" old_prefab_name="" name="vlandia_arena_main_building">
+				<components>
+					<meta_mesh_component name="vlandia_arena_main_building"/>
+				</components>
+				<physics mass="1.000" shape="bo_vlandia_arena_main_building"/>
+				<transform scale="1.062, 1.062, 1.062" rotation_euler="0.000, 0.000, 3.116" position="-14.739, 5.663, 0.000"/>
+			</game_entity>
+			<game_entity occlusion_body_name="bo_occ_module_european_house_end_a" season_mask="255" old_prefab_name="" name="module_european_house_end_a">
+				<components>
+					<meta_mesh_component name="module_european_house_end_a"/>
+				</components>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<physics mass="1.000" shape="bo_module_european_house_end_a"/>
+				<transform scale="0.930, 0.930, 0.930" rotation_euler="0.000, 0.000, 1.590" position="-8.977, 5.093, 0.000"/>
+			</game_entity>
+			<game_entity occlusion_body_name="bo_occ_module_european_house_part_corner_90_degrees" season_mask="255" old_prefab_name="" name="module_european_house_part_corner_90_degrees">
+				<components>
+					<meta_mesh_component name="module_european_house_part_corner_90_degrees"/>
+				</components>
+				<physics mass="1.000" shape="bo_module_european_house_part_corner_90_degrees"/>
+				<transform scale="0.930, 0.930, 0.930" rotation_euler="0.000, 0.000, 1.613" position="-3.150, 5.210, 0.000"/>
+			</game_entity>
+			<game_entity occlusion_body_name="bo_occ_module_european_house_part_corner_90_degrees" season_mask="255" old_prefab_name="" name="module_european_house_part_corner_90_degrees">
+				<components>
+					<meta_mesh_component name="module_european_house_part_corner_90_degrees"/>
+				</components>
+				<physics mass="1.000" shape="bo_module_european_house_part_corner_90_degrees"/>
+				<transform scale="0.930, 0.930, 0.930" rotation_euler="0.000, 0.000, -3.127" position="3.144, 12.924, 0.000"/>
+			</game_entity>
+			<game_entity occlusion_body_name="bo_occ_module_european_house_end_a" season_mask="255" old_prefab_name="" name="module_european_house_end_a">
+				<components>
+					<meta_mesh_component name="module_european_house_end_a"/>
+				</components>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<physics mass="1.000" shape="bo_module_european_house_end_a"/>
+				<transform scale="0.930, 0.930, 0.930" rotation_euler="0.000, 0.000, -0.038" position="-19.930, 8.751, 0.000"/>
+			</game_entity>
+			<game_entity occlusion_body_name="bo_occ_module_european_house_end_a_windowless" season_mask="255" old_prefab_name="" name="module_european_house_end_a_windowless">
+				<components>
+					<meta_mesh_component name="module_european_house_end_a_windowless"/>
+				</components>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<physics mass="1.000" shape="bo_module_european_house_end_a"/>
+				<transform scale="0.930, 0.930, 0.930" rotation_euler="0.000, 0.000, -1.613" position="-7.549, 19.673, 0.000"/>
+			</game_entity>
+			<game_entity occlusion_body_name="bo_occ_module_european_house_part_corner_90_degrees" season_mask="255" old_prefab_name="" name="module_european_house_part_corner_90_degrees">
+				<components>
+					<meta_mesh_component name="module_european_house_part_corner_90_degrees"/>
+				</components>
+				<physics mass="1.000" shape="bo_module_european_house_part_corner_90_degrees"/>
+				<transform scale="0.930, 0.930, 0.930" rotation_euler="0.000, 0.000, -1.593" position="-12.964, 19.604, 0.000"/>
+			</game_entity>
+		</children>
+		<components>
+			<meta_mesh_component name="vlandia_grandbazaar_shop_a"/>
+		</components>
+		<physics mass="1.000" shape="bo_vlandia_grandbazaar_shop_a"/>
+		<transform scale="1.075, 1.075, 1.075" rotation_euler="0.000, 0.000, 2.850" position="80.735, 133.438, 0.000"/>
+	</game_entity>
+	<game_entity occlusion_body_name="bo_occ_house_a" season_mask="255" old_prefab_name="" name="Empire_House02">
+		<children>
+			<game_entity season_mask="255" old_prefab_name="" name="european_city_part_d">
+				<components>
+					<meta_mesh_component name="european_city_part_d"/>
+				</components>
+				<physics mass="1.000" shape="bo_european_city_part_c"/>
+				<transform scale="1.497, 1.177, 0.886" non_orthogonal_rotation_mat="0.999699, -0.019571, 0.014785, 0.032851, 0.999069, -0.027971, -0.040613, 0.050168, 0.997915" position="-2.370, -5.619, -0.881"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="european_city_part_d">
+				<components>
+					<meta_mesh_component name="european_city_part_d"/>
+				</components>
+				<physics mass="1.000" shape="bo_european_city_part_c"/>
+				<transform scale="1.691, 1.329, 1.000" non_orthogonal_rotation_mat="-0.999919, -0.010328, -0.007392, 0.016719, -0.999860, 0.000124, -0.021134, 0.000000, 0.999777" position="0.325, 13.904, -0.960"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_plank_c">
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_c"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_plank_a"/>
+				<transform scale="2.507, 1.635, 1.846" non_orthogonal_rotation_mat="0.999973, 0.000000, 0.007392, 0.016245, 0.639683, -0.768467, -0.009011, 0.904553, 0.426265" position="-4.423, 13.988, -1.457"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_plank_c">
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_c"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_plank_a"/>
+				<transform scale="2.507, 1.635, 1.846" non_orthogonal_rotation_mat="0.999973, 0.000000, 0.007392, 0.016245, 0.639683, -0.768467, -0.009011, 0.904553, 0.426265" position="3.655, 14.017, -1.414"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_heap_a">
+				<components>
+					<meta_mesh_component name="wooden_platform_heap_a"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_heap_a"/>
+				<transform scale="1.691, 1.083, 1.262" non_orthogonal_rotation_mat="0.999973, 0.000000, 0.007392, 0.017182, 0.582312, -0.812784, -0.007945, 0.926650, 0.375840" position="-7.211, 10.122, 0.931"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_heap_a">
+				<components>
+					<meta_mesh_component name="wooden_platform_heap_a"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_heap_a"/>
+				<transform scale="1.691, 1.083, 1.262" non_orthogonal_rotation_mat="0.999973, 0.000000, 0.007392, 0.017182, 0.582312, -0.812784, -0.007945, 0.926650, 0.375840" position="-10.906, 10.088, 0.891"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_heap_a">
+				<components>
+					<meta_mesh_component name="wooden_platform_heap_a"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_heap_a"/>
+				<transform scale="1.691, 1.083, 1.262" non_orthogonal_rotation_mat="0.999973, 0.000000, 0.007392, 0.017182, 0.582312, -0.812784, -0.007945, 0.926650, 0.375840" position="9.712, 12.486, -0.303"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_heap_a">
+				<components>
+					<meta_mesh_component name="wooden_platform_heap_a"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_heap_a"/>
+				<transform scale="1.691, 1.083, 1.262" non_orthogonal_rotation_mat="0.999973, 0.000000, 0.007392, 0.017182, 0.582312, -0.812784, -0.007945, 0.926650, 0.375840" position="15.837, 12.385, -0.297"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="bd_wood_c">
+				<components>
+					<meta_mesh_component name="bd_wood_c"/>
+				</components>
+				<physics mass="1.000" override_material="wood"/>
+				<transform scale="1.691, 1.329, 1.000" non_orthogonal_rotation_mat="0.999973, 0.000000, 0.007392, 0.000000, 1.000000, 0.000000, -0.021134, 0.000000, 0.999777" position="-3.136, -4.908, -1.732"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="bd_wood_heap_e">
+				<components>
+					<meta_mesh_component name="bd_wood_heap_e"/>
+				</components>
+				<physics mass="1.000" shape="bo_bd_wood_heap_e"/>
+				<transform scale="1.316, 1.688, 1.022" non_orthogonal_rotation_mat="-0.082554, 0.981579, 0.172303, -0.998586, -0.041609, -0.033097, -0.070056, -0.298709, 0.951769" position="4.940, -5.447, -1.870"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="arabian_platform_wooden_c">
+				<components>
+					<meta_mesh_component name="arabian_platform_wooden_c"/>
+				</components>
+				<physics mass="1.000" override_material="wood" shape="bo_arabian_platform_wooden_c"/>
+				<transform scale="1.274, 1.533, 1.285" non_orthogonal_rotation_mat="0.132817, 0.926648, 0.351685, -0.933193, -0.139413, 0.331232, 0.688738, -0.444756, 0.572566" position="9.811, -3.522, -2.004"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="arabian_platform_wooden_c">
+				<components>
+					<meta_mesh_component name="arabian_platform_wooden_c"/>
+				</components>
+				<physics mass="1.000" override_material="wood" shape="bo_arabian_platform_wooden_c"/>
+				<transform scale="1.002, 1.691, 1.328" non_orthogonal_rotation_mat="0.020813, 0.094040, 0.995351, -0.999942, 0.008245, 0.006871, -0.012279, -0.998492, 0.053504" position="12.836, -1.560, -2.112"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_001">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_001"/>
+				</components>
+				<physics mass="1.000" override_material="metal" shape="bo_roof_long_spikes_001"/>
+				<transform scale="1.036, 1.325, 1.673" non_orthogonal_rotation_mat="0.299096, -0.146082, 0.942975, -0.001851, 0.996156, 0.087583, -0.993915, -0.018014, 0.108663" position="-13.815, 0.502, 4.153"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_2_plank_c">
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_c"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_2_plank_a"/>
+				<transform scale="1.227, 1.142, 1.678" non_orthogonal_rotation_mat="-0.014769, -0.879316, -0.476011, 0.239322, -0.672272, 0.700553, -0.994324, -0.067953, 0.081863" position="-14.659, 0.571, 4.250"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_2_heap_a">
+				<components>
+					<meta_mesh_component name="wooden_platform_2_heap_a"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_2_heap_a"/>
+				<transform scale="1.212, 1.160, 1.676" non_orthogonal_rotation_mat="0.129471, 0.843407, -0.521443, -0.259573, -0.700860, -0.664392, -0.988138, 0.145927, 0.047843" position="-14.177, 0.750, 4.010"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_2_heap_a">
+				<components>
+					<meta_mesh_component name="wooden_platform_2_heap_a"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_2_heap_a"/>
+				<transform scale="1.232, 1.329, 1.530" non_orthogonal_rotation_mat="0.724671, -0.001409, 0.689094, -0.000025, 0.999999, 0.001167, -0.938547, -0.000726, 0.345151" position="-15.879, 2.404, 1.949"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_2_plank_c">
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_c"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_2_plank_a"/>
+				<transform scale="1.360, 1.601, 1.102" non_orthogonal_rotation_mat="0.608435, 0.709357, 0.355837, 0.910024, -0.405425, -0.086523, 0.208349, 0.584429, -0.784240" position="-16.797, 3.296, 0.534"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_2_plank_c">
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_c"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_2_plank_a"/>
+				<transform scale="1.360, 1.601, 1.102" non_orthogonal_rotation_mat="0.608435, 0.709357, 0.355837, 0.910024, -0.405425, -0.086523, 0.208349, 0.584429, -0.784240" position="-19.752, -0.125, -1.423"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_2_plank_c">
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_c"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_2_plank_a"/>
+				<transform scale="1.213, 1.264, 1.599" non_orthogonal_rotation_mat="-0.037452, 0.858072, 0.512163, 0.595553, -0.575147, 0.560823, 0.946582, 0.245685, -0.208855" position="-19.065, -4.053, -3.665"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_2_plank_c">
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_c"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_2_plank_a"/>
+				<transform scale="1.089, 1.258, 1.690" non_orthogonal_rotation_mat="0.013781, -0.600033, 0.799856, -0.058754, 0.918695, 0.390574, -0.999410, -0.033358, -0.008147" position="-18.613, -6.137, -4.684"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_2_plank_c">
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_c"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_2_plank_a"/>
+				<transform scale="1.082, 1.310, 1.655" non_orthogonal_rotation_mat="0.050320, -0.577382, 0.814922, 0.388056, 0.858239, 0.335915, -0.974153, 0.201594, 0.101907" position="-6.302, -5.772, -4.174"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_2_plank_c">
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_c"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_2_plank_a"/>
+				<transform scale="1.691, 1.013, 1.319" non_orthogonal_rotation_mat="0.999929, 0.010991, -0.004680, 0.008724, 0.239918, 0.970754, 0.019475, -0.990171, 0.138499" position="-15.536, -6.029, -4.794"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_2_plank_c">
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_c"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_2_plank_a"/>
+				<transform scale="1.690, 1.012, 1.321" non_orthogonal_rotation_mat="0.999154, 0.041088, -0.002002, -0.010175, 0.236428, 0.971596, 0.066594, -0.988409, 0.136427" position="-10.353, -5.864, -4.776"/>
+			</game_entity>
+			<game_entity occlusion_body_name="bo_occ_module_building_stone_vlandia_corner_90_degrees" season_mask="255" old_prefab_name="" name="module_building_stone_vlandia_corner_90_degrees">
+				<components>
+					<meta_mesh_component name="module_building_stone_vlandia_corner_90_degrees">
+						<mesh factor="4282278534" name="module_building_stone_vlandia_corner_90_degrees.2"/>
+					</meta_mesh_component>
+				</components>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<physics mass="1.000" shape="bo_module_building_stone_vlandia_corner_90_degrees"/>
+				<transform scale="0.880, 1.125, 0.672" non_orthogonal_rotation_mat="-0.026068, 0.992617, 0.118458, -0.999865, -0.014660, -0.007391, -0.015780, -0.206458, 0.978328" position="-13.477, -1.218, -4.415"/>
+			</game_entity>
+			<game_entity occlusion_body_name="bo_occ_house_a" season_mask="255" old_prefab_name="" name="european_city_house_a">
+				<components>
+					<meta_mesh_component name="house_a">
+						<mesh factor="4290951072" name="house_a.lod5.6"/>
+						<mesh factor="4283331756" name="house_a.lod5.5"/>
+						<mesh factor="4287730065" name="house_a.lod5.1"/>
+						<mesh factor="4290951072" name="house_a.lod5"/>
+						<mesh factor="4287072135" name="house_a.6"/>
+						<mesh factor="4283331756" name="house_a.5"/>
+						<mesh factor="4287730065" name="house_a.1"/>
+						<mesh factor="4287072135" name="house_a"/>
+					</meta_mesh_component>
+				</components>
+				<physics mass="1.000" shape="bo_house_a"/>
+				<transform scale="0.931, 0.831, 0.701" non_orthogonal_rotation_mat="0.003718, -0.999930, -0.011260, 0.999970, 0.002150, 0.007392, -0.021061, -0.019929, 0.999580" position="-10.548, 3.462, 2.640"/>
+			</game_entity>
+			<game_entity occlusion_body_name="bo_occ_house_g" season_mask="255" old_prefab_name="" name="european_city_house_g">
+				<components>
+					<meta_mesh_component name="house_g">
+						<mesh factor="4283331756" name="house_g.lod5.5"/>
+						<mesh factor="4286151033" name="house_g.lod5.1"/>
+						<mesh factor="4283331756" name="house_g.5"/>
+						<mesh factor="4286151033" name="house_g.1"/>
+					</meta_mesh_component>
+				</components>
+				<physics mass="1.000" shape="bo_house_g"/>
+				<transform scale="1.265, 0.865, 0.748" non_orthogonal_rotation_mat="0.999580, -0.028037, 0.007389, 0.045361, 0.998971, 0.000335, -0.021134, 0.000000, 0.999777" position="8.320, 5.814, -1.022"/>
+			</game_entity>
+			<game_entity occlusion_body_name="bo_occ_house_c" season_mask="255" old_prefab_name="" name="european_city_house_c">
+				<components>
+					<meta_mesh_component name="house_c">
+						<mesh factor="4287067481" name="house_c.lod5.6"/>
+						<mesh factor="4283201187" name="house_c.lod5.5"/>
+						<mesh factor="4287730065" name="house_c.lod5.1"/>
+						<mesh factor="4287067481" name="house_c.lod5"/>
+						<mesh factor="4283201187" name="house_c.10"/>
+						<mesh factor="4287067481" name="house_c.6"/>
+						<mesh factor="4283201187" name="house_c.5"/>
+						<mesh factor="4287730065" name="house_c.1"/>
+						<mesh factor="4287067481" name="house_c"/>
+					</meta_mesh_component>
+				</components>
+				<physics mass="1.000" shape="bo_house_c"/>
+				<transform scale="1.691, 1.329, 1.000" non_orthogonal_rotation_mat="0.999973, 0.000000, 0.007392, 0.000000, 1.000000, 0.000000, -0.021134, 0.000000, 0.999777" position="0.150, 3.610, -14.231"/>
+			</game_entity>
+		</children>
+		<components>
+			<meta_mesh_component name="house_a">
+				<mesh factor="4281946218" name="house_a.lod5.5"/>
+				<mesh factor="4287730065" name="house_a.lod5.1"/>
+				<mesh factor="4287072135" name="house_a.lod5"/>
+				<mesh factor="4285172899" name="house_a.10"/>
+				<mesh factor="4287072135" name="house_a.6"/>
+				<mesh factor="4281354596" name="house_a.5"/>
+				<mesh factor="4287730065" name="house_a.1"/>
+				<mesh factor="4287072135" name="house_a"/>
+			</meta_mesh_component>
+		</components>
+		<physics mass="1.000" shape="bo_house_a"/>
+		<transform scale="0.591, 0.752, 1.000" rotation_euler="0.000, 0.013, 0.000" position="342.224, 262.118, 117.866"/>
+	</game_entity>
+	<game_entity season_mask="255" mobility="1" old_prefab_name="" name="Siege_rock">
+		<children>
+			<game_entity season_mask="255" mobility="1" old_prefab_name="" name="__empty_object">
+				<components>
+					<particle_system_instanced_component>
+						<effect base_effect="{27C08E90-79CD-4C55-AAA8-CD85C4223C6F}">
+							<emitter_overrides>
+								<emitter guid="{244E5176-9373-472E-A17F-AB602D8E95E8}">
+									<parameters>
+										<parameter name="particle_color">
+											<alpha>
+												<keys>
+													<key value="0.000" time="1.000"/>
+													<key value="1.000" time="0.262"/>
+													<key value="0.000" time="0.000"/>
+												</keys>
+											</alpha>
+											<color>
+												<keys>
+													<key value="0.122, 0.122, 0.122" time="0.781"/>
+													<key value="1.000, 1.000, 1.000" time="0.000"/>
+												</keys>
+											</color>
+										</parameter>
+										<parameter value="{489D29D2-AD3E-4070-A274-7DEE7235EC77}" name="material_guid"/>
+										<parameter bias="1.000" base="2.000" name="particle_size">
+											<curve curve_multiplier="1.370" default="1.000" version="1" name="particle_life">
+												<keys>
+													<key tangent="-0.200, 0.000" value="1.000" time="1.000"/>
+													<key tangent="0.200, 0.000" value="0.615" time="0.000"/>
+												</keys>
+											</curve>
+										</parameter>
+										<parameter bias="2.000" base="3.000" name="emission_rate"/>
+										<parameter bias="1.500" base="2.300" name="particle_life"/>
+										<parameter value="multiply" name="particle_size_curve_op"/>
+										<parameter value="1.000" name="diffuse_multiplier"/>
+										<parameter value="0.000" name="texture_sprite_frame_rate"/>
+										<parameter value="4" name="texture_sprite_frame_count"/>
+										<parameter value="2, 2" name="texture_sprite_count"/>
+										<parameter value="0.000" name="skew_with_particle_velocity_coef"/>
+									</parameters>
+									<flags>
+										<flag value="true" name="select_random_sprite"/>
+									</flags>
+								</emitter>
+								<emitter guid="{F061B51B-E75F-4F6F-929D-018DB56A30F5}">
+									<parameters>
+										<parameter name="particle_color">
+											<alpha>
+												<keys>
+													<key value="0.000" time="1.000"/>
+													<key value="1.000" time="0.900"/>
+													<key value="1.000" time="0.115"/>
+													<key value="0.000" time="0.000"/>
+												</keys>
+											</alpha>
+											<color>
+												<keys>
+													<key value="1.000, 0.223, 0.094" time="0.900"/>
+													<key value="1.000, 0.774, 0.632" time="0.000"/>
+												</keys>
+											</color>
+										</parameter>
+										<parameter bias="1.000" base="3.000" name="particle_size">
+											<curve curve_multiplier="0.025" default="1.000" version="1" name="particle_life">
+												<keys>
+													<key tangent="-0.200, 0.000" value="0.000" time="1.000"/>
+													<key tangent="0.200, 0.000" value="0.998" time="0.000"/>
+												</keys>
+											</curve>
+										</parameter>
+										<parameter bias="15.000" base="1.000" name="emit_velocity_z"/>
+										<parameter bias="15.000" base="0.000" name="emit_velocity_y"/>
+										<parameter bias="15.000" base="0.000" name="emit_velocity_x"/>
+										<parameter bias="0.000" base="5.000" name="emission_rate"/>
+										<parameter bias="0.200" base="0.500" name="particle_life"/>
+										<parameter bias="0.000" base="80.000" name="turbulence_strength"/>
+										<parameter bias="0.000" base="0.470" name="damping"/>
+										<parameter value="multiply" name="particle_size_curve_op"/>
+										<parameter value="5.000" name="emissive_multiplier"/>
+										<parameter value="500.000" name="diffuse_multiplier"/>
+										<parameter value="0.250" name="backlight_multiplier"/>
+										<parameter value="0.017" name="skew_with_particle_velocity_limit"/>
+										<parameter value="0.083" name="skew_with_particle_velocity_coef"/>
+									</parameters>
+								</emitter>
+								<emitter guid="{55A342B6-75D1-4532-84D2-EDF3D321DD82}">
+									<parameters>
+										<parameter name="particle_color">
+											<alpha>
+												<keys>
+													<key value="1.000" time="1.000"/>
+													<key value="1.000" time="0.200"/>
+													<key value="0.000" time="0.000"/>
+												</keys>
+											</alpha>
+											<color>
+												<keys>
+													<key value="0.548, 0.114, 0.078" time="0.800"/>
+													<key value="0.737, 0.592, 0.453" time="0.061"/>
+												</keys>
+											</color>
+										</parameter>
+										<parameter bias="0.050" base="0.350" name="particle_size">
+											<curve curve_multiplier="0.500" default="1.000" version="1" name="particle_life">
+												<keys>
+													<key tangent="0.000, 0.000" value="0.050" time="1.000"/>
+													<key tangent="0.062, 0.000" value="0.050" time="0.690"/>
+													<key tangent="-0.062, 0.000" value="0.050" time="0.690"/>
+													<key tangent="0.062, 0.000" value="1.000" time="0.000"/>
+												</keys>
+											</curve>
+										</parameter>
+										<parameter bias="0.000" base="15.000" name="emission_rate"/>
+										<parameter value="1000.000" name="diffuse_multiplier"/>
+										<parameter value="0.000" name="skew_with_particle_velocity_coef"/>
+									</parameters>
+									<flags>
+										<flag value="true" name="order_by_distance"/>
+									</flags>
+								</emitter>
+							</emitter_overrides>
+						</effect>
+					</particle_system_instanced_component>
+				</components>
+				<physics mass="1.000"/>
+				<transform rotation_euler="0.000, 2.012, 0.000" position="-88.135, 0.000, 9.853"/>
+			</game_entity>
+		</children>
+		<scripts>
+			<script name="WindMill">
+				<variables>
+					<variable value="false" name="isWaterMill"/>
+					<variable value="1.000" name="waterSplashIntervalMultiplier"/>
+					<variable value="0.000" name="waterSplashPhaseOffset"/>
+					<variable value="500.000" name="rotationSpeed"/>
+				</variables>
+			</script>
+		</scripts>
+		<physics mass="1.000"/>
+		<transform scale="1.000, 1.000, 1.000" rotation_euler="0.000, 2.151, 0.000" position="6.914, 4.149, -42.279"/>
+	</game_entity>
+</prefabs>
+

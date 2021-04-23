@@ -1,0 +1,613 @@
+<prefabs>
+	<game_entity season_mask="255" old_prefab_name="" name="VC_Gatehouse">
+		<children>
+			<game_entity season_mask="255" old_prefab_name="" name="torch">
+				<components>
+					<meta_mesh_component name="torch_g"/>
+				</components>
+				<physics mass="1.000"/>
+				<transform scale="1.662, 1.662, 1.662" rotation_euler="-0.294, 1.345, -1.554" position="0.134, -4.753, 6.046"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_002">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_002"/>
+				</components>
+				<physics mass="1.000" override_material="metal" shape="bo_roof_long_spikes_002"/>
+				<transform scale="3.663, 3.663, 3.663" rotation_euler="0.216, 0.532, -1.415" position="-4.170, -0.021, 14.481"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_002">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_002"/>
+				</components>
+				<physics mass="1.000" override_material="metal" shape="bo_roof_long_spikes_002"/>
+				<transform scale="3.663, 3.663, 3.663" rotation_euler="0.098, 0.078, -0.655" position="0.051, -0.153, 14.563"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_002">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_002"/>
+				</components>
+				<physics mass="1.000" override_material="metal" shape="bo_roof_long_spikes_002"/>
+				<transform scale="3.663, 3.663, 3.663" rotation_euler="0.098, 0.328, -0.655" position="-1.850, -0.184, 14.847"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_002">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_002"/>
+				</components>
+				<physics mass="1.000" override_material="metal" shape="bo_roof_long_spikes_002"/>
+				<transform scale="3.663, 3.663, 3.663" rotation_euler="0.216, 0.000, -1.415" position="-6.339, -0.239, 14.936"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_002">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_002"/>
+				</components>
+				<physics mass="1.000" override_material="metal" shape="bo_roof_long_spikes_002"/>
+				<transform scale="3.663, 3.663, 3.663" rotation_euler="0.122, 0.026, -0.190" position="1.052, -0.034, 14.172"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_cross_piece">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_cross_piece"/>
+				</components>
+				<physics mass="1.000" override_material="metal" shape="bo_roof_long_spikes_cross_piece"/>
+				<transform scale="2.616, 2.616, 2.616" rotation_euler="0.000, 0.000, 3.117" position="5.583, -0.071, 15.832"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_001">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_001"/>
+				</components>
+				<physics mass="1.000" override_material="metal" shape="bo_roof_long_spikes_001"/>
+				<transform scale="1.840, 1.840, 1.840" rotation_euler="0.160, 0.000, -1.415" position="2.617, -0.111, 15.066"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_001">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_001"/>
+				</components>
+				<physics mass="1.000" override_material="metal" shape="bo_roof_long_spikes_001"/>
+				<transform scale="2.700, 2.700, 2.700" rotation_euler="-0.084, -0.028, -1.415" position="4.476, -0.100, 14.467"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_001">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_001"/>
+				</components>
+				<physics mass="1.000" override_material="metal" shape="bo_roof_long_spikes_001"/>
+				<transform scale="2.700, 2.700, 2.700" rotation_euler="-0.083, 0.214, -1.580" position="5.350, 0.070, 13.940"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="chimney_001">
+				<components>
+					<meta_mesh_component name="chimney_001"/>
+				</components>
+				<physics mass="1.000" override_material="metal"/>
+				<transform scale="2.882, 2.882, 2.882" rotation_euler="0.000, 0.000, -1.415" position="3.758, -0.958, 13.864"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="chimney_002">
+				<components>
+					<meta_mesh_component name="chimney_002"/>
+				</components>
+				<physics mass="1.000" override_material="metal"/>
+				<transform scale="4.359, 4.359, 4.359" rotation_euler="0.000, 0.000, 2.976" position="4.653, -1.726, 13.086"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="torch_candle_c_fire">
+				<children>
+					<game_entity season_mask="255" old_prefab_name="" name="candle_flame_01">
+						<scripts>
+							<script name="LightCycle">
+								<variables>
+									<variable value="false" name="alwaysBurn"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<light_component shadow_radius="3.000" shadow_size_multiplier="1" shadow="1" sprite_scale="0.100" sprite_color_scale="1.100" relative_sprite_position="0.000, 0.000, -0.200" sprite_material_name="billboard_candle_flame" sprite_mesh_name="billboard_mesh" falloff_angle="45.000" hotspot_angle="30.000" local_frame_rot="6.000000, 0.000000, 0.000000, 0.000000, 6.000000, 0.000000, 0.000000, 0.000000, 6.000000" flicker_magnitude="0.800" flicker_interval="0.500" radius="6.000" intensity="15.000" color="1.000, 0.596, 0.243" flags="32"/>
+						</components>
+						<physics mass="1.000"/>
+						<transform rotation_euler="0.000, 0.000, -0.080" position="0.000, 0.000, 0.355"/>
+					</game_entity>
+				</children>
+				<components>
+					<meta_mesh_component name="torch_candle_c"/>
+				</components>
+				<physics mass="1.000"/>
+				<transform rotation_euler="0.000, 0.000, -1.415" position="5.446, -5.265, 2.462"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="torch_table_a_fire">
+				<children>
+					<game_entity season_mask="255" old_prefab_name="" name="candle_flame">
+						<scripts>
+							<script name="LightCycle">
+								<variables>
+									<variable value="false" name="alwaysBurn"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<light_component shadow_radius="2.000" shadow_size_multiplier="1" shadow="1" sprite_scale="0.100" sprite_color_scale="1.100" relative_sprite_position="0.000, 0.000, -0.200" sprite_material_name="billboard_candle_flame" sprite_mesh_name="billboard_mesh" falloff_angle="45.000" hotspot_angle="30.000" local_frame_rot="5.000000, 0.000000, 0.000000, 0.000000, 5.000000, 0.000000, 0.000000, 0.000000, 5.000000" flicker_magnitude="0.500" flicker_interval="0.500" radius="5.000" intensity="15.000" color="1.000, 0.596, 0.243"/>
+						</components>
+						<physics mass="1.000"/>
+						<transform rotation_euler="0.000, 0.000, -0.495" position="0.000, 0.000, 0.657"/>
+					</game_entity>
+				</children>
+				<components>
+					<meta_mesh_component name="torch_table_a"/>
+				</components>
+				<physics mass="1.000"/>
+				<transform rotation_euler="0.000, 0.000, -1.415" position="5.610, -5.294, 2.453"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="torch_candle_b_fire">
+				<children>
+					<game_entity season_mask="255" old_prefab_name="" name="candle_flame">
+						<scripts>
+							<script name="LightCycle">
+								<variables>
+									<variable value="false" name="alwaysBurn"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<light_component shadow_radius="4.000" shadow_size_multiplier="1" shadow="1" sprite_scale="0.100" sprite_color_scale="1.100" relative_sprite_position="0.000, 0.000, -0.200" sprite_material_name="billboard_candle_flame" sprite_mesh_name="billboard_mesh" falloff_angle="45.000" hotspot_angle="30.000" local_frame_rot="6.000000, 0.000000, 0.000000, 0.000000, 6.000000, 0.000000, 0.000000, 0.000000, 6.000000" flicker_magnitude="0.500" flicker_interval="0.500" radius="6.000" intensity="15.000" color="1.000, 0.596, 0.243" flags="96"/>
+						</components>
+						<physics mass="1.000"/>
+						<transform rotation_euler="0.000, 0.000, 0.288" position="0.000, 0.000, 0.456"/>
+					</game_entity>
+				</children>
+				<components>
+					<meta_mesh_component name="torch_candle_b"/>
+				</components>
+				<physics mass="1.000"/>
+				<transform rotation_euler="0.000, 0.000, -1.415" position="5.304, -5.308, 2.456"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_002">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_002"/>
+				</components>
+				<physics mass="1.000" override_material="metal" shape="bo_roof_long_spikes_002"/>
+				<transform scale="3.232, 3.232, 3.232" rotation_euler="-0.344, 0.095, -1.332" position="5.400, -5.548, 1.548"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_002">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_002"/>
+				</components>
+				<physics mass="1.000" override_material="metal" shape="bo_roof_long_spikes_002"/>
+				<transform scale="3.232, 3.232, 3.232" rotation_euler="0.346, 0.134, -1.417" position="5.041, -5.886, 1.356"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="torture_tool_chain_d">
+				<components>
+					<meta_mesh_component name="torture_tool_chain_d"/>
+				</components>
+				<physics mass="1.000"/>
+				<transform scale="0.963, 0.963, 0.963" rotation_euler="0.456, 0.457, -2.915" position="5.331, -5.930, 2.247"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="torch">
+				<components>
+					<meta_mesh_component name="torch_g"/>
+				</components>
+				<physics mass="1.000"/>
+				<transform scale="2.966, 2.966, 2.966" rotation_euler="0.288, 1.321, -1.608" position="-0.002, -4.140, 5.871"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="torch_long_b">
+				<scripts>
+					<script name="LightCycle">
+						<variables>
+							<variable value="false" name="alwaysBurn"/>
+						</variables>
+					</script>
+				</scripts>
+				<components>
+					<meta_mesh_component name="torch_long_b"/>
+				</components>
+				<physics mass="1.000" shape="bo_torch_long_b"/>
+				<transform rotation_euler="-0.037, 0.648, -1.413" position="5.234, -4.832, 0.994"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="torch_candle_c_fire">
+				<children>
+					<game_entity season_mask="255" old_prefab_name="" name="candle_flame_01">
+						<scripts>
+							<script name="LightCycle">
+								<variables>
+									<variable value="false" name="alwaysBurn"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<light_component shadow_radius="3.000" shadow_size_multiplier="1" shadow="1" sprite_scale="0.100" sprite_color_scale="1.100" relative_sprite_position="0.000, 0.000, -0.200" sprite_material_name="billboard_candle_flame" sprite_mesh_name="billboard_mesh" falloff_angle="45.000" hotspot_angle="30.000" local_frame_rot="6.000000, 0.000000, 0.000000, 0.000000, 6.000000, 0.000000, 0.000000, 0.000000, 6.000000" flicker_magnitude="0.800" flicker_interval="0.500" radius="6.000" intensity="15.000" color="1.000, 0.596, 0.243" flags="32"/>
+						</components>
+						<physics mass="1.000"/>
+						<transform rotation_euler="0.000, 0.000, -0.080" position="0.000, 0.000, 0.355"/>
+					</game_entity>
+				</children>
+				<components>
+					<meta_mesh_component name="torch_candle_c"/>
+				</components>
+				<physics mass="1.000"/>
+				<transform rotation_euler="0.000, 0.000, -1.415" position="4.189, -5.838, 0.508"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="torch_candle_a_fire">
+				<children>
+					<game_entity season_mask="255" old_prefab_name="" name="candle_flame">
+						<scripts>
+							<script name="LightCycle">
+								<variables>
+									<variable value="false" name="alwaysBurn"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<light_component shadow_radius="4.000" shadow_size_multiplier="1" shadow="1" sprite_scale="0.100" sprite_color_scale="1.100" relative_sprite_position="0.000, 0.000, -0.200" sprite_material_name="billboard_candle_flame" sprite_mesh_name="billboard_mesh" falloff_angle="45.000" hotspot_angle="30.000" local_frame_rot="6.000000, 0.000000, 0.000000, 0.000000, 6.000000, 0.000000, 0.000000, 0.000000, 6.000000" flicker_magnitude="0.500" flicker_interval="0.500" radius="6.000" intensity="15.000" color="1.000, 0.596, 0.243"/>
+						</components>
+						<physics mass="1.000"/>
+						<transform rotation_euler="0.000, 0.000, -0.405" position="0.000, 0.000, 0.484"/>
+					</game_entity>
+				</children>
+				<components>
+					<meta_mesh_component name="torch_candle_a"/>
+				</components>
+				<physics mass="1.000"/>
+				<transform rotation_euler="0.000, 0.000, -1.415" position="4.279, -5.973, 0.519"/>
+				<visibility_masks>
+					<visibility_mask value="true" name="no_shadow"/>
+				</visibility_masks>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="merchandise_stones">
+				<components>
+					<meta_mesh_component name="merchandise_stones"/>
+				</components>
+				<physics mass="1.000" shape="bo_merchandise_stones"/>
+				<transform rotation_euler="-0.008, 0.010, -0.494" position="4.569, -5.820, 0.186"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="torch_candle_c_fire">
+				<children>
+					<game_entity season_mask="255" old_prefab_name="" name="candle_flame_01">
+						<scripts>
+							<script name="LightCycle">
+								<variables>
+									<variable value="false" name="alwaysBurn"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<light_component shadow_radius="3.000" shadow_size_multiplier="1" shadow="1" sprite_scale="0.100" sprite_color_scale="1.100" relative_sprite_position="0.000, 0.000, -0.200" sprite_material_name="billboard_candle_flame" sprite_mesh_name="billboard_mesh" falloff_angle="45.000" hotspot_angle="30.000" local_frame_rot="6.000000, 0.000000, 0.000000, 0.000000, 6.000000, 0.000000, 0.000000, 0.000000, 6.000000" flicker_magnitude="0.800" flicker_interval="0.500" radius="6.000" intensity="15.000" color="1.000, 0.596, 0.243" flags="32"/>
+						</components>
+						<physics mass="1.000"/>
+						<transform rotation_euler="0.000, 0.000, -0.080" position="0.000, 0.000, 0.355"/>
+					</game_entity>
+				</children>
+				<components>
+					<meta_mesh_component name="torch_candle_c"/>
+				</components>
+				<physics mass="1.000"/>
+				<transform rotation_euler="0.000, 0.000, -1.415" position="-4.397, -7.020, 6.591"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="skull_002">
+				<components>
+					<meta_mesh_component name="skull_002"/>
+				</components>
+				<physics mass="1.000" override_material="stone" shape="bo_skull_002"/>
+				<transform scale="4.883, 4.883, 4.883" rotation_euler="-0.456, -0.059, 3.124" position="0.010, -4.963, 5.752"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_cross_piece">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_cross_piece"/>
+				</components>
+				<physics mass="1.000" override_material="metal" shape="bo_roof_long_spikes_cross_piece"/>
+				<transform scale="2.616, 2.616, 2.616" rotation_euler="-0.630, -0.055, 3.062" position="-6.436, -0.190, 15.709"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_002">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_002"/>
+				</components>
+				<physics mass="1.000" override_material="metal" shape="bo_roof_long_spikes_002"/>
+				<transform scale="3.663, 3.663, 3.663" rotation_euler="0.098, 0.078, -0.655" position="-1.119, -0.113, 14.601"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_002">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_002"/>
+				</components>
+				<physics mass="1.000" override_material="metal" shape="bo_roof_long_spikes_002"/>
+				<transform scale="3.663, 3.663, 3.663" rotation_euler="0.216, 0.000, -1.415" position="-5.520, -0.094, 14.409"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_001">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_001"/>
+				</components>
+				<physics mass="1.000" override_material="metal" shape="bo_roof_long_spikes_001"/>
+				<transform scale="1.840, 1.840, 1.840" rotation_euler="-0.084, -0.028, -1.415" position="6.722, -0.137, 14.933"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_cross_piece">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_cross_piece"/>
+				</components>
+				<physics mass="1.000" override_material="metal" shape="bo_roof_long_spikes_cross_piece"/>
+				<transform scale="2.615, 2.616, 2.616" rotation_euler="-0.413, -0.409, -3.105" position="-0.803, -0.346, 15.558"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_001">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_001"/>
+				</components>
+				<physics mass="1.000" override_material="metal" shape="bo_roof_long_spikes_001"/>
+				<transform scale="1.840, 1.840, 1.840" rotation_euler="-0.084, 0.000, -1.415" position="2.987, -0.059, 15.118"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_001">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_001"/>
+				</components>
+				<physics mass="1.000" override_material="metal" shape="bo_roof_long_spikes_001"/>
+				<transform scale="1.840, 1.840, 1.840" rotation_euler="-0.084, 0.000, -1.415" position="7.408, -0.042, 14.412"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_001">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_001"/>
+				</components>
+				<physics mass="1.000" override_material="metal" shape="bo_roof_long_spikes_001"/>
+				<transform scale="1.840, 1.840, 1.840" rotation_euler="-0.084, 0.000, -1.415" position="3.531, -0.105, 14.347"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="lib_book_open_a">
+				<components>
+					<meta_mesh_component name="lib_book_open_a"/>
+				</components>
+				<physics mass="1.000"/>
+				<transform rotation_euler="-1.030, 0.000, 3.129" position="5.410, -5.794, 2.288"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="cave_rock_wall_e">
+				<components>
+					<meta_mesh_component name="cave_rock_wall_e">
+						<mesh factor="4288059030" name="cave_rock_wall_e.lod5"/>
+						<mesh factor="4288059030" name="cave_rock_wall_e.lod2"/>
+						<mesh factor="4288059030" name="cave_rock_wall_e"/>
+					</meta_mesh_component>
+				</components>
+				<physics mass="1.000" shape="bo_cave_rock_wall_e"/>
+				<transform rotation_euler="0.000, 0.000, -1.725" position="5.378, -5.087, 0.780"/>
+			</game_entity>
+			<game_entity occlusion_body_name="bo_occ_module_european_village_house_rooftop_a" season_mask="255" old_prefab_name="" name="module_european_village_house_rooftop_a">
+				<components>
+					<meta_mesh_component name="module_european_village_house_rooftop_a"/>
+				</components>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<physics mass="1.000" shape="bo_module_european_village_house_rooftop_a"/>
+				<transform scale="0.210, 0.210, 0.210" rotation_euler="0.000, 0.000, 0.000" position="5.232, -5.043, 3.340"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_plank_b">
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_b"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_plank_a"/>
+				<transform scale="1.112, 1.112, 1.112" rotation_euler="0.317, -0.686, 1.204" position="-4.053, -3.722, 11.501"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_plank_b">
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_b"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_plank_a"/>
+				<transform scale="1.112, 1.112, 1.112" rotation_euler="0.554, -0.517, 0.859" position="5.111, -2.109, 13.095"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_plank_b">
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_b"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_plank_a"/>
+				<transform scale="0.809, 0.809, 0.809" rotation_euler="0.247, 0.704, -1.256" position="5.515, -3.450, 11.772"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_plank_b">
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_b"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_plank_a"/>
+				<transform rotation_euler="-0.309, 0.682, -1.895" position="4.431, -3.864, 11.363"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_plank_b">
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_b"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_plank_a"/>
+				<transform rotation_euler="0.092, 0.732, -1.410" position="4.180, -2.508, 12.702"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="chimney_roof_003">
+				<components>
+					<meta_mesh_component name="chimney_roof_003"/>
+				</components>
+				<physics mass="1.000" override_material="metal"/>
+				<transform scale="1.966, 1.966, 4.892" rotation_euler="0.000, 0.000, -1.415" position="3.588, -1.062, 17.802"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="torch_candle_b_fire">
+				<children>
+					<game_entity season_mask="255" old_prefab_name="" name="candle_flame">
+						<scripts>
+							<script name="LightCycle">
+								<variables>
+									<variable value="false" name="alwaysBurn"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<light_component shadow_radius="4.000" shadow_size_multiplier="1" shadow="1" sprite_scale="0.100" sprite_color_scale="1.100" relative_sprite_position="0.000, 0.000, -0.200" sprite_material_name="billboard_candle_flame" sprite_mesh_name="billboard_mesh" falloff_angle="45.000" hotspot_angle="30.000" local_frame_rot="6.000000, 0.000000, 0.000000, 0.000000, 6.000000, 0.000000, 0.000000, 0.000000, 6.000000" flicker_magnitude="0.500" flicker_interval="0.500" radius="6.000" intensity="15.000" color="1.000, 0.596, 0.243" flags="96"/>
+						</components>
+						<physics mass="1.000"/>
+						<transform rotation_euler="0.000, 0.000, 0.288" position="0.000, 0.000, 0.456"/>
+					</game_entity>
+				</children>
+				<components>
+					<meta_mesh_component name="torch_candle_b"/>
+				</components>
+				<physics mass="1.000"/>
+				<transform rotation_euler="0.000, 0.000, -1.415" position="-4.264, -7.148, 6.591"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="bd_cloth_hanging_rope">
+				<components>
+					<meta_mesh_component name="bd_cloth_hanging_rope"/>
+				</components>
+				<physics mass="1.000"/>
+				<transform scale="0.497, 0.497, 0.497" rotation_euler="-0.852, 0.205, -2.153" position="-5.855, -5.597, 8.181"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="wooden_platform_plank_c">
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_c"/>
+				</components>
+				<physics mass="1.000" shape="bo_wooden_platform_plank_a"/>
+				<transform rotation_euler="0.000, 0.000, -1.715" position="-4.106, -5.542, 6.501"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="torch_table_a_fire">
+				<children>
+					<game_entity season_mask="255" old_prefab_name="" name="candle_flame">
+						<scripts>
+							<script name="LightCycle">
+								<variables>
+									<variable value="false" name="alwaysBurn"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<light_component shadow_radius="2.000" shadow_size_multiplier="1" shadow="1" sprite_scale="0.100" sprite_color_scale="1.100" relative_sprite_position="0.000, 0.000, -0.200" sprite_material_name="billboard_candle_flame" sprite_mesh_name="billboard_mesh" falloff_angle="45.000" hotspot_angle="30.000" local_frame_rot="5.000000, 0.000000, 0.000000, 0.000000, 5.000000, 0.000000, 0.000000, 0.000000, 5.000000" flicker_magnitude="0.500" flicker_interval="0.500" radius="5.000" intensity="15.000" color="1.000, 0.596, 0.243"/>
+						</components>
+						<physics mass="1.000"/>
+						<transform rotation_euler="0.000, 0.000, -0.495" position="0.000, 0.000, 0.657"/>
+					</game_entity>
+				</children>
+				<components>
+					<meta_mesh_component name="torch_table_a"/>
+				</components>
+				<physics mass="1.000"/>
+				<transform rotation_euler="0.000, 0.000, -1.415" position="-4.408, -7.268, 6.591"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="torch_candle_a_fire">
+				<children>
+					<game_entity season_mask="255" old_prefab_name="" name="candle_flame">
+						<scripts>
+							<script name="LightCycle">
+								<variables>
+									<variable value="false" name="alwaysBurn"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<light_component shadow_radius="4.000" shadow_size_multiplier="1" shadow="1" sprite_scale="0.100" sprite_color_scale="1.100" relative_sprite_position="0.000, 0.000, -0.200" sprite_material_name="billboard_candle_flame" sprite_mesh_name="billboard_mesh" falloff_angle="45.000" hotspot_angle="30.000" local_frame_rot="6.000000, 0.000000, 0.000000, 0.000000, 6.000000, 0.000000, 0.000000, 0.000000, 6.000000" flicker_magnitude="0.500" flicker_interval="0.500" radius="6.000" intensity="15.000" color="1.000, 0.596, 0.243"/>
+						</components>
+						<physics mass="1.000"/>
+						<transform rotation_euler="0.000, 0.000, -0.405" position="0.000, 0.000, 0.484"/>
+					</game_entity>
+				</children>
+				<components>
+					<meta_mesh_component name="torch_candle_a"/>
+				</components>
+				<physics mass="1.000"/>
+				<transform scale="1.764, 1.764, 1.764" rotation_euler="0.000, 0.000, -1.415" position="-4.264, -6.866, 6.591"/>
+				<visibility_masks>
+					<visibility_mask value="true" name="no_shadow"/>
+				</visibility_masks>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="spider_web_b">
+				<components>
+					<meta_mesh_component name="spider_web_b">
+						<mesh factor="4291231676" name="spider_web_b"/>
+					</meta_mesh_component>
+				</components>
+				<physics mass="1.000"/>
+				<transform scale="2.500, 2.500, 2.500" rotation_euler="-0.005, 0.327, -0.003" position="2.407, -5.123, 3.398"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="chimney_roof_004">
+				<components>
+					<meta_mesh_component name="chimney_roof_004"/>
+				</components>
+				<physics mass="1.000" override_material="metal"/>
+				<transform scale="2.789, 2.789, 4.687" rotation_euler="-0.112, -0.135, -1.415" position="4.518, -1.251, 16.644"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="spider_web_a">
+				<components>
+					<meta_mesh_component name="spider_web_a">
+						<mesh factor="4289527757" name="spider_web_a"/>
+					</meta_mesh_component>
+				</components>
+				<physics mass="1.000"/>
+				<transform scale="3.599, 3.599, 3.599" rotation_euler="-0.004, -0.164, -2.962" position="-0.665, -3.815, 3.495"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="bd_cloth_hanging_rope">
+				<components>
+					<meta_mesh_component name="bd_cloth_hanging_rope"/>
+				</components>
+				<physics mass="1.000"/>
+				<transform rotation_euler="0.429, 0.207, -1.003" position="-0.277, -4.245, 8.050"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_002">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_002"/>
+				</components>
+				<physics mass="1.000" override_material="metal" shape="bo_roof_long_spikes_002"/>
+				<transform scale="3.663, 3.663, 3.663" rotation_euler="0.291, 0.157, -1.042" position="-4.698, 0.012, 15.039"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_002">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_002"/>
+				</components>
+				<physics mass="1.000" override_material="metal" shape="bo_roof_long_spikes_002"/>
+				<transform scale="3.663, 3.663, 3.663" rotation_euler="-0.230, -0.269, -0.961" position="-3.918, 0.002, 14.679"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_002">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_002"/>
+				</components>
+				<physics mass="1.000" override_material="metal" shape="bo_roof_long_spikes_002"/>
+				<transform scale="3.663, 3.663, 3.663" rotation_euler="0.122, 0.026, -0.190" position="0.505, -0.070, 14.136"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_002">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_002"/>
+				</components>
+				<physics mass="1.000" override_material="metal" shape="bo_roof_long_spikes_002"/>
+				<transform scale="3.663, 3.663, 3.663" rotation_euler="0.098, 0.078, -0.655" position="1.918, -0.088, 14.627"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_002">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_002"/>
+				</components>
+				<physics mass="1.000" override_material="metal" shape="bo_roof_long_spikes_002"/>
+				<transform scale="5.955, 5.955, 5.955" rotation_euler="-0.090, 0.000, -1.196" position="-86.461, 160.831, -3.249"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_002">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_002"/>
+				</components>
+				<physics mass="1.000" override_material="metal" shape="bo_roof_long_spikes_002"/>
+				<transform scale="3.663, 3.663, 3.663" rotation_euler="0.000, 0.000, -1.415" position="-7.460, -0.140, 15.033"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_002">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_002"/>
+				</components>
+				<physics mass="1.000" override_material="metal" shape="bo_roof_long_spikes_002"/>
+				<transform scale="3.663, 3.663, 3.663" rotation_euler="0.148, 0.438, -1.257" position="-2.457, 0.169, 15.019"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_002">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_002"/>
+				</components>
+				<physics mass="1.000" override_material="metal" shape="bo_roof_long_spikes_002"/>
+				<transform scale="3.663, 3.663, 3.663" rotation_euler="0.216, 0.247, -1.415" position="-5.320, -0.081, 14.421"/>
+			</game_entity>
+			<game_entity season_mask="255" old_prefab_name="" name="roof_long_spikes_001">
+				<components>
+					<meta_mesh_component name="roof_long_spikes_001"/>
+				</components>
+				<physics mass="1.000" override_material="metal" shape="bo_roof_long_spikes_001"/>
+				<transform scale="1.840, 1.840, 1.840" rotation_euler="0.000, 0.000, -1.415" position="1.534, -0.220, 14.959"/>
+			</game_entity>
+		</children>
+		<components>
+			<meta_mesh_component name="european_city_gatehouse_a">
+				<mesh factor="4288387995" name="european_city_gatehouse_a.lod3.9"/>
+				<mesh argument="0.500, 0.000, 0.000, 0.000" factor="4289707706" name="european_city_gatehouse_a.10"/>
+				<mesh factor="4290098613" name="european_city_gatehouse_a.9"/>
+				<mesh factor="4283256655" name="european_city_gatehouse_a.lod6.5"/>
+				<mesh factor="4286545791" material="stone_wall_2_rocks" name="european_city_gatehouse_a.lod6.1"/>
+				<mesh material="plank_floor_a" name="european_city_gatehouse_a.lod6"/>
+				<mesh factor="4282404431" name="european_city_gatehouse_a.lod3.5"/>
+				<mesh factor="4285690482" material="stone_wall_2_rocks" name="european_city_gatehouse_a.lod3.1"/>
+				<mesh material="plank_floor_a" name="european_city_gatehouse_a.lod3"/>
+				<mesh factor="4283326056" name="european_city_gatehouse_a.5"/>
+				<mesh factor="4286545791" material="stone_wall_2_rocks" name="european_city_gatehouse_a.1"/>
+				<mesh material="plank_floor_a" name="european_city_gatehouse_a"/>
+			</meta_mesh_component>
+		</components>
+		<physics mass="1.000" shape="bo_european_city_gatehouse_a"/>
+		<transform rotation_euler="0.000, 0.000, 1.415" position="411.074, 320.786, 93.491"/>
+	</game_entity>
+</prefabs>
+

@@ -10,14 +10,14 @@ using TOW_Core.Battle.Extensions;
 
 namespace TOW_Core.Abilities
 {
-    public class FlameStormAbility : BaseAbility
+    public class WindOfDeathAbility : BaseAbility
     {
-        public FlameStormAbility() : base()
+        public WindOfDeathAbility() : base()
         {
             this.CoolDown = 40;
-            this.MaxDuration = 10f;
-            this.Name = "Flamestorm";
-            this.SpriteName = @"Skills\gui_skills_icon_charm";
+            this.MaxDuration = 5f;
+            this.Name = "Wind of Death";
+            this.SpriteName = "windofdeath_icon";
         }
 
         protected override void OnUse(Agent agent)
@@ -32,7 +32,7 @@ namespace TOW_Core.Abilities
                 frame = frame.Advance(offset);
                 var height = scene.GetTerrainHeight(frame.origin.AsVec2);
                 frame.origin.z = height;
-                var entity = GameEntity.Instantiate(scene, "firestorm", true);
+                var entity = GameEntity.Instantiate(scene, "wind_of_death_vfx", true);
                 entity.SetGlobalFrame(frame);
 
                 var light = Light.CreatePointLight(lightradius);
@@ -44,8 +44,8 @@ namespace TOW_Core.Abilities
 
                 entity.AddLight(light);
 
-                entity.CreateAndAddScriptComponent("FlameStormAbilityScript");
-                FlameStormAbilityScript script = entity.GetFirstScriptOfType<FlameStormAbilityScript>();
+                entity.CreateAndAddScriptComponent("WindOfDeathAbilityScript");
+                WindOfDeathAbilityScript script = entity.GetFirstScriptOfType<WindOfDeathAbilityScript>();
                 script.SetAgent(agent);
                 script.SetAbility(this);
 

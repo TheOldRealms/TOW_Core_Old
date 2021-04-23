@@ -24,5 +24,10 @@ namespace TOW_Core.Utilities
                 return (rng.NextDouble() * max) + min;
             }
         }
+
+        public static float GetDegreeInRadians(float degree)
+        {
+            return degree * (float)Math.PI / 180;
+        }
     }
 }

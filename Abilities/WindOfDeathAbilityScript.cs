@@ -9,30 +9,32 @@ using TOW_Core.Battle.Extensions;
 
 namespace TOW_Core.Abilities
 {
-    public class FlameStormAbilityScript : ScriptComponentBehaviour
+    public class WindOfDeathAbilityScript : ScriptComponentBehaviour
     {
         private Agent _agent;
-        private FlameStormAbility _ability;
-        private float _speed = 3f;
+        private WindOfDeathAbility _ability;
+        private float _speed = 8f;
         private float _abilitylife = -1f;
         private bool _isFading;
         private float _damageInterval = 0.5f;
         private float _timeSinceLastDamage = 0f;
         private float _range = 3f;
-        private float _damagePerInterval = 50f;
-
+        private int _damageMin = 10;
+        private int _damageMax = 30;
+        private Random _random;
         protected override TickRequirement GetTickRequirement()
         {
             return TickRequirement.Tick;
         }
         protected override bool MovesEntity() => true;
         public void SetAgent(Agent agent) => this._agent = agent;
-        public void SetAbility(FlameStormAbility ability) => this._ability = ability;
+        public void SetAbility(WindOfDeathAbility ability) => this._ability = ability;
 
         protected override void OnInit()
         {
             base.OnInit();
             this.SetScriptComponentToTick(this.GetTickRequirement());
+            this._random = new Random();
         }
 
         protected override void OnTick(float dt)
@@ -70,7 +72,7 @@ namespace TOW_Core.Abilities
             var list = Mission.Current.GetAgentsInRange(base.GameEntity.GetGlobalFrame().origin.AsVec2, this._range);
             foreach(var agent in list)
             {
-                agent.ApplyDamage(this._damagePerInterval);
+                agent.ApplyDamage(this._random.Next(this._damageMin, this._damageMax));
             }
         }
     }

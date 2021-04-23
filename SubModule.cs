@@ -15,6 +15,9 @@ using TOW_Core.Utilities.Extensions;
 using TOW_Core.Utilities;
 using TOW_Core.Battle.AttributeSystem.CustomBattleMoralModel;
 using TaleWorlds.MountAndBlade.CustomBattle;
+using TaleWorlds.GauntletUI;
+using TaleWorlds.Engine.GauntletUI;
+using TaleWorlds.TwoDimension;
 
 namespace TOW_Core
 {
@@ -30,6 +33,10 @@ namespace TOW_Core
             Harmony harmony = new Harmony("mod.harmony.theoldworld");
             harmony.PatchAll();
             ConfigureLogging();
+
+            //This has to be here.
+            Abilities.XMLAbilityLoader.LoadAbilities();
+            LoadAttributes();
         }
 
         /// <summary>
@@ -44,8 +51,12 @@ namespace TOW_Core
             TOWTextManager.LoadAdditionalTexts();
             TOWTextManager.LoadTextOverrides();
             CustomBattleTroopManager.LoadCustomBattleTroops();
-            Abilities.XMLAbilityLoader.LoadAbilities();
-            LoadAttributes();
+            LoadSprites();
+        }
+
+        private void LoadSprites()
+        {
+            UIResourceManager.SpriteData.SpriteCategories["tow_spritesheet"].Load(UIResourceManager.ResourceContext, UIResourceManager.UIResourceDepot);
         }
 
         protected override void OnGameStart(Game game, IGameStarter gameStarterObject)
@@ -70,6 +81,7 @@ namespace TOW_Core
             mission.AddMissionBehaviour(new AttributeSystemMissionLogic());
             mission.AddMissionBehaviour(new Abilities.AbilityManagerMissionLogic());
             mission.AddMissionBehaviour(new Abilities.AbilityHUDMissionView());
+            mission.AddMissionBehaviour(new Battle.FireArms.MusketFireEffectMissionLogic());
         }
 
         private void LoadAttributes()

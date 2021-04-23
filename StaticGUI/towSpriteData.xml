@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SpriteData>
+	<SpriteCategories>
+		<SpriteCategory>
+			<Name>tow_spritesheet</Name>
+			<SpriteSheetCount>1</SpriteSheetCount>
+			<SpriteSheetSize ID="1" Width="256" Height="256"/>
+		</SpriteCategory>
+	</SpriteCategories>
+	<SpriteParts>
+		<SpritePart>
+			<SheetID>1</SheetID>
+			<Name>fireball_icon</Name>
+			<Width>128</Width>
+			<Height>128</Height>
+			<SheetX>0</SheetX>
+			<SheetY>0</SheetY>
+			<CategoryName>tow_spritesheet</CategoryName>
+		</SpritePart>
+		<SpritePart>
+			<SheetID>1</SheetID>
+			<Name>windofdeath_icon</Name>
+			<Width>128</Width>
+			<Height>128</Height>
+			<SheetX>128</SheetX>
+			<SheetY>0</SheetY>
+			<CategoryName>tow_spritesheet</CategoryName>
+		</SpritePart>
+	</SpriteParts>
+	<Sprites>
+		<GenericSprite>
+			<Name>fireball_icon</Name>
+			<SpritePartName>fireball_icon</SpritePartName>
+		</GenericSprite>
+		<GenericSprite>
+			<Name>windofdeath_icon</Name>
+			<SpritePartName>windofdeath_icon</SpritePartName>
+		</GenericSprite>
+	</Sprites>
+</SpriteData>

@@ -34,7 +34,8 @@ namespace TOW_Core.HarmonyPatches
                 //Ideally this should not be hardcoded. Maybe create a custombattlelords xml template and load that?
                 list.Add(Game.Current.ObjectManager.GetObject<BasicCharacterObject>("karlfranz"));
                 list.Add(Game.Current.ObjectManager.GetObject<BasicCharacterObject>("mannfred"));
-                list.Add(Game.Current.ObjectManager.GetObject<BasicCharacterObject>("krell"));
+                //TODO! Krell makes the loading screen insanely long.The model itself is bugged somehow.
+                //list.Add(Game.Current.ObjectManager.GetObject<BasicCharacterObject>("krell")); 
             }
             catch (Exception e)
             {

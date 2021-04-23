@@ -19,7 +19,7 @@ namespace TOW_Core.Abilities
             this.CoolDown = 20;
             this.MaxDuration = 3f;
             this.Name = "Fireball";
-            this.SpriteName = "EditorSelector";
+            this.SpriteName = "fireball_icon";
         }
 
         protected override void OnUse(Agent agent)
@@ -47,7 +47,7 @@ namespace TOW_Core.Abilities
                 
                 
                 entity.AddSphereAsBody(Vec3.Zero, 0.2f, BodyFlags.Moveable);
-                entity.AddPhysics(mass, entity.CenterOfMass, entity.GetBodyShape(), Vec3.Zero, Vec3.Zero, PhysicsMaterial.GetFromName("wood_weapon"), false, -1);
+                entity.AddPhysics(mass, entity.CenterOfMass, entity.GetBodyShape(), Vec3.Zero, Vec3.Zero, PhysicsMaterial.GetFromName("missile"), false, -1);
                 entity.SetPhysicsState(true, false);
                 entity.CreateAndAddScriptComponent("FireBallAbilityScript");
                 

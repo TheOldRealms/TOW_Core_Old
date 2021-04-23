@@ -1,0 +1,576 @@
+<prefabs>
+	<game_entity name="twin_tailed_comet_wood" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="twin_tailed_comet"/>
+		</components>
+	</game_entity>
+	<game_entity name="twin_tailed_comet_metal" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="twin_tailed_comet">
+				<mesh name="twin_tailed_comet.flame.lod0" material="twin_tailed_comet_insignia_metal"/>
+				<mesh name="twin_tailed_comet.comet.lod0" material="twin_tailed_comet_insignia_metal"/>
+				<mesh name="twin_tailed_comet.flame.lod2" material="twin_tailed_comet_insignia_metal"/>
+				<mesh name="twin_tailed_comet.comet.lod3" material="twin_tailed_comet_insignia_metal"/>
+				<mesh name="twin_tailed_comet.flame.lod3" material="twin_tailed_comet_insignia_metal"/>
+				<mesh name="twin_tailed_comet.comet.lod5" material="twin_tailed_comet_insignia_metal"/>
+				<mesh name="twin_tailed_comet.flame.lod5" material="twin_tailed_comet_insignia_metal"/>
+				<mesh name="twin_tailed_comet.comet.lod2" material="twin_tailed_comet_insignia_metal"/>
+			</meta_mesh_component>
+		</components>
+	</game_entity>
+	<game_entity name="twin_tailed_comet_stone" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="twin_tailed_comet">
+				<mesh name="twin_tailed_comet.flame.lod0" material="twin_tailed_comet_insignia_stone"/>
+				<mesh name="twin_tailed_comet.comet.lod0" material="twin_tailed_comet_insignia_stone"/>
+				<mesh name="twin_tailed_comet.flame.lod2" material="twin_tailed_comet_insignia_stone"/>
+				<mesh name="twin_tailed_comet.comet.lod3" material="twin_tailed_comet_insignia_stone"/>
+				<mesh name="twin_tailed_comet.flame.lod3" material="twin_tailed_comet_insignia_stone"/>
+				<mesh name="twin_tailed_comet.comet.lod5" material="twin_tailed_comet_insignia_stone"/>
+				<mesh name="twin_tailed_comet.flame.lod5" material="twin_tailed_comet_insignia_stone"/>
+				<mesh name="twin_tailed_comet.comet.lod2" material="twin_tailed_comet_insignia_stone"/>
+			</meta_mesh_component>
+		</components>
+	</game_entity>
+	<game_entity name="twin_tailed_comet_withback_wood" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="twin_tailed_comet_withback"/>
+		</components>
+	</game_entity>
+	<game_entity name="twin_tailed_comet_withback_stone" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="twin_tailed_comet_withback">
+				<mesh name="twin_tailed_comet_withback.comet.lod0" material="twin_tailed_comet_insignia_stone"/>
+				<mesh name="twin_tailed_comet_withback.ring.lod0" material="twin_tailed_comet_insignia_stone"/>
+				<mesh name="twin_tailed_comet_withback.background.lod0" material="twin_tailed_comet_insignia_stone"/>
+				<mesh name="twin_tailed_comet_withback.flame.lod0" material="twin_tailed_comet_insignia_stone"/>
+				<mesh name="twin_tailed_comet_withback.ring.lod2" material="twin_tailed_comet_insignia_stone"/>
+				<mesh name="twin_tailed_comet_withback.comet.lod2" material="twin_tailed_comet_insignia_stone"/>
+				<mesh name="twin_tailed_comet_withback.flame.lod2" material="twin_tailed_comet_insignia_stone"/>
+				<mesh name="twin_tailed_comet_withback.background.lod2" material="twin_tailed_comet_insignia_stone"/>
+				<mesh name="twin_tailed_comet_withback.ring.lod3" material="twin_tailed_comet_insignia_stone"/>
+				<mesh name="twin_tailed_comet_withback.comet.lod3" material="twin_tailed_comet_insignia_stone"/>
+				<mesh name="twin_tailed_comet_withback.flame.lod3" material="twin_tailed_comet_insignia_stone"/>
+				<mesh name="twin_tailed_comet_withback.background.lod3" material="twin_tailed_comet_insignia_stone"/>
+				<mesh name="twin_tailed_comet_withback.ring.lod5" material="twin_tailed_comet_insignia_stone"/>
+				<mesh name="twin_tailed_comet_withback.comet.lod5" material="twin_tailed_comet_insignia_stone"/>
+				<mesh name="twin_tailed_comet_withback.flame.lod5" material="twin_tailed_comet_insignia_stone"/>
+				<mesh name="twin_tailed_comet_withback.background.lod5" material="twin_tailed_comet_insignia_stone"/>
+			</meta_mesh_component>
+		</components>
+	</game_entity>
+	<game_entity name="twin_tailed_comet_withback_metal" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="twin_tailed_comet_withback">
+				<mesh name="twin_tailed_comet_withback.comet.lod0" material="twin_tailed_comet_insignia_metal"/>
+				<mesh name="twin_tailed_comet_withback.ring.lod0" material="twin_tailed_comet_insignia_metal"/>
+				<mesh name="twin_tailed_comet_withback.background.lod0" material="twin_tailed_comet_insignia_metal"/>
+				<mesh name="twin_tailed_comet_withback.flame.lod0" material="twin_tailed_comet_insignia_metal"/>
+				<mesh name="twin_tailed_comet_withback.ring.lod2" material="twin_tailed_comet_insignia_metal"/>
+				<mesh name="twin_tailed_comet_withback.comet.lod2" material="twin_tailed_comet_insignia_metal"/>
+				<mesh name="twin_tailed_comet_withback.flame.lod2" material="twin_tailed_comet_insignia_metal"/>
+				<mesh name="twin_tailed_comet_withback.background.lod2" material="twin_tailed_comet_insignia_metal"/>
+				<mesh name="twin_tailed_comet_withback.ring.lod3" material="twin_tailed_comet_insignia_metal"/>
+				<mesh name="twin_tailed_comet_withback.comet.lod3" material="twin_tailed_comet_insignia_metal"/>
+				<mesh name="twin_tailed_comet_withback.flame.lod3" material="twin_tailed_comet_insignia_metal"/>
+				<mesh name="twin_tailed_comet_withback.background.lod3" material="twin_tailed_comet_insignia_metal"/>
+				<mesh name="twin_tailed_comet_withback.ring.lod5" material="twin_tailed_comet_insignia_metal"/>
+				<mesh name="twin_tailed_comet_withback.comet.lod5" material="twin_tailed_comet_insignia_metal"/>
+				<mesh name="twin_tailed_comet_withback.flame.lod5" material="twin_tailed_comet_insignia_metal"/>
+				<mesh name="twin_tailed_comet_withback.background.lod5" material="twin_tailed_comet_insignia_metal"/>
+			</meta_mesh_component>
+		</components>
+	</game_entity>
+	<game_entity name="empire_stirland_env_shield_wood" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="empire_stirland_env_shield"/>
+		</components>
+	</game_entity>
+	<game_entity name="empire_stirland_env_shield_metal" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="empire_stirland_env_shield">
+				<mesh name="empire_stirland_env_shield.left" material="empire_env_stirland_decorations_001_metal"/>
+				<mesh name="empire_stirland_env_shield" material="empire_env_stirland_decorations_001_metal"/>
+				<mesh name="empire_stirland_env_shield.right" material="empire_env_stirland_decorations_001_metal"/>
+				<mesh name="empire_stirland_env_shield.left.lod1" material="empire_env_stirland_decorations_001_metal"/>
+				<mesh name="empire_stirland_env_shield.lod1" material="empire_env_stirland_decorations_001_metal"/>
+				<mesh name="empire_stirland_env_shield.right.lod1" material="empire_env_stirland_decorations_001_metal"/>
+				<mesh name="empire_stirland_env_shield.left.lod2" material="empire_env_stirland_decorations_001_metal"/>
+				<mesh name="empire_stirland_env_shield.lod2" material="empire_env_stirland_decorations_001_metal"/>
+				<mesh name="empire_stirland_env_shield.right.lod2" material="empire_env_stirland_decorations_001_metal"/>
+				<mesh name="empire_stirland_env_shield.left.lod3" material="empire_env_stirland_decorations_001_metal"/>
+				<mesh name="empire_stirland_env_shield.lod3" material="empire_env_stirland_decorations_001_metal"/>
+				<mesh name="empire_stirland_env_shield.right.lod3" material="empire_env_stirland_decorations_001_metal"/>
+				<mesh name="empire_stirland_env_shield.left.lod4" material="empire_env_stirland_decorations_001_metal"/>
+				<mesh name="empire_stirland_env_shield.lod4" material="empire_env_stirland_decorations_001_metal"/>
+				<mesh name="empire_stirland_env_shield.right.lod4" material="empire_env_stirland_decorations_001_metal"/>
+				<mesh name="empire_stirland_env_shield.left.lod5" material="empire_env_stirland_decorations_001_metal"/>
+				<mesh name="empire_stirland_env_shield.lod5" material="empire_env_stirland_decorations_001_metal"/>
+				<mesh name="empire_stirland_env_shield.right.lod5" material="empire_env_stirland_decorations_001_metal"/>
+			</meta_mesh_component>
+		</components>
+	</game_entity>
+	<game_entity name="empire_stirland_env_shield_stone" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="empire_stirland_env_shield">
+				<mesh name="empire_stirland_env_shield.left" material="empire_env_stirland_decorations_001_stone"/>
+				<mesh name="empire_stirland_env_shield" material="empire_env_stirland_decorations_001_stone"/>
+				<mesh name="empire_stirland_env_shield.right" material="empire_env_stirland_decorations_001_stone"/>
+				<mesh name="empire_stirland_env_shield.left.lod1" material="empire_env_stirland_decorations_001_stone"/>
+				<mesh name="empire_stirland_env_shield.lod1" material="empire_env_stirland_decorations_001_stone"/>
+				<mesh name="empire_stirland_env_shield.right.lod1" material="empire_env_stirland_decorations_001_stone"/>
+				<mesh name="empire_stirland_env_shield.left.lod2" material="empire_env_stirland_decorations_001_stone"/>
+				<mesh name="empire_stirland_env_shield.lod2" material="empire_env_stirland_decorations_001_stone"/>
+				<mesh name="empire_stirland_env_shield.right.lod2" material="empire_env_stirland_decorations_001_stone"/>
+				<mesh name="empire_stirland_env_shield.left.lod3" material="empire_env_stirland_decorations_001_stone"/>
+				<mesh name="empire_stirland_env_shield.lod3" material="empire_env_stirland_decorations_001_stone"/>
+				<mesh name="empire_stirland_env_shield.right.lod3" material="empire_env_stirland_decorations_001_stone"/>
+				<mesh name="empire_stirland_env_shield.left.lod4" material="empire_env_stirland_decorations_001_stone"/>
+				<mesh name="empire_stirland_env_shield.lod4" material="empire_env_stirland_decorations_001_stone"/>
+				<mesh name="empire_stirland_env_shield.right.lod4" material="empire_env_stirland_decorations_001_stone"/>
+				<mesh name="empire_stirland_env_shield.left.lod5" material="empire_env_stirland_decorations_001_stone"/>
+				<mesh name="empire_stirland_env_shield.lod5" material="empire_env_stirland_decorations_001_stone"/>
+				<mesh name="empire_stirland_env_shield.right.lod5" material="empire_env_stirland_decorations_001_stone"/>
+			</meta_mesh_component>
+		</components>
+	</game_entity>
+	<game_entity name="empire_stirland_env_horn_wood" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="empire_stirland_env_horn"/>
+		</components>
+	</game_entity>
+	<game_entity name="empire_stirland_env_horn_metal" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="empire_stirland_env_horn">
+				<mesh name="empire_stirland_env_horn.metal" material="empire_env_stirland_decorations_001_metal"/>
+				<mesh name="empire_stirland_env_horn.horn" material="empire_env_stirland_decorations_001_metal"/>
+				<mesh name="empire_stirland_env_horn.string" material="empire_env_stirland_decorations_001_metal"/>
+				<mesh name="empire_stirland_env_horn.metal.lod1" material="empire_env_stirland_decorations_001_metal"/>
+				<mesh name="empire_stirland_env_horn.horn.lod1" material="empire_env_stirland_decorations_001_metal"/>
+				<mesh name="empire_stirland_env_horn.string.lod1" material="empire_env_stirland_decorations_001_metal"/>
+				<mesh name="empire_stirland_env_horn.metal.lod2" material="empire_env_stirland_decorations_001_metal"/>
+				<mesh name="empire_stirland_env_horn.horn.lod2" material="empire_env_stirland_decorations_001_metal"/>
+				<mesh name="empire_stirland_env_horn.string.lod2" material="empire_env_stirland_decorations_001_metal"/>
+				<mesh name="empire_stirland_env_horn.metal.lod3" material="empire_env_stirland_decorations_001_metal"/>
+				<mesh name="empire_stirland_env_horn.horn.lod3" material="empire_env_stirland_decorations_001_metal"/>
+				<mesh name="empire_stirland_env_horn.string.lod3" material="empire_env_stirland_decorations_001_metal"/>
+				<mesh name="empire_stirland_env_horn.metal.lod4" material="empire_env_stirland_decorations_001_metal"/>
+				<mesh name="empire_stirland_env_horn.horn.lod4" material="empire_env_stirland_decorations_001_metal"/>
+				<mesh name="empire_stirland_env_horn.string.lod4" material="empire_env_stirland_decorations_001_metal"/>
+				<mesh name="empire_stirland_env_horn.metal.lod5" material="empire_env_stirland_decorations_001_metal"/>
+				<mesh name="empire_stirland_env_horn.horn.lod5" material="empire_env_stirland_decorations_001_metal"/>
+				<mesh name="empire_stirland_env_horn.string.lod5" material="empire_env_stirland_decorations_001_metal"/>
+			</meta_mesh_component>
+		</components>
+	</game_entity>
+	<game_entity name="empire_stirland_env_horn_stone" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="empire_stirland_env_horn">
+				<mesh name="empire_stirland_env_horn.metal" material="empire_env_stirland_decorations_001_stone"/>
+				<mesh name="empire_stirland_env_horn.horn" material="empire_env_stirland_decorations_001_stone"/>
+				<mesh name="empire_stirland_env_horn.string" material="empire_env_stirland_decorations_001_stone"/>
+				<mesh name="empire_stirland_env_horn.metal.lod1" material="empire_env_stirland_decorations_001_stone"/>
+				<mesh name="empire_stirland_env_horn.horn.lod1" material="empire_env_stirland_decorations_001_stone"/>
+				<mesh name="empire_stirland_env_horn.string.lod1" material="empire_env_stirland_decorations_001_stone"/>
+				<mesh name="empire_stirland_env_horn.metal.lod2" material="empire_env_stirland_decorations_001_stone"/>
+				<mesh name="empire_stirland_env_horn.horn.lod2" material="empire_env_stirland_decorations_001_stone"/>
+				<mesh name="empire_stirland_env_horn.string.lod2" material="empire_env_stirland_decorations_001_stone"/>
+				<mesh name="empire_stirland_env_horn.metal.lod3" material="empire_env_stirland_decorations_001_stone"/>
+				<mesh name="empire_stirland_env_horn.horn.lod3" material="empire_env_stirland_decorations_001_stone"/>
+				<mesh name="empire_stirland_env_horn.string.lod3" material="empire_env_stirland_decorations_001_stone"/>
+				<mesh name="empire_stirland_env_horn.metal.lod4" material="empire_env_stirland_decorations_001_stone"/>
+				<mesh name="empire_stirland_env_horn.horn.lod4" material="empire_env_stirland_decorations_001_stone"/>
+				<mesh name="empire_stirland_env_horn.string.lod4" material="empire_env_stirland_decorations_001_stone"/>
+				<mesh name="empire_stirland_env_horn.metal.lod5" material="empire_env_stirland_decorations_001_stone"/>
+				<mesh name="empire_stirland_env_horn.horn.lod5" material="empire_env_stirland_decorations_001_stone"/>
+				<mesh name="empire_stirland_env_horn.string.lod5" material="empire_env_stirland_decorations_001_stone"/>
+			</meta_mesh_component>
+		</components>
+	</game_entity>
+	<game_entity name="empire_stirland_env_cross_wood" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="empire_stirland_env_cross"/>
+		</components>
+	</game_entity>
+	<game_entity name="empire_stirland_env_cross_metal" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="empire_stirland_env_cross">
+				<mesh name="empire_stirland_env_cross" material="empire_env_stirland_decorations_001_metal"/>
+				<mesh name="empire_stirland_env_cross.lod1" material="empire_env_stirland_decorations_001_metal"/>
+				<mesh name="empire_stirland_env_cross.lod2" material="empire_env_stirland_decorations_001_metal"/>
+				<mesh name="empire_stirland_env_cross.lod3" material="empire_env_stirland_decorations_001_metal"/>
+				<mesh name="empire_stirland_env_cross.lod4" material="empire_env_stirland_decorations_001_metal"/>
+				<mesh name="empire_stirland_env_cross.lod5" material="empire_env_stirland_decorations_001_metal"/>
+			</meta_mesh_component>
+		</components>
+	</game_entity>
+	<game_entity name="empire_stirland_env_cross_stone" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="empire_stirland_env_cross">
+				<mesh name="empire_stirland_env_cross" material="empire_env_stirland_decorations_001_stone"/>
+				<mesh name="empire_stirland_env_cross.lod1" material="empire_env_stirland_decorations_001_stone"/>
+				<mesh name="empire_stirland_env_cross.lod2" material="empire_env_stirland_decorations_001_stone"/>
+				<mesh name="empire_stirland_env_cross.lod3" material="empire_env_stirland_decorations_001_stone"/>
+				<mesh name="empire_stirland_env_cross.lod4" material="empire_env_stirland_decorations_001_stone"/>
+				<mesh name="empire_stirland_env_cross.lod5" material="empire_env_stirland_decorations_001_stone"/>
+			</meta_mesh_component>
+		</components>
+	</game_entity>
+	<game_entity name="empire_env_lantern_002" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="empire_env_lantern_002"/>
+		</components>
+	</game_entity>
+	<game_entity name="empire_env_lantern_001" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="empire_env_lantern_001"/>
+		</components>
+	</game_entity>
+	<game_entity name="empire_purity_seal_short_cloth" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<cloth_simulator>
+				<meta_mesh_component name="empire_purity_seal_short_cloth"/>
+			</cloth_simulator>
+		</components>
+	</game_entity>
+	<game_entity name="empire_seal_with_skull" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="empire_seal_with_skull"/>
+		</components>
+	</game_entity>
+	<game_entity name="empire_seal_empty" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="empire_seal_empty"/>
+		</components>
+	</game_entity>
+	<game_entity name="empire_purity_seal_short" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="empire_purity_seal_short"/>
+		</components>
+	</game_entity>
+	<game_entity name="empire_purity_seal_long" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="empire_purity_seal_long"/>
+		</components>
+	</game_entity>
+	<game_entity name="empire_purity_seal_long_cloth" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<cloth_simulator>
+				<meta_mesh_component name="empire_purity_seal_long_cloth"/>
+			</cloth_simulator>
+		</components>
+	</game_entity>
+	<game_entity name="empire_guillotine_001" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="empire_guillotine_001"/>
+		</components>
+	</game_entity>
+	<game_entity name="imperial_cross_001_skull_low" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="imperial_cross_001_skull_low"/>
+		</components>
+	</game_entity>
+	<game_entity name="imperial_cross_001_ring" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="imperial_cross_001_ring"/>
+		</components>
+	</game_entity>
+	<game_entity name="imperial_cross_001_cross" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="imperial_cross_001_cross"/>
+		</components>
+	</game_entity>
+	<game_entity name="imperial_cross_001_cylinder" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="imperial_cross_001_cylinder"/>
+		</components>
+	</game_entity>
+	<game_entity name="imperial_cross_001_spike" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="imperial_cross_001_spike"/>
+		</components>
+	</game_entity>
+	<game_entity name="coffin1" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="coffin1"/>
+		</components>
+	</game_entity>
+	<game_entity name="coffin1_lid" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="coffin1_lid"/>
+		</components>
+	</game_entity>
+	<game_entity name="coffin10" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="coffin10"/>
+		</components>
+	</game_entity>
+	<game_entity name="coffin10_lid" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="coffin10_lid"/>
+		</components>
+	</game_entity>
+	<game_entity name="coffin2_lid" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="coffin2_lid"/>
+		</components>
+	</game_entity>
+	<game_entity name="coffin2" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="coffin2"/>
+		</components>
+	</game_entity>
+	<game_entity name="coffin3" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="coffin3"/>
+		</components>
+	</game_entity>
+	<game_entity name="coffin3_lid" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="coffin3_lid"/>
+		</components>
+	</game_entity>
+	<game_entity name="coffin4" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="coffin4"/>
+		</components>
+	</game_entity>
+	<game_entity name="coffin4_lid" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="coffin4_lid"/>
+		</components>
+	</game_entity>
+	<game_entity name="coffin5" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="coffin5"/>
+		</components>
+	</game_entity>
+	<game_entity name="coffin8_lid" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="coffin8_lid"/>
+		</components>
+	</game_entity>
+	<game_entity name="coffin8" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="coffin8"/>
+		</components>
+	</game_entity>
+	<game_entity name="coffin7_lid" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="coffin7_lid"/>
+		</components>
+	</game_entity>
+	<game_entity name="coffin7" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="coffin7"/>
+		</components>
+	</game_entity>
+	<game_entity name="coffin6_lid" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="coffin6_lid"/>
+		</components>
+	</game_entity>
+	<game_entity name="coffin6" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="coffin6"/>
+		</components>
+	</game_entity>
+	<game_entity name="coffin9" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="coffin9"/>
+		</components>
+	</game_entity>
+	<game_entity name="coffin9_lid" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="coffin9_lid"/>
+		</components>
+	</game_entity>
+	<game_entity name="vc_coffin_chains" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="vc_coffin_chains"/>
+		</components>
+	</game_entity>
+	<game_entity name="vc_coffin_decoration_skull" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="vc_coffin_decoration_skull"/>
+		</components>
+	</game_entity>
+	<game_entity name="vc_coffin_decoration_cross" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="vc_coffin_decoration_cross"/>
+		</components>
+	</game_entity>
+	<game_entity name="vc_coffin_decoration_candle" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="vc_coffin_decoration_candle"/>
+		</components>
+	</game_entity>
+	<game_entity name="vc_coffin_handle1" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="vc_coffin_handle1"/>
+		</components>
+	</game_entity>
+	<game_entity name="vc_coffin_handle2" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="vc_coffin_handle2"/>
+		</components>
+	</game_entity>
+	<game_entity name="vc_coffin_handle3" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="vc_coffin_handle3"/>
+		</components>
+	</game_entity>
+	<game_entity name="vc_coffin_lid" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="vc_coffin_lid"/>
+		</components>
+	</game_entity>
+	<game_entity name="vc_coffin_mainbody" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="vc_coffin_mainbody"/>
+		</components>
+	</game_entity>
+	<game_entity name="vc_coffin_ornament2" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="vc_coffin_ornament2"/>
+		</components>
+	</game_entity>
+	<game_entity name="vc_coffin_ornament1" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="vc_coffin_ornament1"/>
+		</components>
+	</game_entity>
+	<game_entity name="vc_coffin_ornament3" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="vc_coffin_ornament3"/>
+		</components>
+	</game_entity>
+	<game_entity name="tombstone_001" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="tombstone_001"/>
+		</components>
+	</game_entity>
+</prefabs>
+
