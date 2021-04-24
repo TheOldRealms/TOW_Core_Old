@@ -16,7 +16,7 @@ namespace TOW_Core.Abilities
     {
         public FireBallAbility() : base()
         {
-            this.CoolDown = 20;
+            this.CoolDown = 6;
             this.MaxDuration = 3f;
             this.Name = "Fireball";
             this.SpriteName = "fireball_icon";

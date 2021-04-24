@@ -14,8 +14,8 @@ namespace TOW_Core.Abilities
     {
         private Agent _agent;
         private float _radius = 5f;
-        private int _minDamage = 30;
-        private int _maxDamage = 80;
+        private int _minDamage = 60;
+        private int _maxDamage = 100;
         private Random _random;
         private bool _firstCollision;
         private float _speed = 40f;
@@ -76,7 +76,7 @@ namespace TOW_Core.Abilities
                 var list = Mission.Current.GetNearbyEnemyAgents(collisionpoint.AsVec2, _radius, _agent.Team);
                 foreach (var agent in list)
                 {
-                    agent.ApplyDamage(_random.Next(_minDamage, _maxDamage));
+                    agent.ApplyDamage(_random.Next(_minDamage, _maxDamage), _agent);
                 }
                 var explosion = GameEntity.CreateEmpty(Scene);
                 MatrixFrame frame = MatrixFrame.Identity;

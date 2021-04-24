@@ -18,9 +18,9 @@ namespace TOW_Core.Abilities
         private bool _isFading;
         private float _damageInterval = 0.5f;
         private float _timeSinceLastDamage = 0f;
-        private float _range = 3f;
-        private int _damageMin = 10;
-        private int _damageMax = 30;
+        private float _range = 5f;
+        private int _damageMin = 50;
+        private int _damageMax = 80;
         private Random _random;
         protected override TickRequirement GetTickRequirement()
         {
@@ -72,7 +72,7 @@ namespace TOW_Core.Abilities
             var list = Mission.Current.GetAgentsInRange(base.GameEntity.GetGlobalFrame().origin.AsVec2, this._range);
             foreach(var agent in list)
             {
-                agent.ApplyDamage(this._random.Next(this._damageMin, this._damageMax));
+                agent.ApplyDamage(this._random.Next(this._damageMin, this._damageMax), _agent);
             }
         }
     }

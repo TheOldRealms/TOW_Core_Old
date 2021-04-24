@@ -139,11 +139,19 @@ namespace TOW_Core.Battle.Extensions
         /// </summary>
         /// <param name="agent">The agent that will be damaged</param>
         /// <param name="damageAmount">How much damage the agent will receive.</param>
-        public static void ApplyDamage(this Agent agent, float damageAmount)
+        public static void ApplyDamage(this Agent agent, float damageAmount, Agent damager = null)
         {
-            var blow = new Blow();
-            blow.InflictedDamage = (int)damageAmount;
-            agent.RegisterBlow(blow);
+            try
+            {
+                var blow = new Blow();
+                blow.InflictedDamage = (int)damageAmount;
+                if(damager != null) blow.OwnerId = damager.Index;
+                agent.RegisterBlow(blow);
+            }
+            catch(Exception e)
+            {
+                TOWCommon.Log("Applydamange: attempted to damage agent, but: " + e.Message, NLog.LogLevel.Error);
+            }
         }
 
         /// <summary>
