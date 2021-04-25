@@ -171,9 +171,15 @@
 		</ItemComponent>
 		<Flags />
 	</Item>
+	<Item id="mannfred_body" name="Mannfred's Armor" mesh="vc_mannfred_body" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="80" leg_armor="35" arm_armor="35" head_armor="80" has_gender_variations="false" covers_body="true" covers_head="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
 	<Item id="krell_body" name="{=!}Krell's Armor" mesh="krell_body" weight="0.8" difficulty="0" appearance="1" Type="BodyArmor">
 		<ItemComponent>
-			<Armor body_armor="60" leg_armor="20" arm_armor="20" has_gender_variations="false" covers_body="true" covers_head="true" modifier_group="plate" material_type="Plate" />
+			<Armor body_armor="60" leg_armor="20" arm_armor="20" head_armor="80" has_gender_variations="false" covers_body="true" covers_head="true" modifier_group="plate" material_type="Plate" />
 		</ItemComponent>
 		<Flags />
 	</Item>

@@ -159,6 +159,12 @@
 		</ItemComponent>
 		<Flags />
 	</Item>
+	<Item id="mannfred_legs" name="Mannfred' Leg Armor" mesh="vc_mannfred_feet" weight="0.9" difficulty="0" appearance="1" Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="60" covers_legs="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
 	<Item id="krell_legs" name="{=!}Krell's Leg Armor " mesh="krell_legs" weight="0.9" difficulty="0" appearance="1" Type="LegArmor">
 		<ItemComponent>
 			<Armor leg_armor="40" covers_legs="true" modifier_group="plate" material_type="Plate" />

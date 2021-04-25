@@ -22,6 +22,20 @@ namespace TOW_Core.Abilities
         private FireBallAbility _ability;
         private float _abilitylife = -1f;
         private bool _isFading;
+        private int _movingSoundindex;
+        private int _explosionSoundindex;
+        private SoundEvent _movingSound;
+
+        protected override void OnRemoved(int removeReason)
+        {
+            base.OnRemoved(removeReason);
+            //clean up
+            this._movingSound.Release();
+            this._random = null;
+            this._agent = null;
+            this._ability = null;
+            this._movingSound = null;
+        }
 
         protected override TickRequirement GetTickRequirement()
         {
@@ -36,6 +50,9 @@ namespace TOW_Core.Abilities
             base.OnInit();
             this.SetScriptComponentToTick(this.GetTickRequirement());
             _random = new Random();
+            this._movingSoundindex = SoundEvent.GetEventIdFromString("fireball");
+            this._explosionSoundindex = SoundEvent.GetEventIdFromString("fireball_explosion");
+
         }
 
         protected override void OnTick(float dt)
@@ -62,6 +79,13 @@ namespace TOW_Core.Abilities
                     _isFading = true;
                 }
             }
+            if(this._movingSound == null)
+            {
+                this._movingSound = SoundEvent.CreateEvent(this._movingSoundindex, Scene);
+                this._movingSound.SetPosition(newframe.origin);
+                this._movingSound.Play();
+            }
+            this._movingSound.SetPosition(newframe.origin);
         }
 
         protected override void OnPhysicsCollision(ref PhysicsContact contact)
@@ -81,8 +105,10 @@ namespace TOW_Core.Abilities
                 var explosion = GameEntity.CreateEmpty(Scene);
                 MatrixFrame frame = MatrixFrame.Identity;
                 var psys = ParticleSystem.CreateParticleSystemAttachedToEntity("psys_burning_projectile_default_coll", explosion, ref frame);
-                explosion.SetGlobalFrame(new MatrixFrame(Mat3.CreateMat3WithForward(in collisionnormal), collisionpoint));
+                var globalFrame = new MatrixFrame(Mat3.CreateMat3WithForward(in collisionnormal), collisionpoint);
+                explosion.SetGlobalFrame(globalFrame);
                 explosion.FadeOut(3, true);
+                Mission.Current.MakeSound(this._explosionSoundindex, globalFrame.origin, false, true, -1, -1);
                 _firstCollision = true;
             }
         }

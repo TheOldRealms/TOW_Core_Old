@@ -215,13 +215,13 @@
 		<Equipments>
 			<EquipmentRoster>
 				<equipment slot="Item0"
-						   id="Item.vampire_greatsword_002" />
+						   id="Item.grave_guard_sword_006" />
 				<equipment slot="Body"
 						   id="Item.grave_guard_body_001_full" />
 			</EquipmentRoster>
 			<EquipmentRoster>
 				<equipment slot="Item0"
-						   id="Item.vampire_greatsword_002" />
+						   id="Item.grave_guard_sword_006" />
 				<equipment slot="Body"
 						   id="Item.grave_guard_body_002_full" />
 			</EquipmentRoster>

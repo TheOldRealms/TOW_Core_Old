@@ -44,8 +44,12 @@ namespace TOW_Core.Utilities
         public static ParticleSystem ApplyParticleToAgentBone(Agent agent, string particleId, sbyte boneIndex)
         {
             Skeleton skeleton = agent.AgentVisuals.GetSkeleton();
+            Scene scene = Mission.Current.Scene;
+            GameEntity entity = GameEntity.CreateEmpty(scene);
             MatrixFrame localFrame = new MatrixFrame(Mat3.Identity, new Vec3(0, 0, 0));
-            ParticleSystem particle = ParticleSystem.CreateParticleSystemAttachedToBone(particleId, skeleton, boneIndex, ref localFrame);
+            ParticleSystem particle = ParticleSystem.CreateParticleSystemAttachedToEntity("undead_crumbling", entity, ref localFrame);
+            agent.AgentVisuals.AddChildEntity(entity);
+            skeleton.AddComponentToBone(boneIndex, particle);
             return particle;
         }
     }

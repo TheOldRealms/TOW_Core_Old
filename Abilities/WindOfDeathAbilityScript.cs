@@ -18,7 +18,7 @@ namespace TOW_Core.Abilities
         private bool _isFading;
         private float _damageInterval = 0.5f;
         private float _timeSinceLastDamage = 0f;
-        private float _range = 5f;
+        private float _range = 3.5f;
         private int _damageMin = 50;
         private int _damageMax = 80;
         private Random _random;

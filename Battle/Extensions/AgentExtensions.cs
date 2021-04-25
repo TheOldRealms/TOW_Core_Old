@@ -146,6 +146,7 @@ namespace TOW_Core.Battle.Extensions
                 var blow = new Blow();
                 blow.InflictedDamage = (int)damageAmount;
                 if(damager != null) blow.OwnerId = damager.Index;
+                if(agent.State == TaleWorlds.Core.AgentState.Active || agent.State == TaleWorlds.Core.AgentState.Routed)
                 agent.RegisterBlow(blow);
             }
             catch(Exception e)

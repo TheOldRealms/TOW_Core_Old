@@ -134,5 +134,13 @@
 			<Piece id="vampire_greatsword_002_pommel" Type="Pommel" />
 		</Pieces>
 	</CraftedItem>
+
+	<CraftedItem id="grave_guard_sword_006" name="Grave Guard Sword 006" crafting_template="tow_greatswords_template">
+		<Pieces>
+			<Piece id="grave_guard_sword_006_blade" Type="Blade" scale_factor="100" />
+			<Piece id="grave_guard_sword_006_handle" Type="Handle" scale_factor="100" />
+			<Piece id="grave_guard_sword_006_guard" Type="Guard" />
+		</Pieces>
+	</CraftedItem>
 	
 </Items>

@@ -39,6 +39,12 @@
 			eventRef.Play();
 		}
   -->
-		<module_sound name="musket_fire_sound" sound_category="mission_combat" path="musket_fire3.wav" />
+		<module_sound name="musket_fire_sound_1" sound_category="mission_combat" path="musket_fire1.wav" />
+		<module_sound name="musket_fire_sound_2" sound_category="mission_combat" path="musket_fire2.wav" />
+		<module_sound name="musket_fire_sound_3" sound_category="mission_combat" path="musket_fire3.wav" />
+		<module_sound name="musket_fire_sound_4" sound_category="mission_combat" path="musket_fire4.wav" />
+		<module_sound name="musket_fire_sound_5" sound_category="mission_combat" path="musket_fire5.wav" />
+		<module_sound name="fireball" sound_category="mission_ambient_3d_big" path="fireball.wav" />
+		<module_sound name="fireball_explosion" sound_category="mission_ambient_3d_big" path="fireball_explosion.wav" />
 	</module_sounds>
 </base>

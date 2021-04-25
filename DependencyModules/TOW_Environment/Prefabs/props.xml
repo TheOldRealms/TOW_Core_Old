@@ -572,5 +572,26 @@
 			<meta_mesh_component name="tombstone_001"/>
 		</components>
 	</game_entity>
+	<game_entity name="tombstone_001_skull" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="tombstone_001_skull"/>
+		</components>
+	</game_entity>
+	<game_entity name="tombstone_001_scroll" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="tombstone_001_scroll"/>
+		</components>
+	</game_entity>
+	<game_entity name="sigmar_statue_001" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="sigmar_statue_001"/>
+		</components>
+	</game_entity>
 </prefabs>
 

@@ -7,6 +7,12 @@
 		<Flags />
 	</Item>
 
+	<Item id="mannfred_hands" name="Mannfred's Gauntlets" mesh="vc_mannfred_hands" weight="1.5" difficulty="0" appearance="3" Type="HandArmor">
+		<ItemComponent>
+			<Armor arm_armor="45" covers_hands="true" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
 	<Item id="vampire_lord_braces_001" name="{=!}Vampire Lord Bracers" mesh="vampire_lord_braces_001" weight="1.5" difficulty="0" appearance="3" Type="HandArmor">
 		<ItemComponent>
 			<Armor arm_armor="30" covers_hands="true" modifier_group="plate" material_type="Plate" />

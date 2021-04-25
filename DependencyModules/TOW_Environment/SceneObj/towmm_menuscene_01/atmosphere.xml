@@ -7,7 +7,7 @@
 		<value name="humidity" value="1.000"/>
 		<value name="color_grade_name" value="cg_50c_5b"/>
 		<value name="time_of_day" value="12.000"/>
-		<value name="fall_density" value="0.200"/>
+		<value name="fall_density" value="0.000"/>
 		<value name="snow_density" value="0.000"/>
 		<value name="is_indoor" value="false"/>
 		<value name="global_envmap_multiplier" value="1.000"/>

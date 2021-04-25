@@ -119,6 +119,33 @@
 		</Materials>
 	</CraftingPiece>
 
+
+	<CraftingPiece id="grave_guard_sword_006_blade" name="Grave Guard Greatsword 006 Blade" tier="5" piece_type="Blade" mesh="grave_guard_sword_006_blade" culture="Culture.khuzait" length="89.3" weight="1.35">
+		<PieceUsages unavailable_usages="" />
+		<BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_grave_guard_sword_006_blade" >
+			<Thrust damage_type="Pierce" damage_factor="3.2" />
+			<Swing damage_type="Cut" damage_factor="4.1" />
+		</BladeData>
+		<Materials>
+			<Material id="Iron4" count="4" />
+		</Materials>
+	</CraftingPiece>
+	<CraftingPiece id="grave_guard_sword_006_handle" name="Grave Guard Greatsword 006 Handle" tier="3" piece_type="Handle" mesh="grave_guard_sword_006_handle" culture="Culture.khuzait" length="43.4" weight="0.13">
+		<PieceUsages unavailable_usages="" />
+		<BuildData piece_offset="0" next_piece_offset="0" previous_piece_offset="0" />
+		<Materials>
+			<Material id="Iron3" count="1" />
+		</Materials>
+	</CraftingPiece>
+	<CraftingPiece id="grave_guard_sword_006_guard" name="Grave Guard Greatsword 006 Guard" tier="5" piece_type="Guard" mesh="grave_guard_sword_006_guard" culture="Culture.khuzait" length="9.03" weight="0.15">
+		<PieceUsages unavailable_usages="" />
+		<BuildData next_piece_offset="10.5" previous_piece_offset="12" />
+		<StatContributions armor_bonus="5" />
+		<Materials>
+			<Material id="Iron5" count="2" />
+		</Materials>
+	</CraftingPiece>
+
 	<CraftingPiece id="skeleton_warrior_sword_005_blade" name="Skeleton Warrior Sword Blade 005" tier="1" piece_type="Blade" mesh="skele_warr_sword_005_blade" culture="Culture.khuzait" length="73.5" weight="0.9">
 		<PieceUsages unavailable_usages="" />
 		<BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_skele_warr_sword_005_blade" >

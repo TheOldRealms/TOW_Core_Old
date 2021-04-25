@@ -34,5 +34,138 @@
 			<meta_mesh_component name="tombstone_002"/>
 		</components>
 	</game_entity>
+	<game_entity name="buttress1" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="buttress1"/>
+		</components>
+	</game_entity>
+	<game_entity name="crypt" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="crypt"/>
+		</components>
+	</game_entity>
+	<game_entity name="buttress3" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="buttress3"/>
+		</components>
+	</game_entity>
+	<game_entity name="buttress2" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="buttress2"/>
+		</components>
+	</game_entity>
+	<game_entity name="pillar1" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="pillar1"/>
+		</components>
+	</game_entity>
+	<game_entity name="door1" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="door1"/>
+		</components>
+	</game_entity>
+	<game_entity name="door2" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="door2"/>
+		</components>
+	</game_entity>
+	<game_entity name="door3" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="door3"/>
+		</components>
+	</game_entity>
+	<game_entity name="facade1" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="facade1"/>
+		</components>
+	</game_entity>
+	<game_entity name="facade2" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="facade2"/>
+		</components>
+	</game_entity>
+	<game_entity name="facade3" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="facade3"/>
+		</components>
+	</game_entity>
+	<game_entity name="ornament1" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="ornament1"/>
+		</components>
+	</game_entity>
+	<game_entity name="ornament2" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="ornament2"/>
+		</components>
+	</game_entity>
+	<game_entity name="ornament3" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="ornament3"/>
+		</components>
+	</game_entity>
+	<game_entity name="pillar2" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="pillar2"/>
+		</components>
+	</game_entity>
+	<game_entity name="skulls" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="skulls"/>
+		</components>
+	</game_entity>
+	<game_entity name="spikes1" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="spikes1"/>
+		</components>
+	</game_entity>
+	<game_entity name="spikes2" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="spikes2"/>
+		</components>
+	</game_entity>
+	<game_entity name="swords" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="swords"/>
+		</components>
+	</game_entity>
 </prefabs>
 
