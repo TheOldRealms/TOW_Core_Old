@@ -14,21 +14,21 @@ namespace TOW_Core.Abilities
     {
         public WindOfDeathAbility() : base()
         {
-            this.CoolDown = 40;
-            this.MaxDuration = 5f;
-            this.Name = "Wind of Death";
-            this.SpriteName = "windofdeath_icon";
+            CoolDown = 40;
+            MaxDuration = 5f;
+            Name = "Wind of Death";
+            SpriteName = "windofdeath_icon";
         }
 
-        protected override void OnUse(Agent agent)
+        protected override void OnUse(Agent casterAgent)
         {
-            if (agent.IsActive() && agent.Health > 0 && agent.GetMorale() > 1 && agent.IsAbilityUser())
+            if (casterAgent.IsActive() && casterAgent.Health > 0 && casterAgent.GetMorale() > 1 && casterAgent.IsAbilityUser())
             {
                 var scene = Mission.Current.Scene;
                 var offset = 10f;
                 var lightradius = 10f;
 
-                var frame = agent.LookFrame;
+                var frame = casterAgent.LookFrame;
                 frame = frame.Advance(offset);
                 var height = scene.GetTerrainHeight(frame.origin.AsVec2);
                 frame.origin.z = height;
@@ -46,7 +46,7 @@ namespace TOW_Core.Abilities
 
                 entity.CreateAndAddScriptComponent("WindOfDeathAbilityScript");
                 WindOfDeathAbilityScript script = entity.GetFirstScriptOfType<WindOfDeathAbilityScript>();
-                script.SetAgent(agent);
+                script.SetAgent(casterAgent);
                 script.SetAbility(this);
 
                 entity.CallScriptCallbacks();

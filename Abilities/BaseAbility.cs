@@ -21,7 +21,7 @@ namespace TOW_Core.Abilities
         private int _coolDownLeft = 0;
         private Timer _timer = null;
 
-        public bool GetOnCoolDownStatus()
+        public bool IsOnCooldown()
         {
             return this._timer.Enabled;
         }
@@ -34,11 +34,11 @@ namespace TOW_Core.Abilities
         public BaseAbility()
         {
             this._timer = new Timer(1000);
-            this._timer.Elapsed += _timer_Elapsed;
+            this._timer.Elapsed += TimerElapsed;
             this._timer.Enabled = false;
         }
 
-        private void _timer_Elapsed(object sender, ElapsedEventArgs e)
+        private void TimerElapsed(object sender, ElapsedEventArgs e)
         {
             this._coolDownLeft -= 1;
             if(this._coolDownLeft <= 0)
@@ -48,16 +48,16 @@ namespace TOW_Core.Abilities
             }
         }
 
-        public void Use(Agent agent)
+        public void Use(Agent casterAgent)
         {
-            if (!this.GetOnCoolDownStatus())
+            if (!this.IsOnCooldown())
             {
                 this._coolDownLeft = this.CoolDown;
                 this._timer.Start();
-                OnUse(agent);
+                OnUse(casterAgent);
             }
         }
 
-        protected virtual void OnUse(Agent agent) { }
+        protected virtual void OnUse(Agent casterAgent) { }
     }
 }

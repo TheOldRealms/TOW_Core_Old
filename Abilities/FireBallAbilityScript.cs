@@ -7,17 +7,18 @@ using TaleWorlds.Engine;
 using TaleWorlds.Library;
 using TaleWorlds.MountAndBlade;
 using TOW_Core.Battle.Extensions;
+using TOW_Core.Battle;
+using TOW_Core.Utilities;
 
 namespace TOW_Core.Abilities
 {
     public class FireBallAbilityScript : ScriptComponentBehaviour
     {
-        private Agent _agent;
+        private Agent _casterAgent;
         private float _radius = 5f;
         private int _minDamage = 60;
         private int _maxDamage = 100;
-        private Random _random;
-        private bool _firstCollision;
+        private bool _hasCollided;
         private float _speed = 40f;
         private FireBallAbility _ability;
         private float _abilitylife = -1f;
@@ -30,11 +31,10 @@ namespace TOW_Core.Abilities
         {
             base.OnRemoved(removeReason);
             //clean up
-            this._movingSound.Release();
-            this._random = null;
-            this._agent = null;
-            this._ability = null;
-            this._movingSound = null;
+            _movingSound.Release();
+            _casterAgent = null;
+            _ability = null;
+            _movingSound = null;
         }
 
         protected override TickRequirement GetTickRequirement()
@@ -42,16 +42,15 @@ namespace TOW_Core.Abilities
             return TickRequirement.Tick;
         }
         protected override bool MovesEntity() => true;
-        public void SetAgent(Agent agent) => this._agent = agent;
-        public void SetAbility(FireBallAbility fireBallAbility) => this._ability = fireBallAbility;
+        public void SetAgent(Agent agent) => _casterAgent = agent;
+        public void SetAbility(FireBallAbility fireBallAbility) => _ability = fireBallAbility;
 
         protected override void OnInit()
         {
             base.OnInit();
-            this.SetScriptComponentToTick(this.GetTickRequirement());
-            _random = new Random();
-            this._movingSoundindex = SoundEvent.GetEventIdFromString("fireball");
-            this._explosionSoundindex = SoundEvent.GetEventIdFromString("fireball_explosion");
+            SetScriptComponentToTick(GetTickRequirement());
+            _movingSoundindex = SoundEvent.GetEventIdFromString("fireball");
+            _explosionSoundindex = SoundEvent.GetEventIdFromString("fireball_explosion");
 
         }
 
@@ -79,37 +78,39 @@ namespace TOW_Core.Abilities
                     _isFading = true;
                 }
             }
-            if(this._movingSound == null)
+            if(_movingSound == null)
             {
-                this._movingSound = SoundEvent.CreateEvent(this._movingSoundindex, Scene);
-                this._movingSound.SetPosition(newframe.origin);
-                this._movingSound.Play();
+                _movingSound = SoundEvent.CreateEvent(_movingSoundindex, Scene);
+                _movingSound.SetPosition(newframe.origin);
+                _movingSound.Play();
             }
-            this._movingSound.SetPosition(newframe.origin);
+            _movingSound.SetPosition(newframe.origin);
         }
 
         protected override void OnPhysicsCollision(ref PhysicsContact contact)
         {
             base.OnPhysicsCollision(ref contact);
-            if (!_firstCollision)
+            if (!_hasCollided)
             {
+                //start fading out for the projectile
                 base.GameEntity.FadeOut(0.1f, true);
                 _isFading = true;
+                //get collision data
                 var collisionpoint = contact.ContactPair0.Contact0.Position;
                 var collisionnormal = contact.ContactPair0.Contact0.Normal;
-                var list = Mission.Current.GetNearbyEnemyAgents(collisionpoint.AsVec2, _radius, _agent.Team);
-                foreach (var agent in list)
-                {
-                    agent.ApplyDamage(_random.Next(_minDamage, _maxDamage), _agent);
-                }
+                //apply AOE damage
+                TOWBattleUtilities.DamageAgentsInArea(collisionpoint.AsVec2, _radius, _minDamage, _maxDamage, _casterAgent, true);
+                //create visual explosion
                 var explosion = GameEntity.CreateEmpty(Scene);
                 MatrixFrame frame = MatrixFrame.Identity;
                 var psys = ParticleSystem.CreateParticleSystemAttachedToEntity("psys_burning_projectile_default_coll", explosion, ref frame);
                 var globalFrame = new MatrixFrame(Mat3.CreateMat3WithForward(in collisionnormal), collisionpoint);
                 explosion.SetGlobalFrame(globalFrame);
                 explosion.FadeOut(3, true);
-                Mission.Current.MakeSound(this._explosionSoundindex, globalFrame.origin, false, true, -1, -1);
-                _firstCollision = true;
+                //play explosion sound
+                Mission.Current.MakeSound(_explosionSoundindex, globalFrame.origin, false, true, -1, -1);
+                //set flag so we dont run this again (there can be multiple collisions, because fadeout is not instant)
+                _hasCollided = true;
             }
         }
 

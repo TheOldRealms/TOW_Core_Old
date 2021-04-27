@@ -71,9 +71,9 @@ namespace TOW_Core.Battle.Extensions
             }
         }
 
-        public static List<string> GetAbilitiesFromXML(this Agent agent)
+        public static List<string> GetAbilities(this Agent agent)
         {
-            return XMLAbilityLoader.GetAbilitesForCharacter(agent.Character.StringId);
+            return AbilityManager.GetAbilitesForCharacter(agent.Character.StringId);
         }
 
         /// <summary>
@@ -139,12 +139,12 @@ namespace TOW_Core.Battle.Extensions
         /// </summary>
         /// <param name="agent">The agent that will be damaged</param>
         /// <param name="damageAmount">How much damage the agent will receive.</param>
-        public static void ApplyDamage(this Agent agent, float damageAmount, Agent damager = null)
+        public static void ApplyDamage(this Agent agent, int damageAmount, Agent damager = null)
         {
             try
             {
                 var blow = new Blow();
-                blow.InflictedDamage = (int)damageAmount;
+                blow.InflictedDamage = damageAmount;
                 if(damager != null) blow.OwnerId = damager.Index;
                 if(agent.State == TaleWorlds.Core.AgentState.Active || agent.State == TaleWorlds.Core.AgentState.Routed)
                 agent.RegisterBlow(blow);

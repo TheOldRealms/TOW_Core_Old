@@ -21,6 +21,7 @@ namespace TOW_Core.Battle.AttributeSystem.CustomAgentComponents
         private float _regenAmount = 5f;
         private float _crumbleThreshold = 15f;
         private float _regenThreshold = 30f;
+        private int _crumbleDamagePerInterval = 5;
         private bool _crumblingVisualsApplied;
 
         private MoraleAgentComponent _moraleComponent;
@@ -60,9 +61,7 @@ namespace TOW_Core.Battle.AttributeSystem.CustomAgentComponents
 
         private void ApplyCrumbleDamage()
         {
-            float damageTaken = 5f;
-            damageTaken = MBMath.ClampFloat(damageTaken, 0, 5);
-            Agent.ApplyDamage(damageTaken);
+            Agent.ApplyDamage(_crumbleDamagePerInterval);
             if (!_crumblingVisualsApplied)
             {
                 _crumblingVisualsApplied = true;

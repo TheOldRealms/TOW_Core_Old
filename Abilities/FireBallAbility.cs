@@ -16,22 +16,22 @@ namespace TOW_Core.Abilities
     {
         public FireBallAbility() : base()
         {
-            this.CoolDown = 6;
-            this.MaxDuration = 3f;
-            this.Name = "Fireball";
-            this.SpriteName = "fireball_icon";
+            CoolDown = 6;
+            MaxDuration = 3f;
+            Name = "Fireball";
+            SpriteName = "fireball_icon";
         }
 
-        protected override void OnUse(Agent agent)
+        protected override void OnUse(Agent casterAgent)
         {
-            if(agent.IsActive() && agent.Health > 0 && agent.GetMorale() > 1 && agent.IsAbilityUser())
+            if(casterAgent.IsActive() && casterAgent.Health > 0 && casterAgent.GetMorale() > 1 && casterAgent.IsAbilityUser())
             {
                 var scene = Mission.Current.Scene;
                 var offset = 1f;
                 var mass = 1f;
                 var lightradius = 10f;
 
-                var frame = agent.LookFrame.Elevate(agent.GetEyeGlobalHeight());
+                var frame = casterAgent.LookFrame.Elevate(casterAgent.GetEyeGlobalHeight());
                 frame = frame.Advance(offset);
                 var entity = GameEntity.Instantiate(scene, "fireball_prefab", true);
                 entity.SetGlobalFrame(frame);
@@ -52,7 +52,7 @@ namespace TOW_Core.Abilities
                 entity.CreateAndAddScriptComponent("FireBallAbilityScript");
                 
                 FireBallAbilityScript script = entity.GetFirstScriptOfType<FireBallAbilityScript>();
-                script.SetAgent(agent);
+                script.SetAgent(casterAgent);
                 script.SetAbility(this);
                 
                 entity.CallScriptCallbacks();

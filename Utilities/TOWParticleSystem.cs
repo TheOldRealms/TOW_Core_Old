@@ -47,7 +47,7 @@ namespace TOW_Core.Utilities
             Scene scene = Mission.Current.Scene;
             GameEntity entity = GameEntity.CreateEmpty(scene);
             MatrixFrame localFrame = new MatrixFrame(Mat3.Identity, new Vec3(0, 0, 0));
-            ParticleSystem particle = ParticleSystem.CreateParticleSystemAttachedToEntity("undead_crumbling", entity, ref localFrame);
+            ParticleSystem particle = ParticleSystem.CreateParticleSystemAttachedToEntity(particleId, entity, ref localFrame);
             agent.AgentVisuals.AddChildEntity(entity);
             skeleton.AddComponentToBone(boneIndex, particle);
             return particle;

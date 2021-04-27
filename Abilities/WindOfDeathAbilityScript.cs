@@ -5,13 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 using TaleWorlds.Engine;
 using TaleWorlds.MountAndBlade;
+using TOW_Core.Battle;
 using TOW_Core.Battle.Extensions;
+using TOW_Core.Utilities;
 
 namespace TOW_Core.Abilities
 {
     public class WindOfDeathAbilityScript : ScriptComponentBehaviour
     {
-        private Agent _agent;
+        private Agent _casterAgent;
         private WindOfDeathAbility _ability;
         private float _speed = 8f;
         private float _abilitylife = -1f;
@@ -21,26 +23,25 @@ namespace TOW_Core.Abilities
         private float _range = 3.5f;
         private int _damageMin = 50;
         private int _damageMax = 80;
-        private Random _random;
+
         protected override TickRequirement GetTickRequirement()
         {
             return TickRequirement.Tick;
         }
         protected override bool MovesEntity() => true;
-        public void SetAgent(Agent agent) => this._agent = agent;
-        public void SetAbility(WindOfDeathAbility ability) => this._ability = ability;
+        public void SetAgent(Agent agent) => _casterAgent = agent;
+        public void SetAbility(WindOfDeathAbility ability) => _ability = ability;
 
         protected override void OnInit()
         {
             base.OnInit();
-            this.SetScriptComponentToTick(this.GetTickRequirement());
-            this._random = new Random();
+            SetScriptComponentToTick(GetTickRequirement());
         }
 
         protected override void OnTick(float dt)
         {
             base.OnTick(dt);
-            if (_timeSinceLastDamage > _damageInterval) this.DamageAgents();
+            if (_timeSinceLastDamage > _damageInterval) DamageAgents();
             _timeSinceLastDamage += dt;
             var frame = base.GameEntity.GetGlobalFrame();
             var newframe = frame.Advance(_speed * dt);
@@ -68,12 +69,8 @@ namespace TOW_Core.Abilities
 
         private void DamageAgents()
         {
-            this._timeSinceLastDamage = 0f;
-            var list = Mission.Current.GetAgentsInRange(base.GameEntity.GetGlobalFrame().origin.AsVec2, this._range);
-            foreach(var agent in list)
-            {
-                agent.ApplyDamage(this._random.Next(this._damageMin, this._damageMax), _agent);
-            }
+            _timeSinceLastDamage = 0f;
+            TOWBattleUtilities.DamageAgentsInArea(base.GameEntity.GetGlobalFrame().origin.AsVec2, _range, _damageMin, _damageMax,  _casterAgent);
         }
     }
 }

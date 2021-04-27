@@ -11,10 +11,13 @@ namespace TOW_Core.Abilities
     {
         private BaseAbility _currentAbility = null;
         private List<BaseAbility> _knownAbilities = new List<BaseAbility>();
+        private int _currentAbilityIndex;
+
         public BaseAbility CurrentAbility { get => _currentAbility; set => _currentAbility = value; }
+
         public AbilityComponent(Agent agent) : base(agent)
         {
-            var abilities = agent.GetAbilitiesFromXML();
+            var abilities = agent.GetAbilities();
             if(abilities.Count > 0)
             {
                 foreach (var ability in abilities)
@@ -24,7 +27,11 @@ namespace TOW_Core.Abilities
                         object instance = Activator.CreateInstance(Type.GetType(ability));
                         if (instance is BaseAbility)
                         {
-                            this._knownAbilities.Add(instance as BaseAbility);
+                            _knownAbilities.Add(instance as BaseAbility);
+                        }
+                        else
+                        {
+                            TOWCommon.Log("Attempted to add an ability to agent: " + agent.Character.StringId + ", but it wasn't of tpye Baseability", LogLevel.Warn);
                         }
                     }
                     catch (Exception)
@@ -32,30 +39,25 @@ namespace TOW_Core.Abilities
                         TOWCommon.Log("Failed instantiating ability class: " + ability, LogLevel.Error);
                     }
                 }
-                if (_knownAbilities.Count > 0) CurrentAbility = _knownAbilities[0];
+                if (_knownAbilities.Count > 0)
+                {
+                    SelectAbility(0);
+                }
             }
         }
 
         public void SelectAbility(int index)
         {
-            if(index>=0 && index < this._knownAbilities.Count)
+            if (_knownAbilities.Count > 0)
             {
-                this.CurrentAbility = _knownAbilities[index];
+                _currentAbilityIndex = index % _knownAbilities.Count;
+                CurrentAbility = _knownAbilities[_currentAbilityIndex];
             }
         }
 
         public void SelectNextAbility()
         {
-            if(this._knownAbilities.Count > 1)
-            {
-                int index = this._knownAbilities.FindIndex(x => x.Name == CurrentAbility.Name);
-                index += 1;
-                if(index > this._knownAbilities.Count - 1)
-                {
-                    index = 0;
-                }
-                this.SelectAbility(index);
-            }
+            SelectAbility(_currentAbilityIndex + 1);
         }
     }
 }

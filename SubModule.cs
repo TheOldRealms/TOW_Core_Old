@@ -35,7 +35,7 @@ namespace TOW_Core
             ConfigureLogging();
 
             //This has to be here.
-            Abilities.XMLAbilityLoader.LoadAbilities();
+            Abilities.AbilityManager.LoadAbilities();
             LoadAttributes();
         }
 

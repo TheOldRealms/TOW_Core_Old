@@ -25,6 +25,14 @@ namespace TOW_Core.Utilities
             }
         }
 
+        public static int GetRandomInt(int min, int max)
+        {
+            lock (syncLock)
+            {
+                return rng.Next(min, max);
+            }
+        }
+
         public static float GetDegreeInRadians(float degree)
         {
             return degree * (float)Math.PI / 180;

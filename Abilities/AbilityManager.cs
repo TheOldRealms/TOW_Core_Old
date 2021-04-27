@@ -12,7 +12,7 @@ using TOW_Core.Utilities;
 
 namespace TOW_Core.Abilities
 {
-    internal static class XMLAbilityLoader
+    internal static class AbilityManager
     {
         private static Dictionary<string, List<string>> _abilities = new Dictionary<string, List<string>>();
 

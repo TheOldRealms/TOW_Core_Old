@@ -12,22 +12,6 @@ namespace TOW_Core.Abilities
 {
     public class AbilityHUD_VM : ViewModel
     {
-        public AbilityHUD_VM() : base() { }
-
-        public void UpdateProperties()
-        {
-            if (Agent.Main == null) return;
-            this._ability = Agent.Main.GetCurrentAbility();
-            this.HasAnyAbility = this._ability != null;
-            if (this._hasAnyAbility)
-            {
-                this.SpriteName = this._ability.SpriteName;
-                this.Name = this._ability.Name;
-                this.CoolDownLeft = this._ability.GetCoolDownLeft().ToString();
-                this.IsOnCoolDown = this._ability.GetOnCoolDownStatus();
-            }
-        }
-
         private BaseAbility _ability = null;
         private string _name = "";
         private string _spriteName = "";
@@ -35,18 +19,34 @@ namespace TOW_Core.Abilities
         private bool _hasAnyAbility;
         private bool _onCoolDown;
 
+        public AbilityHUD_VM() : base() { }
+
+        public void UpdateProperties()
+        {
+            if (Agent.Main == null) return;
+            _ability = Agent.Main.GetCurrentAbility();
+            HasAnyAbility = _ability != null;
+            if (HasAnyAbility)
+            {
+                SpriteName = _ability.SpriteName;
+                Name = _ability.Name;
+                CoolDownLeft = _ability.GetCoolDownLeft().ToString();
+                IsOnCoolDown = _ability.IsOnCooldown();
+            }
+        }
+
         [DataSourceProperty]
         public bool HasAnyAbility
         {
             get
             {
-                return this._hasAnyAbility;
+                return _hasAnyAbility;
             }
             set
             {
-                if (value != this._hasAnyAbility)
+                if (value != _hasAnyAbility)
                 {
-                    this._hasAnyAbility = value;
+                    _hasAnyAbility = value;
                     base.OnPropertyChangedWithValue(value, "HasAnyAbility");
                 }
             }
@@ -57,13 +57,13 @@ namespace TOW_Core.Abilities
         {
             get
             {
-                return this._name;
+                return _name;
             }
             set
             {
-                if (value != this._name)
+                if (value != _name)
                 {
-                    this._name = value;
+                    _name = value;
                     base.OnPropertyChangedWithValue(value, "Name");
                 }
             }
@@ -74,13 +74,13 @@ namespace TOW_Core.Abilities
         {
             get
             {
-                return this._spriteName;
+                return _spriteName;
             }
             set
             {
-                if (value != this._spriteName)
+                if (value != _spriteName)
                 {
-                    this._spriteName = value;
+                    _spriteName = value;
                     base.OnPropertyChangedWithValue(value, "SpriteName");
                 }
             }
@@ -91,13 +91,13 @@ namespace TOW_Core.Abilities
         {
             get
             {
-                return this._coolDownLeft;
+                return _coolDownLeft;
             }
             set
             {
-                if (value != this._coolDownLeft)
+                if (value != _coolDownLeft)
                 {
-                    this._coolDownLeft = value;
+                    _coolDownLeft = value;
                     base.OnPropertyChangedWithValue(value, "CoolDownLeft");
                 }
             }
@@ -108,13 +108,13 @@ namespace TOW_Core.Abilities
         {
             get
             {
-                return this._onCoolDown;
+                return _onCoolDown;
             }
             set
             {
-                if (value != this._onCoolDown)
+                if (value != _onCoolDown)
                 {
-                    this._onCoolDown = value;
+                    _onCoolDown = value;
                     base.OnPropertyChangedWithValue(value, "IsOnCoolDown");
                 }
             }
