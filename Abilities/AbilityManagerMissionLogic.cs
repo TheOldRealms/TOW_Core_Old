@@ -16,7 +16,7 @@ namespace TOW_Core.Abilities
         public override void OnMissionTick(float dt)
         {
             base.OnMissionTick(dt);
-            if (Mission.CurrentState == Mission.State.Continuing)
+            if (Mission.CurrentState == Mission.State.Continuing && Agent.Main != null && Agent.Main.IsAbilityUser())
             {
                 if (Input.IsKeyPressed(InputKey.Q))
                 {

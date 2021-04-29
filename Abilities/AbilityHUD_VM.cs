@@ -23,7 +23,11 @@ namespace TOW_Core.Abilities
 
         public void UpdateProperties()
         {
-            if (Agent.Main == null) return;
+            if (Agent.Main == null) 
+            {
+                HasAnyAbility = false;
+                return;
+            }
             _ability = Agent.Main.GetCurrentAbility();
             HasAnyAbility = _ability != null;
             if (HasAnyAbility)
