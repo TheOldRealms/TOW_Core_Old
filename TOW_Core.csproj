@@ -282,11 +282,23 @@
   </ItemGroup>
   <!-- Files & Classes -->
   <ItemGroup>
+    <Compile Include="Abilities\AbilityComponent.cs" />
+    <Compile Include="Abilities\AbilityHUDMissionView.cs" />
+    <Compile Include="Abilities\AbilityHUD_VM.cs" />
+    <Compile Include="Abilities\AbilityManagerMissionLogic.cs" />
+    <Compile Include="Abilities\BaseAbility.cs" />
+    <Compile Include="Abilities\FireBallAbilityScript.cs" />
+    <Compile Include="Abilities\FireBallAbility.cs" />
+    <Compile Include="Abilities\WindOfDeathAbility.cs" />
+    <Compile Include="Abilities\WindOfDeathAbilityScript.cs" />
+    <Compile Include="Abilities\AbilityManager.cs" />
     <Compile Include="Battle\AttributeSystem\AttributeManager.cs" />
     <Compile Include="Battle\AttributeSystem\CustomAgentComponents\UndeadMoraleAgentComponent.cs" />
+    <Compile Include="Battle\AttributeSystem\CustomBattleMoralModel\TOWBattleMoraleModel.cs" />
     <Compile Include="Battle\AttributeSystem\CustomMissionLogic\AttributeSystemMissionLogic.cs" />
-    <Compile Include="Battle\AttributeSystem\CustomMissionLogic\TOWAgentMoraleInteractionLogic.cs" />
     <Compile Include="Battle\Extensions\AgentExtensions.cs" />
+    <Compile Include="Battle\FireArms\MusketFireEffectMissionLogic.cs" />
+    <Compile Include="Battle\TOWBattleUtilities.cs" />
     <Compile Include="CustomBattles\CustomBattleFormationTemplate.cs" />
     <Compile Include="CustomBattles\CustomBattleTroopManager.cs" />
     <Compile Include="GameTexts\TOWTextManager.cs" />
@@ -316,29 +328,61 @@
     <Content Include="DependencyModules\TOW_Armory\ModuleData\tow_items\shoulder_armors.xml" />
     <Content Include="DependencyModules\TOW_Armory\ModuleData\tow_items\weapons.xml" />
     <Content Include="DependencyModules\TOW_Armory\SubModule.xml" />
+    <Content Include="DependencyModules\TOW_Environment\ModuleData\tow_custombattlescenes.xml" />
+    <Content Include="DependencyModules\TOW_Environment\Prefabs\buildings.xml" />
+    <Content Include="DependencyModules\TOW_Environment\Prefabs\building_details.xml" />
+    <Content Include="DependencyModules\TOW_Environment\Prefabs\custom_structures_01.xml" />
+    <Content Include="DependencyModules\TOW_Environment\Prefabs\Empire Houses.xml" />
+    <Content Include="DependencyModules\TOW_Environment\Prefabs\House_VC_001.xml" />
+    <Content Include="DependencyModules\TOW_Environment\Prefabs\props.xml" />
+    <Content Include="DependencyModules\TOW_Environment\Prefabs\Spike.xml" />
+    <Content Include="DependencyModules\TOW_Environment\Prefabs\terrain.xml" />
+    <Content Include="DependencyModules\TOW_Environment\Prefabs\Vampire_houses.xml" />
+    <Content Include="DependencyModules\TOW_Environment\Prefabs\VC_Tower.xml" />
+    <Content Include="DependencyModules\TOW_Environment\Prefabs\VC_trees.xml" />
     <Content Include="DependencyModules\TOW_Environment\SceneObj\towmm_menuscene_01\atmosphere.xml" />
     <Content Include="DependencyModules\TOW_Environment\SceneObj\towmm_menuscene_01\references.txt" />
+    <Content Include="DependencyModules\TOW_PreNative\ModuleData\tow_action_sets.xml" />
+    <Content Include="DependencyModules\TOW_PreNative\ModuleData\tow_action_types.xml" />
+    <Content Include="DependencyModules\TOW_PreNative\SubModule.xml" />
+    <Content Include="StaticGUI\Prefabs\AbilityHUD.xml" />
+    <Content Include="StaticGUI\towSpriteData.xml" />
+    <Content Include="StaticPrefabs\spelleffects_prefab.xml" />
     <Content Include="DependencyModules\TOW_Environment\SubModule.xml" />
-    <Content Include="ModuleData\*.xml" />
+    <Content Include="ModuleData\tow_abilities.xml" />
+    <Content Include="ModuleData\tow_characterattributes.xml" />
+    <Content Include="ModuleData\tow_cultures.xml" />
+    <Content Include="ModuleData\tow_custombattletemplates.xml" />
+    <Content Include="ModuleData\tow_item_usages.xml" />
+    <Content Include="ModuleData\tow_lords.xml" />
+    <Content Include="ModuleData\tow_module_strings.xml" />
+    <Content Include="ModuleData\tow_override_strings.xml" />
+    <Content Include="ModuleData\tow_skillsets.xml" />
+    <Content Include="ModuleData\tow_sounds.xml" />
+    <Content Include="ModuleData\tow_troopdefinitions_empire.xml" />
+    <Content Include="ModuleData\tow_troopdefinitions_vc.xml" />
     <Content Include="SubModule.xml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DependencyModules\TOW_Environment\SceneObj\towmm_menuscene_01\flora.bin" />
     <None Include="DependencyModules\TOW_Environment\SceneObj\towmm_menuscene_01\scene.xscene" />
     <None Include="DependencyModules\TOW_Environment\SceneObj\towmm_menuscene_01\terrain.bin" />
+    <None Include="DependencyModules\TOW_PreNative\ModuleData\project.mbproj" />
+    <None Include="ModuleData\project.mbproj" />
     <None Include="packages.config" />
     <None Include="Readme.md" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DependencyModules\TOW_Armory\AssetPackages\" />
     <Folder Include="DependencyModules\TOW_Environment\AssetPackages\" />
-    <Folder Include="DependencyModules\TOW_Environment\ModuleData\" />
   </ItemGroup>
   <!-- Post-Build -->
   <PropertyGroup>
     <PostBuildEvent>xcopy /d /y "$(MSBuildProjectDirectory)\SubModule.xml" "$(GameDir)\Modules\TOW_Core"
 xcopy /s /e /i /y "$(MSBuildProjectDirectory)\ModuleData" "$(GameDir)\Modules\TOW_Core\ModuleData"
-xcopy /s /e /i /y "$(MSBuildProjectDirectory)\DependencyModules" "$(GameDir)\Modules"</PostBuildEvent>
+xcopy /s /e /i /y "$(MSBuildProjectDirectory)\DependencyModules" "$(GameDir)\Modules"
+xcopy /s /e /i /y "$(MSBuildProjectDirectory)\StaticGUI" "$(GameDir)\Modules\TOW_Core\GUI"
+xcopy /s /e /i /y "$(MSBuildProjectDirectory)\StaticPrefabs" "$(GameDir)\Modules\TOW_Core\Prefabs"</PostBuildEvent>
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,0 +1,15 @@
+<prefabs>
+	<game_entity occlusion_body_name="bo_occ_vlandia_arena_tower" season_mask="255" old_prefab_name="" name="VC_Tower">
+		<components>
+			<meta_mesh_component name="vlandia_arena_tower">
+				<mesh factor="4285492116" name="vlandia_arena_tower.lod2.29"/>
+				<mesh factor="4289243304" material="stone_wall_14" name="vlandia_arena_tower.lod2.1"/>
+				<mesh factor="4285492116" name="vlandia_arena_tower.29"/>
+				<mesh factor="4289243304" material="stone_wall_14" name="vlandia_arena_tower.1"/>
+			</meta_mesh_component>
+		</components>
+		<physics mass="1.000" shape="bo_vlandia_arena_tower"/>
+		<transform scale="0.563, 0.563, 0.563" rotation_euler="0.000, 0.000, -0.934" position="603.857, 450.490, 49.331"/>
+	</game_entity>
+</prefabs>
+

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CustomBattleScenes>
+	<Scene id="battle_terrain_a"
+		   name="{=!}AA TOW Sylvanian marsh"
+		   terrain="Plain" />
+</CustomBattleScenes>
+<!--This file's scene references will get loaded into the custombattle screen's scene selection in addition to the natives scenes.-->
+<!--The schema is the same as Modules\CustomBattle\ModuleData\custom_battle_scenes.xml-->

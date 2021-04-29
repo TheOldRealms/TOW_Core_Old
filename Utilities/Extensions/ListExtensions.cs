@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,17 @@ namespace TOW_Core.Utilities.Extensions
             {
                 list.Add(item);
             }
+        }
+
+        public static void RemoveIfExists<T>(this IEnumerable<T> list, T item) where T : class
+        {
+            list = list.Where(x => x != item);
+        }
+
+        public static void RemoveAllOfType<T>(this IEnumerable<T> list, Type type) where T : class
+        {
+            list = list.Where(x => x.GetType() != type);
+
         }
     }
 }

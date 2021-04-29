@@ -1,0 +1,38 @@
+<prefabs>
+	<game_entity name="spiky_rock_001" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="spiky_rock_001"/>
+		</components>
+	</game_entity>
+	<game_entity name="spiky_rock_002" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="spiky_rock_002"/>
+		</components>
+	</game_entity>
+	<game_entity name="spiky_rock_003" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="spiky_rock_003"/>
+		</components>
+	</game_entity>
+	<game_entity name="spiky_rock_004" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="spiky_rock_004"/>
+		</components>
+	</game_entity>
+	<game_entity name="spiky_rock_005" old_prefab_name="" season_mask="255">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<components>
+			<meta_mesh_component name="spiky_rock_005"/>
+		</components>
+	</game_entity>
+</prefabs>
+

@@ -24,6 +24,42 @@
 		</Pieces>
 	</CraftedItem>
 
+	<Item id="tow_musket_001" name="{=!}Handgun" body_name="bo_cross_bow_heavy" mesh="musket_with_shaders" culture="Culture.empire" weight="2.0" appearance="1" difficulty="0" Type="Crossbow" AmmoOffset="0.0, 0.0, 0.0" item_holsters="crossbow_back:bow_hip:mace_right_hip:bow_hip_2" holster_position_shift="0.02,0,-0.4">
+		<ItemComponent>
+			<Weapon weapon_class="Crossbow"
+				  ammo_class="Bolt"
+						position="0, 0, 0"
+						rotation="0, -1, 0"
+				  missile_speed="350"
+				  accuracy="90"
+				  thrust_damage="190"
+				  thrust_speed="60"
+				  speed_rating="30"
+				  weapon_length="95"
+				  ammo_limit="1"
+				  thrust_damage_type="Pierce"
+				  item_usage="handgun"
+				  physics_material="wood_weapon"
+				  center_of_mass="0,0,-0.1">
+				<WeaponFlags RangedWeapon="true"
+							 HasString="true"
+							 UseHandAsThrowBase="true"
+							 CantReloadOnHorseback="true"
+							 NotUsableWithOneHand="true"
+							 TwoHandIdleOnMount="true" />
+			</Weapon>
+		</ItemComponent>
+	</Item>
+
+	<Item id="musket_ball" name="{=!}Musket Ball" body_name="bo_capsule_arrow" holster_body_name="bo_axe_short" mesh="bolt_bl_a" flying_mesh="bolt_bl_flying" weight="0.05" appearance="1" Type="Bolts" item_holsters="quiver_bolts:quiver_bolts_2:quiver_back_middle:quiver_back_top">
+		<ItemComponent>
+			<Weapon weapon_class="Bolt" stack_amount="20" thrust_speed="0" thrust_damage_type="Pierce" speed_rating="0" missile_speed="10" weapon_length="47" item_usage="" rotation="180, 0, 0" physics_material="missile" sticking_position="0,-0.47,0" sticking_rotation="90,0,0" center_of_mass="0,0,-0.1">
+				<WeaponFlags AttachAmmoToVisual="true" Consumable="true" AmmoSticksWhenShot="true" AmmoBreaksOnBounceBack="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags ForceAttachOffHandPrimaryItemBone="true" />
+	</Item>
+
 	<!-- Vampire Weapons TOW -->
 	<CraftedItem id="skeleton_warrior_sword_002" name="{=!}Skeleton Warrior Sword 002" crafting_template="tow_longsword_template">
 		<Pieces>
@@ -96,6 +132,14 @@
 			<Piece id="vampire_greatsword_002_hilt" Type="Handle" scale_factor="100" />
 			<Piece id="vampire_greatsword_002_guard" Type="Guard" />
 			<Piece id="vampire_greatsword_002_pommel" Type="Pommel" />
+		</Pieces>
+	</CraftedItem>
+
+	<CraftedItem id="grave_guard_sword_006" name="Grave Guard Sword 006" crafting_template="tow_greatswords_template">
+		<Pieces>
+			<Piece id="grave_guard_sword_006_blade" Type="Blade" scale_factor="100" />
+			<Piece id="grave_guard_sword_006_handle" Type="Handle" scale_factor="100" />
+			<Piece id="grave_guard_sword_006_guard" Type="Guard" />
 		</Pieces>
 	</CraftedItem>
 	

@@ -7,6 +7,12 @@
 		</ItemComponent>
 		<Flags />
 	</Item>
+	<Item id="mannfred_shoulders" name="Mannfred's Pauldrons" mesh="vc_mannfred_shoulders" culture="Culture.khuzait" weight="5.0" appearance="2" Type="Cape">
+		<ItemComponent>
+			<Armor body_armor="60" arm_armor="30" modifier_group="plate" material_type="Plate" />
+		</ItemComponent>
+		<Flags />
+	</Item>
 	<Item id="krell_cape" name="{=!}Krell's Cape" mesh="krell_cape" culture="Culture.khuzait" weight="5.0" appearance="2" Type="Cape">
 		<ItemComponent>
 			<Armor body_armor="20" arm_armor="5" modifier_group="cloth" material_type="Cloth" />

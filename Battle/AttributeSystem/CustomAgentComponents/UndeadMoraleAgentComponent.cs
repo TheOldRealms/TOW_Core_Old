@@ -3,69 +3,75 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TaleWorlds.Core;
 using TaleWorlds.Engine;
 using TaleWorlds.Library;
 using TaleWorlds.MountAndBlade;
 using TOW_Core.Battle.Extensions;
 using TOW_Core.Utilities;
+using System.Timers;
 
 namespace TOW_Core.Battle.AttributeSystem.CustomAgentComponents
 {
-    public class UndeadMoraleAgentComponent : MoraleAgentComponent
+    public class UndeadMoraleAgentComponent : AgentComponent
     {
-        private Timer crumbleTimer;
-        private bool effectReady = false;
-        private float crumbleFrequencyInSeconds = 1f;
-        private float regenAmount = 1f;
-        private float crumbleThreshold = 10f;
-        private float regenThreshold = 30f;
+        private float _crumbleFrequencyInSeconds = 1;
+        private float _regenFrequencyInSeconds = 1;
+        private float _deltaSinceLastRegenTick = 0;
+        private float _deltaSinceLastCrumbleTick = 0;
+        private float _regenAmount = 5f;
+        private float _crumbleThreshold = 15f;
+        private float _regenThreshold = 30f;
+        private int _crumbleDamagePerInterval = 5;
+        private bool _crumblingVisualsApplied;
 
-        public UndeadMoraleAgentComponent(Agent agent) : base(agent)
-        {
-            agent.RemoveComponentIfNotNull(agent.GetComponent<MoraleAgentComponent>());
-        }
+        private MoraleAgentComponent _moraleComponent;
+
+        public UndeadMoraleAgentComponent(Agent agent) : base(agent) { }
 
         protected override void Initialize()
         {
             base.Initialize();
-            crumbleTimer = new Timer(GetDistributedTime(crumbleFrequencyInSeconds), crumbleFrequencyInSeconds, true);
+            this._moraleComponent = Agent.GetComponent<MoraleAgentComponent>();
         }
 
         protected override void OnTickAsAI(float dt)
         {
-            effectReady = crumbleTimer.Check(MBCommon.GetTime(MBCommon.TimeType.Mission));
+            base.OnTickAsAI(dt);
+            this._deltaSinceLastCrumbleTick += dt;
+            this._deltaSinceLastRegenTick += dt;
 
-            if (effectReady)
+            if (_moraleComponent.Morale < _crumbleThreshold && this._deltaSinceLastCrumbleTick > this._crumbleFrequencyInSeconds)
             {
-                if (Morale < crumbleThreshold)
+                this._deltaSinceLastCrumbleTick = 0;
+                try
                 {
-                    ApplyCrumbleDamage();
+                    if (Agent.IsActive() || Agent.IsRetreating()) ApplyCrumbleDamage();
                 }
-                else if (Morale > regenThreshold)
+                catch (Exception ex)
                 {
-                    ApplyMoraleRegen();
+                    TOWCommon.Log("Attempted to deal crumbledamage to agent. Error: " + ex.Message, NLog.LogLevel.Error);
                 }
+            }
+            else if (_moraleComponent.Morale > _regenThreshold && this._deltaSinceLastRegenTick > this._regenFrequencyInSeconds)
+            {
+                _deltaSinceLastRegenTick = 0;
+                ApplyRegenerationHealing();
             }
         }
 
         private void ApplyCrumbleDamage()
         {
-            float damageTaken = 5f;
-            damageTaken = MBMath.ClampFloat(damageTaken, 0, 5);
-            Agent.ApplyDamage(damageTaken);
-            crumbleTimer.Reset(MBCommon.GetTime(MBCommon.TimeType.Mission));
+            Agent.ApplyDamage(_crumbleDamagePerInterval);
+            if (!_crumblingVisualsApplied)
+            {
+                _crumblingVisualsApplied = true;
+                TOWParticleSystem.ApplyParticleToAgent(this.Agent, "undead_crumbling");
+            }
         }
 
-        private void ApplyMoraleRegen()
+        private void ApplyRegenerationHealing()
         {
-            Agent.Heal(regenAmount);
-            crumbleTimer.Reset(MBCommon.GetTime(MBCommon.TimeType.Mission));
-        }
-
-        private float GetDistributedTime(float deviation)
-        {
-            return MBCommon.GetTime(MBCommon.TimeType.Mission) - (float)TOWMath.GetRandomDouble(0, deviation);
+            Agent.Heal(_regenAmount);
         }
     }
 } 

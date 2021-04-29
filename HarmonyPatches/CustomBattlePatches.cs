@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using HarmonyLib;
 using TaleWorlds.Core;
+using TaleWorlds.ModuleManager;
 using TaleWorlds.MountAndBlade.CustomBattle;
 using TaleWorlds.MountAndBlade.CustomBattle.CustomBattle;
+using TaleWorlds.MountAndBlade.GauntletUI.Widgets.Multiplayer;
 using TOW_Core.CustomBattles;
 using TOW_Core.Utilities;
 
@@ -24,6 +26,7 @@ namespace TOW_Core.HarmonyPatches
             if (obj != null) __result = obj;
         }
 
+        //Fill available characters
         [HarmonyPostfix]
         [HarmonyPatch(typeof(CustomBattleData), "Characters", MethodType.Getter)]
         public static void Postfix2(ref IEnumerable<BasicCharacterObject> __result)
@@ -32,9 +35,10 @@ namespace TOW_Core.HarmonyPatches
             try
             {
                 //Ideally this should not be hardcoded. Maybe create a custombattlelords xml template and load that?
-                list.Add(Game.Current.ObjectManager.GetObject<BasicCharacterObject>("karlfranz"));
+                list.Add(Game.Current.ObjectManager.GetObject<BasicCharacterObject>("emp_lord"));
                 list.Add(Game.Current.ObjectManager.GetObject<BasicCharacterObject>("mannfred"));
-                list.Add(Game.Current.ObjectManager.GetObject<BasicCharacterObject>("krell"));
+                list.Add(Game.Current.ObjectManager.GetObject<BasicCharacterObject>("vc_lord"));
+                list.Add(Game.Current.ObjectManager.GetObject<BasicCharacterObject>("krell")); 
             }
             catch (Exception e)
             {
@@ -43,6 +47,7 @@ namespace TOW_Core.HarmonyPatches
             if (list.Count > 1) __result = list;
         }
 
+        //Fill available cultures
         [HarmonyPostfix]
         [HarmonyPatch(typeof(CustomBattleData), "Factions", MethodType.Getter)]
         public static void Postfix3(ref IEnumerable<BasicCultureObject> __result)
@@ -116,5 +121,43 @@ namespace TOW_Core.HarmonyPatches
                 instance.SelectedRangedInfantryTypes.Add(element.Identifier as BasicCharacterObject);
             }
         }
+
+        //This is prime example of Taleworlds hardcoding simple color strings. Need to override.
+        [HarmonyPostfix]
+        [HarmonyPatch(typeof(WidgetsMultiplayerHelper), "GetFactionColorCode")]
+        public static void Postfix4(ref string __result, string lowercaseFactionCode, bool useSecondary)
+        {
+            if (useSecondary)
+            {
+                if (lowercaseFactionCode == "empire")
+                {
+                    __result = "#ED3F16FF";
+                }
+                if (lowercaseFactionCode == "khuzait")
+                {
+                    __result = "#ED3F16FF";
+                }
+            }
+            else
+            {
+                if (lowercaseFactionCode == "empire")
+                {
+                    __result = "#F8F2F0FF";
+                }
+                if (lowercaseFactionCode == "khuzait")
+                {
+                    __result = "#2E2727FF";
+                }
+            }
+        }
+
+        [HarmonyPostfix]
+        [HarmonyPatch(typeof(CustomGame), "InitializeScenes")]
+        public static void Postfix5(ref CustomGame __instance)
+        {
+            __instance.LoadCustomBattleScenes(ModuleHelper.GetModuleFullPath("TOW_Environment") + "ModuleData/tow_custombattlescenes.xml");
+        }
+
+
     }
 }

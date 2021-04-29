@@ -1,0 +1,21 @@
+<prefabs>
+	<game_entity season_mask="255" old_prefab_name="" name="vc_tree_001">
+		<components>
+			<meta_mesh_component name="tree_high_b">
+				<mesh argument="0.500, 0.000, 0.000, 0.000" material="new_tree_a_winter" name="tree_high_b.lod6.5"/>
+				<mesh material="bark_pine" name="tree_high_b.lod6.1"/>
+				<mesh argument="0.500, 0.000, 0.000, 0.000" material="new_tree_a_winter" name="tree_high_b.lod5.5"/>
+				<mesh material="bark_pine" name="tree_high_b.lod5.1"/>
+				<mesh argument="0.500, 0.000, 0.000, 0.000" material="new_tree_a_winter" name="tree_high_b.lod3.5"/>
+				<mesh argument="0.500, 0.000, 0.000, 0.000" name="tree_high_b.lod3.2"/>
+				<mesh material="bark_pine" name="tree_high_b.lod3.1"/>
+				<mesh argument="0.500, 0.000, 0.000, 0.000" material="new_tree_a_winter" name="tree_high_b.5"/>
+				<mesh argument="0.500, 0.000, 0.000, 0.000" name="tree_high_b.2"/>
+				<mesh material="bark_pine" name="tree_high_b.1"/>
+			</meta_mesh_component>
+		</components>
+		<physics mass="1.000" override_material="wood" shape="bo_tree_high_b"/>
+		<transform rotation_euler="0.000, 0.000, 0.000" position="433.796, 209.396, 17.768"/>
+	</game_entity>
+</prefabs>
+

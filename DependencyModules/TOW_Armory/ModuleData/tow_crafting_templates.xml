@@ -37,6 +37,11 @@
 			<UsablePiece piece_id="vampire_greatsword_002_hilt"/>
 			<UsablePiece piece_id="vampire_greatsword_002_guard"/>
 			<UsablePiece piece_id="vampire_greatsword_002_pommel"/>
+
+			<UsablePiece piece_id="grave_guard_sword_006_blade"/>
+			<UsablePiece piece_id="grave_guard_sword_006_handle"/>
+			<UsablePiece piece_id="grave_guard_sword_006_guard"/>
+			
 		</UsablePieces>
 	</CraftingTemplate>
 

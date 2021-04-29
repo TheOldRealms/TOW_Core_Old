@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<action_types>
+	<action name="act_ready_handgun" type="actt_ready_ranged" action_stage="as_attack_ready" />
+	<action name="act_shoot_handgun" type="actt_release_ranged" action_stage="as_attack_release" />
+	<action name="act_ready_continue_handgun" type="actt_ready_ranged" action_stage="as_attack_ready" />
+	<action name="act_reload_handgun" type="actt_reload" action_stage="as_reload_phase_1" />
+	<action name="act_reload_handgun_fast" type="actt_reload" action_stage="as_reload_phase_1" />
+	<action name="act_reload_handgun_continue" type="actt_reload" action_stage="as_reload_phase_2" />
+	<action name="act_reload_handgun_horseback" type="actt_reload" action_stage="as_reload_phase_1" />
+	<action name="act_reload_handgun_continue_horseback" type="actt_reload" action_stage="as_reload_phase_2" />
+</action_types>
