@@ -10,7 +10,7 @@ using TOW_Core.Battle.Extensions;
 namespace TOW_Core.HarmonyPatches
 {
     [HarmonyPatch]
-    public static class DecideAgentHitParticlesPatch
+    public static class UndeadBleedParticlePatch
     {
         [HarmonyPrefix]
         [HarmonyPatch(typeof(Mission), "DecideAgentHitParticles")]
