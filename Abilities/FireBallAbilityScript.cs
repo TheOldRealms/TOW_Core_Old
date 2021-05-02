@@ -96,15 +96,15 @@ namespace TOW_Core.Abilities
                 base.GameEntity.FadeOut(0.1f, true);
                 _isFading = true;
                 //get collision data
-                var collisionpoint = contact.ContactPair0.Contact0.Position;
-                var collisionnormal = contact.ContactPair0.Contact0.Normal;
+                var collisionPoint = contact.ContactPair0.Contact0.Position;
+                var collisionNormal = contact.ContactPair0.Contact0.Normal;
                 //apply AOE damage
-                TOWBattleUtilities.DamageAgentsInArea(collisionpoint.AsVec2, _radius, _minDamage, _maxDamage, _casterAgent, true);
+                TOWBattleUtilities.DamageAgentsInArea(collisionPoint.AsVec2, _radius, _minDamage, _maxDamage, _casterAgent, true);
                 //create visual explosion
                 var explosion = GameEntity.CreateEmpty(Scene);
                 MatrixFrame frame = MatrixFrame.Identity;
                 var psys = ParticleSystem.CreateParticleSystemAttachedToEntity("psys_burning_projectile_default_coll", explosion, ref frame);
-                var globalFrame = new MatrixFrame(Mat3.CreateMat3WithForward(in collisionnormal), collisionpoint);
+                var globalFrame = new MatrixFrame(Mat3.CreateMat3WithForward(in collisionNormal), collisionPoint);
                 explosion.SetGlobalFrame(globalFrame);
                 explosion.FadeOut(3, true);
                 //play explosion sound

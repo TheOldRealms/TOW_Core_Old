@@ -304,6 +304,7 @@
     <Compile Include="GameTexts\TOWTextManager.cs" />
     <Compile Include="GameTexts\TOWTextOverride.cs" />
     <Compile Include="HarmonyPatches\CustomBattlePatches.cs" />
+    <Compile Include="HarmonyPatches\UndeadBleedParticlePatch.cs" />
     <Compile Include="HarmonyPatches\FindGameTextPatch.cs" />
     <Compile Include="HarmonyPatches\LoadingScreenTempPatch.cs" />
     <Compile Include="HarmonyPatches\RotatingMainMenuPatch.cs" />
