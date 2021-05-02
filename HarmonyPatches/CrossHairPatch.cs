@@ -5,9 +5,10 @@ namespace TOW_Core.HarmonyPatches
 {
     public static class CrossHairPatch
     {
-        [HarmonyPostfix]
-        [HarmonyPatch(typeof(CrosshairWidget), "IsVisible")]
-        public static void PostFix(ref bool __result)
+        [HarmonyPrefix]
+        [HarmonyPatch(typeof(CrosshairWidget))]
+        [HarmonyPatch("IsVisible", MethodType.Setter)]
+        public static void PreFix(ref bool __result)
         {
             if (__result == false)
             {

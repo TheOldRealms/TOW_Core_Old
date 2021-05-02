@@ -28,7 +28,7 @@ namespace TOW_Core.Battle.FireArms
         public override void OnAgentShootMissile(Agent shooterAgent, EquipmentIndex weaponIndex, Vec3 position, Vec3 velocity, Mat3 orientation, bool hasRigidBody, int forcedMissileIndex)
         {
             base.OnAgentShootMissile(shooterAgent, weaponIndex, position, velocity, orientation, hasRigidBody, forcedMissileIndex);
-            if(shooterAgent.WieldedWeapon.Item.StringId == "tow_musket_001")
+            if(shooterAgent.WieldedWeapon.Item.StringId == "tow_musket_001" ||shooterAgent.WieldedWeapon.Item.StringId == "tow_musket_002")
             {
                 var direction = shooterAgent.LookDirection;
                 var frame = new MatrixFrame(Mat3.CreateMat3WithForward(in direction), position);
@@ -41,6 +41,7 @@ namespace TOW_Core.Battle.FireArms
                     Mission.MakeSound(this._soundIndex[selected], position, false, true, -1, -1);
                 }
             }
+            
         }
     }
 }
