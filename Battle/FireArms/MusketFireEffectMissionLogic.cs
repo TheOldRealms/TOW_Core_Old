@@ -8,6 +8,7 @@ using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.MountAndBlade;
 using TOW_Core.Utilities;
+using LogLevel = NLog.LogLevel;
 
 namespace TOW_Core.Battle.FireArms
 {
@@ -30,6 +31,7 @@ namespace TOW_Core.Battle.FireArms
             base.OnAgentShootMissile(shooterAgent, weaponIndex, position, velocity, orientation, hasRigidBody, forcedMissileIndex);
             if(shooterAgent.WieldedWeapon.Item.StringId == "tow_musket_001" ||shooterAgent.WieldedWeapon.Item.StringId == "tow_musket_002")
             {
+                TOWCommon.Say("Shoot");
                 var direction = shooterAgent.LookDirection;
                 var frame = new MatrixFrame(Mat3.CreateMat3WithForward(in direction), position);
                 frame = frame.Advance(1.1f);
