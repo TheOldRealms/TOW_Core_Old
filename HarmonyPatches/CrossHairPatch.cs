@@ -12,6 +12,7 @@ namespace TOW_Core.HarmonyPatches
         {
             if (__result == false)
             {
+                TOWCommon.Log("Crosshair is gone");
                 __result = true;
             }
         }
