@@ -38,13 +38,12 @@
 				  weapon_length="95"
 				  ammo_limit="6"
 				  thrust_damage_type="Pierce"
-				  item_usage="handgun"
+				  item_usage="crossbow"
 				  physics_material="wood_weapon"
 				  center_of_mass="0,0,-0.1">
 				<WeaponFlags RangedWeapon="true"
 							 HasString="true"
 							 UseHandAsThrowBase="true"
-							 CantReloadOnHorseback="False"
 							 NotUsableWithOneHand="true"
 							 TwoHandIdleOnMount="true" />
 			</Weapon>
