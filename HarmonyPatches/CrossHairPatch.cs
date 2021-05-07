@@ -1,20 +1,23 @@
 using HarmonyLib;
+using NLog;
+using TaleWorlds.MountAndBlade.GauntletUI;
 using TaleWorlds.MountAndBlade.GauntletUI.Widgets;
+using TaleWorlds.MountAndBlade.ViewModelCollection.HUD;
+using TOW_Core.Utilities;
 
 namespace TOW_Core.HarmonyPatches
 {
+    [HarmonyPatch]
     public static class CrossHairPatch
     {
-        [HarmonyPrefix]
-        [HarmonyPatch(typeof(CrosshairWidget))]
-        [HarmonyPatch("IsVisible", MethodType.Setter)]
-        public static void PreFix(ref bool __result)
+        [HarmonyPostfix]
+        [HarmonyPatch(typeof(MissionGauntletCrosshair), "GetShouldCrosshairBeVisible")]
+        public static void PostFix(ref bool  __result)
         {
-            if (__result == false)
-            {
-                TOWCommon.Log("Crosshair is gone");
-                __result = true;
-            }
+            __result = true;
         }
+        
+        
+        
     }
 }
