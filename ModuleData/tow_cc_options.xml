@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<ArrayOfCharacterCreationOption xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<!--This is a single character creation option. ID has no naming convention, but has to be unique. 
+	SkillsToIncrease possible values:
+			OneHanded
+			TwoHanded
+			Polearm
+			Bow
+			Crossbow
+			Throwing
+			Riding
+			Athletics
+			Scouting
+			Tactics
+			Crafting
+			Roguery
+			Charm
+			Leadership
+			Trade
+			Steward
+			Medicine
+			Engineering
+	AttributeToIncrease possible values:
+			Vigor
+			Control
+			Endurance
+			Cunning
+			Social
+			Intelligence
+	-->
+  <CharacterCreationOption Id="test1" Culture="empire" StageNumber="1" CharacterIdToCopyEquipmentFrom="emp_lord">
+    <SkillsToIncrease>
+      <string>Trade</string>
+      <string>Charm</string>
+    </SkillsToIncrease>
+    <AttributeToIncrease>Endurance</AttributeToIncrease>
+    <OptionText>Placeholder Option: please edit me</OptionText>
+    <OptionFlavourText>Placeholder Option Flavour text. Please edit me in tow_cc_options.xml</OptionFlavourText>
+  </CharacterCreationOption>
+	<CharacterCreationOption Id="test2" Culture="empire" StageNumber="1" CharacterIdToCopyEquipmentFrom="emp_lord">
+		<SkillsToIncrease>
+			<string>Trade</string>
+			<string>Charm</string>
+		</SkillsToIncrease>
+		<AttributeToIncrease>Endurance</AttributeToIncrease>
+		<OptionText>Placeholder Option: please edit me</OptionText>
+		<OptionFlavourText>Placeholder Option Flavour text. Please edit me in tow_cc_options.xml</OptionFlavourText>
+	</CharacterCreationOption>
+	<CharacterCreationOption Id="test3" Culture="empire" StageNumber="2" CharacterIdToCopyEquipmentFrom="emp_lord">
+		<SkillsToIncrease>
+			<string>Trade</string>
+			<string>Charm</string>
+		</SkillsToIncrease>
+		<AttributeToIncrease>Endurance</AttributeToIncrease>
+		<OptionText>Placeholder Option: please edit me</OptionText>
+		<OptionFlavourText>Placeholder Option Flavour text. Please edit me in tow_cc_options.xml</OptionFlavourText>
+	</CharacterCreationOption>
+	<CharacterCreationOption Id="test4" Culture="empire" StageNumber="2" CharacterIdToCopyEquipmentFrom="emp_lord">
+		<SkillsToIncrease>
+			<string>Trade</string>
+			<string>Charm</string>
+		</SkillsToIncrease>
+		<AttributeToIncrease>Endurance</AttributeToIncrease>
+		<OptionText>Placeholder Option: please edit me</OptionText>
+		<OptionFlavourText>Placeholder Option Flavour text. Please edit me in tow_cc_options.xml</OptionFlavourText>
+	</CharacterCreationOption>
+	<CharacterCreationOption Id="test5" Culture="empire" StageNumber="3" CharacterIdToCopyEquipmentFrom="emp_lord">
+		<SkillsToIncrease>
+			<string>Trade</string>
+			<string>Charm</string>
+		</SkillsToIncrease>
+		<AttributeToIncrease>Endurance</AttributeToIncrease>
+		<OptionText>Placeholder Option: please edit me</OptionText>
+		<OptionFlavourText>Placeholder Option Flavour text. Please edit me in tow_cc_options.xml</OptionFlavourText>
+	</CharacterCreationOption>
+	<CharacterCreationOption Id="test6" Culture="empire" StageNumber="3" CharacterIdToCopyEquipmentFrom="emp_lord">
+		<SkillsToIncrease>
+			<string>Trade</string>
+			<string>Charm</string>
+		</SkillsToIncrease>
+		<AttributeToIncrease>Endurance</AttributeToIncrease>
+		<OptionText>Placeholder Option: please edit me</OptionText>
+		<OptionFlavourText>Placeholder Option Flavour text. Please edit me in tow_cc_options.xml</OptionFlavourText>
+	</CharacterCreationOption>
+
+	<CharacterCreationOption Id="test7" Culture="khuzait" StageNumber="1" CharacterIdToCopyEquipmentFrom="emp_lord">
+		<SkillsToIncrease>
+			<string>Trade</string>
+			<string>Charm</string>
+		</SkillsToIncrease>
+		<AttributeToIncrease>Endurance</AttributeToIncrease>
+		<OptionText>Placeholder Option: please edit me</OptionText>
+		<OptionFlavourText>Placeholder Option Flavour text. Please edit me in tow_cc_options.xml</OptionFlavourText>
+	</CharacterCreationOption>
+	<CharacterCreationOption Id="test8" Culture="khuzait" StageNumber="1" CharacterIdToCopyEquipmentFrom="emp_lord">
+		<SkillsToIncrease>
+			<string>Trade</string>
+			<string>Charm</string>
+		</SkillsToIncrease>
+		<AttributeToIncrease>Endurance</AttributeToIncrease>
+		<OptionText>Placeholder Option: please edit me</OptionText>
+		<OptionFlavourText>Placeholder Option Flavour text. Please edit me in tow_cc_options.xml</OptionFlavourText>
+	</CharacterCreationOption>
+	<CharacterCreationOption Id="test9" Culture="khuzait" StageNumber="2" CharacterIdToCopyEquipmentFrom="emp_lord">
+		<SkillsToIncrease>
+			<string>Trade</string>
+			<string>Charm</string>
+		</SkillsToIncrease>
+		<AttributeToIncrease>Endurance</AttributeToIncrease>
+		<OptionText>Placeholder Option: please edit me</OptionText>
+		<OptionFlavourText>Placeholder Option Flavour text. Please edit me in tow_cc_options.xml</OptionFlavourText>
+	</CharacterCreationOption>
+	<CharacterCreationOption Id="test10" Culture="khuzait" StageNumber="2" CharacterIdToCopyEquipmentFrom="emp_lord">
+		<SkillsToIncrease>
+			<string>Trade</string>
+			<string>Charm</string>
+		</SkillsToIncrease>
+		<AttributeToIncrease>Endurance</AttributeToIncrease>
+		<OptionText>Placeholder Option: please edit me</OptionText>
+		<OptionFlavourText>Placeholder Option Flavour text. Please edit me in tow_cc_options.xml</OptionFlavourText>
+	</CharacterCreationOption>
+	<CharacterCreationOption Id="test11" Culture="khuzait" StageNumber="3" CharacterIdToCopyEquipmentFrom="emp_lord">
+		<SkillsToIncrease>
+			<string>Trade</string>
+			<string>Charm</string>
+		</SkillsToIncrease>
+		<AttributeToIncrease>Endurance</AttributeToIncrease>
+		<OptionText>Placeholder Option: please edit me</OptionText>
+		<OptionFlavourText>Placeholder Option Flavour text. Please edit me in tow_cc_options.xml</OptionFlavourText>
+	</CharacterCreationOption>
+	<CharacterCreationOption Id="test12" Culture="khuzait" StageNumber="3" CharacterIdToCopyEquipmentFrom="emp_lord">
+		<SkillsToIncrease>
+			<string>Trade</string>
+			<string>Charm</string>
+		</SkillsToIncrease>
+		<AttributeToIncrease>Endurance</AttributeToIncrease>
+		<OptionText>Placeholder Option: please edit me</OptionText>
+		<OptionFlavourText>Placeholder Option Flavour text. Please edit me in tow_cc_options.xml</OptionFlavourText>
+	</CharacterCreationOption>
+</ArrayOfCharacterCreationOption>

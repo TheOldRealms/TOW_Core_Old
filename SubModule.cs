@@ -18,6 +18,8 @@ using TaleWorlds.MountAndBlade.CustomBattle;
 using TaleWorlds.GauntletUI;
 using TaleWorlds.Engine.GauntletUI;
 using TaleWorlds.TwoDimension;
+using TOW_Core.Abilities;
+using TOW_Core.CharacterCreation;
 
 namespace TOW_Core
 {
@@ -35,8 +37,9 @@ namespace TOW_Core
             ConfigureLogging();
 
             //This has to be here.
-            Abilities.AbilityManager.LoadAbilities();
+            AbilityManager.LoadAbilities();
             LoadAttributes();
+            LoadSprites();
         }
 
         /// <summary>
@@ -45,13 +48,13 @@ namespace TOW_Core
         /// <param name="game"></param>
         public override void BeginGameStart(Game game)
         {
-            //TOWTextManager.WriteSampleOverrideXml();
-            //CustomBattleTroopManager.WriteSampleOverrideXml();
-            //Abilities.XMLAbilityLoader.WriteSampleXML();
             TOWTextManager.LoadAdditionalTexts();
             TOWTextManager.LoadTextOverrides();
-            CustomBattleTroopManager.LoadCustomBattleTroops();
-            LoadSprites();
+            if(game.GameType.GetType() == typeof(CustomGame))
+            {
+                CustomBattleTroopManager.LoadCustomBattleTroops();
+            }
+            //LoadSprites();
         }
 
         private void LoadSprites()

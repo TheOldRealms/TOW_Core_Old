@@ -51,13 +51,44 @@
 		</ItemComponent>
 	</Item>
 
-	<Item id="musket_ball" name="{=!}Musket Ball" body_name="bo_capsule_arrow" holster_body_name="bo_axe_short" mesh="bolt_bl_a" flying_mesh="bolt_bl_flying" weight="0.05" appearance="1" Type="Bolts" item_holsters="quiver_bolts:quiver_bolts_2:quiver_back_middle:quiver_back_top">
+	<Item id="musket_ball"
+			name="{=!}Musket Ball"
+			body_name="bo_capsule_arrow"
+			holster_body_name="bo_axe_short"
+			flying_mesh="bolt_bl_flying"
+			mesh="torch_flame_base"
+			holster_mesh="stone_holster"
+			holster_mesh_with_weapon="stone_holster"
+			weight="0.2"
+			appearance="1"
+			Type="Bolts"
+			item_holsters="throwing_stone:throwing_stone_2"
+			value="500"
+			is_merchandise="true">
 		<ItemComponent>
-			<Weapon weapon_class="Bolt" stack_amount="20" thrust_speed="0" thrust_damage_type="Pierce" speed_rating="0" missile_speed="10" weapon_length="47" item_usage="" rotation="180, 0, 0" physics_material="missile" sticking_position="0,-0.47,0" sticking_rotation="90,0,0" center_of_mass="0,0,-0.1">
-				<WeaponFlags AttachAmmoToVisual="true" Consumable="true" AmmoSticksWhenShot="true" AmmoBreaksOnBounceBack="true" />
+			<Weapon weapon_class="Bolt"
+					stack_amount="30"
+					thrust_speed="0"
+					thrust_damage_type="Pierce"
+					speed_rating="0"
+					missile_speed="10"
+					weapon_length="35"
+					item_usage=""
+					rotation="180, 0, 0"
+					physics_material="missile"
+					sticking_position="0,-0.47,0"
+					sticking_rotation="90,0,0"
+					center_of_mass="0,0,-0.1">
+				<WeaponFlags AttachAmmoToVisual="false"
+							 Consumable="true"
+							 AmmoSticksWhenShot="false"
+							 AmmoBreaksOnBounceBack="true"
+							 LeavesTrail="false"
+							 BonusAgainstShield="true" />
+
 			</Weapon>
 		</ItemComponent>
-		<Flags ForceAttachOffHandPrimaryItemBone="true" />
+		<Flags ForceAttachOffHandPrimaryItemBone="true"/>
 	</Item>
 
 	<!-- Vampire Weapons TOW -->
@@ -115,7 +146,7 @@
 			<Piece id="skeleton_warrior_sword_003_guard" Type="Guard" />
 			<Piece id="skeleton_warrior_sword_003_pommel" Type="Pommel" />
 		</Pieces>
-	</CraftedItem>	
+	</CraftedItem>
 
 	<CraftedItem id="grave_guard_sword_001" name="{=!}Grave Guard Sword 001" crafting_template="tow_longsword_template">
 		<Pieces>
@@ -142,5 +173,5 @@
 			<Piece id="grave_guard_sword_006_guard" Type="Guard" />
 		</Pieces>
 	</CraftedItem>
-	
+
 </Items>

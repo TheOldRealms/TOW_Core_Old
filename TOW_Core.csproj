@@ -41,7 +41,7 @@
   <PropertyGroup>
     <StartAction>Program</StartAction>
     <StartProgram>$(GameDir)\bin\Win64_Shipping_Client\Bannerlord.exe</StartProgram>
-    <StartArguments>/singleplayer _MODULES_*Native*SandBoxCore*SandBox*StoryMode*CustomBattle*TOW_Armory*TOW_Environment*TOW_Core*_MODULES_</StartArguments>
+    <StartArguments>/singleplayer _MODULES_*TOW_PreNative*Native*SandBoxCore*SandBox*StoryMode*CustomBattle*TOW_Armory*TOW_Environment*TOW_Core*_MODULES_</StartArguments>
     <StartWorkingDirectory>$(GameDir)\bin\Win64_Shipping_Client</StartWorkingDirectory>
   </PropertyGroup>
   <!-- Bannerlord Native Assemblies -->
@@ -299,10 +299,13 @@
     <Compile Include="Battle\Extensions\AgentExtensions.cs" />
     <Compile Include="Battle\FireArms\MusketFireEffectMissionLogic.cs" />
     <Compile Include="Battle\TOWBattleUtilities.cs" />
+    <Compile Include="CharacterCreation\CharacterCreationOption.cs" />
+    <Compile Include="CharacterCreation\TOWCharacterCreationContent.cs" />
     <Compile Include="CustomBattles\CustomBattleFormationTemplate.cs" />
     <Compile Include="CustomBattles\CustomBattleTroopManager.cs" />
     <Compile Include="GameTexts\TOWTextManager.cs" />
     <Compile Include="GameTexts\TOWTextOverride.cs" />
+    <Compile Include="HarmonyPatches\CharacterCreationPatches.cs" />
     <Compile Include="HarmonyPatches\CustomBattlePatches.cs" />
     <Compile Include="HarmonyPatches\FindGameTextPatch.cs" />
     <Compile Include="HarmonyPatches\LoadingScreenTempPatch.cs" />
@@ -345,6 +348,7 @@
     <Content Include="DependencyModules\TOW_PreNative\ModuleData\tow_action_sets.xml" />
     <Content Include="DependencyModules\TOW_PreNative\ModuleData\tow_action_types.xml" />
     <Content Include="DependencyModules\TOW_PreNative\SubModule.xml" />
+    <Content Include="ModuleData\tow_cc_options.xml" />
     <Content Include="StaticGUI\Prefabs\AbilityHUD.xml" />
     <Content Include="StaticGUI\towSpriteData.xml" />
     <Content Include="StaticPrefabs\spelleffects_prefab.xml" />
