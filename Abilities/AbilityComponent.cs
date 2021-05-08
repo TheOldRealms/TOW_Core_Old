@@ -31,7 +31,7 @@ namespace TOW_Core.Abilities
                         }
                         else
                         {
-                            TOWCommon.Log("Attempted to add an ability to agent: " + agent.Character.StringId + ", but it wasn't of tpye Baseability", LogLevel.Warn);
+                            TOWCommon.Log("Attempted to add an ability to agent: " + agent.Character.StringId + ", but it wasn't of type BaseAbility", LogLevel.Warn);
                         }
                     }
                     catch (Exception)
@@ -48,7 +48,7 @@ namespace TOW_Core.Abilities
 
         public void SelectAbility(int index)
         {
-            if (_knownAbilities.Count > 0)
+            if (_knownAbilities.Count > 0 && index >= 0)
             {
                 _currentAbilityIndex = index % _knownAbilities.Count;
                 CurrentAbility = _knownAbilities[_currentAbilityIndex];

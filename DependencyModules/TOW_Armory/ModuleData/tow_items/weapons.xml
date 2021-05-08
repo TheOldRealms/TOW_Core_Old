@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Items>
 	<!-- Empire Weapons TOW -->
 	<CraftedItem id="empire_greatsword_002" name="{=!}Empire Greatsword 002" crafting_template="tow_greatswords_template">
@@ -24,19 +24,47 @@
 		</Pieces>
 	</CraftedItem>
 
-	<Item id="tow_musket_001" name="{=!}Handgun" body_name="bo_cross_bow_heavy" mesh="musket_with_shaders" culture="Culture.empire" weight="2.0" appearance="1" difficulty="0" Type="Crossbow" AmmoOffset="0.0, 0.0, 0.0" item_holsters="crossbow_back:bow_hip:mace_right_hip:bow_hip_2" holster_position_shift="0.02,0,-0.4">
+
+	<Item id="tow_handgun_001" name="{=!}MatchlockMusket" body_name="bo_cross_bow_heavy" mesh="musket_with_shaders" culture="Culture.empire" weight="2.0" appearance="1" difficulty="0" Type="Crossbow" AmmoOffset="0.0, 0.0, 0.0" item_holsters="crossbow_back:bow_hip:mace_right_hip:bow_hip_2" holster_position_shift="0.02,0,-0.4">
+		<ItemComponent>
+			<Weapon weapon_class="Crossbow"
+					ammo_class="Bolt"
+					position="0, 0, 0"
+					rotation="0, -1, 0"
+					missile_speed="350"
+					accuracy="90"
+					thrust_damage="190"
+					thrust_speed="60"
+					speed_rating="30"
+					weapon_length="95"
+					ammo_limit="1"
+					thrust_damage_type="Pierce"
+					item_usage="handgunMatchlock"
+					physics_material="wood_weapon"
+					center_of_mass="0,0,-0.1">
+				<WeaponFlags RangedWeapon="true"
+							 HasString="true"
+							 UseHandAsThrowBase="true"
+							 NotUsableWithOneHand="true"
+							 TwoHandIdleOnMount="true" />
+			</Weapon>
+		</ItemComponent>
+	</Item>
+	
+
+	<Item id="tow_handgun_002" name="{=!}OutriderGun" body_name="bo_cross_bow_heavy" mesh="musket_with_shaders" culture="Culture.empire" weight="2.0" appearance="1" difficulty="0" Type="Crossbow" AmmoOffset="0.0, 0.0, 0.0" item_holsters="crossbow_back:bow_hip:mace_right_hip:bow_hip_2" holster_position_shift="0.02,0,-0.4">
 		<ItemComponent>
 			<Weapon weapon_class="Crossbow"
 				  ammo_class="Bolt"
 						position="0, 0, 0"
 						rotation="0, -1, 0"
 				  missile_speed="350"
-				  accuracy="90"
+				  accuracy="80"
 				  thrust_damage="190"
 				  thrust_speed="60"
-				  speed_rating="30"
+				  speed_rating="120"
 				  weapon_length="95"
-				  ammo_limit="1"
+				  ammo_limit="6"
 				  thrust_damage_type="Pierce"
 				  item_usage="handgun"
 				  physics_material="wood_weapon"
@@ -44,7 +72,6 @@
 				<WeaponFlags RangedWeapon="true"
 							 HasString="true"
 							 UseHandAsThrowBase="true"
-							 CantReloadOnHorseback="true"
 							 NotUsableWithOneHand="true"
 							 TwoHandIdleOnMount="true" />
 			</Weapon>
@@ -66,26 +93,8 @@
 			value="500"
 			is_merchandise="true">
 		<ItemComponent>
-			<Weapon weapon_class="Bolt"
-					stack_amount="30"
-					thrust_speed="0"
-					thrust_damage_type="Pierce"
-					speed_rating="0"
-					missile_speed="10"
-					weapon_length="35"
-					item_usage=""
-					rotation="180, 0, 0"
-					physics_material="missile"
-					sticking_position="0,-0.47,0"
-					sticking_rotation="90,0,0"
-					center_of_mass="0,0,-0.1">
-				<WeaponFlags AttachAmmoToVisual="false"
-							 Consumable="true"
-							 AmmoSticksWhenShot="false"
-							 AmmoBreaksOnBounceBack="true"
-							 LeavesTrail="false"
-							 BonusAgainstShield="true" />
-
+			<Weapon weapon_class="Bolt" stack_amount="30" thrust_speed="0" thrust_damage_type="Pierce" speed_rating="0" missile_speed="10" weapon_length="47" item_usage="" rotation="180, 0, 0" physics_material="missile" sticking_position="0,-0.47,0" sticking_rotation="90,0,0" center_of_mass="0,0,-0.1">
+				<WeaponFlags AttachAmmoToVisual="true" Consumable="true" AmmoSticksWhenShot="true" AmmoBreaksOnBounceBack="true" />
 			</Weapon>
 		</ItemComponent>
 		<Flags ForceAttachOffHandPrimaryItemBone="true"/>

@@ -4,7 +4,7 @@
 		<action type="act_ready_handgun" animation="ready_crossbow" />
 		<action type="act_shoot_handgun" animation="musket_shoot" />
 		<action type="act_ready_continue_handgun" animation="ready_continue_crossbow" />
-		<action type="act_reload_handgun" animation="musket_reload" />
+		<action type="act_reload_handgun" animation="crossbow_reload" />
 		<action type="act_reload_handgun_fast" animation="reload_crossbow_fast" />
 		<action type="act_reload_handgun_continue" animation="musket_reload_continue" />
 		<action type="act_reload_handgun_horseback" animation="reload_crossbow_horseback" />
