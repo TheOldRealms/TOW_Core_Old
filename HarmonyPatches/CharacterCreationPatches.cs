@@ -25,9 +25,9 @@ namespace TOW_Core.HarmonyPatches
         public static bool Prefix2(CampaignGameManager __instance)
         {
             CharacterCreationState gameState = Game.Current.GameStateManager.CreateState<CharacterCreationState>(new object[]
-{
+            {
                 new TOWCharacterCreationContent()
-});
+            });
             Game.Current.GameStateManager.CleanAndPushState(gameState, 0);
             return false;
         }

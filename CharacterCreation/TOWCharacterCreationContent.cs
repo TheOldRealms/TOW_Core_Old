@@ -91,7 +91,7 @@ namespace TOW_Core.CharacterCreation
                             break;
                     }
                     
-                    var relevantOptions = _options.FindAll(x => x.StageNumber == i && x.Culture == culture);
+                    var relevantOptions = _options.FindAll(x => x.StageNumber == i && x.Culture.Equals(culture));
                     foreach(var option in relevantOptions)
                     {
                         var effectedSkills = new List<SkillObject>();
