@@ -299,10 +299,13 @@
     <Compile Include="Battle\Extensions\AgentExtensions.cs" />
     <Compile Include="Battle\FireArms\MusketFireEffectMissionLogic.cs" />
     <Compile Include="Battle\TOWBattleUtilities.cs" />
+    <Compile Include="CharacterCreation\CharacterCreationOption.cs" />
+    <Compile Include="CharacterCreation\TOWCharacterCreationContent.cs" />
     <Compile Include="CustomBattles\CustomBattleFormationTemplate.cs" />
     <Compile Include="CustomBattles\CustomBattleTroopManager.cs" />
     <Compile Include="GameTexts\TOWTextManager.cs" />
     <Compile Include="GameTexts\TOWTextOverride.cs" />
+    <Compile Include="HarmonyPatches\CharacterCreationPatches.cs" />
     <Compile Include="HarmonyPatches\CrossHairPatch.cs" />
     <Compile Include="HarmonyPatches\CustomBattlePatches.cs" />
     <Compile Include="HarmonyPatches\UndeadBleedParticlePatch.cs" />
@@ -347,6 +350,7 @@
     <Content Include="DependencyModules\TOW_PreNative\ModuleData\tow_action_sets.xml" />
     <Content Include="DependencyModules\TOW_PreNative\ModuleData\tow_action_types.xml" />
     <Content Include="DependencyModules\TOW_PreNative\SubModule.xml" />
+    <Content Include="ModuleData\tow_cc_options.xml" />
     <Content Include="StaticGUI\Prefabs\AbilityHUD.xml" />
     <Content Include="StaticGUI\towSpriteData.xml" />
     <Content Include="StaticPrefabs\spelleffects_prefab.xml" />
