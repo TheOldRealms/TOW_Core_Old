@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using TaleWorlds.Engine;
 using TaleWorlds.Core;
@@ -29,9 +30,10 @@ namespace TOW_Core.Battle.FireArms
         public override void OnAgentShootMissile(Agent shooterAgent, EquipmentIndex weaponIndex, Vec3 position, Vec3 velocity, Mat3 orientation, bool hasRigidBody, int forcedMissileIndex)
         {
             base.OnAgentShootMissile(shooterAgent, weaponIndex, position, velocity, orientation, hasRigidBody, forcedMissileIndex);
-            if(shooterAgent.WieldedWeapon.Item.StringId == "tow_musket_001" ||shooterAgent.WieldedWeapon.Item.StringId == "tow_musket_002")
+            
+            if(shooterAgent.WieldedWeapon.CurrentUsageItem.ItemUsage == "handgun" ||shooterAgent.WieldedWeapon.CurrentUsageItem.ItemUsage == "handgunMatchlock")
             {
-                TOWCommon.Say("Shoot");
+                
                 var direction = shooterAgent.LookDirection;
                 var frame = new MatrixFrame(Mat3.CreateMat3WithForward(in direction), position);
                 frame = frame.Advance(1.1f);
