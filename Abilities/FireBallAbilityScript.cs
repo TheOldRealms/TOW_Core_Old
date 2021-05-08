@@ -26,6 +26,8 @@ namespace TOW_Core.Abilities
         private int _movingSoundindex;
         private int _explosionSoundindex;
         private SoundEvent _movingSound;
+        private float _dropSpeed = -0.1f;
+        private float _collisionRadius = 2f;
 
         protected override void OnRemoved(int removeReason)
         {
@@ -57,11 +59,18 @@ namespace TOW_Core.Abilities
         protected override void OnTick(float dt)
         {
             base.OnTick(dt);
-
             var frame = base.GameEntity.GetGlobalFrame();
-            var newframe = frame.Advance(_speed * dt);
+
+            if (CollidedWithAgent())
+            {
+                HandleCollision(frame.origin, frame.origin.NormalizedCopy());
+            }
+
+            var newframe = GetUpdatedFrame(frame, dt);
+
             base.GameEntity.SetGlobalFrame(newframe);
             base.GameEntity.GetBodyShape().ManualInvalidate();
+
             if (_abilitylife < 0)
             {
                 _abilitylife = 0;
@@ -78,6 +87,7 @@ namespace TOW_Core.Abilities
                     _isFading = true;
                 }
             }
+
             if(_movingSound == null)
             {
                 _movingSound = SoundEvent.CreateEvent(_movingSoundindex, Scene);
@@ -90,21 +100,23 @@ namespace TOW_Core.Abilities
         protected override void OnPhysicsCollision(ref PhysicsContact contact)
         {
             base.OnPhysicsCollision(ref contact);
+            HandleCollision(contact.ContactPair0.Contact0.Position, contact.ContactPair0.Contact0.Normal);
+        }
+        
+        private void HandleCollision(Vec3 collisionPoint, Vec3 collisionNormal)
+        {
             if (!_hasCollided)
             {
                 //start fading out for the projectile
                 base.GameEntity.FadeOut(0.1f, true);
                 _isFading = true;
-                //get collision data
-                var collisionpoint = contact.ContactPair0.Contact0.Position;
-                var collisionnormal = contact.ContactPair0.Contact0.Normal;
                 //apply AOE damage
-                TOWBattleUtilities.DamageAgentsInArea(collisionpoint.AsVec2, _radius, _minDamage, _maxDamage, _casterAgent, true);
+                TOWBattleUtilities.DamageAgentsInArea(collisionPoint.AsVec2, _radius, _minDamage, _maxDamage, _casterAgent, true);
                 //create visual explosion
                 var explosion = GameEntity.CreateEmpty(Scene);
                 MatrixFrame frame = MatrixFrame.Identity;
                 var psys = ParticleSystem.CreateParticleSystemAttachedToEntity("psys_burning_projectile_default_coll", explosion, ref frame);
-                var globalFrame = new MatrixFrame(Mat3.CreateMat3WithForward(in collisionnormal), collisionpoint);
+                var globalFrame = new MatrixFrame(Mat3.CreateMat3WithForward(in collisionNormal), collisionPoint);
                 explosion.SetGlobalFrame(globalFrame);
                 explosion.FadeOut(3, true);
                 //play explosion sound
@@ -114,5 +126,19 @@ namespace TOW_Core.Abilities
             }
         }
 
+        private bool CollidedWithAgent()
+        {
+            return Mission.Current.GetAgentsInRange(GameEntity.GetGlobalFrame().origin.AsVec2, _collisionRadius)
+                .Where(agent => Math.Abs(GameEntity.GetGlobalFrame().origin.Z - agent.Position.Z) < _collisionRadius)
+                .Any();
+        }
+
+        private MatrixFrame GetUpdatedFrame(MatrixFrame frame, float dt)
+        {
+            var newFrame = frame.Advance(_speed * dt);
+            _dropSpeed = _dropSpeed - 0.1f;
+            newFrame = newFrame.Elevate(_dropSpeed * dt);
+            return newFrame;
+        }
     }
 }
