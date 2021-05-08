@@ -26,6 +26,14 @@
   </SubModules>
 	<Xmls>
 		<XmlNode>
+			<XmlName id="Settlements" path="tow_settlements"/>
+			<IncludedGameTypes>
+				<GameType value = "Campaign"/>
+				<GameType value = "CampaignStoryMode"/>
+				<GameType value = "CustomGame"/>
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
 			<XmlName id="SPCultures" path="tow_cultures"/>
 			<IncludedGameTypes>
 				<GameType value = "Campaign"/>
