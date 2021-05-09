@@ -1,7 +1,9 @@
 ﻿namespace TOW_Core.Battle.StatusEffect
 {
-    public interface IStatusEffect
+    public class  StatusEffect
     {
-         float duration { get; set; }
+        public bool active{ get; set; }
+        public int id{ get; set; }
+        public float duration { get; set; }
     }
 }
