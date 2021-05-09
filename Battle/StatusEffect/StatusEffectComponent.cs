@@ -17,15 +17,21 @@ namespace TOW_Core.Battle.StatusEffect
         private StatusEffectManager _statusEffectManager;
         private Dictionary<int,StatusEffect> _statusEffects;
         private Dictionary<int,float> _currentEffects;
-
-
-        private float _damageValue;      //between 0 and infinite added at the end of a damage calculation of a hit
+        
+        
+        //armor related
+        private float _WardSaveFactor;  // between 0 and 1 , 1 means full damage, 0 means 0 damage
         private float _armorvalue;      //between 0 and infite added at the end of damage calculation of beeing hit
+        
+        private float _damageValue;      //between 0 and infinite added at the end of a damage calculation of a hit
+        
+        
         private float _speedfactor;      //between 0 and a reasonable number(maybe 2) percentage of movement speed
         private float _staggering;
-        private Timer _timer;
-
         
+        
+
+
 
         public void InitializeStatusEffect(StatusEffect effect)
         {
@@ -37,16 +43,23 @@ namespace TOW_Core.Battle.StatusEffect
         }
         
 
-        private void  RunBuff(StatusEffect effect, float duration)
+        private void  RunStatusEffect(StatusEffect effect, float duration)
         {
-            _currentEffects.Add(effect.id,duration);
+            if (_currentEffects.ContainsKey(effect.id))
+            {
+                _currentEffects[effect.id] = duration;
+            }
+            else
+            {
+                _currentEffects.Add(effect.id,duration);
+            }
+            
         }
 
         public void OnTick(object sender, OnTickArgs args)
         {
            if(!_currentEffects.IsEmpty())
            {
-               
                foreach (var key in _currentEffects.Keys)
                {
                    _currentEffects[key] = _currentEffects[key] - args.deltatime;
