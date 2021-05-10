@@ -16,7 +16,7 @@ namespace TOW_Core.Battle.StatusEffect
         
         private StatusEffectManager _statusEffectManager;
         private Dictionary<int,StatusEffect> _statusEffects;
-        private Dictionary<int,float> _currentEffects;
+        private List<int> _currentEffects;
         
         
         //TODO refine the active status values
@@ -56,13 +56,13 @@ namespace TOW_Core.Battle.StatusEffect
 
         private void  RunStatusEffect(StatusEffect effect)
         {
-            if (_currentEffects.ContainsKey(effect.id))
+            if (_currentEffects.Contains(effect.id))
             {
-                _currentEffects[effect.id] = effect.duration;
+                _statusEffects[effect.id]._currentduration =_statusEffects[effect.id].duration;
             }
             else
             {
-                _currentEffects.Add(effect.id,effect.duration);
+                _currentEffects.Add(effect.id);
             }
             
         }
@@ -71,16 +71,13 @@ namespace TOW_Core.Battle.StatusEffect
         {
            if(!_currentEffects.IsEmpty())
            {
-               foreach (var key in _currentEffects.Keys)
+               foreach (var key in _currentEffects)
                {
-                   _currentEffects[key] = _currentEffects[key] - args.deltatime;
+                   _statusEffects[key]._currentduration = _currentEffects[key] - args.deltatime;
 
-                   if (_currentEffects[key] < 0f)
+                   if (_statusEffects[key]._currentduration<= 0f)
                    {
-                       if (_currentEffects.ContainsKey(key))
-                       {
-                           _statusEffects[key].active = false;
-                       }
+                       _statusEffects[key]._currentduration = _statusEffects[key].duration;
                        _currentEffects.Remove(key);
                    }
                }
