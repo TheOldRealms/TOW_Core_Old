@@ -20,6 +20,8 @@ using TaleWorlds.Engine.GauntletUI;
 using TaleWorlds.TwoDimension;
 using TOW_Core.Abilities;
 using TOW_Core.CharacterCreation;
+using TaleWorlds.CampaignSystem;
+using TaleWorlds.CampaignSystem.SandBox.CampaignBehaviors;
 
 namespace TOW_Core
 {
@@ -54,7 +56,6 @@ namespace TOW_Core
             {
                 CustomBattleTroopManager.LoadCustomBattleTroops();
             }
-            //LoadSprites();
         }
 
         private void LoadSprites()
@@ -69,6 +70,11 @@ namespace TOW_Core
             {
                 gameStarterObject.Models.RemoveAllOfType(typeof(CustomBattleMoraleModel));
                 gameStarterObject.AddModel(new TOWBattleMoraleModel());
+            }
+            else if(game.GameType is Campaign)
+            {
+                CampaignGameStarter starter = gameStarterObject as CampaignGameStarter;
+                starter.CampaignBehaviors.RemoveAllOfType(typeof(BackstoryCampaignBehavior));
             }
         }
 

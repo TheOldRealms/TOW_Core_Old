@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Settlements>
 	<!-- Averland 2 Towns 11 villages 2 castles -->
-	<Settlement id="town_AV1" name="{=Settlements.Settlement.name.town_AV1}Averheim" owner="Faction.clan_empire_south_1" posX="1436.810" posY="925.494" culture="Culture.empire" prosperity="3400" gate_posX="1433.199" gate_posY="923.3003" text="{=4ENGzVaC}Averheim is the capital city of the Grand Province of Averland, and the original capital of the ancient Brigundians tribe.">
+	<Settlement id="town_AV1" name="{=Settlements.Settlement.name.town_AV1}Averheim" owner="Faction.clan_averland_1" posX="1436.810" posY="925.494" culture="Culture.empire" prosperity="3400" gate_posX="1433.199" gate_posY="923.3003" text="{=4ENGzVaC}Averheim is the capital city of the Grand Province of Averland, and the original capital of the ancient Brigundians tribe.">
 		<Components>
 			<Town id="town_comp_AV1" is_castle="false" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -73,7 +73,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="castle_AV2" name="{=Settlements.Settlement.name.castle_AV2}Wuppertal" owner="Faction.clan_empire_south_1" posX="1393.959" posY="889.762" prosperity="420" culture="Culture.empire" gate_posX="1394.557" gate_posY="890.3242">
+	<Settlement id="castle_AV2" name="{=Settlements.Settlement.name.castle_AV2}Wuppertal" owner="Faction.clan_averland_1" posX="1393.959" posY="889.762" prosperity="420" culture="Culture.empire" gate_posX="1394.557" gate_posY="890.3242">
 		<Components>
 			<Town id="castle_comp_AV2" is_castle="true" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -122,7 +122,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="town_AV3" name="{=Settlements.Settlement.name.town_AV3}Grenzstadt" owner="Faction.clan_empire_south_1" posX="1493.496" posY="834.908" culture="Culture.empire" prosperity="2520" gate_posX="1493.882" gate_posY="834.9" text="{=4ENGzVaC}Grenzstadt is an Imperial fortress-town that is located at the northwestern end of Black Fire Pass.">
+	<Settlement id="town_AV3" name="{=Settlements.Settlement.name.town_AV3}Grenzstadt" owner="Faction.clan_averland_1" posX="1493.496" posY="834.908" culture="Culture.empire" prosperity="2520" gate_posX="1493.882" gate_posY="834.9" text="{=4ENGzVaC}Grenzstadt is an Imperial fortress-town that is located at the northwestern end of Black Fire Pass.">
 		<Components>
 			<Town id="town_comp_AV3" is_castle="false" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -168,7 +168,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="castle_AV4" name="{=Settlements.Settlement.name.castle_AV4}Peungzig" owner="Faction.clan_empire_south_1" posX="1522.925" posY="890.502" prosperity="420" culture="Culture.empire" gate_posX="1522.214" gate_posY="889.6931">
+	<Settlement id="castle_AV4" name="{=Settlements.Settlement.name.castle_AV4}Peungzig" owner="Faction.clan_averland_1" posX="1522.925" posY="890.502" prosperity="420" culture="Culture.empire" gate_posX="1522.214" gate_posY="889.6931">
 		<Components>
 			<Town id="castle_comp_AV4" is_castle="true" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -205,7 +205,7 @@
 		</CommonAreas>
 	</Settlement>
 	<!--Stirland-->
-	<Settlement id="town_ST1" name="{=Settlements.Settlement.name.town_ST1}Wurtbad" owner="Faction.clan_empire_south_1" posX="1443.906" posY="1014.650" culture="Culture.empire" prosperity="2000" gate_posX="1444.599" gate_posY="1010.559" text="{=4ENGzVaC}Capital of Stirland, Wurtbad rests at the terminus of the Old Dwarf Road, surrounded by the Great Forest.">
+	<Settlement id="town_ST1" name="{=Settlements.Settlement.name.town_ST1}Wurtbad" owner="Faction.clan_averland_1" posX="1443.906" posY="1014.650" culture="Culture.empire" prosperity="2000" gate_posX="1444.599" gate_posY="1010.559" text="{=4ENGzVaC}Capital of Stirland, Wurtbad rests at the terminus of the Old Dwarf Road, surrounded by the Great Forest.">
 		<Components>
 			<Town id="town_comp_ST1" is_castle="false" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -277,7 +277,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="castle_ST1" name="{=Settlements.Settlement.name.castle_ST1}Flensburg" owner="Faction.clan_empire_south_1" posX="1382.927" posY="986.824" prosperity="420" culture="Culture.empire" gate_posX="1382.877" gate_posY="985.6664">
+	<Settlement id="castle_ST1" name="{=Settlements.Settlement.name.castle_ST1}Flensburg" owner="Faction.clan_averland_1" posX="1382.927" posY="986.824" prosperity="420" culture="Culture.empire" gate_posX="1382.877" gate_posY="985.6664">
 		<Components>
 			<Town id="castle_comp_ST1" is_castle="true" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -313,7 +313,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="castle_ST2" name="{=Settlements.Settlement.name.castle_ST2}Franzen" owner="Faction.clan_empire_south_1" posX="1428.838" posY="942.029" prosperity="420" culture="Culture.empire" gate_posX="1429.951" gate_posY="942.0782">
+	<Settlement id="castle_ST2" name="{=Settlements.Settlement.name.castle_ST2}Franzen" owner="Faction.clan_averland_1" posX="1428.838" posY="942.029" prosperity="420" culture="Culture.empire" gate_posX="1429.951" gate_posY="942.0782">
 		<Components>
 			<Town id="castle_comp_ST2" is_castle="true" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -349,7 +349,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="castle_ST3" name="{=Settlements.Settlement.name.castle_AV1}Halstedt" owner="Faction.clan_empire_south_1" posX="1473.685" posY="962.959" prosperity="420" culture="Culture.empire" gate_posX="1473.755" gate_posY="963.772">
+	<Settlement id="castle_ST3" name="{=Settlements.Settlement.name.castle_AV1}Halstedt" owner="Faction.clan_averland_1" posX="1473.685" posY="962.959" prosperity="420" culture="Culture.empire" gate_posX="1473.755" gate_posY="963.772">
 		<Components>
 			<Town id="castle_comp_ST3" is_castle="true" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -385,7 +385,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="town_ST2" name="{=Settlements.Settlement.name.town_ST2}Leicheberg" owner="Faction.clan_empire_south_1" posX="1578.421" posY="977.160" culture="Culture.empire" prosperity="3400" gate_posX="1583.195" gate_posY="973.565" text="{=4ENGzVaC}At the edge of the Haunted Hills by the source of the Black Run River, Leicheberg lives in fear of its neighbour to the east.">
+	<Settlement id="town_ST2" name="{=Settlements.Settlement.name.town_ST2}Leicheberg" owner="Faction.clan_averland_1" posX="1578.421" posY="977.160" culture="Culture.empire" prosperity="3400" gate_posX="1583.195" gate_posY="973.565" text="{=4ENGzVaC}At the edge of the Haunted Hills by the source of the Black Run River, Leicheberg lives in fear of its neighbour to the east.">
 		<Components>
 			<Town id="town_comp_ST2" is_castle="false" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -444,7 +444,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="town_ST3" name="{=Settlements.Settlement.name.town_ST3}Siegfriedhof" owner="Faction.clan_empire_south_1" posX="1561.296" posY="1012.569" culture="Culture.empire" prosperity="3400" gate_posX="1561.581" gate_posY="1008.037" text="{=4ENGzVaC}Siegfriedhof lies on the borderlands with the County of Sylvania near Hunger Wood.">
+	<Settlement id="town_ST3" name="{=Settlements.Settlement.name.town_ST3}Siegfriedhof" owner="Faction.clan_averland_1" posX="1561.296" posY="1012.569" culture="Culture.empire" prosperity="3400" gate_posX="1561.581" gate_posY="1008.037" text="{=4ENGzVaC}Siegfriedhof lies on the borderlands with the County of Sylvania near Hunger Wood.">
 		<Components>
 			<Town id="town_comp_ST3" is_castle="false" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -490,7 +490,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="town_ST4" name="{=Settlements.Settlement.name.town_ST4}Mittlenburg" owner="Faction.clan_empire_south_1" posX="1555.656" posY="878.844" culture="Culture.empire" prosperity="3400" gate_posX="1555.329" gate_posY="882.903" text="{=4ENGzVaC}Sir seaghouls place to hang out it's fresh mountainair for his boypussy">
+	<Settlement id="town_ST4" name="{=Settlements.Settlement.name.town_ST4}Mittlenburg" owner="Faction.clan_averland_1" posX="1555.656" posY="878.844" culture="Culture.empire" prosperity="3400" gate_posX="1555.329" gate_posY="882.903" text="{=4ENGzVaC}Sir seaghouls place to hang out it's fresh mountainair for his boypussy">
 		<Components>
 			<Town id="town_comp_ST4" is_castle="false" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -562,7 +562,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="castle_ST4" name="{=Settlements.Settlement.name.castle_ST4}Wördern" owner="Faction.clan_empire_south_1" posX="1451.011" posY="972.307" prosperity="420" culture="Culture.empire" gate_posX="1451.798" gate_posY="972.0756">
+	<Settlement id="castle_ST4" name="{=Settlements.Settlement.name.castle_ST4}Wördern" owner="Faction.clan_averland_1" posX="1451.011" posY="972.307" prosperity="420" culture="Culture.empire" gate_posX="1451.798" gate_posY="972.0756">
 		<Components>
 			<Town id="castle_comp_ST4" is_castle="true" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -598,7 +598,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="castle_ST5" name="{=Settlements.Settlement.name.castle_ST5}Marburg" owner="Faction.clan_empire_south_1" posX="1498.114" posY="1029.143" prosperity="420" culture="Culture.empire" gate_posX="1498.802" gate_posY="1028.957">
+	<Settlement id="castle_ST5" name="{=Settlements.Settlement.name.castle_ST5}Marburg" owner="Faction.clan_averland_1" posX="1498.114" posY="1029.143" prosperity="420" culture="Culture.empire" gate_posX="1498.802" gate_posY="1028.957">
 		<Components>
 			<Town id="castle_comp_ST5" is_castle="true" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -635,7 +635,7 @@
 		</CommonAreas>
 	</Settlement>
 	<!-- Mootland 1 town 4 villages -->
-	<Settlement id="town_MT1" name="{=Settlements.Settlement.name.town_MT1}Eicheschatten" owner="Faction.clan_empire_south_1" posX="1515.597" posY="942.964" culture="Culture.empire" prosperity="3400" gate_posX="1512.243" gate_posY="946.930" text="{=4ENGzVaC}Eicheschatten, the capital of the Mootland is utterly unprepossessing at first glance. After a longer examination, one’s opinion is confirmed.">
+	<Settlement id="town_MT1" name="{=Settlements.Settlement.name.town_MT1}Eicheschatten" owner="Faction.clan_averland_1" posX="1515.597" posY="942.964" culture="Culture.empire" prosperity="3400" gate_posX="1512.243" gate_posY="946.930" text="{=4ENGzVaC}Eicheschatten, the capital of the Mootland is utterly unprepossessing at first glance. After a longer examination, one’s opinion is confirmed.">
 		<Components>
 			<Town id="town_comp_MT1" is_castle="false" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -708,7 +708,7 @@
 		</CommonAreas>
 	</Settlement>
 	<!-- Sylvania -->
-	<Settlement id="town_SY1" name="{=Settlements.Settlement.name.town_MT1}Castle Drakenhof" owner="Faction.clan_khuzait_5" posX="1648.721" posY="961.512" culture="Culture.empire" prosperity="3400" gate_posX="1645.013" gate_posY="959.1583" text="{=4ENGzVaC}Castle Drakenhof was the former capital of the Imperial province of Sylvania during the reign of its last Imperial noble, Count Otto von Drak.">
+	<Settlement id="town_SY1" name="{=Settlements.Settlement.name.town_MT1}Castle Drakenhof" owner="Faction.clan_sylvania_1" posX="1648.721" posY="961.512" culture="Culture.khuzait" prosperity="3400" gate_posX="1645.013" gate_posY="959.1583" text="{=4ENGzVaC}Castle Drakenhof was the former capital of the Imperial province of Sylvania during the reign of its last Imperial noble, Count Otto von Drak.">
 		<Components>
 			<Town id="town_comp_SY1" is_castle="false" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -728,7 +728,7 @@
 			<Area type="Waterfront" name="{=Rr1cy5Sk}Waterfront" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="village_SY1_1" name="{=Settlements.Settlement.name.village_SY1_1}drakenhof" posX="1627.836" posY="962.0392" culture="Culture.empire" text="{=Settlements.Settlement.text.village_SY1_1}">
+	<Settlement id="village_SY1_1" name="{=Settlements.Settlement.name.village_SY1_1}drakenhof" posX="1627.836" posY="962.0392" culture="Culture.khuzait" text="{=Settlements.Settlement.text.village_SY1_1}">
 		<Components>
 			<Village id="village_comp_SY1_1" village_type="VillageType.sheep_farm" hearth="84" gate_rotation="0.008" trade_bound="Settlement.town_SY1" bound="Settlement.town_SY1" background_crop_position="0.0" background_mesh="gui_bg_village_vlanda" wait_mesh="wait_vlandia_village" castle_background_mesh="gui_bg_castle_vlanda" />
 		</Components>
@@ -741,7 +741,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="village_SY1_2" name="{=Settlements.Settlement.name.village_SY1_2}Nachthafen" posX="1632.186" posY="942.906" culture="Culture.empire" text="{=Settlements.Settlement.text.village_SY1_2}">
+	<Settlement id="village_SY1_2" name="{=Settlements.Settlement.name.village_SY1_2}Nachthafen" posX="1632.186" posY="942.906" culture="Culture.khuzait" text="{=Settlements.Settlement.text.village_SY1_2}">
 		<Components>
 			<Village id="village_comp_SY1_2" village_type="VillageType.cattle_farm" hearth="96" gate_rotation="0.008" trade_bound="Settlement.town_SY1" bound="Settlement.town_SY1" background_crop_position="0.0" background_mesh="gui_bg_village_vlanda" wait_mesh="wait_vlandia_village" castle_background_mesh="gui_bg_castle_vlanda" />
 		</Components>
@@ -754,7 +754,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="village_SY1_3" name="{=Settlements.Settlement.name.village_SY1_3}Folburg" posX="1603.255" posY="959.283" culture="Culture.empire" text="{=Settlements.Settlement.text.village_SY1_3}.">
+	<Settlement id="village_SY1_3" name="{=Settlements.Settlement.name.village_SY1_3}Folburg" posX="1603.255" posY="959.283" culture="Culture.khuzait" text="{=Settlements.Settlement.text.village_SY1_3}.">
 		<Components>
 			<Village id="village_comp_SY1_3" village_type="VillageType.swine_farm" hearth="70" gate_rotation="0.008" trade_bound="Settlement.town_SY1" bound="Settlement.town_SY1" background_crop_position="0.0" background_mesh="gui_bg_village_vlanda" wait_mesh="wait_vlandia_village" castle_background_mesh="gui_bg_castle_vlanda" />
 		</Components>
@@ -767,7 +767,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="village_SY1_4" name="{=Settlements.Settlement.name.village_SY1_4}Gerhof" posX="1623.435" posY="979.956" culture="Culture.empire" text="{=Settlements.Settlement.text.village_SY1_4}">
+	<Settlement id="village_SY1_4" name="{=Settlements.Settlement.name.village_SY1_4}Gerhof" posX="1623.435" posY="979.956" culture="Culture.khuzait" text="{=Settlements.Settlement.text.village_SY1_4}">
 		<Components>
 			<Village id="village_comp_SY1_4" village_type="VillageType.wheat_farm" hearth="36" gate_rotation="0.008" trade_bound="Settlement.town_MT1" bound="Settlement.town_SY1" background_crop_position="0.0" background_mesh="gui_bg_village_vlanda" wait_mesh="wait_vlandia_village" castle_background_mesh="gui_bg_castle_vlanda" />
 		</Components>
@@ -780,7 +780,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="castle_SY1" name="{=Settlements.Settlement.name.castle_SY1}castle Tempelhof" owner="Faction.clan_khuzait_5" posX="1609.692" posY="989.558" prosperity="420" culture="Culture.empire" gate_posX="1594.735" gate_posY="992.207">
+	<Settlement id="castle_SY1" name="{=Settlements.Settlement.name.castle_SY1}castle Tempelhof" owner="Faction.clan_sylvania_1" posX="1609.692" posY="989.558" prosperity="420" culture="Culture.khuzait" gate_posX="1594.735" gate_posY="992.207">
 		<Components>
 			<Town id="castle_comp_SY1" is_castle="true" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -790,7 +790,7 @@
 			<Location id="prison" scene_name="empire_dungeon_a" />
 		</Locations>
 	</Settlement>
-	<Settlement id="castle_village_SY1_1" name="{=Settlements.Settlement.name.castle_village_SY1_1}Templehof" posX="1609.649" posY="1011.718" culture="Culture.empire" text="{=Settlements.Settlement.text.castle_village_SY1_1}This town in Sylvania, bordering the imperial province of Stirland is named for its famed temple of Morr.">
+	<Settlement id="castle_village_SY1_1" name="{=Settlements.Settlement.name.castle_village_SY1_1}Templehof" posX="1609.649" posY="1011.718" culture="Culture.khuzait" text="{=Settlements.Settlement.text.castle_village_SY1_1}This town in Sylvania, bordering the imperial province of Stirland is named for its famed temple of Morr.">
 		<Components>
 			<Village id="castle_village_comp_SY1_1" village_type="VillageType.sheep_farm" hearth="120" gate_rotation="0.008" trade_bound="Settlement.town_SY1" bound="Settlement.castle_SY1" background_crop_position="0.0" background_mesh="gui_bg_village_vlanda" wait_mesh="wait_vlandia_village" castle_background_mesh="gui_bg_castle_vlanda" />
 		</Components>
@@ -803,7 +803,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="castle_village_SY1_2" name="{=Settlements.Settlement.name.castle_village_SY1_2}Vanhaldenhof" posX="1604.520" posY="1000.128" culture="Culture.empire" text="{=Settlements.Settlement.text.castle_village_SY1_2}">
+	<Settlement id="castle_village_SY1_2" name="{=Settlements.Settlement.name.castle_village_SY1_2}Vanhaldenhof" posX="1604.520" posY="1000.128" culture="Culture.khuzait" text="{=Settlements.Settlement.text.castle_village_SY1_2}">
 		<Components>
 			<Village id="castle_village_comp_SY1_2" village_type="VillageType.silver_mine" hearth="80" gate_rotation="0.008" trade_bound="Settlement.town_SY1" bound="Settlement.castle_SY1" background_crop_position="0.0" background_mesh="gui_bg_village_vlanda" wait_mesh="wait_vlandia_village" castle_background_mesh="gui_bg_castle_vlanda" />
 		</Components>
@@ -816,7 +816,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="town_SY2" name="{=Settlements.Settlement.name.town_SY2}Waldenhof" owner="Faction.clan_khuzait_5" posX="1663.270" posY="1021.537" culture="Culture.empire" prosperity="3400" gate_posX="1659.555" gate_posY="1019.089" text="{=4ENGzVaC}The capital of Sylvania, Waldenhof, is a walled town that sits where the rivers come together to create the Stir.">
+	<Settlement id="town_SY2" name="{=Settlements.Settlement.name.town_SY2}Waldenhof" owner="Faction.clan_sylvania_1" posX="1663.270" posY="1021.537" culture="Culture.khuzait" prosperity="3400" gate_posX="1659.555" gate_posY="1019.089" text="{=4ENGzVaC}The capital of Sylvania, Waldenhof, is a walled town that sits where the rivers come together to create the Stir.">
 		<Components>
 			<Town id="town_comp_SY2" is_castle="false" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -836,7 +836,7 @@
 			<Area type="Waterfront" name="{=Rr1cy5Sk}Waterfront" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="village_SY2_1" name="{=Settlements.Settlement.name.village_SY2_1}Mikalsdorf" posX="1648.773" posY="1011.982" culture="Culture.empire" text="{=Settlements.Settlement.text.village_SY2_1}">
+	<Settlement id="village_SY2_1" name="{=Settlements.Settlement.name.village_SY2_1}Mikalsdorf" posX="1648.773" posY="1011.982" culture="Culture.khuzait" text="{=Settlements.Settlement.text.village_SY2_1}">
 		<Components>
 			<Village id="village_comp_SY2_1" village_type="VillageType.sheep_farm" hearth="88" gate_rotation="0.008" trade_bound="Settlement.town_SY2" bound="Settlement.town_SY2" background_crop_position="0.0" background_mesh="gui_bg_village_vlanda" wait_mesh="wait_vlandia_village" castle_background_mesh="gui_bg_castle_vlanda" />
 		</Components>
@@ -849,7 +849,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="village_SY2_2" name="{=Settlements.Settlement.name.village_SY2_2}Hundam" posX="1658.891" posY="1009.086" culture="Culture.empire" text="{=Settlements.Settlement.text.village_SY2_2}">
+	<Settlement id="village_SY2_2" name="{=Settlements.Settlement.name.village_SY2_2}Hundam" posX="1658.891" posY="1009.086" culture="Culture.khuzait" text="{=Settlements.Settlement.text.village_SY2_2}">
 		<Components>
 			<Village id="village_comp_SY2_2" village_type="VillageType.cattle_farm" hearth="92" gate_rotation="0.008" trade_bound="Settlement.town_SY2" bound="Settlement.town_SY2" background_crop_position="0.0" background_mesh="gui_bg_village_vlanda" wait_mesh="wait_vlandia_village" castle_background_mesh="gui_bg_castle_vlanda" />
 		</Components>
@@ -862,7 +862,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="village_SY2_3" name="{=Settlements.Settlement.name.village_SY2_3}Eschen" posX="1643.360" posY="1002.446" culture="Culture.empire" text="{=Settlements.Settlement.text.village_SY1_3}.">
+	<Settlement id="village_SY2_3" name="{=Settlements.Settlement.name.village_SY2_3}Eschen" posX="1643.360" posY="1002.446" culture="Culture.khuzait" text="{=Settlements.Settlement.text.village_SY1_3}.">
 		<Components>
 			<Village id="village_comp_SY1_3" village_type="VillageType.trapper" hearth="82" gate_rotation="0.008" trade_bound="Settlement.town_SY2" bound="Settlement.town_SY2" background_crop_position="0.0" background_mesh="gui_bg_village_vlanda" wait_mesh="wait_vlandia_village" castle_background_mesh="gui_bg_castle_vlanda" />
 		</Components>
@@ -875,7 +875,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="village_SY2_4" name="{=Settlements.Settlement.name.village_SY2_4}Stephansdorp" posX="1634.533" posY="1009.226" culture="Culture.empire" text="{=Settlements.Settlement.text.village_SY1_4}">
+	<Settlement id="village_SY2_4" name="{=Settlements.Settlement.name.village_SY2_4}Stephansdorp" posX="1634.533" posY="1009.226" culture="Culture.khuzait" text="{=Settlements.Settlement.text.village_SY1_4}">
 		<Components>
 			<Village id="village_comp_SY2_4" village_type="VillageType.wheat_farm" hearth="55" gate_rotation="0.008" trade_bound="Settlement.town_SY2" bound="Settlement.town_SY2" background_crop_position="0.0" background_mesh="gui_bg_village_vlanda" wait_mesh="wait_vlandia_village" castle_background_mesh="gui_bg_castle_vlanda" />
 		</Components>
@@ -888,7 +888,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="castle_SY2" name="{=Settlements.Settlement.name.castle_SY2}Fort Oberstyre" owner="Faction.clan_khuzait_5" posX="1532.138" posY="987.682" prosperity="420" culture="Culture.empire" gate_posX="1531.196" gate_posY="988.350">
+	<Settlement id="castle_SY2" name="{=Settlements.Settlement.name.castle_SY2}Fort Oberstyre" owner="Faction.clan_sylvania_1" posX="1532.138" posY="987.682" prosperity="420" culture="Culture.khuzait" gate_posX="1531.196" gate_posY="988.350">
 		<Components>
 			<Town id="castle_comp_SY2" is_castle="true" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -898,7 +898,7 @@
 			<Location id="prison" scene_name="empire_dungeon_a" />
 		</Locations>
 	</Settlement>
-	<Settlement id="castle_village_SY2_1" name="{=Settlements.Settlement.name.castle_village_ST2_1}Murieste" posX="1551.422" posY="985.768" culture="Culture.empire" text="{=Settlements.Settlement.text.castle_village_SY2_1}">
+	<Settlement id="castle_village_SY2_1" name="{=Settlements.Settlement.name.castle_village_ST2_1}Murieste" posX="1551.422" posY="985.768" culture="Culture.khuzait" text="{=Settlements.Settlement.text.castle_village_SY2_1}">
 		<Components>
 			<Village id="castle_village_comp_SY2_1" village_type="VillageType.sheep_farm" hearth="36" gate_rotation="0.008" trade_bound="Settlement.town_SY2" bound="Settlement.castle_SY2" background_crop_position="0.0" background_mesh="gui_bg_village_vlanda" wait_mesh="wait_vlandia_village" castle_background_mesh="gui_bg_castle_vlanda" />
 		</Components>
@@ -911,7 +911,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="castle_SY3" name="{=Settlements.Settlement.name.castle_SY3}Fort Bracher" owner="Faction.clan_khuzait_5" posX="1587.614" posY="912.944" prosperity="420" culture="Culture.empire" gate_posX="1586.5" gate_posY="913.188">
+	<Settlement id="castle_SY3" name="{=Settlements.Settlement.name.castle_SY3}Fort Bracher" owner="Faction.clan_sylvania_1" posX="1587.614" posY="912.944" prosperity="420" culture="Culture.khuzait" gate_posX="1586.5" gate_posY="913.188">
 		<Components>
 			<Town id="castle_comp_SY3" is_castle="true" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -921,7 +921,7 @@
 			<Location id="prison" scene_name="empire_dungeon_a" />
 		</Locations>
 	</Settlement>
-	<Settlement id="castle_village_SY3_1" name="{=Settlements.Settlement.name.castle_village_SY3_1}Templehof" posX="1581.196" posY="901.469" culture="Culture.empire" text="{=Settlements.Settlement.text.castle_village_SY3_1}">
+	<Settlement id="castle_village_SY3_1" name="{=Settlements.Settlement.name.castle_village_SY3_1}Templehof" posX="1581.196" posY="901.469" culture="Culture.khuzait" text="{=Settlements.Settlement.text.castle_village_SY3_1}">
 		<Components>
 			<Village id="castle_village_comp_SY3_1" village_type="VillageType.sheep_farm" hearth="60" gate_rotation="0.008" trade_bound="Settlement.town_SY2" bound="Settlement.castle_SY3" background_crop_position="0.0" background_mesh="gui_bg_village_vlanda" wait_mesh="wait_vlandia_village" castle_background_mesh="gui_bg_castle_vlanda" />
 		</Components>
@@ -934,7 +934,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="castle_village_SY3_2" name="{=Settlements.Settlement.name.castle_village_SY3_2}Vanhaldenhof" posX="1588.322" posY="881.285" culture="Culture.empire" text="{=Settlements.Settlement.text.castle_village_SY3_2}">
+	<Settlement id="castle_village_SY3_2" name="{=Settlements.Settlement.name.castle_village_SY3_2}Vanhaldenhof" posX="1588.322" posY="881.285" culture="Culture.khuzait" text="{=Settlements.Settlement.text.castle_village_SY3_2}">
 		<Components>
 			<Village id="castle_village_comp_SY3_2" village_type="VillageType.europe_horse_ranch" hearth="46" gate_rotation="0.008" trade_bound="Settlement.town_SY2" bound="Settlement.castle_SY3" background_crop_position="0.0" background_mesh="gui_bg_village_vlanda" wait_mesh="wait_vlandia_village" castle_background_mesh="gui_bg_castle_vlanda" />
 		</Components>
@@ -947,7 +947,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="castle_SY4" name="{=Settlements.Settlement.name.castle_SY4}nachtschlosse castle" owner="Faction.clan_khuzait_5" posX="1651.078" posY="927.899" prosperity="420" culture="Culture.empire" gate_posX="1650.906" gate_posY="928.800">
+	<Settlement id="castle_SY4" name="{=Settlements.Settlement.name.castle_SY4}nachtschlosse castle" owner="Faction.clan_sylvania_1" posX="1651.078" posY="927.899" prosperity="420" culture="Culture.khuzait" gate_posX="1650.906" gate_posY="928.800">
 		<Components>
 			<Town id="castle_comp_SY4" is_castle="true" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -957,7 +957,7 @@
 			<Location id="prison" scene_name="empire_dungeon_a" />
 		</Locations>
 	</Settlement>
-	<Settlement id="castle_village_SY4_1" name="{=Settlements.Settlement.name.castle_village_SY4_1}Gallhof" posX="1682.087" posY="948.896" culture="Culture.empire" text="{=Settlements.Settlement.text.castle_village_SY4_1}">
+	<Settlement id="castle_village_SY4_1" name="{=Settlements.Settlement.name.castle_village_SY4_1}Gallhof" posX="1682.087" posY="948.896" culture="Culture.khuzait" text="{=Settlements.Settlement.text.castle_village_SY4_1}">
 		<Components>
 			<Village id="castle_village_comp_SY4_1" village_type="VillageType.flax_plant" hearth="34" gate_rotation="0.008" trade_bound="Settlement.town_SY2" bound="Settlement.castle_SY4" background_crop_position="0.0" background_mesh="gui_bg_village_vlanda" wait_mesh="wait_vlandia_village" castle_background_mesh="gui_bg_castle_vlanda" />
 		</Components>
@@ -970,7 +970,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="castle_SY5" name="{=Settlements.Settlement.name.castle_SY5}Castle Senkhof" owner="Faction.clan_khuzait_5" posX="1674.036" posY="958.230" prosperity="420" culture="Culture.empire" gate_posX="1673.594" gate_posY="957.182">
+	<Settlement id="castle_SY5" name="{=Settlements.Settlement.name.castle_SY5}Castle Senkhof" owner="Faction.clan_sylvania_1" posX="1674.036" posY="958.230" prosperity="420" culture="Culture.khuzait" gate_posX="1673.594" gate_posY="957.182">
 		<Components>
 			<Town id="castle_comp_SY5" is_castle="true" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -980,7 +980,7 @@
 			<Location id="prison" scene_name="empire_dungeon_a" />
 		</Locations>
 	</Settlement>
-	<Settlement id="castle_village_SY5_1" name="{=Settlements.Settlement.name.castle_village_SY5_1}Senkhof" posX="1660.105" posY="951.527" culture="Culture.empire" text="{=Settlements.Settlement.text.castle_village_SY5_1}">
+	<Settlement id="castle_village_SY5_1" name="{=Settlements.Settlement.name.castle_village_SY5_1}Senkhof" posX="1660.105" posY="951.527" culture="Culture.khuzait" text="{=Settlements.Settlement.text.castle_village_SY5_1}">
 		<Components>
 			<Village id="castle_village_comp_SY5_1" village_type="VillageType.flax_plant" hearth="53" gate_rotation="0.008" trade_bound="Settlement.town_SY2" bound="Settlement.castle_SY5" background_crop_position="0.0" background_mesh="gui_bg_village_vlanda" wait_mesh="wait_vlandia_village" castle_background_mesh="gui_bg_castle_vlanda" />
 		</Components>
@@ -993,7 +993,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="castle_SY6" name="{=Settlements.Settlement.name.castle_SY6}Castle Wartenhof" owner="Faction.clan_khuzait_5" posX="1664.257" posY="977.810" prosperity="420" culture="Culture.empire" gate_posX="1663.431" gate_posY="978.2975">
+	<Settlement id="castle_SY6" name="{=Settlements.Settlement.name.castle_SY6}Castle Wartenhof" owner="Faction.clan_sylvania_1" posX="1664.257" posY="977.810" prosperity="420" culture="Culture.khuzait" gate_posX="1663.431" gate_posY="978.2975">
 		<Components>
 			<Town id="castle_comp_SY6" is_castle="true" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -1003,7 +1003,7 @@
 			<Location id="prison" scene_name="empire_dungeon_a" />
 		</Locations>
 	</Settlement>
-	<Settlement id="castle_village_SY6_1" name="{=Settlements.Settlement.name.castle_village_SY6_1}Wartenhof" posX="1652.442" posY="990.343" culture="Culture.empire" text="{=Settlements.Settlement.text.castle_village_SY6_1}">
+	<Settlement id="castle_village_SY6_1" name="{=Settlements.Settlement.name.castle_village_SY6_1}Wartenhof" posX="1652.442" posY="990.343" culture="Culture.khuzait" text="{=Settlements.Settlement.text.castle_village_SY6_1}">
 		<Components>
 			<Village id="castle_village_comp_SY6_1" village_type="VillageType.clay_mine" hearth="62" gate_rotation="0.008" trade_bound="Settlement.town_SY2" bound="Settlement.castle_SY6" background_crop_position="0.0" background_mesh="gui_bg_village_vlanda" wait_mesh="wait_vlandia_village" castle_background_mesh="gui_bg_castle_vlanda" />
 		</Components>
@@ -1016,7 +1016,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="castle_village_SY6_2" name="{=Settlements.Settlement.name.castle_village_SY6_2}Sumpfdorf" posX="1643.206" posY="983.121" culture="Culture.empire" text="{=Settlements.Settlement.text.castle_village_SY6_2}">
+	<Settlement id="castle_village_SY6_2" name="{=Settlements.Settlement.name.castle_village_SY6_2}Sumpfdorf" posX="1643.206" posY="983.121" culture="Culture.khuzait" text="{=Settlements.Settlement.text.castle_village_SY6_2}">
 		<Components>
 			<Village id="castle_village_comp_SY6_2" village_type="VillageType.lumberjack" hearth="56" gate_rotation="0.008" trade_bound="Settlement.town_SY2" bound="Settlement.castle_SY6" background_crop_position="0.0" background_mesh="gui_bg_village_vlanda" wait_mesh="wait_vlandia_village" castle_background_mesh="gui_bg_castle_vlanda" />
 		</Components>
@@ -1029,7 +1029,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="castle_SY7" name="{=Settlements.Settlement.name.castle_SY7}Zherdenschlosse Castle" owner="Faction.clan_khuzait_5" posX="1698.861" posY="1000.173" prosperity="420" culture="Culture.empire" gate_posX="1698.039" gate_posY="999.596">
+	<Settlement id="castle_SY7" name="{=Settlements.Settlement.name.castle_SY7}Zherdenschlosse Castle" owner="Faction.clan_sylvania_1" posX="1698.861" posY="1000.173" prosperity="420" culture="Culture.khuzait" gate_posX="1698.039" gate_posY="999.596">
 		<Components>
 			<Town id="castle_comp_SY7" is_castle="true" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -1039,7 +1039,7 @@
 			<Location id="prison" scene_name="empire_dungeon_a" />
 		</Locations>
 	</Settlement>
-	<Settlement id="castle_village_SY7_1" name="{=Settlements.Settlement.name.castle_village_SY7_1}Zherden" posX="1687.560" posY="1000.167" culture="Culture.empire" text="{=Settlements.Settlement.text.castle_village_SY7_1}">
+	<Settlement id="castle_village_SY7_1" name="{=Settlements.Settlement.name.castle_village_SY7_1}Zherden" posX="1687.560" posY="1000.167" culture="Culture.khuzait" text="{=Settlements.Settlement.text.castle_village_SY7_1}">
 		<Components>
 			<Village id="castle_village_comp_SY7_1" village_type="VillageType.clay_mine" hearth="60" gate_rotation="0.008" trade_bound="Settlement.town_SY2" bound="Settlement.castle_SY7" background_crop_position="0.0" background_mesh="gui_bg_village_vlanda" wait_mesh="wait_vlandia_village" castle_background_mesh="gui_bg_castle_vlanda" />
 		</Components>
@@ -1052,7 +1052,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="castle_village_SY7_2" name="{=Settlements.Settlement.name.castle_village_SY7_2}Messinghof" posX="1678.563" posY="1011.473" culture="Culture.empire" text="{=Settlements.Settlement.text.castle_village_SY7_2}">
+	<Settlement id="castle_village_SY7_2" name="{=Settlements.Settlement.name.castle_village_SY7_2}Messinghof" posX="1678.563" posY="1011.473" culture="Culture.khuzait" text="{=Settlements.Settlement.text.castle_village_SY7_2}">
 		<Components>
 			<Village id="castle_village_comp_SY7_2" village_type="VillageType.lumberjack" hearth="101" gate_rotation="0.008" trade_bound="Settlement.town_SY2" bound="Settlement.castle_SY7" background_crop_position="0.0" background_mesh="gui_bg_village_vlanda" wait_mesh="wait_vlandia_village" castle_background_mesh="gui_bg_castle_vlanda" />
 		</Components>
