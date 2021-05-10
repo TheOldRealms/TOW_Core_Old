@@ -23,6 +23,7 @@ namespace TOW_Core.Battle.StatusEffect
         //health and Hots, Dots
         private float _baseHealth;    //to be assigned by the agent, will not be changed during mission
         private float _bonusHealth;     //additional health on top of the base health. 
+        private int _currentHealth;
         private float _healthOverTime;  //all hots(heal over time) and dots(damge over time)  negative numbers resemble a dot.
         private List<DamageTypes> receivedDamageTypes; // all Damage types the agent suffers of.
         //armor related
@@ -47,10 +48,7 @@ namespace TOW_Core.Battle.StatusEffect
         public void InitializeStatusEffect(StatusEffect effect)
         {
             // TODO called at the beginning of mission by the StatusEffectManager fills all possible buffs and debuffs
-
-
-
-            _statusEffectManager.NotifyStatusEffectTickObservers += OnTick;
+            
         }
         
 
@@ -66,22 +64,26 @@ namespace TOW_Core.Battle.StatusEffect
             }
             
         }
+        
+        protected override void  OnTickAsAI(float dt)
+        {
+            if(!_currentEffects.IsEmpty())
+            {
+                foreach (var key in _currentEffects)
+                {
+                    _statusEffects[key]._currentduration = _currentEffects[key] - dt;
 
+                    if (_statusEffects[key]._currentduration<= 0f)
+                    {
+                        _statusEffects[key]._currentduration = _statusEffects[key].duration;
+                        _currentEffects.Remove(key);
+                    }
+                }
+            }
+        }
         public void OnTick(object sender, OnTickArgs args)
         {
-           if(!_currentEffects.IsEmpty())
-           {
-               foreach (var key in _currentEffects)
-               {
-                   _statusEffects[key]._currentduration = _currentEffects[key] - args.deltatime;
-
-                   if (_statusEffects[key]._currentduration<= 0f)
-                   {
-                       _statusEffects[key]._currentduration = _statusEffects[key].duration;
-                       _currentEffects.Remove(key);
-                   }
-               }
-           }
+           
                 
         }
 
