@@ -68,6 +68,8 @@ namespace TOW_Core.Battle.StatusEffect
 
             
             //TODO all active perks or skill values need also to be assigned here aswell to base values 
+            Mission.Current.GetMissionBehaviour<StatusEffectManager>().NotifyStatusEffectTickObservers += OnTick;
+            TOW_Core.Utilities.TOWCommon.Say("initialized");
             
         }
         
@@ -87,15 +89,9 @@ namespace TOW_Core.Battle.StatusEffect
             
         }
         
-        protected override void  OnTickAsAI(float dt)
-        {
-           
-        }
         public void OnTick(object sender, OnTickArgs args)
         {
-            
-            TOW_Core.Utilities.TOWCommon.Say("50% of time of " + key + "went off");
-            
+            TOW_Core.Utilities.TOWCommon.Say("Update...");
             if(!_currentEffects.IsEmpty())
             {
                 foreach (var key in _currentEffects)

@@ -6,7 +6,7 @@ using TaleWorlds.MountAndBlade;
 
 namespace TOW_Core.Battle.StatusEffect
 {
-    public class StatusEffectManager: MissionBehaviour
+    public  class StatusEffectManager: MissionBehaviour
     {
         
         public override void OnAgentCreated(Agent agent)
