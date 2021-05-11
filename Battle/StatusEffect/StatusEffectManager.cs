@@ -47,10 +47,10 @@ namespace TOW_Core.Battle.StatusEffect
         public override MissionBehaviourType BehaviourType { get; }
         
        public EventHandler<OnTickArgs> NotifyStatusEffectTickObservers;
-        public virtual void OnMissionTick(float dt)
+        public override void OnMissionTick(float dt)
         {
             OnTickArgs arguments = new OnTickArgs() {deltatime = dt};
-            NotifyStatusEffectTickObservers.Invoke(this,arguments);
+            NotifyStatusEffectTickObservers?.Invoke(this,arguments);
         }
         
     }
