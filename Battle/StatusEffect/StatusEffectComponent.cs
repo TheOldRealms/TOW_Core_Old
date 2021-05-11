@@ -17,22 +17,24 @@ namespace TOW_Core.Battle.StatusEffect
         
         private StatusEffectManager _statusEffectManager;
         private Dictionary<int,StatusEffect> _statusEffects;
-        private List<int> _currentEffects;
+        private List<int> _currentEffects = new List<int>();
         
+        //TODO refine the active status and passive values
+        // base values - passiv values, include raw values of the unit as well as campaign map modifications by perks and 
         private float _baseHealth; //to be assigned by the agent, will not be changed during mission
         private float _currentHealth;
-        //TODO refine the active status values
         
-            
+        
+        //health related    
         private float _bonusHealth;     //additional health on top of the base health. 
         private float _healthPercentage;
-      
         private float _healthOverTime;  //all hots(heal over time) and dots(damge over time)  negative numbers resemble a dot.
+        
         private List<DamageTypes> receivedDamageTypes; // all Damage types the agent suffers of.
         //armor related
         private float _WardSaveFactor;  // between 0 and 1 , 1 means full damage, 0 means 0 damage
         private float _armorvalue;      //between 0 and infite added at the end of damage calculation of beeing hit
-        private float _armorPercentage; //percental 
+        private float _armorPercentage; //additonal percental value on top of the resulting armor value 
         private List<DamageTypes> protectionTypes;
         
         //damage output
@@ -52,20 +54,34 @@ namespace TOW_Core.Battle.StatusEffect
 
         public void InitializeStatusEffect(StatusEffect effect)
         {
+            if (_statusEffects == null)
+            {
+                _statusEffects = new Dictionary<int, StatusEffect>();
+                _statusEffects.Add(effect.id,effect);
+            }
+            else
+            {
+                _statusEffects.Add(effect.id,effect);
+            }
+            
             // TODO called at the beginning of mission by the StatusEffectManager fills all possible buffs and debuffs
+
+            
+            //TODO all active perks or skill values need also to be assigned here aswell to base values 
             
         }
         
 
-        private void  RunStatusEffect(StatusEffect effect)
+        public void  RunStatusEffect(int id)
         {
-            if (_currentEffects.Contains(effect.id))
+            TOW_Core.Utilities.TOWCommon.Say("Status Effects are added");
+            if (_currentEffects.Contains(id))
             {
-                _statusEffects[effect.id]._currentduration =_statusEffects[effect.id].duration;
+                _statusEffects[id]._currentduration =_statusEffects[id].duration;
             }
             else
             {
-                _currentEffects.Add(effect.id);
+                _currentEffects.Add(id);
                 UpdateEffects();
             }
             
@@ -77,7 +93,8 @@ namespace TOW_Core.Battle.StatusEffect
         }
         public void OnTick(object sender, OnTickArgs args)
         {
-            _currentHealth += _healthOverTime * args.deltatime; //TODO maybe check this somewhere different, but might make sense also here
+            
+            TOW_Core.Utilities.TOWCommon.Say("50% of time of " + key + "went off");
             
             if(!_currentEffects.IsEmpty())
             {
@@ -85,31 +102,45 @@ namespace TOW_Core.Battle.StatusEffect
                 {
                     _statusEffects[key]._currentduration = _currentEffects[key] - args.deltatime;
 
+                    if (_statusEffects[key]._currentduration <= _statusEffects[key].duration / 2)
+                    {
+                        TOW_Core.Utilities.TOWCommon.Say("50% of time of " + key + "went off");
+                    }
+
                     if (_statusEffects[key]._currentduration<= 0f)
                     {
+                        TOW_Core.Utilities.TOWCommon.Say("Status Effects ended");
                         _statusEffects[key]._currentduration = _statusEffects[key].duration;
                         _currentEffects.Remove(key);
                         UpdateEffects();
                     }
                 }
+                _currentHealth += _healthOverTime * args.deltatime; //TODO maybe check this somewhere different, but might make sense also here
             }
+            
+            
         }
 
 
         private void UpdateEffects()
         {
             EffectContainer MergeContainer = new EffectContainer();
-            foreach (var key in _statusEffects)
+            foreach (var id in _currentEffects)
             {
                 
-                var container = key.Value.EffectContainer;
-                switch (key.Value._EffectType)
+                var container = _statusEffects[id].EffectContainer;
+                switch ( _statusEffects[id]._EffectType)
                 {
                     case StatusEffect.EffectType.Armor:
                         MergeContainer.Armorvalue+= container.Armorvalue;
                         MergeContainer.ArmorPercentage += container.ArmorPercentage;
                         MergeContainer.WardSaveFactor += container.WardSaveFactor;
                         break;
+                    case StatusEffect.EffectType.Damage:
+                        break;
+                    case StatusEffect.EffectType.Health:
+                        break;
+                    
                     //... Health ... Damage
                 }
             }
@@ -117,6 +148,8 @@ namespace TOW_Core.Battle.StatusEffect
             _armorvalue = MergeContainer.Armorvalue;
             _armorPercentage = MergeContainer.ArmorPercentage;
             _WardSaveFactor = MergeContainer.WardSaveFactor;
+            
+            TOW_Core.Utilities.TOWCommon.Say("Status Effects are updated");
             //... other effects 
 
 

@@ -18,13 +18,13 @@ namespace TOW_Core.Battle.StatusEffect
 
 
         public EffectContainer EffectContainer;
+
         public enum EffectType
         {
-            Armor, 
-            Health, 
+            Armor,
+            Health,
             Damage
-            EOT
-        }
+        };
 
 
         public void Activate()
@@ -51,5 +51,4 @@ namespace TOW_Core.Battle.StatusEffect
         public float _damagePercentage; //damage Percentage after all effects are added
         public List<DamageTypes> _attackDamageTypes;   //NOT FUNCTIONAL Implies all kind of damage types for an output attack
     }
-}
 }

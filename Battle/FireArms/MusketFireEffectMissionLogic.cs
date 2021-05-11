@@ -8,6 +8,7 @@ using TaleWorlds.Engine;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.MountAndBlade;
+using TOW_Core.Battle.StatusEffect;
 using TOW_Core.Utilities;
 using LogLevel = NLog.LogLevel;
 
@@ -44,6 +45,9 @@ namespace TOW_Core.Battle.FireArms
                     int selected = this._random.Next(0, this._soundIndex.Length - 1);
                     Mission.MakeSound(this._soundIndex[selected], position, false, true, -1, -1);
                 }
+
+                shooterAgent.GetComponent<StatusEffectComponent>().RunStatusEffect(1);
+
             }
             
         }
