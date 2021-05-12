@@ -6,7 +6,7 @@ using TaleWorlds.MountAndBlade;
 
 namespace TOW_Core.Battle.StatusEffect
 {
-    public  class StatusEffectManager: MissionBehaviour
+    public class StatusEffectManager: MissionLogic
     {
         
         public override void OnAgentCreated(Agent agent)
@@ -20,9 +20,9 @@ namespace TOW_Core.Battle.StatusEffect
             var testList = new List<StatusEffect>();
             StatusEffect testStatusEffect = new StatusEffect
             {
-                id = 1,
-                duration = 30f,
-                _currentduration = 0,
+                id = 0,
+                duration = 5f,
+                _currentduration = 5f,
                 _EffectType = StatusEffect.EffectType.Armor,
                 active = false,
                 affector = null,
@@ -39,6 +39,15 @@ namespace TOW_Core.Battle.StatusEffect
                 }
             };
             testList.Add(testStatusEffect);
+            testList.Add(testStatusEffect);
+            testList.Add(testStatusEffect);
+            testList.Add(testStatusEffect);
+            testList.Add(testStatusEffect);
+            testList.Add(testStatusEffect);
+            testList.Add(testStatusEffect);
+            testList.Add(testStatusEffect);
+            testList.Add(testStatusEffect);
+            testList.Add(testStatusEffect);
             
             testList.ForEach(statusEffect => agent.GetComponent<StatusEffectComponent>().InitializeStatusEffect(statusEffect));
         }
@@ -48,7 +57,7 @@ namespace TOW_Core.Battle.StatusEffect
         
        public EventHandler<OnTickArgs> NotifyStatusEffectTickObservers;
         public override void OnMissionTick(float dt)
-        {
+        { 
             OnTickArgs arguments = new OnTickArgs() {deltatime = dt};
             NotifyStatusEffectTickObservers?.Invoke(this,arguments);
         }

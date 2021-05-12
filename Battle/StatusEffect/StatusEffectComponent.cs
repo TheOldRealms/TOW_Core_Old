@@ -46,22 +46,36 @@ namespace TOW_Core.Battle.StatusEffect
         //movement and agility
         private float _speedfactor;      //between 0 and a reasonable number(maybe 2) percentage of movement speed
         private float _staggering;
-        
-        
+
+        private float testudate;
         
 
 
 
         public void InitializeStatusEffect(StatusEffect effect)
         {
+            
             if (_statusEffects == null)
             {
                 _statusEffects = new Dictionary<int, StatusEffect>();
-                _statusEffects.Add(effect.id,effect);
             }
             else
             {
-                _statusEffects.Add(effect.id,effect);
+                foreach (var idKey in _statusEffects.Keys)
+                {
+                    if (effect.id == idKey)
+                    {
+                        effect.id++;        //testing purpose
+                    }
+                }
+                try
+                {
+                    _statusEffects.Add(effect.id,effect);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Key" + effect.id + "already exists.");
+                }
             }
             
             // TODO called at the beginning of mission by the StatusEffectManager fills all possible buffs and debuffs
@@ -69,7 +83,7 @@ namespace TOW_Core.Battle.StatusEffect
             
             //TODO all active perks or skill values need also to be assigned here aswell to base values 
             Mission.Current.GetMissionBehaviour<StatusEffectManager>().NotifyStatusEffectTickObservers += OnTick;
-            TOW_Core.Utilities.TOWCommon.Say("initialized");
+            //TOW_Core.Utilities.TOWCommon.Say("initialized");
             
         }
         
@@ -91,27 +105,44 @@ namespace TOW_Core.Battle.StatusEffect
         
         public void OnTick(object sender, OnTickArgs args)
         {
-            TOW_Core.Utilities.TOWCommon.Say("Update...");
+            testudate += args.deltatime;
+            if (testudate >= 10f)
+            {
+                RunStatusEffect(0);
+                RunStatusEffect(1);
+                RunStatusEffect(2);
+                RunStatusEffect(3);
+                RunStatusEffect(4);
+                RunStatusEffect(5);
+                RunStatusEffect(6);
+                RunStatusEffect(7);
+                RunStatusEffect(8);
+                if(Agent.IsPlayerControlled)
+                    //TOW_Core.Utilities.TOWCommon.Say(this.ToString()+ _armorvalue);
+                testudate = 0f;
+            }
+            
             if(!_currentEffects.IsEmpty())
             {
-                foreach (var key in _currentEffects)
+                for (int i=0;i<_currentEffects.Count;i++)
                 {
-                    _statusEffects[key]._currentduration = _currentEffects[key] - args.deltatime;
+                    _statusEffects[_currentEffects[i]]._currentduration -= args.deltatime;
 
-                    if (_statusEffects[key]._currentduration <= _statusEffects[key].duration / 2)
+                    if (_statusEffects[_currentEffects[i]]._currentduration <= _statusEffects[_currentEffects[i]].duration / 2)
                     {
-                        TOW_Core.Utilities.TOWCommon.Say("50% of time of " + key + "went off");
+                        //OW_Core.Utilities.TOWCommon.Say("50% of time of " + key + "went off");
                     }
 
-                    if (_statusEffects[key]._currentduration<= 0f)
+                    if (_statusEffects[_currentEffects[i]]._currentduration>= 0f)
                     {
                         TOW_Core.Utilities.TOWCommon.Say("Status Effects ended");
-                        _statusEffects[key]._currentduration = _statusEffects[key].duration;
-                        _currentEffects.Remove(key);
+                        _statusEffects[_currentEffects[i]]._currentduration = _statusEffects[_currentEffects[i]].duration;
+                        _currentEffects.Remove(_currentEffects[i]);
                         UpdateEffects();
+                        continue;
                     }
                 }
-                _currentHealth += _healthOverTime * args.deltatime; //TODO maybe check this somewhere different, but might make sense also here
+                //_currentHealth += _healthOverTime * args.deltatime; //TODO maybe check this somewhere different, but might make sense also here
             }
             
             
@@ -145,7 +176,7 @@ namespace TOW_Core.Battle.StatusEffect
             _armorPercentage = MergeContainer.ArmorPercentage;
             _WardSaveFactor = MergeContainer.WardSaveFactor;
             
-            TOW_Core.Utilities.TOWCommon.Say("Status Effects are updated");
+           // TOW_Core.Utilities.TOWCommon.Say("Status Effects are updated");
             //... other effects 
 
 
