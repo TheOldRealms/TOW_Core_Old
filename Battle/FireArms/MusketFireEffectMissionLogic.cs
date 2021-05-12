@@ -46,7 +46,7 @@ namespace TOW_Core.Battle.FireArms
                     Mission.MakeSound(this._soundIndex[selected], position, false, true, -1, -1);
                 }
 
-                shooterAgent.GetComponent<StatusEffectComponent>().RunStatusEffect(1);
+                //shooterAgent.GetComponent<StatusEffectComponent>().RunStatusEffect(1);
 
             }
             
