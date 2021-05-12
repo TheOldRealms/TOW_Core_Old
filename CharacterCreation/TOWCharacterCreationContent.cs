@@ -11,6 +11,7 @@ using TaleWorlds.Localization;
 using System.Xml.Serialization;
 using TaleWorlds.Library;
 using System.IO;
+using TaleWorlds.CampaignSystem.GameState;
 
 namespace TOW_Core.CharacterCreation
 {
@@ -103,7 +104,7 @@ namespace TOW_Core.CharacterCreation
                         {
                             OnOptionSelected(charInfo, option.Id);
                         }, 
-                        null, new TextObject("{=!}" + option.OptionFlavourText));
+                        OnFinalize, new TextObject("{=!}" + option.OptionFlavourText));
                     }
                 }
             }
@@ -111,6 +112,12 @@ namespace TOW_Core.CharacterCreation
             characterCreation.AddNewMenu(stage1Menu);
             characterCreation.AddNewMenu(stage2Menu);
             characterCreation.AddNewMenu(stage3Menu);
+        }
+
+        //It is important that such a method exists, because if its null, CharacterCreationMenu.ApplyFinalEffect does not apply SkillAndAttributeEffects.
+        private void OnFinalize(TaleWorlds.CampaignSystem.CharacterCreationContent.CharacterCreation charInfo)
+        {
+            return;
         }
 
         private void OnOptionSelected(TaleWorlds.CampaignSystem.CharacterCreationContent.CharacterCreation charInfo, string optionId)
@@ -144,6 +151,56 @@ namespace TOW_Core.CharacterCreation
             charInfo.IsPlayerAlone = true;
             charInfo.HasSecondaryCharacter = false;
             charInfo.ClearFaceGenMounts();
+        }
+
+        public override void OnCharacterCreationFinalized()
+        {
+            CultureObject culture = CharacterObject.PlayerCharacter.Culture;
+            Vec2 position2D = default(Vec2);
+
+            switch (culture.StringId)
+            {
+                case "empire":
+                    position2D = new Vec2(1420.97f, 981.37f);
+                    break;
+                case "khuzait":
+                    position2D = new Vec2(1617.54f, 969.70f);
+                    break;
+                default:
+                    position2D = new Vec2(1420.97f, 981.37f);
+                    break;
+            }
+            MobileParty.MainParty.Position2D = position2D;
+            MapState mapState;
+            if ((mapState = (GameStateManager.Current.ActiveState as MapState)) != null)
+            {
+                mapState.Handler.ResetCamera();
+                mapState.Handler.TeleportCameraToMainParty();
+            }
+            SelectClanName();
+        }
+
+        private void SelectClanName()
+        {
+            InformationManager.ShowTextInquiry(new TextInquiryData(new TextObject("{=JJiKk4ow}Select your family name: ", null).ToString(), string.Empty, true, false, GameTexts.FindText("str_done", null).ToString(), null, new Action<string>(this.OnChangeClanNameDone), null, false, new Func<string, bool>(this.IsNewClanNameApplicable), "", ""), false);
+        }
+
+        private bool IsNewClanNameApplicable(string input)
+        {
+            return input.Length <= 50 && input.Length >= 1;
+        }
+
+        private void OnChangeClanNameDone(string newClanName)
+        {
+            TextObject textObject = new TextObject(newClanName ?? "", null);
+            Clan.PlayerClan.InitializeClan(textObject, textObject, Clan.PlayerClan.Culture, Clan.PlayerClan.Banner, default(Vec2), false);
+            this.OpenBannerSelectionScreen();
+        }
+
+        // Token: 0x06002513 RID: 9491 RVA: 0x00097382 File Offset: 0x00095582
+        private void OpenBannerSelectionScreen()
+        {
+            Game.Current.GameStateManager.PushState(Game.Current.GameStateManager.CreateState<BannerEditorState>(), 0);
         }
     }
 }

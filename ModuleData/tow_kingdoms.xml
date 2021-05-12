@@ -1,6 +1,48 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Kingdoms>
-	<Kingdom id="averland" owner="Hero.emp_lord" banner_key="11.4.4.4345.4345.768.768.1.0.0.163.5.5.512.512.769.764.1.0.0" primary_banner_color="0xff793191" secondary_banner_color="0xffFCDE90" label_color="FF850C6D" color="FF4E3A55" color2="FFDE9953" alternative_color="FFffffff" alternative_color2="FF660653" culture="Culture.empire" settlement_banner_mesh="encounter_flag_a" flag_mesh="info_screen_flags_b" name="{=!}Averland" short_name="{=!}Averland" title="{=!}Averland" ruler_title="{=!}Elector Count" text="{=aEfsyVH4}Many of the oldest families of the Empire live in the north. They came here as marcher lords, granted vast tracts of land by their colleagues in the Senate to keep 'pacified' northern tribes in check and hold the frontiers against Battanian, Sturgian, and Khuzait raiders. They drained marshes and turned the river floodplains into wheatfields, cut back forests and turned the hillsides into pasture. But as the republic became an empire and as emperors became more and more dependent on money and lands to reward their loyal soldiers, the nobility here began to fear that their estates would one day be seized by some cash-starved tyrant. Consequently, in the ongoing imperial civil war they have become some of the strongest champions of Lucon, who sees a Senate of established property-holders as the supreme authority and the emperor as its servant.">
+	<Kingdom id="averland" 
+			 owner="Hero.averland_clan_1_1" 
+			 banner_key="11.4.4.4345.4345.768.768.1.0.0.163.5.5.512.512.769.764.1.0.0" 
+			 primary_banner_color="0xff793191" 
+			 secondary_banner_color="0xffFCDE90" 
+			 label_color="FF850C6D" 
+			 color="FF4E3A55" 
+			 color2="FFDE9953" 
+			 alternative_color="FFffffff" 
+			 alternative_color2="FF660653" 
+			 culture="Culture.empire" 
+			 settlement_banner_mesh="encounter_flag_a" 
+			 flag_mesh="info_screen_flags_b" 
+			 name="{=!}Averland" 
+			 short_name="{=!}Averland" 
+			 title="{=!}Averland" 
+			 ruler_title="{=!}Elector Count" 
+			 text="{=!}Replace me.">
+		<relationships>
+		</relationships>
+		<policies>
+			<policy id="policy_senate" />
+			<policy id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	<Kingdom id="stirland"
+			 owner="Hero.stirland_clan_1_1"
+			 banner_key="11.4.4.4345.4345.768.768.1.0.0.163.5.5.512.512.769.764.1.0.0"
+			 primary_banner_color="0xff793191"
+			 secondary_banner_color="0xffFCDE90"
+			 label_color="FF850C6D"
+			 color="FF4E3A55"
+			 color2="FFDE9953"
+			 alternative_color="FFffffff"
+			 alternative_color2="FF660653"
+			 culture="Culture.empire"
+			 settlement_banner_mesh="encounter_flag_a"
+			 flag_mesh="info_screen_flags_b"
+			 name="{=!}Stirland"
+			 short_name="{=!}Stirland"
+			 title="{=!}Stirland"
+			 ruler_title="{=!}Elector Count"
+			text="{=!}Replace me.">
 		<relationships>
 			<relationship kingdom="Kingdom.sylvania" value="-1" isAtWar="true" />
 		</relationships>
@@ -9,9 +51,53 @@
 			<policy id="policy_feudal_inheritance" />
 		</policies>
 	</Kingdom>
-	<Kingdom id="sylvania" owner="Hero.mannfred" banner_key="11.10.10.1536.1536.768.768.1.0.0.461.11.11.512.512.768.768.1.0.0" primary_banner_color="0xff429081" secondary_banner_color="0xffEFC990" label_color="FF7CC8EB" color="FF58888B" color2="FFCCBB89" alternative_color="FF787878" alternative_color2="FF6caecc" culture="Culture.khuzait" settlement_banner_mesh="encounter_flag_f" flag_mesh="info_screen_flags_b" name="{=!}Sylvania" short_name="{=!}Sylvania" title="{=!}Sylvania" ruler_title="{=!}High Vampire" text="{=fGNdo1BK}For centuries, the tribes in the vast steppe east of the empire were content to live as nomads, venturing into the imperial lands to raid and trade, and then returning to their ancestral freedom. Two generations ago, however, something happened far away to the east - a change in the winds, perhaps, or some terrible but distant conqueror - and the horse clans were set in motion. Urkhun the Khuzait led the clans nearest the empire into its eastern provinces, overrunning its eastern province and forming a khanate. He imposed discipline on the unruly clans, forcing them to ride to war on his command instead of simply when they wished. But after his death, the spirit of unity that he inspired was lost. His descendants still rule the khanate, but some of the other clans chaff under his authority, and others dream of becoming khan themselves.">
+	<Kingdom id="moot"
+			 owner="Hero.moot_clan_1_1"
+			 banner_key="11.4.4.4345.4345.768.768.1.0.0.163.5.5.512.512.769.764.1.0.0"
+			 primary_banner_color="0xff793191"
+			 secondary_banner_color="0xffFCDE90"
+			 label_color="FF850C6D"
+			 color="FF4E3A55"
+			 color2="FFDE9953"
+			 alternative_color="FFffffff"
+			 alternative_color2="FF660653"
+			 culture="Culture.empire"
+			 settlement_banner_mesh="encounter_flag_a"
+			 flag_mesh="info_screen_flags_b"
+			 name="{=!}The Moot"
+			 short_name="{=!}Moot"
+			 title="{=!}The Moot"
+			 ruler_title="{=!}Lord"
+			text="{=!}Replace me.">
 		<relationships>
-			<relationship kingdom="Kingdom.averland" value="-1" isAtWar="true" />
+			<relationship kingdom="Kingdom.sylvania" value="-1" isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy id="policy_senate" />
+			<policy id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+	<Kingdom id="sylvania"
+			 owner="Hero.sylvania_clan_1_1"
+			 banner_key="11.4.4.4345.4345.768.768.1.0.0.163.5.5.512.512.769.764.1.0.0"
+			 primary_banner_color="0xff793191"
+			 secondary_banner_color="0xffFCDE90"
+			 label_color="FF850C6D"
+			 color="FF4E3A55"
+			 color2="FFDE9953"
+			 alternative_color="FFffffff"
+			 alternative_color2="FF660653"
+			 culture="Culture.empire"
+			 settlement_banner_mesh="encounter_flag_a"
+			 flag_mesh="info_screen_flags_b"
+			 name="{=!}Sylvania"
+			 short_name="{=!}Sylvania"
+			 title="{=!}Sylvania"
+			 ruler_title="{=!}Vampire Count"
+			text="{=!}Replace me.">
+		<relationships>
+			<relationship kingdom="Kingdom.stirland" value="-1" isAtWar="true" />
+			<relationship kingdom="Kingdom.moot" value="-1" isAtWar="true" />
 		</relationships>
 		<policies>
 			<policy id="policy_grazing_rights" />

@@ -351,6 +351,7 @@
     <Content Include="DependencyModules\TOW_PreNative\ModuleData\tow_action_sets.xml" />
     <Content Include="DependencyModules\TOW_PreNative\ModuleData\tow_action_types.xml" />
     <Content Include="DependencyModules\TOW_PreNative\SubModule.xml" />
+    <Content Include="ModuleData\tow_campaign_lords.xml" />
     <Content Include="ModuleData\tow_cc_options.xml" />
     <Content Include="ModuleData\tow_clans.xml" />
     <Content Include="ModuleData\tow_heroes.xml" />

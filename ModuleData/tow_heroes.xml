@@ -4,6 +4,8 @@
 	<Hero id="main_hero_father" alive="false" is_noble="true" faction="Faction.player_faction" spouse="Hero.main_hero_mother" />
 	<Hero id="main_hero_mother" alive="false" is_noble="true" faction="Faction.player_faction" spouse="Hero.main_hero_father" />
 
-	<Hero id="mannfred" is_noble="true" faction="Faction.clan_sylvania_1" />
-	<Hero id="emp_lord" is_noble="true" faction="Faction.clan_averland_1" />
+	<Hero id="sylvania_clan_1_1" is_noble="true" faction="Faction.sylvania_clan_1" />
+	<Hero id="averland_clan_1_1" is_noble="true" faction="Faction.averland_clan_1" />
+	<Hero id="stirland_clan_1_1" is_noble="true" faction="Faction.stirland_clan_1" />
+	<Hero id="moot_clan_1_1" is_noble="true" faction="Faction.moot_clan_1" />
 </Heroes>

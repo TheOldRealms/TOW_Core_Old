@@ -82,8 +82,8 @@ namespace TOW_Core
         {
             base.OnMissionBehaviourInitialize(mission);
             mission.AddMissionBehaviour(new AttributeSystemMissionLogic());
-            mission.AddMissionBehaviour(new Abilities.AbilityManagerMissionLogic());
-            mission.AddMissionBehaviour(new Abilities.AbilityHUDMissionView());
+            mission.AddMissionBehaviour(new AbilityManagerMissionLogic());
+            mission.AddMissionBehaviour(new AbilityHUDMissionView());
             mission.AddMissionBehaviour(new Battle.FireArms.MusketFireEffectMissionLogic());
         }
 

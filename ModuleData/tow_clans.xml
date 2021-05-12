@@ -111,18 +111,32 @@
 			 name="{=e6csp4ha}Steppe Bandits"
 			 tier="1" />
 	<!--main factions-->
-	<Faction id="clan_averland_1"
+	<Faction id="averland_clan_1"
 			 name="{=!}Test Clan Averland"
 			 tier="6"
-			 owner="Hero.emp_lord"
+			 owner="Hero.averland_clan_1_1"
 			 culture="Culture.empire"
 			 super_faction="Kingdom.averland"
 			 banner_key="11.71.4.4922.4922.776.777.1.0.0.529.5.0.152.152.882.879.0.0.0.419.5.0.510.510.772.767.0.0.0.526.5.0.152.152.664.876.0.0.0.527.5.0.152.152.659.658.0.0.0.528.5.0.152.152.879.657.0.0.0" />
-	<Faction id="clan_sylvania_1"
+	<Faction id="sylvania_clan_1"
 			 name="{=!}Test Clan Sylvania"
 			 tier="6"
-			 owner="Hero.mannfred"
+			 owner="Hero.sylvania_clan_1_1"
 			 culture="Culture.khuzait"
 			 super_faction="Kingdom.sylvania"
+			 banner_key="11.71.4.4922.4922.776.777.1.0.0.142.5.0.502.502.754.693.0.0.1.142.5.0.502.502.772.869.0.0.179" />
+	<Faction id="stirland_clan_1"
+			 name="{=!}Test Clan Stirland"
+			 tier="6"
+			 owner="Hero.stirland_clan_1_1"
+			 culture="Culture.empire"
+			 super_faction="Kingdom.stirland"
+			 banner_key="11.71.4.4922.4922.776.777.1.0.0.142.5.0.502.502.754.693.0.0.1.142.5.0.502.502.772.869.0.0.179" />
+	<Faction id="moot_clan_1"
+			 name="{=!}Test Clan Moot"
+			 tier="6"
+			 owner="Hero.moot_clan_1_1"
+			 culture="Culture.empire"
+			 super_faction="Kingdom.moot"
 			 banner_key="11.71.4.4922.4922.776.777.1.0.0.142.5.0.502.502.754.693.0.0.1.142.5.0.502.502.772.869.0.0.179" />
 </Factions>

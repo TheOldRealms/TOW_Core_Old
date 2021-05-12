@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Settlements>
 	<!-- Averland 2 Towns 11 villages 2 castles -->
-	<Settlement id="town_AV1" name="{=Settlements.Settlement.name.town_AV1}Averheim" owner="Faction.clan_averland_1" posX="1436.810" posY="925.494" culture="Culture.empire" prosperity="3400" gate_posX="1433.199" gate_posY="923.3003" text="{=4ENGzVaC}Averheim is the capital city of the Grand Province of Averland, and the original capital of the ancient Brigundians tribe.">
+	<Settlement id="town_AV1" name="{=Settlements.Settlement.name.town_AV1}Averheim" owner="Faction.averland_clan_1" posX="1436.810" posY="925.494" culture="Culture.empire" prosperity="3400" gate_posX="1433.199" gate_posY="923.3003" text="{=4ENGzVaC}Averheim is the capital city of the Grand Province of Averland, and the original capital of the ancient Brigundians tribe.">
 		<Components>
 			<Town id="town_comp_AV1" is_castle="false" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -73,7 +73,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="castle_AV2" name="{=Settlements.Settlement.name.castle_AV2}Wuppertal" owner="Faction.clan_averland_1" posX="1393.959" posY="889.762" prosperity="420" culture="Culture.empire" gate_posX="1394.557" gate_posY="890.3242">
+	<Settlement id="castle_AV2" name="{=Settlements.Settlement.name.castle_AV2}Wuppertal" owner="Faction.averland_clan_1" posX="1393.959" posY="889.762" prosperity="420" culture="Culture.empire" gate_posX="1394.557" gate_posY="890.3242">
 		<Components>
 			<Town id="castle_comp_AV2" is_castle="true" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -122,7 +122,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="town_AV3" name="{=Settlements.Settlement.name.town_AV3}Grenzstadt" owner="Faction.clan_averland_1" posX="1493.496" posY="834.908" culture="Culture.empire" prosperity="2520" gate_posX="1493.882" gate_posY="834.9" text="{=4ENGzVaC}Grenzstadt is an Imperial fortress-town that is located at the northwestern end of Black Fire Pass.">
+	<Settlement id="town_AV3" name="{=Settlements.Settlement.name.town_AV3}Grenzstadt" owner="Faction.averland_clan_1" posX="1493.496" posY="834.908" culture="Culture.empire" prosperity="2520" gate_posX="1492.916" gate_posY="838.8751" text="{=4ENGzVaC}Grenzstadt is an Imperial fortress-town that is located at the northwestern end of Black Fire Pass.">
 		<Components>
 			<Town id="town_comp_AV3" is_castle="false" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -168,7 +168,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="castle_AV4" name="{=Settlements.Settlement.name.castle_AV4}Peungzig" owner="Faction.clan_averland_1" posX="1522.925" posY="890.502" prosperity="420" culture="Culture.empire" gate_posX="1522.214" gate_posY="889.6931">
+	<Settlement id="castle_AV4" name="{=Settlements.Settlement.name.castle_AV4}Peungzig" owner="Faction.averland_clan_1" posX="1522.925" posY="890.502" prosperity="420" culture="Culture.empire" gate_posX="1522.214" gate_posY="889.6931">
 		<Components>
 			<Town id="castle_comp_AV4" is_castle="true" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -205,7 +205,7 @@
 		</CommonAreas>
 	</Settlement>
 	<!--Stirland-->
-	<Settlement id="town_ST1" name="{=Settlements.Settlement.name.town_ST1}Wurtbad" owner="Faction.clan_averland_1" posX="1443.906" posY="1014.650" culture="Culture.empire" prosperity="2000" gate_posX="1444.599" gate_posY="1010.559" text="{=4ENGzVaC}Capital of Stirland, Wurtbad rests at the terminus of the Old Dwarf Road, surrounded by the Great Forest.">
+	<Settlement id="town_ST1" name="{=Settlements.Settlement.name.town_ST1}Wurtbad" owner="Faction.stirland_clan_1" posX="1443.906" posY="1014.650" culture="Culture.empire" prosperity="2000" gate_posX="1444.599" gate_posY="1010.559" text="{=4ENGzVaC}Capital of Stirland, Wurtbad rests at the terminus of the Old Dwarf Road, surrounded by the Great Forest.">
 		<Components>
 			<Town id="town_comp_ST1" is_castle="false" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -277,7 +277,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="castle_ST1" name="{=Settlements.Settlement.name.castle_ST1}Flensburg" owner="Faction.clan_averland_1" posX="1382.927" posY="986.824" prosperity="420" culture="Culture.empire" gate_posX="1382.877" gate_posY="985.6664">
+	<Settlement id="castle_ST1" name="{=Settlements.Settlement.name.castle_ST1}Flensburg" owner="Faction.stirland_clan_1" posX="1382.927" posY="986.824" prosperity="420" culture="Culture.empire" gate_posX="1382.877" gate_posY="985.6664">
 		<Components>
 			<Town id="castle_comp_ST1" is_castle="true" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -313,7 +313,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="castle_ST2" name="{=Settlements.Settlement.name.castle_ST2}Franzen" owner="Faction.clan_averland_1" posX="1428.838" posY="942.029" prosperity="420" culture="Culture.empire" gate_posX="1429.951" gate_posY="942.0782">
+	<Settlement id="castle_ST2" name="{=Settlements.Settlement.name.castle_ST2}Franzen" owner="Faction.stirland_clan_1" posX="1428.838" posY="942.029" prosperity="420" culture="Culture.empire" gate_posX="1429.951" gate_posY="942.0782">
 		<Components>
 			<Town id="castle_comp_ST2" is_castle="true" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -349,7 +349,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="castle_ST3" name="{=Settlements.Settlement.name.castle_AV1}Halstedt" owner="Faction.clan_averland_1" posX="1473.685" posY="962.959" prosperity="420" culture="Culture.empire" gate_posX="1473.755" gate_posY="963.772">
+	<Settlement id="castle_ST3" name="{=Settlements.Settlement.name.castle_AV1}Halstedt" owner="Faction.stirland_clan_1" posX="1473.685" posY="962.959" prosperity="420" culture="Culture.empire" gate_posX="1473.755" gate_posY="963.772">
 		<Components>
 			<Town id="castle_comp_ST3" is_castle="true" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -385,7 +385,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="town_ST2" name="{=Settlements.Settlement.name.town_ST2}Leicheberg" owner="Faction.clan_averland_1" posX="1578.421" posY="977.160" culture="Culture.empire" prosperity="3400" gate_posX="1583.195" gate_posY="973.565" text="{=4ENGzVaC}At the edge of the Haunted Hills by the source of the Black Run River, Leicheberg lives in fear of its neighbour to the east.">
+	<Settlement id="town_ST2" name="{=Settlements.Settlement.name.town_ST2}Leicheberg" owner="Faction.stirland_clan_1" posX="1578.421" posY="977.160" culture="Culture.empire" prosperity="3400" gate_posX="1583.195" gate_posY="973.565" text="{=4ENGzVaC}At the edge of the Haunted Hills by the source of the Black Run River, Leicheberg lives in fear of its neighbour to the east.">
 		<Components>
 			<Town id="town_comp_ST2" is_castle="false" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -444,7 +444,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="town_ST3" name="{=Settlements.Settlement.name.town_ST3}Siegfriedhof" owner="Faction.clan_averland_1" posX="1561.296" posY="1012.569" culture="Culture.empire" prosperity="3400" gate_posX="1561.581" gate_posY="1008.037" text="{=4ENGzVaC}Siegfriedhof lies on the borderlands with the County of Sylvania near Hunger Wood.">
+	<Settlement id="town_ST3" name="{=Settlements.Settlement.name.town_ST3}Siegfriedhof" owner="Faction.stirland_clan_1" posX="1561.296" posY="1012.569" culture="Culture.empire" prosperity="3400" gate_posX="1561.581" gate_posY="1008.037" text="{=4ENGzVaC}Siegfriedhof lies on the borderlands with the County of Sylvania near Hunger Wood.">
 		<Components>
 			<Town id="town_comp_ST3" is_castle="false" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -490,7 +490,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="town_ST4" name="{=Settlements.Settlement.name.town_ST4}Mittlenburg" owner="Faction.clan_averland_1" posX="1555.656" posY="878.844" culture="Culture.empire" prosperity="3400" gate_posX="1555.329" gate_posY="882.903" text="{=4ENGzVaC}Sir seaghouls place to hang out it's fresh mountainair for his boypussy">
+	<Settlement id="town_ST4" name="{=Settlements.Settlement.name.town_ST4}Mittlenburg" owner="Faction.stirland_clan_1" posX="1555.656" posY="878.844" culture="Culture.empire" prosperity="3400" gate_posX="1555.329" gate_posY="882.903" text="{=4ENGzVaC}Sir seaghouls place to hang out it's fresh mountainair for his boypussy">
 		<Components>
 			<Town id="town_comp_ST4" is_castle="false" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -562,7 +562,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="castle_ST4" name="{=Settlements.Settlement.name.castle_ST4}Wördern" owner="Faction.clan_averland_1" posX="1451.011" posY="972.307" prosperity="420" culture="Culture.empire" gate_posX="1451.798" gate_posY="972.0756">
+	<Settlement id="castle_ST4" name="{=Settlements.Settlement.name.castle_ST4}Wördern" owner="Faction.stirland_clan_1" posX="1451.011" posY="972.307" prosperity="420" culture="Culture.empire" gate_posX="1451.798" gate_posY="972.0756">
 		<Components>
 			<Town id="castle_comp_ST4" is_castle="true" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -598,7 +598,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="castle_ST5" name="{=Settlements.Settlement.name.castle_ST5}Marburg" owner="Faction.clan_averland_1" posX="1498.114" posY="1029.143" prosperity="420" culture="Culture.empire" gate_posX="1498.802" gate_posY="1028.957">
+	<Settlement id="castle_ST5" name="{=Settlements.Settlement.name.castle_ST5}Marburg" owner="Faction.stirland_clan_1" posX="1498.114" posY="1029.143" prosperity="420" culture="Culture.empire" gate_posX="1498.802" gate_posY="1028.957">
 		<Components>
 			<Town id="castle_comp_ST5" is_castle="true" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -635,7 +635,7 @@
 		</CommonAreas>
 	</Settlement>
 	<!-- Mootland 1 town 4 villages -->
-	<Settlement id="town_MT1" name="{=Settlements.Settlement.name.town_MT1}Eicheschatten" owner="Faction.clan_averland_1" posX="1515.597" posY="942.964" culture="Culture.empire" prosperity="3400" gate_posX="1512.243" gate_posY="946.930" text="{=4ENGzVaC}Eicheschatten, the capital of the Mootland is utterly unprepossessing at first glance. After a longer examination, one’s opinion is confirmed.">
+	<Settlement id="town_MT1" name="{=Settlements.Settlement.name.town_MT1}Eicheschatten" owner="Faction.moot_clan_1" posX="1515.597" posY="942.964" culture="Culture.empire" prosperity="3400" gate_posX="1512.243" gate_posY="946.930" text="{=4ENGzVaC}Eicheschatten, the capital of the Mootland is utterly unprepossessing at first glance. After a longer examination, one’s opinion is confirmed.">
 		<Components>
 			<Town id="town_comp_MT1" is_castle="false" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -708,7 +708,7 @@
 		</CommonAreas>
 	</Settlement>
 	<!-- Sylvania -->
-	<Settlement id="town_SY1" name="{=Settlements.Settlement.name.town_MT1}Castle Drakenhof" owner="Faction.clan_sylvania_1" posX="1648.721" posY="961.512" culture="Culture.khuzait" prosperity="3400" gate_posX="1645.013" gate_posY="959.1583" text="{=4ENGzVaC}Castle Drakenhof was the former capital of the Imperial province of Sylvania during the reign of its last Imperial noble, Count Otto von Drak.">
+	<Settlement id="town_SY1" name="{=Settlements.Settlement.name.town_MT1}Castle Drakenhof" owner="Faction.sylvania_clan_1" posX="1648.721" posY="961.512" culture="Culture.khuzait" prosperity="3400" gate_posX="1645.013" gate_posY="959.1583" text="{=4ENGzVaC}Castle Drakenhof was the former capital of the Imperial province of Sylvania during the reign of its last Imperial noble, Count Otto von Drak.">
 		<Components>
 			<Town id="town_comp_SY1" is_castle="false" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -780,7 +780,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="castle_SY1" name="{=Settlements.Settlement.name.castle_SY1}castle Tempelhof" owner="Faction.clan_sylvania_1" posX="1609.692" posY="989.558" prosperity="420" culture="Culture.khuzait" gate_posX="1594.735" gate_posY="992.207">
+	<Settlement id="castle_SY1" name="{=Settlements.Settlement.name.castle_SY1}Castle Templehof" owner="Faction.sylvania_clan_1" posX="1609.692" posY="989.558" prosperity="420" culture="Culture.khuzait" gate_posX="1594.869" gate_posY="991.536">
 		<Components>
 			<Town id="castle_comp_SY1" is_castle="true" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -790,7 +790,7 @@
 			<Location id="prison" scene_name="empire_dungeon_a" />
 		</Locations>
 	</Settlement>
-	<Settlement id="castle_village_SY1_1" name="{=Settlements.Settlement.name.castle_village_SY1_1}Templehof" posX="1609.649" posY="1011.718" culture="Culture.khuzait" text="{=Settlements.Settlement.text.castle_village_SY1_1}This town in Sylvania, bordering the imperial province of Stirland is named for its famed temple of Morr.">
+	<Settlement id="castle_village_SY1_1" name="{=Settlements.Settlement.name.castle_village_SY1_1}Templehof" posX="1609.649" posY="989.215" culture="Culture.khuzait" text="{=Settlements.Settlement.text.castle_village_SY1_1}This town in Sylvania, bordering the imperial province of Stirland is named for its famed temple of Morr.">
 		<Components>
 			<Village id="castle_village_comp_SY1_1" village_type="VillageType.sheep_farm" hearth="120" gate_rotation="0.008" trade_bound="Settlement.town_SY1" bound="Settlement.castle_SY1" background_crop_position="0.0" background_mesh="gui_bg_village_vlanda" wait_mesh="wait_vlandia_village" castle_background_mesh="gui_bg_castle_vlanda" />
 		</Components>
@@ -816,7 +816,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="town_SY2" name="{=Settlements.Settlement.name.town_SY2}Waldenhof" owner="Faction.clan_sylvania_1" posX="1663.270" posY="1021.537" culture="Culture.khuzait" prosperity="3400" gate_posX="1659.555" gate_posY="1019.089" text="{=4ENGzVaC}The capital of Sylvania, Waldenhof, is a walled town that sits where the rivers come together to create the Stir.">
+	<Settlement id="town_SY2" name="{=Settlements.Settlement.name.town_SY2}Waldenhof" owner="Faction.sylvania_clan_1" posX="1663.270" posY="1021.537" culture="Culture.khuzait" prosperity="3400" gate_posX="1659.555" gate_posY="1019.089" text="{=4ENGzVaC}The capital of Sylvania, Waldenhof, is a walled town that sits where the rivers come together to create the Stir.">
 		<Components>
 			<Town id="town_comp_SY2" is_castle="false" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -888,7 +888,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="castle_SY2" name="{=Settlements.Settlement.name.castle_SY2}Fort Oberstyre" owner="Faction.clan_sylvania_1" posX="1532.138" posY="987.682" prosperity="420" culture="Culture.khuzait" gate_posX="1531.196" gate_posY="988.350">
+	<Settlement id="castle_SY2" name="{=Settlements.Settlement.name.castle_SY2}Fort Oberstyre" owner="Faction.sylvania_clan_1" posX="1532.138" posY="987.682" prosperity="420" culture="Culture.khuzait" gate_posX="1531.196" gate_posY="988.350">
 		<Components>
 			<Town id="castle_comp_SY2" is_castle="true" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -911,7 +911,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="castle_SY3" name="{=Settlements.Settlement.name.castle_SY3}Fort Bracher" owner="Faction.clan_sylvania_1" posX="1587.614" posY="912.944" prosperity="420" culture="Culture.khuzait" gate_posX="1586.5" gate_posY="913.188">
+	<Settlement id="castle_SY3" name="{=Settlements.Settlement.name.castle_SY3}Fort Bracher" owner="Faction.sylvania_clan_1" posX="1587.614" posY="912.944" prosperity="420" culture="Culture.khuzait" gate_posX="1586.5" gate_posY="913.188">
 		<Components>
 			<Town id="castle_comp_SY3" is_castle="true" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -921,7 +921,7 @@
 			<Location id="prison" scene_name="empire_dungeon_a" />
 		</Locations>
 	</Settlement>
-	<Settlement id="castle_village_SY3_1" name="{=Settlements.Settlement.name.castle_village_SY3_1}Templehof" posX="1581.196" posY="901.469" culture="Culture.khuzait" text="{=Settlements.Settlement.text.castle_village_SY3_1}">
+	<Settlement id="castle_village_SY3_1" name="{=Settlements.Settlement.name.castle_village_SY3_1}Stoodhof" posX="1581.196" posY="901.469" culture="Culture.khuzait" text="{=Settlements.Settlement.text.castle_village_SY3_1}">
 		<Components>
 			<Village id="castle_village_comp_SY3_1" village_type="VillageType.sheep_farm" hearth="60" gate_rotation="0.008" trade_bound="Settlement.town_SY2" bound="Settlement.castle_SY3" background_crop_position="0.0" background_mesh="gui_bg_village_vlanda" wait_mesh="wait_vlandia_village" castle_background_mesh="gui_bg_castle_vlanda" />
 		</Components>
@@ -947,7 +947,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="castle_SY4" name="{=Settlements.Settlement.name.castle_SY4}nachtschlosse castle" owner="Faction.clan_sylvania_1" posX="1651.078" posY="927.899" prosperity="420" culture="Culture.khuzait" gate_posX="1650.906" gate_posY="928.800">
+	<Settlement id="castle_SY4" name="{=Settlements.Settlement.name.castle_SY4}nachtschlosse castle" owner="Faction.sylvania_clan_1" posX="1651.078" posY="927.899" prosperity="420" culture="Culture.khuzait" gate_posX="1650.906" gate_posY="928.800">
 		<Components>
 			<Town id="castle_comp_SY4" is_castle="true" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -970,7 +970,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="castle_SY5" name="{=Settlements.Settlement.name.castle_SY5}Castle Senkhof" owner="Faction.clan_sylvania_1" posX="1674.036" posY="958.230" prosperity="420" culture="Culture.khuzait" gate_posX="1673.594" gate_posY="957.182">
+	<Settlement id="castle_SY5" name="{=Settlements.Settlement.name.castle_SY5}Castle Senkhof" owner="Faction.sylvania_clan_1" posX="1674.036" posY="958.230" prosperity="420" culture="Culture.khuzait" gate_posX="1673.594" gate_posY="957.182">
 		<Components>
 			<Town id="castle_comp_SY5" is_castle="true" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -993,7 +993,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="castle_SY6" name="{=Settlements.Settlement.name.castle_SY6}Castle Wartenhof" owner="Faction.clan_sylvania_1" posX="1664.257" posY="977.810" prosperity="420" culture="Culture.khuzait" gate_posX="1663.431" gate_posY="978.2975">
+	<Settlement id="castle_SY6" name="{=Settlements.Settlement.name.castle_SY6}Castle Wartenhof" owner="Faction.sylvania_clan_1" posX="1664.257" posY="977.810" prosperity="420" culture="Culture.khuzait" gate_posX="1663.431" gate_posY="978.2975">
 		<Components>
 			<Town id="castle_comp_SY6" is_castle="true" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -1029,7 +1029,7 @@
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
 	</Settlement>
-	<Settlement id="castle_SY7" name="{=Settlements.Settlement.name.castle_SY7}Zherdenschlosse Castle" owner="Faction.clan_sylvania_1" posX="1698.861" posY="1000.173" prosperity="420" culture="Culture.khuzait" gate_posX="1698.039" gate_posY="999.596">
+	<Settlement id="castle_SY7" name="{=Settlements.Settlement.name.castle_SY7}Zherdenschlosse Castle" owner="Faction.sylvania_clan_1" posX="1698.861" posY="1000.173" prosperity="420" culture="Culture.khuzait" gate_posX="1698.039" gate_posY="999.596">
 		<Components>
 			<Town id="castle_comp_SY7" is_castle="true" level="1" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="wait_empire_town" gate_rotation="0.908" />
 		</Components>
@@ -1064,5 +1064,512 @@
 			<Area type="Thicket" name="{=66Mzk0NZ}Thicket" />
 			<Area type="Bog" name="{=iXA5SttU}Bog" />
 		</CommonAreas>
+	</Settlement>
+	
+	<!-- Hideouts -->
+	<!-- hideout forest -->
+	<Settlement id="hideout_forest_1" name="{=Settlements.Settlement.name.hideout_forest_1}Hideout" type="Hideout" posX="1518.176" posY="1021.992" culture="Culture.forest_bandits">
+		<Components>
+			<Hideout id="hideout_forest_1" map_icon="bandit_hideout_b" scene_name="bandit_forest" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_forest" gate_rotation="6.283" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_forest_2" name="{=Settlements.Settlement.name.hideout_forest_2}Hideout" type="Hideout" posX="1396.267" posY="932.942" culture="Culture.forest_bandits">
+		<Components>
+			<Hideout id="hideout_forest_2" map_icon="bandit_hideout_b" scene_name="bandit_forest" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_forest" gate_rotation="6.283" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_forest_3" name="{=Settlements.Settlement.name.hideout_forest_3}Hideout" type="Hideout" posX="1515.833" posY="845.504" culture="Culture.forest_bandits">
+		<Components>
+			<Hideout id="hideout_forest_3" map_icon="bandit_hideout_b" scene_name="bandit_forest" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_forest" gate_rotation="6.283" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_forest_4" name="{=Settlements.Settlement.name.hideout_forest_4}Hideout" type="Hideout" posX="1381.767" posY="896.139" culture="Culture.forest_bandits">
+		<Components>
+			<Hideout id="hideout_forest_4" map_icon="bandit_hideout_b" scene_name="bandit_forest" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_forest" gate_rotation="6.283" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_forest_5" name="{=Settlements.Settlement.name.hideout_forest_5}Hideout" type="Hideout" posX="1534.903" posY="962.841" culture="Culture.forest_bandits">
+		<Components>
+			<Hideout id="hideout_forest_5" map_icon="bandit_hideout_b" scene_name="bandit_forest" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_forest" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_forest_6" name="{=Settlements.Settlement.name.hideout_forest_6}Hideout" type="Hideout" posX="1587.574" posY="951.436" culture="Culture.forest_bandits">
+		<Components>
+			<Hideout id="hideout_forest_6" map_icon="bandit_hideout_b" scene_name="bandit_forest" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_forest" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_forest_7" name="{=Settlements.Settlement.name.hideout_forest_7}Hideout" type="Hideout" posX="1351.113" posY="975.863" culture="Culture.forest_bandits">
+		<Components>
+			<Hideout id="hideout_forest_7" map_icon="bandit_hideout_b" scene_name="bandit_forest" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_forest" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_forest_8" name="{=Settlements.Settlement.name.hideout_forest_8}Hideout" type="Hideout" posX="1593.040" posY="901.424" culture="Culture.forest_bandits">
+		<Components>
+			<Hideout id="hideout_forest_8" map_icon="bandit_hideout_b" scene_name="bandit_forest" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_forest" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_forest_9" name="{=Settlements.Settlement.name.hideout_forest_9}Hideout" type="Hideout" posX="1603.574" posY="935.458" culture="Culture.forest_bandits">
+		<Components>
+			<Hideout id="hideout_forest_9" map_icon="bandit_hideout_b" scene_name="bandit_forest" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_forest" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_forest_10" name="{=Settlements.Settlement.name.hideout_forest_10}Hideout" type="Hideout" posX="1355.861" posY="915.113" culture="Culture.forest_bandits">
+		<Components>
+			<Hideout id="hideout_forest_10" map_icon="bandit_hideout_b" scene_name="bandit_forest" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_forest" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_forest_11" name="{=Settlements.Settlement.name.hideout_forest_11}Hideout" type="Hideout" posX="1627.898" posY="1003.282" culture="Culture.forest_bandits">
+		<Components>
+			<Hideout id="hideout_forest_11" map_icon="bandit_hideout_b" scene_name="bandit_forest" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_forest" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_forest_12" name="{=Settlements.Settlement.name.hideout_forest_12}Hideout" type="Hideout" posX="527.047" posY="361.783" culture="Culture.forest_bandits">
+		<Components>
+			<Hideout id="hideout_forest_12" map_icon="bandit_hideout_b" scene_name="bandit_forest" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_forest" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_forest_13" name="{=Settlements.Settlement.name.hideout_forest_13}Hideout" type="Hideout" posX="1422.559" posY="863.268" culture="Culture.forest_bandits">
+		<Components>
+			<Hideout id="hideout_forest_13" map_icon="bandit_hideout_b" scene_name="bandit_forest" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_forest" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_forest_14" name="{=Settlements.Settlement.name.hideout_forest_14}Hideout" type="Hideout" posX="1538.223" posY="1035.974" culture="Culture.forest_bandits">
+		<Components>
+			<Hideout id="hideout_forest_14" map_icon="bandit_hideout_b" scene_name="bandit_forest" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_forest" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_forest_15" name="{=Settlements.Settlement.name.hideout_forest_15}Hideout" type="Hideout" posX="1475.855" posY="914.329" culture="Culture.forest_bandits">
+		<Components>
+			<Hideout id="hideout_forest_15" map_icon="bandit_hideout_b" scene_name="bandit_forest" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_forest" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_forest_16" name="{=Settlements.Settlement.name.hideout_forest_16}Hideout" type="Hideout" posX="1425.474" posY="874.866" culture="Culture.forest_bandits">
+		<Components>
+			<Hideout id="hideout_forest_16" map_icon="bandit_hideout_b" scene_name="bandit_forest" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_forest" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_forest_17" name="{=Settlements.Settlement.name.hideout_forest_17}Hideout" type="Hideout" posX="1549.788" posY="1025.913" culture="Culture.forest_bandits">
+		<Components>
+			<Hideout id="hideout_forest_17" map_icon="bandit_hideout_b" scene_name="bandit_forest" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_forest" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_forest_18" name="{=Settlements.Settlement.name.hideout_forest_18}Hideout" type="Hideout" posX="1682.765" posY="988.610" culture="Culture.forest_bandits">
+		<Components>
+			<Hideout id="hideout_forest_18" map_icon="bandit_hideout_b" scene_name="bandit_forest" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_forest" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_forest_19" name="{=Settlements.Settlement.name.hideout_forest_19}Hideout" type="Hideout" posX="1370.662" posY="1010.820" culture="Culture.forest_bandits">
+		<Components>
+			<Hideout id="hideout_forest_19" map_icon="bandit_hideout_b" scene_name="bandit_forest" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_forest" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_forest_20" name="{=Settlements.Settlement.name.hideout_forest_20}Hideout" type="Hideout" posX="1392.667" posY="941.803" culture="Culture.forest_bandits">
+		<Components>
+			<Hideout id="hideout_forest_20" map_icon="bandit_hideout_b" scene_name="bandit_forest" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_forest" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<!-- Sea Raider  Hideouts -->
+	<Settlement id="hideout_seaside_1" name="{=Settlements.Settlement.name.hideout_seaside_1}Hideout" type="Hideout" posX="1000.255" posY="270.295" culture="Culture.sea_raiders">
+		<Components>
+			<Hideout id="hideout_seaside_1" map_icon="bandit_hideout_c" scene_name="sea_bandit_a" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_seaside" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_seaside_2" name="{=Settlements.Settlement.name.hideout_seaside_2}Hideout" type="Hideout" posX="1003.008" posY="266.829" culture="Culture.sea_raiders">
+		<Components>
+			<Hideout id="hideout_seaside_2" map_icon="bandit_hideout_c" scene_name="sea_bandit_a" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_seaside" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_seaside_3" name="{=Settlements.Settlement.name.hideout_seaside_3}Hideout" type="Hideout" posX="995.283" posY="289.274" culture="Culture.sea_raiders">
+		<Components>
+			<Hideout id="hideout_seaside_3" map_icon="bandit_hideout_c" scene_name="sea_bandit_a" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_seaside" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_seaside_4" name="{=Settlements.Settlement.name.hideout_seaside_4}Hideout" type="Hideout" posX="1000.295" posY="283.456" culture="Culture.sea_raiders">
+		<Components>
+			<Hideout id="hideout_seaside_4" map_icon="bandit_hideout_c" scene_name="sea_bandit_a" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_seaside" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_seaside_5" name="{=Settlements.Settlement.name.hideout_seaside_5}Hideout" type="Hideout" posX="987.177" posY="287.379" culture="Culture.sea_raiders">
+		<Components>
+			<Hideout id="hideout_seaside_5" map_icon="bandit_hideout_c" scene_name="sea_bandit_a" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_seaside" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_seaside_6" name="{=Settlements.Settlement.name.hideout_seaside_6}Hideout" type="Hideout" posX="1040.004" posY="257.186" culture="Culture.sea_raiders">
+		<Components>
+			<Hideout id="hideout_seaside_6" map_icon="bandit_hideout_c" scene_name="sea_bandit_a" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_seaside" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_seaside_7" name="{=Settlements.Settlement.name.hideout_seaside_7}Hideout" type="Hideout" posX="998.329" posY="274.206" culture="Culture.sea_raiders">
+		<Components>
+			<Hideout id="hideout_seaside_7" map_icon="bandit_hideout_c" scene_name="sea_bandit_a" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_seaside" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_seaside_8" name="{=Settlements.Settlement.name.hideout_seaside_8}Hideout" type="Hideout" posX="1041.917" posY="263.687" culture="Culture.sea_raiders">
+		<Components>
+			<Hideout id="hideout_seaside_8" map_icon="bandit_hideout_c" scene_name="sea_bandit_a" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_seaside" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_seaside_9" name="{=Settlements.Settlement.name.hideout_seaside_9}Hideout" type="Hideout" posX="1024.067" posY="274.675" culture="Culture.sea_raiders">
+		<Components>
+			<Hideout id="hideout_seaside_9" map_icon="bandit_hideout_c" scene_name="sea_bandit_a" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_seaside" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_seaside_10" name="{=Settlements.Settlement.name.hideout_seaside_10}Hideout" type="Hideout" posX="1007.442" posY="277.615" culture="Culture.sea_raiders">
+		<Components>
+			<Hideout id="hideout_seaside_10" map_icon="bandit_hideout_c" scene_name="sea_bandit_a" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_seaside" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_seaside_11" name="{=Settlements.Settlement.name.hideout_seaside_11}Hideout" type="Hideout" posX="1058.666" posY="259.069" culture="Culture.sea_raiders">
+		<Components>
+			<Hideout id="hideout_seaside_11" map_icon="bandit_hideout_c" scene_name="sea_bandit_a" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_seaside" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_seaside_12" name="{=Settlements.Settlement.name.hideout_seaside_12}Hideout" type="Hideout" posX="1014.963" posY="263.250" culture="Culture.sea_raiders">
+		<Components>
+			<Hideout id="hideout_seaside_12" map_icon="bandit_hideout_c" scene_name="sea_bandit_a" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_seaside" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_seaside_13" name="{=Settlements.Settlement.name.hideout_seaside_13}Hideout" type="Hideout" posX="1034.087" posY="272.864" culture="Culture.sea_raiders">
+		<Components>
+			<Hideout id="hideout_seaside_13" map_icon="bandit_hideout_c" scene_name="sea_bandit_a" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_seaside" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_seaside_14" name="{=Settlements.Settlement.name.hideout_seaside_14}Seaside Hideout" type="Hideout" posX="1023.326" posY="255.377" culture="Culture.sea_raiders">
+		<Components>
+			<Hideout id="hideout_seaside_14" map_icon="bandit_hideout_c" scene_name="sea_bandit_a" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_seaside" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_seaside_15" name="{=Settlements.Settlement.name.hideout_seaside_15}Hideout" type="Hideout" posX="1016.742" posY="253.090" culture="Culture.sea_raiders">
+		<Components>
+			<Hideout id="hideout_seaside_15" map_icon="bandit_hideout_c" scene_name="sea_bandit_a" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_seaside" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_seaside_16" name="{=Settlements.Settlement.name.hideout_seaside_16}Hideout" type="Hideout" posX="1051.597" posY="255.502" culture="Culture.sea_raiders">
+		<Components>
+			<Hideout id="hideout_seaside_16" map_icon="bandit_hideout_c" scene_name="sea_bandit_a" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_seaside" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_seaside_17" name="{=Settlements.Settlement.name.hideout_seaside_17}Hideout" type="Hideout" posX="1033.849" posY="255.197" culture="Culture.sea_raiders">
+		<Components>
+			<Hideout id="hideout_seaside_17" map_icon="bandit_hideout_c" scene_name="sea_bandit_a" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_seaside" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_seaside_18" name="{=Settlements.Settlement.name.hideout_seaside_18}Hideout" type="Hideout" posX="1017.272" posY="260.577" culture="Culture.sea_raiders">
+		<Components>
+			<Hideout id="hideout_seaside_18" map_icon="bandit_hideout_c" scene_name="sea_bandit_a" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_seaside" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_seaside_19" name="{=Settlements.Settlement.name.hideout_seaside_19}Hideout" type="Hideout" posX="1009.642" posY="254.882" culture="Culture.sea_raiders">
+		<Components>
+			<Hideout id="hideout_seaside_19" map_icon="bandit_hideout_c" scene_name="sea_bandit_a" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_seaside" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_seaside_20" name="{=Settlements.Settlement.name.hideout_seaside_20}Hideout" type="Hideout" posX="1033.869" posY="265.438" culture="Culture.sea_raiders">
+		<Components>
+			<Hideout id="hideout_seaside_20" map_icon="bandit_hideout_c" scene_name="sea_bandit_a" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_seaside" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<!-- Mountain Bandit  Hideouts -->
+	<Settlement id="hideout_mountain_1" name="{=Settlements.Settlement.name.hideout_mountain_1}Hideout" type="Hideout" posX="1511.585" posY="832.015" culture="Culture.mountain_bandits">
+		<Components>
+			<Hideout id="hideout_mountain_1" map_icon="bandit_hideout_c" scene_name="forest_hideout_003" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_mountain" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_mountain_2" name="{=Settlements.Settlement.name.hideout_mountain_2}Hideout" type="Hideout" posX="1560.056" posY="848.800" culture="Culture.mountain_bandits">
+		<Components>
+			<Hideout id="hideout_mountain_2" map_icon="bandit_hideout_c" scene_name="forest_hideout_003" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_mountain" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_mountain_3" name="{=Settlements.Settlement.name.hideout_mountain_3}Hideout" type="Hideout" posX="1597.708" posY="876.582" culture="Culture.mountain_bandits">
+		<Components>
+			<Hideout id="hideout_mountain_3" map_icon="bandit_hideout_c" scene_name="forest_hideout_003" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_mountain" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_mountain_4" name="{=Settlements.Settlement.name.hideout_mountain_4}Hideout" type="Hideout" posX="1605.308" posY="890.197" culture="Culture.mountain_bandits">
+		<Components>
+			<Hideout id="hideout_mountain_4" map_icon="bandit_hideout_c" scene_name="forest_hideout_003" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_forest" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_mountain_5" name="{=Settlements.Settlement.name.hideout_mountain_5}Hideout" type="Hideout" posX="1648.267" posY="925.430" culture="Culture.mountain_bandits">
+		<Components>
+			<Hideout id="hideout_mountain_5" map_icon="bandit_hideout_c" scene_name="forest_hideout_003" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_mountain" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_mountain_6" name="{=Settlements.Settlement.name.hideout_mountain_6}Hideout" type="Hideout" posX="1692.679" posY="934.399" culture="Culture.mountain_bandits">
+		<Components>
+			<Hideout id="hideout_mountain_6" map_icon="bandit_hideout_c" scene_name="forest_hideout_003" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_mountain" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_mountain_7" name="{=Settlements.Settlement.name.hideout_mountain_7}Hideout" type="Hideout" posX="1701.494" posY="950.485" culture="Culture.mountain_bandits">
+		<Components>
+			<Hideout id="hideout_mountain_7" map_icon="bandit_hideout_c" scene_name="forest_hideout_003" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_mountain" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_mountain_8" name="{=Settlements.Settlement.name.hideout_mountain_8}Hideout" type="Hideout" posX="1682.161" posY="964.590" culture="Culture.mountain_bandits">
+		<Components>
+			<Hideout id="hideout_mountain_8" map_icon="bandit_hideout_c" scene_name="forest_hideout_003" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_mountain" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_mountain_9" name="{=Settlements.Settlement.name.hideout_mountain_9}Hideout" type="Hideout" posX="1707.933" posY="987.524" culture="Culture.mountain_bandits">
+		<Components>
+			<Hideout id="hideout_mountain_9" map_icon="bandit_hideout_c" scene_name="forest_hideout_003" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_mountain" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_mountain_10" name="{=Settlements.Settlement.name.hideout_mountain_10}Hideout" type="Hideout" posX="1689.015" posY="1016.093" culture="Culture.mountain_bandits">
+		<Components>
+			<Hideout id="hideout_mountain_10" map_icon="bandit_hideout_c" scene_name="forest_hideout_003" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_mountain" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_mountain_11" name="{=Settlements.Settlement.name.hideout_mountain_11}Hideout" type="Hideout" posX="1573.973" posY="644.141" culture="Culture.mountain_bandits">
+		<Components>
+			<Hideout id="hideout_mountain_11" map_icon="bandit_hideout_c" scene_name="forest_hideout_003" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_mountain" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_mountain_12" name="{=Settlements.Settlement.name.hideout_mountain_12}Hideout" type="Hideout" posX="1569.208" posY="626.085" culture="Culture.mountain_bandits">
+		<Components>
+			<Hideout id="hideout_mountain_12" map_icon="bandit_hideout_c" scene_name="forest_hideout_003" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_mountain" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_mountain_13" name="{=Settlements.Settlement.name.hideout_mountain_13}Hideout" type="Hideout" posX="1550.608" posY="626.368" culture="Culture.mountain_bandits">
+		<Components>
+			<Hideout id="hideout_mountain_13" map_icon="bandit_hideout_c" scene_name="forest_hideout_003" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_mountain" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_mountain_14" name="{=Settlements.Settlement.name.hideout_mountain_14}Hideout" type="Hideout" posX="1570.999" posY="654.730" culture="Culture.mountain_bandits">
+		<Components>
+			<Hideout id="hideout_mountain_14" map_icon="bandit_hideout_c" scene_name="forest_hideout_003" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_mountain" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_mountain_15" name="{=Settlements.Settlement.name.hideout_mountain_15}Hideout" type="Hideout" posX="1555.601" posY="597.595" culture="Culture.mountain_bandits">
+		<Components>
+			<Hideout id="hideout_mountain_15" map_icon="bandit_hideout_c" scene_name="forest_hideout_003" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_mountain" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_mountain_16" name="{=Settlements.Settlement.name.hideout_mountain_16}Hideout" type="Hideout" posX="1574.804" posY="652.408" culture="Culture.mountain_bandits">
+		<Components>
+			<Hideout id="hideout_mountain_16" map_icon="bandit_hideout_c" scene_name="forest_hideout_003" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_mountain" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_mountain_17" name="{=Settlements.Settlement.name.hideout_mountain_17}Hideout" type="Hideout" posX="1556.012" posY="569.295" culture="Culture.mountain_bandits">
+		<Components>
+			<Hideout id="hideout_mountain_17" map_icon="bandit_hideout_c" scene_name="forest_hideout_003" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_mountain" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_mountain_18" name="{=Settlements.Settlement.name.hideout_mountain_18}Hideout" type="Hideout" posX="1591.016" posY="592.134" culture="Culture.mountain_bandits">
+		<Components>
+			<Hideout id="hideout_mountain_18" map_icon="bandit_hideout_c" scene_name="forest_hideout_003" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_mountain" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_mountain_19" name="{=Settlements.Settlement.name.hideout_mountain_19}Hideout" type="Hideout" posX="1556.327" posY="619.957" culture="Culture.mountain_bandits">
+		<Components>
+			<Hideout id="hideout_mountain_19" map_icon="bandit_hideout_c" scene_name="forest_hideout_003" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_mountain" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_mountain_20" name="{=Settlements.Settlement.name.hideout_mountain_20}Hideout" type="Hideout" posX="1567.539" posY="622.099" culture="Culture.mountain_bandits">
+		<Components>
+			<Hideout id="hideout_mountain_20" map_icon="bandit_hideout_c" scene_name="forest_hideout_003" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_mountain" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<!-- Desert Bandit  Hideouts -->
+	<Settlement id="hideout_desert_1" name="{=Settlements.Settlement.name.hideout_desert_1}Hideout" type="Hideout" posX="1446.797" posY="473.952" culture="Culture.desert_bandits">
+		<Components>
+			<Hideout id="hideout_desert_1" map_icon="bandit_hideout_a" scene_name="desert_hideout_002" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_desert" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_desert_2" name="{=Settlements.Settlement.name.hideout_desert_2}Hideout" type="Hideout" posX="1429.232" posY="476.288" culture="Culture.desert_bandits">
+		<Components>
+			<Hideout id="hideout_desert_2" map_icon="bandit_hideout_a" scene_name="desert_hideout_002" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_desert" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_desert_3" name="{=Settlements.Settlement.name.hideout_desert_3}Hideout" type="Hideout" posX="1448.267" posY="456.802" culture="Culture.desert_bandits">
+		<Components>
+			<Hideout id="hideout_desert_3" map_icon="bandit_hideout_a" scene_name="desert_hideout_002" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_desert" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_desert_4" name="{=Settlements.Settlement.name.hideout_desert_4}Hideout" type="Hideout" posX="1428.693" posY="463.534" culture="Culture.desert_bandits">
+		<Components>
+			<Hideout id="hideout_desert_4" map_icon="bandit_hideout_a" scene_name="desert_hideout_002" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_desert" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_desert_5" name="{=Settlements.Settlement.name.hideout_desert_5}Hideout" type="Hideout" posX="1445.578" posY="444.578" culture="Culture.desert_bandits">
+		<Components>
+			<Hideout id="hideout_desert_5" map_icon="bandit_hideout_a" scene_name="desert_hideout_002" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_desert" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_desert_6" name="{=Settlements.Settlement.name.hideout_desert_6}Hideout" type="Hideout" posX="1427.260" posY="470.332" culture="Culture.desert_bandits">
+		<Components>
+			<Hideout id="hideout_desert_6" map_icon="bandit_hideout_a" scene_name="desert_hideout_002" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_desert" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_desert_7" name="{=Settlements.Settlement.name.hideout_desert_7}Hideout" type="Hideout" posX="1437.697" posY="472.091" culture="Culture.desert_bandits">
+		<Components>
+			<Hideout id="hideout_desert_7" map_icon="bandit_hideout_a" scene_name="desert_hideout_002" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_desert" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_desert_8" name="{=Settlements.Settlement.name.hideout_desert_8}Hideout" type="Hideout" posX="1456.481" posY="471.515" culture="Culture.desert_bandits">
+		<Components>
+			<Hideout id="hideout_desert_8" map_icon="bandit_hideout_a" scene_name="desert_hideout_002" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_desert" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_desert_9" name="{=Settlements.Settlement.name.hideout_desert_9}Hideout" type="Hideout" posX="1463.141" posY="470.855" culture="Culture.desert_bandits">
+		<Components>
+			<Hideout id="hideout_desert_9" map_icon="bandit_hideout_a" scene_name="desert_hideout_002" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_desert" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_desert_10" name="{=Settlements.Settlement.name.hideout_desert_10}Hideout" type="Hideout" posX="1456.227" posY="453.060" culture="Culture.desert_bandits">
+		<Components>
+			<Hideout id="hideout_desert_10" map_icon="bandit_hideout_a" scene_name="desert_hideout_002" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_desert" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_desert_11" name="{=Settlements.Settlement.name.hideout_desert_11}Hideout" type="Hideout" posX="1449.963" posY="478.998" culture="Culture.desert_bandits">
+		<Components>
+			<Hideout id="hideout_desert_11" map_icon="bandit_hideout_a" scene_name="desert_hideout_002" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_desert" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_desert_12" name="{=Settlements.Settlement.name.hideout_desert_12}Hideout" type="Hideout" posX="1449.786" posY="466.386" culture="Culture.desert_bandits">
+		<Components>
+			<Hideout id="hideout_desert_12" map_icon="bandit_hideout_a" scene_name="desert_hideout_002" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_desert" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_desert_13" name="{=Settlements.Settlement.name.hideout_desert_13}Hideout" type="Hideout" posX="1432.472" posY="457.946" culture="Culture.desert_bandits">
+		<Components>
+			<Hideout id="hideout_desert_13" map_icon="bandit_hideout_a" scene_name="desert_hideout_002" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_desert" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_desert_14" name="{=Settlements.Settlement.name.hideout_desert_14}Hideout" type="Hideout" posX="1458.495" posY="462.429" culture="Culture.desert_bandits">
+		<Components>
+			<Hideout id="hideout_desert_14" map_icon="bandit_hideout_a" scene_name="desert_hideout_002" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_desert" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_desert_15" name="{=Settlements.Settlement.name.hideout_desert_15}Hideout" type="Hideout" posX="1440.241" posY="466.124" culture="Culture.desert_bandits">
+		<Components>
+			<Hideout id="hideout_desert_15" map_icon="bandit_hideout_a" scene_name="desert_hideout_002" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_desert" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_desert_16" name="{=Settlements.Settlement.name.hideout_desert_16}Hideout" type="Hideout" posX="1441.603" posY="482.562" culture="Culture.desert_bandits">
+		<Components>
+			<Hideout id="hideout_desert_16" map_icon="bandit_hideout_a" scene_name="desert_hideout_002" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_desert" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_desert_17" name="{=Settlements.Settlement.name.hideout_desert_17}Hideout" type="Hideout" posX="1453.565" posY="489.789" culture="Culture.desert_bandits">
+		<Components>
+			<Hideout id="hideout_desert_17" map_icon="bandit_hideout_a" scene_name="desert_hideout_002" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_desert" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_desert_18" name="{=Settlements.Settlement.name.hideout_desert_18}Hideout" type="Hideout" posX="1443.663" posY="463.062" culture="Culture.desert_bandits">
+		<Components>
+			<Hideout id="hideout_desert_18" map_icon="bandit_hideout_a" scene_name="desert_hideout_002" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_desert" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_desert_19" name="{=Settlements.Settlement.name.hideout_desert_19}Hideout" type="Hideout" posX="1441.741" posY="452.647" culture="Culture.desert_bandits">
+		<Components>
+			<Hideout id="hideout_desert_19" map_icon="bandit_hideout_a" scene_name="desert_hideout_002" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_desert" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_desert_20" name="{=Settlements.Settlement.name.hideout_desert_20}Hideout" type="Hideout" posX="1458.205" posY="477.333" culture="Culture.desert_bandits">
+		<Components>
+			<Hideout id="hideout_desert_20" map_icon="bandit_hideout_a" scene_name="desert_hideout_002" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_desert" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<!-- steppe Bandit  Hideouts -->
+	<Settlement id="hideout_steppe_1" name="{=Settlements.Settlement.name.hideout_steppe_1}Hideout" type="Hideout" posX="1401.945" posY="140.461" culture="Culture.steppe_bandits">
+		<Components>
+			<Hideout id="hideout_steppe_1" map_icon="bandit_hideout_a" scene_name="hideout_steppe_001" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_desert" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_steppe_2" name="{=Settlements.Settlement.name.hideout_steppe_2}Hideout" type="Hideout" posX="1396.974" posY="134.053" culture="Culture.steppe_bandits">
+		<Components>
+			<Hideout id="hideout_steppe_2" map_icon="bandit_hideout_a" scene_name="hideout_steppe_001" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_desert" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_steppe_3" name="{=Settlements.Settlement.name.hideout_steppe_3}Hideout" type="Hideout" posX="1501.130" posY="267.396" culture="Culture.steppe_bandits">
+		<Components>
+			<Hideout id="hideout_steppe_3" map_icon="bandit_hideout_a" scene_name="hideout_steppe_001" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_desert" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_steppe_4" name="{=Settlements.Settlement.name.hideout_steppe_4}Hideout" type="Hideout" posX="1404.598" posY="131.261" culture="Culture.steppe_bandits">
+		<Components>
+			<Hideout id="hideout_steppe_4" map_icon="bandit_hideout_a" scene_name="hideout_steppe_001" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_desert" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_steppe_5" name="{=Settlements.Settlement.name.hideout_steppe_5}Hideout" type="Hideout" posX="1404.598" posY="131.261" culture="Culture.steppe_bandits">
+		<Components>
+			<Hideout id="hideout_steppe_5" map_icon="bandit_hideout_a" scene_name="hideout_steppe_001" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_desert" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_steppe_6" name="{=Settlements.Settlement.name.hideout_steppe_6}Hideout" type="Hideout" posX="1432.119" posY="264.496" culture="Culture.steppe_bandits">
+		<Components>
+			<Hideout id="hideout_steppe_6" map_icon="bandit_hideout_a" scene_name="hideout_steppe_001" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_desert" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_steppe_7" name="{=Settlements.Settlement.name.hideout_steppe_7}Hideout" type="Hideout" posX="1391.221" posY="127.283" culture="Culture.steppe_bandits">
+		<Components>
+			<Hideout id="hideout_steppe_7" map_icon="bandit_hideout_a" scene_name="hideout_steppe_001" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_desert" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_steppe_8" name="{=Settlements.Settlement.name.hideout_steppe_8}Hideout" type="Hideout" posX="1406.351" posY="128.444" culture="Culture.steppe_bandits">
+		<Components>
+			<Hideout id="hideout_steppe_8" map_icon="bandit_hideout_a" scene_name="hideout_steppe_001" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_desert" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_steppe_9" name="{=Settlements.Settlement.name.hideout_steppe_9}Hideout" type="Hideout" posX="1410.260" posY="121.779" culture="Culture.steppe_bandits">
+		<Components>
+			<Hideout id="hideout_steppe_9" map_icon="bandit_hideout_a" scene_name="hideout_steppe_001" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_desert" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_steppe_10" name="{=Settlements.Settlement.name.hideout_steppe_10}Hideout" type="Hideout" posX="1392.963" posY="124.001" culture="Culture.steppe_bandits">
+		<Components>
+			<Hideout id="hideout_steppe_10" map_icon="bandit_hideout_a" scene_name="hideout_steppe_001" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_desert" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_steppe_11" name="{=Settlements.Settlement.name.hideout_steppe_11}Hideout" type="Hideout" posX="1392.673" posY="136.662" culture="Culture.steppe_bandits">
+		<Components>
+			<Hideout id="hideout_steppe_11" map_icon="bandit_hideout_a" scene_name="hideout_steppe_001" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_desert" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_steppe_12" name="{=Settlements.Settlement.name.hideout_steppe_12}Hideout" type="Hideout" posX="1400.034" posY="124.897" culture="Culture.steppe_bandits">
+		<Components>
+			<Hideout id="hideout_steppe_12" map_icon="bandit_hideout_a" scene_name="hideout_steppe_001" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_desert" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_steppe_13" name="{=Settlements.Settlement.name.hideout_steppe_13}Hideout" type="Hideout" posX="1440.229" posY="362.289" culture="Culture.steppe_bandits">
+		<Components>
+			<Hideout id="hideout_steppe_13" map_icon="bandit_hideout_a" scene_name="hideout_steppe_001" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_desert" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_steppe_14" name="{=Settlements.Settlement.name.hideout_steppe_14}Hideout" type="Hideout" posX="1405.066" posY="136.507" culture="Culture.steppe_bandits">
+		<Components>
+			<Hideout id="hideout_steppe_14" map_icon="bandit_hideout_a" scene_name="hideout_steppe_001" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_desert" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_steppe_15" name="{=Settlements.Settlement.name.hideout_steppe_15}Hideout" type="Hideout" posX="1402.576" posY="122.029" culture="Culture.steppe_bandits">
+		<Components>
+			<Hideout id="hideout_steppe_15" map_icon="bandit_hideout_a" scene_name="hideout_steppe_001" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_desert" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_steppe_16" name="{=Settlements.Settlement.name.hideout_steppe_16}Hideout" type="Hideout" posX="1388.975" posY="134.155" culture="Culture.steppe_bandits">
+		<Components>
+			<Hideout id="hideout_steppe_16" map_icon="bandit_hideout_a" scene_name="hideout_steppe_001" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_desert" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_steppe_17" name="{=Settlements.Settlement.name.hideout_steppe_17}Hideout" type="Hideout" posX="1458.552" posY="224.469" culture="Culture.steppe_bandits">
+		<Components>
+			<Hideout id="hideout_steppe_17" map_icon="bandit_hideout_a" scene_name="hideout_steppe_001" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_desert" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_steppe_18" name="{=Settlements.Settlement.name.hideout_steppe_18}Hideout" type="Hideout" posX="1428.088" posY="75.466" culture="Culture.steppe_bandits">
+		<Components>
+			<Hideout id="hideout_steppe_18" map_icon="bandit_hideout_a" scene_name="hideout_steppe_001" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_desert" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_steppe_19" name="{=Settlements.Settlement.name.hideout_steppe_19}Hideout" type="Hideout" posX="1407.412" posY="124.739" culture="Culture.steppe_bandits">
+		<Components>
+			<Hideout id="hideout_steppe_19" map_icon="bandit_hideout_a" scene_name="hideout_steppe_001" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_desert" gate_rotation="0.0" />
+		</Components>
+	</Settlement>
+	<Settlement id="hideout_steppe_20" name="{=Settlements.Settlement.name.hideout_steppe_20}Hideout" type="Hideout" posX="1395.833" posY="128.508" culture="Culture.steppe_bandits">
+		<Components>
+			<Hideout id="hideout_steppe_20" map_icon="bandit_hideout_a" scene_name="hideout_steppe_001" background_crop_position="0.0" background_mesh="empire_twn_scene_bg" wait_mesh="wait_hideout_desert" gate_rotation="0.0" />
+		</Components>
 	</Settlement>
 </Settlements>

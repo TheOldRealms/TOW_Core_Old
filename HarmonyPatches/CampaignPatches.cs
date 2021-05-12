@@ -13,7 +13,7 @@ using TaleWorlds.ObjectSystem;
 using TOW_Core.Utilities;
 
 //Need a way to somehow skip loading of vanilla xmls in the following categories:
-//Settlements, Factions, Kingdoms, NPCCharacters
+//Settlements, Clans, Kingdoms, Heroes
 
 namespace TOW_Core.HarmonyPatches
 {
@@ -77,6 +77,8 @@ namespace TOW_Core.HarmonyPatches
             }
         }
 
+        //Ideally this should not need a harmony patch, but somehow removing this on gamestart in submodule.cs still makes it run on NewGameStart event.
+        //This behaviour contains hardcoded hero / lord references that are not present because we skip loading the vanilla files.
         [HarmonyPrefix]
         [HarmonyPatch(typeof(BackstoryCampaignBehavior), "RegisterEvents")]
         public static bool Prefix3()
