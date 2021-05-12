@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-
+using System.Timers;
 using TaleWorlds.Core;
 using TaleWorlds.InputSystem;
 using TaleWorlds.MountAndBlade;
+using System.Timers;
+using Messages.FromClient.ToLobbyServer;
+using Timer = System.Timers.Timer;
 
 namespace TOW_Core.Battle.StatusEffect
 {
@@ -47,8 +50,9 @@ namespace TOW_Core.Battle.StatusEffect
         private float _speedfactor;      //between 0 and a reasonable number(maybe 2) percentage of movement speed
         private float _staggering;
 
-        private float testudate;
-        
+        private float testupdate=0f;
+        private int counter;
+        private Timer _timer;
 
 
 
@@ -82,15 +86,24 @@ namespace TOW_Core.Battle.StatusEffect
 
             
             //TODO all active perks or skill values need also to be assigned here aswell to base values 
-            Mission.Current.GetMissionBehaviour<StatusEffectManager>().NotifyStatusEffectTickObservers += OnTick;
-            //TOW_Core.Utilities.TOWCommon.Say("initialized");
+
+
+            _timer = new Timer(1000f);
+            this._timer.Elapsed += this.OnTick;
+            _timer.AutoReset = true;
+            _timer.Enabled = true;
+            
+            
+            //Mission.Current.GetMissionBehaviour<StatusEffectManager>().NotifyStatusEffectTickObservers += OnTick;
+            if(Agent.IsPlayerControlled)
+                TOW_Core.Utilities.TOWCommon.Say("initialized");
             
         }
         
 
         public void  RunStatusEffect(int id)
         {
-            TOW_Core.Utilities.TOWCommon.Say("Status Effects are added");
+            
             if (_currentEffects.Contains(id))
             {
                 _statusEffects[id]._currentduration =_statusEffects[id].duration;
@@ -103,11 +116,16 @@ namespace TOW_Core.Battle.StatusEffect
             
         }
         
-        public void OnTick(object sender, OnTickArgs args)
+        public void OnTick(object sender, ElapsedEventArgs e)
         {
-            testudate += args.deltatime;
-            if (testudate >= 10f)
+            testupdate += 1;
+            
+            if (testupdate >= 10f)
             {
+                counter += 1;
+                if(Agent.IsPlayerControlled)
+                    TOW_Core.Utilities.TOWCommon.Say(sender.GetHashCode()+ " " + testupdate.ToString()+ "  " + counter.ToString());
+                testupdate = 0f;
                 RunStatusEffect(0);
                 RunStatusEffect(1);
                 RunStatusEffect(2);
@@ -118,30 +136,31 @@ namespace TOW_Core.Battle.StatusEffect
                 RunStatusEffect(7);
                 RunStatusEffect(8);
                 if(Agent.IsPlayerControlled)
-                    //TOW_Core.Utilities.TOWCommon.Say(this.ToString()+ _armorvalue);
-                testudate = 0f;
+                    TOW_Core.Utilities.TOWCommon.Say( "current armor value:"+ _armorvalue.ToString());
+                
             }
             
             if(!_currentEffects.IsEmpty())
             {
                 for (int i=0;i<_currentEffects.Count;i++)
                 {
-                    _statusEffects[_currentEffects[i]]._currentduration -= args.deltatime;
+                    _statusEffects[_currentEffects[i]]._currentduration -= 1;
 
                     if (_statusEffects[_currentEffects[i]]._currentduration <= _statusEffects[_currentEffects[i]].duration / 2)
                     {
-                        //OW_Core.Utilities.TOWCommon.Say("50% of time of " + key + "went off");
+                        if(Agent.IsPlayerControlled)
+                            TOW_Core.Utilities.TOWCommon.Say("50% of time of " +_currentEffects[i]  + "went off");
                     }
 
                     if (_statusEffects[_currentEffects[i]]._currentduration>= 0f)
                     {
-                        TOW_Core.Utilities.TOWCommon.Say("Status Effects ended");
+
                         _statusEffects[_currentEffects[i]]._currentduration = _statusEffects[_currentEffects[i]].duration;
                         _currentEffects.Remove(_currentEffects[i]);
                         UpdateEffects();
-                        continue;
                     }
                 }
+                
                 //_currentHealth += _healthOverTime * args.deltatime; //TODO maybe check this somewhere different, but might make sense also here
             }
             
