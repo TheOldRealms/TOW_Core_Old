@@ -171,7 +171,7 @@ namespace TOW_Core.Battle.StatusEffect
                         }
                     }
 
-                    if (_statusEffects[_currentEffects[i]]._currentduration>= 0f)
+                    if (_statusEffects[_currentEffects[i]]._currentduration<= 0f)
                     {
 
                         _statusEffects[_currentEffects[i]]._currentduration = _statusEffects[_currentEffects[i]].duration;
