@@ -54,7 +54,7 @@ namespace TOW_Core.Battle.StatusEffect
         private int counter;
         private Timer _timer;
 
-
+        private EventHandler<ElapsedEventArgs> NotifyOnIternalTimerTickCall;
 
         public void InitializeStatusEffect(StatusEffect effect)
         {
@@ -62,6 +62,7 @@ namespace TOW_Core.Battle.StatusEffect
             if (_statusEffects == null)
             {
                 _statusEffects = new Dictionary<int, StatusEffect>();
+                _statusEffects.Add(effect.id, effect);
             }
             else
             {
@@ -80,6 +81,7 @@ namespace TOW_Core.Battle.StatusEffect
                 {
                     Console.WriteLine("Key" + effect.id + "already exists.");
                 }
+                
             }
             
             // TODO called at the beginning of mission by the StatusEffectManager fills all possible buffs and debuffs
@@ -89,7 +91,8 @@ namespace TOW_Core.Battle.StatusEffect
 
 
             _timer = new Timer(1000f);
-            this._timer.Elapsed += this.OnTick;
+            this._timer.Elapsed += TimerTick;
+            NotifyOnIternalTimerTickCall=OnTick;
             _timer.AutoReset = true;
             _timer.Enabled = true;
             
@@ -103,18 +106,33 @@ namespace TOW_Core.Battle.StatusEffect
 
         public void  RunStatusEffect(int id)
         {
-            
+            //TOW_Core.Utilities.TOWCommon.Say("Run effect " + id);
             if (_currentEffects.Contains(id))
             {
                 _statusEffects[id]._currentduration =_statusEffects[id].duration;
             }
             else
             {
+               // TOW_Core.Utilities.TOWCommon.Say("...Add effect " + id);
                 _currentEffects.Add(id);
                 UpdateEffects();
             }
             
         }
+
+        private void TimerTick(object sender, ElapsedEventArgs e)
+        {
+            
+            if (sender == this._timer)
+            {
+                NotifyOnIternalTimerTickCall?.Invoke(this,e); 
+            }
+            else
+            {
+                //deregister the listener of the sender
+            }
+            
+        } 
         
         public void OnTick(object sender, ElapsedEventArgs e)
         {
@@ -123,8 +141,7 @@ namespace TOW_Core.Battle.StatusEffect
             if (testupdate >= 10f)
             {
                 counter += 1;
-                if(Agent.IsPlayerControlled)
-                    TOW_Core.Utilities.TOWCommon.Say(sender.GetHashCode()+ " " + testupdate.ToString()+ "  " + counter.ToString());
+                
                 testupdate = 0f;
                 RunStatusEffect(0);
                 RunStatusEffect(1);
@@ -135,9 +152,9 @@ namespace TOW_Core.Battle.StatusEffect
                 RunStatusEffect(6);
                 RunStatusEffect(7);
                 RunStatusEffect(8);
-                if(Agent.IsPlayerControlled)
-                    TOW_Core.Utilities.TOWCommon.Say( "current armor value:"+ _armorvalue.ToString());
                 
+                
+
             }
             
             if(!_currentEffects.IsEmpty())
@@ -148,8 +165,7 @@ namespace TOW_Core.Battle.StatusEffect
 
                     if (_statusEffects[_currentEffects[i]]._currentduration <= _statusEffects[_currentEffects[i]].duration / 2)
                     {
-                        if(Agent.IsPlayerControlled)
-                            TOW_Core.Utilities.TOWCommon.Say("50% of time of " +_currentEffects[i]  + "went off");
+                        TOW_Core.Utilities.TOWCommon.Say("50% of time of " +_currentEffects[i]  + "went off");
                     }
 
                     if (_statusEffects[_currentEffects[i]]._currentduration>= 0f)
@@ -160,7 +176,7 @@ namespace TOW_Core.Battle.StatusEffect
                         UpdateEffects();
                     }
                 }
-                
+                //TOW_Core.Utilities.TOWCommon.Say(Agent.Name+"listen to"+ sender.GetHashCode()+ "armor value "  + _armorvalue.ToString()+ "  " + counter.ToString());
                 //_currentHealth += _healthOverTime * args.deltatime; //TODO maybe check this somewhere different, but might make sense also here
             }
             
@@ -170,14 +186,17 @@ namespace TOW_Core.Battle.StatusEffect
 
         private void UpdateEffects()
         {
+           // TOW_Core.Utilities.TOWCommon.Say("...Update Effect " );
             EffectContainer MergeContainer = new EffectContainer();
-            foreach (var id in _currentEffects)
+            for (int i=0;i<_currentEffects.Count;i++ )
             {
+               // TOW_Core.Utilities.TOWCommon.Say("..." + _currentEffects[i] + " is Effect type of " +_statusEffects[_currentEffects[i]]._EffectType.ToString());
+                var container = _statusEffects[_currentEffects[i]].EffectContainer;
                 
-                var container = _statusEffects[id].EffectContainer;
-                switch ( _statusEffects[id]._EffectType)
+                switch ( _statusEffects[_currentEffects[i]]._EffectType)
                 {
                     case StatusEffect.EffectType.Armor:
+                        
                         MergeContainer.Armorvalue+= container.Armorvalue;
                         MergeContainer.ArmorPercentage += container.ArmorPercentage;
                         MergeContainer.WardSaveFactor += container.WardSaveFactor;

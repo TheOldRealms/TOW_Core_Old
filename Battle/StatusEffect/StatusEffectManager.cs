@@ -20,7 +20,7 @@ namespace TOW_Core.Battle.StatusEffect
             var testList = new List<StatusEffect>();
             StatusEffect testStatusEffect = new StatusEffect
             {
-                id = 1,
+                id = 0,
                 duration = 5f,
                 _currentduration = 5f,
                 _EffectType = StatusEffect.EffectType.Armor,
