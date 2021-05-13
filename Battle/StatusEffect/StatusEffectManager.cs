@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Timers;
+using Microsoft.Win32;
 using TaleWorlds.CampaignSystem.GameMenus;
 using TaleWorlds.Library.EventSystem;
 using TaleWorlds.MountAndBlade;
@@ -8,7 +10,18 @@ namespace TOW_Core.Battle.StatusEffect
 {
     public class StatusEffectManager: MissionLogic
     {
+        private List<Agent> Agents =new List<Agent>();
+        public override MissionBehaviourType BehaviourType { get; }
         
+        public EventHandler<ElapsedEventArgs> NotifyStatusEffectTickObservers;
+        
+        public static Timer Timer; 
+        public override void OnCreated()
+        {
+            Timer = new Timer(1000f) {AutoReset = true, Enabled = true};
+            Timer.Elapsed += OnTimeElasped;
+        }
+
         public override void OnAgentCreated(Agent agent)
         {
             base.OnAgentCreated(agent);
@@ -50,24 +63,29 @@ namespace TOW_Core.Battle.StatusEffect
             testList.Add(testStatusEffect);
             
             testList.ForEach(statusEffect => agent.GetComponent<StatusEffectComponent>().InitializeStatusEffect(statusEffect));
+            Agents.Add(agent);
+            
         }
         //assigns all valid Statuseffect Option at the beginning of the Mission to Status effect Components residing on every agent
 
-        public override MissionBehaviourType BehaviourType { get; }
-        
-       public EventHandler<OnTickArgs> NotifyStatusEffectTickObservers;
-        public override void OnMissionTick(float dt)
-        { 
-            OnTickArgs arguments = new OnTickArgs() {deltatime = dt};
-            NotifyStatusEffectTickObservers?.Invoke(this,arguments);
+
+        public void OnTimeElasped(object sender, ElapsedEventArgs elapsedEventArgs)
+        {
+            if(!TaleWorlds.Core.Extensions.IsEmpty(Agents))
+                Utilities.TOWCommon.Say(Agents.Count.ToString());
+            NotifyStatusEffectTickObservers?.Invoke(this,elapsedEventArgs);
         }
+       
+        
         
     }
-
-
+    
 
     public class OnTickArgs : EventArgs
     {
+        
+        
+        
         public float deltatime;
     }
 }

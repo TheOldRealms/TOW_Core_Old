@@ -88,16 +88,16 @@ namespace TOW_Core.Battle.StatusEffect
             //TODO all active perks or skill values need also to be assigned here aswell to base values 
 
 
-            _timer = new Timer(1000f);
-            this._timer.Elapsed += this.OnTick;
-            _timer.AutoReset = true;
-            _timer.Enabled = true;
-            
-            
-            //Mission.Current.GetMissionBehaviour<StatusEffectManager>().NotifyStatusEffectTickObservers += OnTick;
-            if(Agent.IsPlayerControlled)
+
+            Mission.Current.GetMissionBehaviour<StatusEffectManager>().NotifyStatusEffectTickObservers += OnTick;
+
+
+            //.NotifyStatusEffectTickObservers += OnTick;
+            if (Agent.IsMainAgent)
+            {
                 TOW_Core.Utilities.TOWCommon.Say("initialized");
-            
+            }
+
         }
         
 
@@ -123,8 +123,8 @@ namespace TOW_Core.Battle.StatusEffect
             if (testupdate >= 10f)
             {
                 counter += 1;
-                if(Agent.IsPlayerControlled)
-                    TOW_Core.Utilities.TOWCommon.Say(sender.GetHashCode()+ " " + testupdate.ToString()+ "  " + counter.ToString());
+                
+                    
                 testupdate = 0f;
                 RunStatusEffect(0);
                 RunStatusEffect(1);
@@ -135,7 +135,13 @@ namespace TOW_Core.Battle.StatusEffect
                 RunStatusEffect(6);
                 RunStatusEffect(7);
                 RunStatusEffect(8);
-                if(Agent.IsPlayerControlled)
+                
+                if (this.Agent.IsMainAgent)
+                {
+                    TOW_Core.Utilities.TOWCommon.Say(sender.GetHashCode()+ " " + testupdate.ToString()+ "  " + counter.ToString() +" current armor value is "+ _armorvalue+ " with " + _currentEffects.Count + "events");
+                }
+                
+                if(Agent.IsMainAgent)
                     TOW_Core.Utilities.TOWCommon.Say( "current armor value:"+ _armorvalue.ToString());
                 
             }
