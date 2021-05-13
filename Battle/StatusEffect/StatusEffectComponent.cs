@@ -71,6 +71,7 @@ namespace TOW_Core.Battle.StatusEffect
                     if (effect.id == idKey)
                     {
                         effect.id++;        //testing purpose
+                        effect.duration += 5;
                     }
                 }
                 try
@@ -143,29 +144,31 @@ namespace TOW_Core.Battle.StatusEffect
                 counter += 1;
                 
                 testupdate = 0f;
-                RunStatusEffect(0);
-                RunStatusEffect(1);
-                RunStatusEffect(2);
-                RunStatusEffect(3);
-                RunStatusEffect(4);
-                RunStatusEffect(5);
-                RunStatusEffect(6);
-                RunStatusEffect(7);
-                RunStatusEffect(8);
                 
-                
-
+                    RunStatusEffect(0);
+                    RunStatusEffect(1);
+                    RunStatusEffect(2);
+                    RunStatusEffect(3);
+                    RunStatusEffect(4);
+                    RunStatusEffect(5);
+                    RunStatusEffect(6);
+                    RunStatusEffect(7);
+                    RunStatusEffect(8);
             }
             
             if(!_currentEffects.IsEmpty())
             {
+               // TOW_Core.Utilities.TOWCommon.Say("... timeupdate for " + _currentEffects.Count);
                 for (int i=0;i<_currentEffects.Count;i++)
                 {
                     _statusEffects[_currentEffects[i]]._currentduration -= 1;
 
-                    if (_statusEffects[_currentEffects[i]]._currentduration <= _statusEffects[_currentEffects[i]].duration / 2)
+                    if (_statusEffects[_currentEffects[i]]._currentduration <= _statusEffects[_currentEffects[i]].duration / 2f)
                     {
-                        TOW_Core.Utilities.TOWCommon.Say("50% of time of " +_currentEffects[i]  + "went off");
+                        if (Agent == Agent.Main)
+                        {
+                            TOW_Core.Utilities.TOWCommon.Say("50% of time of " + _currentEffects[i] + "went off");
+                        }
                     }
 
                     if (_statusEffects[_currentEffects[i]]._currentduration>= 0f)
@@ -173,7 +176,13 @@ namespace TOW_Core.Battle.StatusEffect
 
                         _statusEffects[_currentEffects[i]]._currentduration = _statusEffects[_currentEffects[i]].duration;
                         _currentEffects.Remove(_currentEffects[i]);
+                        if (Agent == Agent.Main)
+                        {
+                            TOW_Core.Utilities.TOWCommon.Say( "removed " + " "+  _currentEffects[i]);
+                        }
+                        
                         UpdateEffects();
+                        
                     }
                 }
                 //TOW_Core.Utilities.TOWCommon.Say(Agent.Name+"listen to"+ sender.GetHashCode()+ "armor value "  + _armorvalue.ToString()+ "  " + counter.ToString());
@@ -214,9 +223,13 @@ namespace TOW_Core.Battle.StatusEffect
             _armorPercentage = MergeContainer.ArmorPercentage;
             _WardSaveFactor = MergeContainer.WardSaveFactor;
             
-           // TOW_Core.Utilities.TOWCommon.Say("Status Effects are updated");
+           
             //... other effects 
-
+            if (Agent == Agent.Main)
+            {
+                TOW_Core.Utilities.TOWCommon.Say("updatated" + Agent.Name + " " + _armorvalue.ToString());
+            }
+            // TOW_Core.Utilities.TOWCommon.Say("Status Effects are updated");
 
             //TODO this is done once an status effect is added, or removed, it recalculates the fields which are included in the Damage Model
         }

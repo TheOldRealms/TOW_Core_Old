@@ -21,7 +21,7 @@ namespace TOW_Core.Battle.StatusEffect
             StatusEffect testStatusEffect = new StatusEffect
             {
                 id = 0,
-                duration = 5f,
+                duration = 2.5f,
                 _currentduration = 5f,
                 _EffectType = StatusEffect.EffectType.Armor,
                 active = false,
