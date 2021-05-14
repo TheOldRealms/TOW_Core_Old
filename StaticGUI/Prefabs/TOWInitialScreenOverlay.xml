@@ -1,0 +1,26 @@
+﻿<Prefab>
+  <Constants>
+    <Constant Name="Button.SuggestedWidth" Value="200"/>
+    <Constant Name="Button.SuggestedHeight" Value="50"/>
+  </Constants>
+  <Window>
+    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="200" MarginRight="100" HorizontalAlignment="Right">
+      <Children>
+        <Widget DataSource="{..}" WidthSizePolicy="Fixed" SuggestedHeight="50" SuggestedWidth="200" Sprite="InitialMenu\main_menu_texture" AlphaFactor="0.9">
+          <Children>
+            <ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Button.SuggestedWidth" SuggestedHeight="!Button.SuggestedHeight" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="InitialMenuButtonBrush" Command.Click="ExecuteAction" UpdateChildrenStates="true">
+              <Children>
+                <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" Brush="InitialMenuButtonBrush" ClipContents="false" Text="@NameText" UpdateChildrenStates="true">
+                  <Children>
+                    <ImageWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="46" SuggestedHeight="20" HorizontalAlignment="Left" VerticalAlignment="Center" PositionXOffset="-55" MarginBottom="2" Brush="HoverIndicatorBrush" />
+                    <ImageWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="46" SuggestedHeight="20" HorizontalAlignment="Right" VerticalAlignment="Center" PositionXOffset="55" MarginBottom="2" Brush="HoverIndicatorBrushFlipped" />
+                  </Children>
+                </TextWidget>
+              </Children>
+            </ButtonWidget>
+          </Children>
+        </Widget>
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>
