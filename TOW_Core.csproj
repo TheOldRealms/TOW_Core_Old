@@ -1,4 +1,4 @@
-<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <!-- Main Project Properties -->
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -312,6 +312,8 @@
     <Compile Include="HarmonyPatches\FindGameTextPatch.cs" />
     <Compile Include="HarmonyPatches\LoadingScreenTempPatch.cs" />
     <Compile Include="HarmonyPatches\RotatingMainMenuPatch.cs" />
+    <Compile Include="Screen\InitialScreen\TOWInitialGauntletScreen.cs" />
+    <Compile Include="Screen\InitialScreen\TOWInitialScreenVM.cs" />
     <Compile Include="SubModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\Extensions\ListExtensions.cs" />
@@ -352,6 +354,7 @@
     <Content Include="DependencyModules\TOW_PreNative\SubModule.xml" />
     <Content Include="ModuleData\tow_cc_options.xml" />
     <Content Include="StaticGUI\Prefabs\AbilityHUD.xml" />
+    <Content Include="StaticGUI\Prefabs\TOWInitialScreenOverlay.xml" />
     <Content Include="StaticGUI\towSpriteData.xml" />
     <Content Include="StaticPrefabs\spelleffects_prefab.xml" />
     <Content Include="DependencyModules\TOW_Environment\SubModule.xml" />
