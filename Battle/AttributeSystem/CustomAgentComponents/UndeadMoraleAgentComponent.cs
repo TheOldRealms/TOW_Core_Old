@@ -24,14 +24,14 @@ namespace TOW_Core.Battle.AttributeSystem.CustomAgentComponents
         private int _crumbleDamagePerInterval = 5;
         private bool _crumblingVisualsApplied;
 
-        private MoraleAgentComponent _moraleComponent;
+        private CommonAIComponent _moraleComponent;
 
         public UndeadMoraleAgentComponent(Agent agent) : base(agent) { }
 
         protected override void Initialize()
         {
             base.Initialize();
-            this._moraleComponent = Agent.GetComponent<MoraleAgentComponent>();
+            this._moraleComponent = Agent.GetComponent<CommonAIComponent>();
         }
 
         protected override void OnTickAsAI(float dt)

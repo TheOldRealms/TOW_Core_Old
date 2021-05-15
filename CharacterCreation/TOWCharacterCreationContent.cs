@@ -51,9 +51,9 @@ namespace TOW_Core.CharacterCreation
         private void AddStages(TaleWorlds.CampaignSystem.CharacterCreationContent.CharacterCreation characterCreation)
         {
             //stages
-            CharacterCreationMenu stage1Menu = new CharacterCreationMenu(new TextObject("{=!}Stage 1 @lore: please rename me", null), new TextObject("{=!}Placeholder...", null), new CharacterCreationOnInit(OnMenuInit), CharacterCreationMenu.MenuTypes.MultipleChoice);
-            CharacterCreationMenu stage2Menu = new CharacterCreationMenu(new TextObject("{=!}Stage 2 @lore: please rename me", null), new TextObject("{=!}Placeholder...", null), new CharacterCreationOnInit(OnMenuInit), CharacterCreationMenu.MenuTypes.MultipleChoice);
-            CharacterCreationMenu stage3Menu = new CharacterCreationMenu(new TextObject("{=!}Stage 3 @lore: please rename me", null), new TextObject("{=!}Placeholder...", null), new CharacterCreationOnInit(OnMenuInit), CharacterCreationMenu.MenuTypes.MultipleChoice);
+            CharacterCreationMenu stage1Menu = new CharacterCreationMenu(new TextObject("{=!}Origin", null), new TextObject("{=!}Choose your family's background...", null), new CharacterCreationOnInit(OnMenuInit), CharacterCreationMenu.MenuTypes.MultipleChoice);
+            CharacterCreationMenu stage2Menu = new CharacterCreationMenu(new TextObject("{=!}Growth", null), new TextObject("{=!}Teenage years...", null), new CharacterCreationOnInit(OnMenuInit), CharacterCreationMenu.MenuTypes.MultipleChoice);
+            CharacterCreationMenu stage3Menu = new CharacterCreationMenu(new TextObject("{=!}Profession", null), new TextObject("{=!}Your starting profession...", null), new CharacterCreationOnInit(OnMenuInit), CharacterCreationMenu.MenuTypes.MultipleChoice);
 
             for(int i = 1; i <= _maxStageNumber; i++)
             {

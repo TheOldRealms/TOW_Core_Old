@@ -22,6 +22,11 @@ using TOW_Core.Abilities;
 using TOW_Core.CharacterCreation;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.SandBox.CampaignBehaviors;
+using TaleWorlds.Localization;
+using System;
+using SandBox;
+using SandBox.View;
+using TaleWorlds.Engine.Screens;
 
 namespace TOW_Core
 {
@@ -42,6 +47,9 @@ namespace TOW_Core
             AbilityManager.LoadAbilities();
             LoadAttributes();
             LoadSprites();
+
+            //ref https://forums.taleworlds.com/index.php?threads/ui-widget-modification.441516/ 
+            UIConfig.DoNotUseGeneratedPrefabs = true;
         }
 
         /// <summary>

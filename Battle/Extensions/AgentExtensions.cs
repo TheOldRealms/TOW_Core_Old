@@ -76,29 +76,6 @@ namespace TOW_Core.Battle.Extensions
             return AbilityManager.GetAbilitesForCharacter(agent.Character.StringId);
         }
 
-        /// <summary>
-        /// Return all MoraleAgentComponents attached to the agent that are not of the base TaleWorlds implementation.
-        /// </summary>
-        /// <returns>A List of objects that subclass MoraleAgentComponent.</returns>
-        public static List<MoraleAgentComponent> GetCustomMoraleComponents(this Agent agent)
-        {
-            List<MoraleAgentComponent> components = new List<MoraleAgentComponent>();
-            List<AgentComponent> agentComponents = agent.Components
-                .Where(component => component.GetType().IsSubclassOf(typeof(MoraleAgentComponent)) && component.GetType() != typeof(MoraleAgentComponent))
-                .ToList();
-
-            agentComponents.ForEach(component => components.AddIfNotNull(component as MoraleAgentComponent));
-
-            return components;
-        }
-
-        public static List<MoraleAgentComponent> GetMoraleComponents(this Agent agent)
-        {
-            List<MoraleAgentComponent> components = agent.GetCustomMoraleComponents();
-            components.AddIfNotNull(agent.GetComponent<MoraleAgentComponent>());
-            return components;
-        }
-
         public static List<string> GetAttributes(this Agent agent)
         {
             if (agent != null && agent.Character != null)

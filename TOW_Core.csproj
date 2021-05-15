@@ -358,6 +358,7 @@
     <Content Include="ModuleData\tow_kingdoms.xml" />
     <Content Include="ModuleData\tow_settlements.xml" />
     <Content Include="StaticGUI\Prefabs\AbilityHUD.xml" />
+    <Content Include="StaticGUI\Prefabs\InitialScreen.xml" />
     <Content Include="StaticGUI\towSpriteData.xml" />
     <Content Include="StaticPrefabs\spelleffects_prefab.xml" />
     <Content Include="DependencyModules\TOW_Environment\SubModule.xml" />

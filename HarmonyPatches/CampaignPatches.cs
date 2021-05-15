@@ -9,8 +9,11 @@ using HarmonyLib;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.SandBox.CampaignBehaviors;
 using TaleWorlds.Library;
+using TaleWorlds.MountAndBlade;
 using TaleWorlds.ObjectSystem;
 using TOW_Core.Utilities;
+using TaleWorlds.Localization;
+using SandBox;
 
 //Need a way to somehow skip loading of vanilla xmls in the following categories:
 //Settlements, Clans, Kingdoms, Heroes
@@ -84,6 +87,29 @@ namespace TOW_Core.HarmonyPatches
         public static bool Prefix3()
         {
             return false;
+        }
+
+        [HarmonyPostfix]
+        [HarmonyPatch(typeof(Module), "GetInitialStateOptions")]
+        public static void Postfix2(ref IEnumerable<InitialStateOption> __result)
+        {
+            List<InitialStateOption> newlist = new List<InitialStateOption>();
+            newlist = __result.Where(x => x.Id != "StoryModeNewGame" && x.Id != "SandBoxNewGame").ToList();
+            var towOption = new InitialStateOption("TOWNewgame", new TextObject("Enter the Old World"),3,OnCLick,IsDisabledAndReason);
+            newlist.Add(towOption);
+            newlist.Sort((x, y) => x.OrderIndex.CompareTo(y.OrderIndex));
+            __result = newlist;
+        }
+
+        private static void OnCLick()
+        {
+            MBGameManager.StartNewGame(new CampaignGameManager());
+        }
+
+        private static (bool, TextObject) IsDisabledAndReason()
+        {
+            TextObject coreContentDisabledReason = new TextObject("{=V8BXjyYq}Disabled during installation.", null);
+            return new ValueTuple<bool, TextObject>(Module.CurrentModule.IsOnlyCoreContentEnabled, coreContentDisabledReason);
         }
     }
 }
