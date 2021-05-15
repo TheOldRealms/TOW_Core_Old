@@ -313,6 +313,7 @@
     <Compile Include="HarmonyPatches\FindGameTextPatch.cs" />
     <Compile Include="HarmonyPatches\LoadingScreenTempPatch.cs" />
     <Compile Include="HarmonyPatches\RotatingMainMenuPatch.cs" />
+    <Compile Include="HarmonyPatches\WorldMapDebugPatch.cs" />
     <Compile Include="SubModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\Extensions\ListExtensions.cs" />
