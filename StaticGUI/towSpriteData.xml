@@ -6,6 +6,13 @@
 			<SpriteSheetCount>1</SpriteSheetCount>
 			<SpriteSheetSize ID="1" Width="256" Height="256"/>
 		</SpriteCategory>
+		<SpriteCategory>
+			<Name>tow_gamemenu_backgrounds</Name>
+			<SpriteSheetCount>3</SpriteSheetCount>
+			<SpriteSheetSize ID="1" Width="445" Height="805"/>
+			<SpriteSheetSize ID="2" Width="445" Height="805"/>
+			<SpriteSheetSize ID="3" Width="445" Height="805"/>
+		</SpriteCategory>
 	</SpriteCategories>
 	<SpriteParts>
 		<SpritePart>
@@ -26,6 +33,33 @@
 			<SheetY>0</SheetY>
 			<CategoryName>tow_spritesheet</CategoryName>
 		</SpritePart>
+		<SpritePart>
+			<SheetID>1</SheetID>
+			<Name>vampire_village_background</Name>
+			<Width>445</Width>
+			<Height>805</Height>
+			<SheetX>0</SheetX>
+			<SheetY>0</SheetY>
+			<CategoryName>tow_gamemenu_backgrounds</CategoryName>
+		</SpritePart>
+		<SpritePart>
+			<SheetID>2</SheetID>
+			<Name>empire_village_background</Name>
+			<Width>445</Width>
+			<Height>805</Height>
+			<SheetX>0</SheetX>
+			<SheetY>0</SheetY>
+			<CategoryName>tow_gamemenu_backgrounds</CategoryName>
+		</SpritePart>
+		<SpritePart>
+			<SheetID>3</SheetID>
+			<Name>empire_city_background</Name>
+			<Width>445</Width>
+			<Height>805</Height>
+			<SheetX>0</SheetX>
+			<SheetY>0</SheetY>
+			<CategoryName>tow_gamemenu_backgrounds</CategoryName>
+		</SpritePart>
 	</SpriteParts>
 	<Sprites>
 		<GenericSprite>
@@ -35,6 +69,18 @@
 		<GenericSprite>
 			<Name>windofdeath_icon</Name>
 			<SpritePartName>windofdeath_icon</SpritePartName>
+		</GenericSprite>
+		<GenericSprite>
+			<Name>vampire_village_background</Name>
+			<SpritePartName>vampire_village_background</SpritePartName>
+		</GenericSprite>
+		<GenericSprite>
+			<Name>empire_village_background</Name>
+			<SpritePartName>empire_village_background</SpritePartName>
+		</GenericSprite>
+		<GenericSprite>
+			<Name>empire_city_background</Name>
+			<SpritePartName>empire_city_background</SpritePartName>
 		</GenericSprite>
 	</Sprites>
 </SpriteData>

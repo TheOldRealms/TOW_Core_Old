@@ -46,7 +46,7 @@ namespace TOW_Core
             //This has to be here.
             AbilityManager.LoadAbilities();
             LoadAttributes();
-            LoadSprites();
+            
 
             //ref https://forums.taleworlds.com/index.php?threads/ui-widget-modification.441516/ 
             UIConfig.DoNotUseGeneratedPrefabs = true;
@@ -60,7 +60,8 @@ namespace TOW_Core
         {
             TOWTextManager.LoadAdditionalTexts();
             TOWTextManager.LoadTextOverrides();
-            if(game.GameType.GetType() == typeof(CustomGame))
+            LoadSprites();
+            if (game.GameType.GetType() == typeof(CustomGame))
             {
                 CustomBattleTroopManager.LoadCustomBattleTroops();
             }
@@ -69,6 +70,7 @@ namespace TOW_Core
         private void LoadSprites()
         {
             UIResourceManager.SpriteData.SpriteCategories["tow_spritesheet"].Load(UIResourceManager.ResourceContext, UIResourceManager.UIResourceDepot);
+            UIResourceManager.SpriteData.SpriteCategories["tow_gamemenu_backgrounds"].Load(UIResourceManager.ResourceContext, UIResourceManager.UIResourceDepot);
         }
 
         protected override void OnGameStart(Game game, IGameStarter gameStarterObject)

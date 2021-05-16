@@ -357,6 +357,7 @@
     <Content Include="ModuleData\tow_clans.xml" />
     <Content Include="ModuleData\tow_heroes.xml" />
     <Content Include="ModuleData\tow_kingdoms.xml" />
+    <Content Include="ModuleData\tow_partytemplates.xml" />
     <Content Include="ModuleData\tow_settlements.xml" />
     <Content Include="StaticGUI\Prefabs\AbilityHUD.xml" />
     <Content Include="StaticGUI\Prefabs\InitialScreen.xml" />

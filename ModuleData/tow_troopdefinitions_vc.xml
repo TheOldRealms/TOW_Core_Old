@@ -5,10 +5,10 @@
 	<NPCCharacter id="tow_empire_recruit_vc"
 				  default_group="Infantry"
 				  level="6"
-				  name="{=!}Empire Recruit"
+				  name="{=!}Sylvanian Recruit"
 				  occupation="Soldier"
 				  is_basic_troop="true"
-				  culture="Culture.empire"
+				  culture="Culture.khuzait"
 				  skill_template="SkillSet.tow_skills_level6">
 		<face>
 			<face_key_template value="BodyProperty.fighter_empire" />
@@ -64,9 +64,9 @@
 	<NPCCharacter id="tow_empire_state_troop_vc"
 			 default_group="Infantry"
 			 level="11"
-			 name="{=!}Empire State Troop"
+			 name="{=!}Sylvanian State Troop"
 			 occupation="Soldier"
-			 culture="Culture.empire"
+			 culture="Culture.khuzait"
 			 skill_template="SkillSet.tow_skills_level11">
 		<face>
 			<face_key_template value="BodyProperty.fighter_empire" />
@@ -128,9 +128,9 @@
 	<NPCCharacter id="tow_empire_archer_vc"
 				  default_group="Ranged"
 				  level="11"
-				  name="{=!}Empire Archer"
+				  name="{=!}Sylvanian Archer"
 				  occupation="Soldier"
-				  culture="Culture.empire"
+				  culture="Culture.khuzait"
 				  skill_template="SkillSet.tow_skills_level11">
 		<face>
 			<face_key_template value="BodyProperty.fighter_empire" />
@@ -220,7 +220,7 @@
 		</face>
 		<upgrade_targets>
 			<upgrade_target id="NPCCharacter.tow_skeleton_warrior" />
-			<upgrade_target id="NPCCharacter.tow_skeleton_spearmen" />
+			<upgrade_target id="NPCCharacter.tow_skeleton_spearman" />
 		</upgrade_targets>
 		<Equipments>
 			<EquipmentRoster>
@@ -243,7 +243,6 @@
 			level="11"
 			name="{=!}Skeleton Warrior"
 			occupation="Soldier"
-			is_basic_troop="true"
 			culture="Culture.khuzait"
 			skill_template="SkillSet.tow_skills_level11">
 		<face>
@@ -309,7 +308,6 @@
 			level="11"
 			name="{=!}Skeleton Spearman"
 			occupation="Soldier"
-			is_basic_troop="true"
 			culture="Culture.khuzait"
 			skill_template="SkillSet.tow_skills_level11">
 		<face>
@@ -374,7 +372,6 @@
 			level="16"
 			name="{=!}Grave Guard"
 			occupation="Soldier"
-			is_basic_troop="true"
 			culture="Culture.khuzait"
 			skill_template="SkillSet.tow_skills_level16">
 		<face>
@@ -409,7 +406,6 @@
 			level="21"
 			name="{=!}Grave Guard with GreatSword"
 			occupation="Soldier"
-			is_basic_troop="true"
 			culture="Culture.khuzait"
 			skill_template="SkillSet.tow_skills_level21">
 		<face>
@@ -438,7 +434,6 @@
 			level="21"
 			name="{=!}Cairn Wraith"
 			occupation="Soldier"
-			is_basic_troop="true"
 			culture="Culture.khuzait"
 			skill_template="SkillSet.tow_skills_level21">
 		<face>

@@ -80,5 +80,12 @@
 				<GameType value = "CustomGame"/>
 			</IncludedGameTypes>
 		</XmlNode>
+		<XmlNode>
+			<XmlName id="partyTemplates" path="tow_partytemplates"/>
+			<IncludedGameTypes>
+				<GameType value = "Campaign"/>
+				<GameType value = "CampaignStoryMode"/>
+			</IncludedGameTypes>
+		</XmlNode>
 	</Xmls>
 </Module>
