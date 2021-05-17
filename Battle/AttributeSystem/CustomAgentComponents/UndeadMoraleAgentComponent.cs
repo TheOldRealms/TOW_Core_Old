@@ -15,7 +15,7 @@ namespace TOW_Core.Battle.AttributeSystem.CustomAgentComponents
     public class UndeadMoraleAgentComponent : AgentComponent
     {
         private float _crumbleThreshold = 15f;
-        private float _regenThreshold = 15f;
+        private float _regenThreshold = 30f;
 
         private MoraleAgentComponent _moraleComponent;
 
