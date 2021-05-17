@@ -18,14 +18,14 @@ namespace TOW_Core.Battle.AttributeSystem.CustomAgentComponents
         private float _regenThreshold = 30f;
         private float _timeElapsed = 0;
 
-        private MoraleAgentComponent _moraleComponent;
+        private CommonAIComponent _moraleComponent;
 
         public UndeadMoraleAgentComponent(Agent agent) : base(agent) { }
 
         protected override void Initialize()
         {
             base.Initialize();
-            _moraleComponent = Agent.GetComponent<MoraleAgentComponent>();
+            _moraleComponent = Agent.GetComponent<CommonAIComponent>();
         }
 
         protected override void OnTickAsAI(float dt)
