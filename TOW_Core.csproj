@@ -360,6 +360,8 @@
     <Content Include="ModuleData\tow_cc_options.xml" />
     <Content Include="ModuleData\tow_clans.xml" />
     <Content Include="ModuleData\tow_heroes.xml" />
+    <Content Include="StaticGUI\Brushes\InitialMenu.xml" />
+    <Content Include="StaticGUI\NativeSpriteData.xml" />
     <Content Include="ModuleData\tow_kingdoms.xml" />
     <Content Include="ModuleData\tow_partytemplates.xml" />
     <Content Include="ModuleData\tow_settlements.xml" />
@@ -390,6 +392,7 @@
     <None Include="ModuleData\project.mbproj" />
     <None Include="packages.config" />
     <None Include="Readme.md" />
+    <None Include="StaticGUI\Fonts\CasablancaAntique.fnt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DependencyModules\TOW_Armory\AssetPackages\" />
