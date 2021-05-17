@@ -1,4 +1,4 @@
-<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <!-- Main Project Properties -->
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -298,9 +298,11 @@
     <Compile Include="Battle\AttributeSystem\CustomMissionLogic\AttributeSystemMissionLogic.cs" />
     <Compile Include="Battle\Extensions\AgentExtensions.cs" />
     <Compile Include="Battle\FireArms\MusketFireEffectMissionLogic.cs" />
-    <Compile Include="Battle\StatusEffect\StatusEffect.cs" />
-    <Compile Include="Battle\StatusEffect\StatusEffectComponent.cs" />
-    <Compile Include="Battle\StatusEffect\StatusEffectManager.cs" />
+    <Compile Include="Battle\StatusEffects\StatusEffect.cs" />
+    <Compile Include="Battle\StatusEffects\StatusEffectComponent.cs" />
+    <Compile Include="Battle\StatusEffects\StatusEffectList.cs" />
+    <Compile Include="Battle\StatusEffects\StatusEffectManager.cs" />
+    <Compile Include="Battle\StatusEffects\StatusEffectMissionLogic.cs" />
     <Compile Include="Battle\TOWBattleUtilities.cs" />
     <Compile Include="CharacterCreation\CharacterCreationOption.cs" />
     <Compile Include="CharacterCreation\TOWCharacterCreationContent.cs" />

@@ -14,15 +14,8 @@ namespace TOW_Core.Battle.AttributeSystem.CustomAgentComponents
 {
     public class UndeadMoraleAgentComponent : AgentComponent
     {
-        private float _crumbleFrequencyInSeconds = 1;
-        private float _regenFrequencyInSeconds = 1;
-        private float _deltaSinceLastRegenTick = 0;
-        private float _deltaSinceLastCrumbleTick = 0;
-        private float _regenAmount = 5f;
         private float _crumbleThreshold = 15f;
-        private float _regenThreshold = 30f;
-        private int _crumbleDamagePerInterval = 5;
-        private bool _crumblingVisualsApplied;
+        private float _regenThreshold = 15f;
 
         private MoraleAgentComponent _moraleComponent;
 
@@ -31,47 +24,41 @@ namespace TOW_Core.Battle.AttributeSystem.CustomAgentComponents
         protected override void Initialize()
         {
             base.Initialize();
-            this._moraleComponent = Agent.GetComponent<MoraleAgentComponent>();
+            _moraleComponent = Agent.GetComponent<MoraleAgentComponent>();
         }
 
         protected override void OnTickAsAI(float dt)
         {
             base.OnTickAsAI(dt);
-            this._deltaSinceLastCrumbleTick += dt;
-            this._deltaSinceLastRegenTick += dt;
-
-            if (_moraleComponent.Morale < _crumbleThreshold && this._deltaSinceLastCrumbleTick > this._crumbleFrequencyInSeconds)
+            try
             {
-                this._deltaSinceLastCrumbleTick = 0;
-                try
+                if (Agent.IsActive() || Agent.IsRetreating())
                 {
-                    if (Agent.IsActive() || Agent.IsRetreating()) ApplyCrumbleDamage();
-                }
-                catch (Exception ex)
-                {
-                    TOWCommon.Log("Attempted to deal crumbledamage to agent. Error: " + ex.Message, NLog.LogLevel.Error);
+
+                    if (_moraleComponent.Morale < _crumbleThreshold)
+                    {
+                        ApplyCrumble();
+                    }
+                    else if (_moraleComponent.Morale > _regenThreshold)
+                    {
+                        ApplyRegeneration();
+                    }
                 }
             }
-            else if (_moraleComponent.Morale > _regenThreshold && this._deltaSinceLastRegenTick > this._regenFrequencyInSeconds)
+            catch (Exception ex)
             {
-                _deltaSinceLastRegenTick = 0;
-                ApplyRegenerationHealing();
+                TOWCommon.Log("Attempted to apply crumbling to agent. Error: " + ex.Message, NLog.LogLevel.Error);
             }
         }
 
-        private void ApplyCrumbleDamage()
+        private void ApplyCrumble()
         {
-            Agent.ApplyDamage(_crumbleDamagePerInterval);
-            if (!_crumblingVisualsApplied)
-            {
-                _crumblingVisualsApplied = true;
-                TOWParticleSystem.ApplyParticleToAgent(this.Agent, "undead_crumbling");
-            }
+            Agent.ApplyStatusEffect("crumble");
         }
 
-        private void ApplyRegenerationHealing()
+        private void ApplyRegeneration()
         {
-            Agent.Heal(_regenAmount);
+            Agent.ApplyStatusEffect("regeneration");
         }
     }
 } 

@@ -8,7 +8,6 @@ using TaleWorlds.Engine;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.MountAndBlade;
-using TOW_Core.Battle.StatusEffect;
 using TOW_Core.Utilities;
 using LogLevel = NLog.LogLevel;
 

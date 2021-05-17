@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NLog;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,16 +22,25 @@ namespace TOW_Core.Utilities
         /// </summary>
         /// <param name="agent">The agent receiving the particle system.</param>
         /// <param name="particleId">The ID of the particle system.</param>
+        /// <param name="intensity">Affects the number of bones the particle attaches to</param>
         /// <returns>A List of ParticleSystems attached to the agent</returns>
-        public static List<ParticleSystem> ApplyParticleToAgent(Agent agent, string particleId)
+        public static List<ParticleSystem> ApplyParticleToAgent(Agent agent, string particleId, ParticleIntensity intensity = ParticleIntensity.High)
         {
             List<ParticleSystem> particleList = new List<ParticleSystem>();
-            int[] boneIndexes = { 0, 1, 2, 3, 5, 6, 7, 9, 12, 13, 15, 17, 22, 24 };
-            for (byte i = 0; i < boneIndexes.Length; i++)
+            if (intensity == ParticleIntensity.Undefined)
             {
-                ParticleSystem particle = ApplyParticleToAgentBone(agent, particleId, (sbyte)boneIndexes[i]);
-                particleList.Add(particle);
+                TOWCommon.Log("Attempted to give an agent a particle with undefined intensity.", LogLevel.Warn);
             }
+            else
+            {
+                int[] boneIndexes = { 0, 1, 2, 3, 5, 6, 7, 9, 12, 13, 15, 17, 22, 24 };
+                for (byte i = 0; i < boneIndexes.Length / (int)intensity; i++)
+                {
+                    ParticleSystem particle = ApplyParticleToAgentBone(agent, particleId, (sbyte)boneIndexes[i]);
+                    particleList.Add(particle);
+                }
+            }
+            
             return particleList;
         }
 
@@ -51,6 +61,14 @@ namespace TOW_Core.Utilities
             agent.AgentVisuals.AddChildEntity(entity);
             skeleton.AddComponentToBone(boneIndex, particle);
             return particle;
+        }
+
+        public enum ParticleIntensity
+        {
+            Undefined,
+            High,
+            Medium,
+            Low = 14
         }
     }
 }

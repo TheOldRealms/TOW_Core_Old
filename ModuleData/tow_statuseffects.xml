@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<StatusEffects>
+	<StatusEffect 
+		id="crumble" 
+		particle_id="undead_crumbling"
+		particle_intensity="High"
+		health_over_time="-5"
+		duration="1"
+		type="Health"/>
+	<StatusEffect 
+		id="regeneration" 
+		particle_id="undead_crumbling"
+		particle_intensity="Low"
+		health_over_time="3"
+		duration="1"
+		type="Health"/>
+</StatusEffects>

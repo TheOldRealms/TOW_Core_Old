@@ -4,8 +4,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TaleWorlds.Core;
 using TaleWorlds.MountAndBlade;
 using TOW_Core.Abilities;
+using TOW_Core.Battle.StatusEffects;
 using TOW_Core.Utilities;
 using TOW_Core.Utilities.Extensions;
 
@@ -146,12 +148,16 @@ namespace TOW_Core.Battle.Extensions
                 var blow = new Blow();
                 blow.InflictedDamage = damageAmount;
                 if(damager != null) blow.OwnerId = damager.Index;
-                if(agent.State == TaleWorlds.Core.AgentState.Active || agent.State == TaleWorlds.Core.AgentState.Routed)
-                agent.RegisterBlow(blow);
+                bool agentIsActive = agent.State == AgentState.Active;
+                bool agentIsRouted = agent.State == AgentState.Routed;
+                if (agent != null  && (agentIsActive || agentIsRouted))
+                {
+                    agent.RegisterBlow(blow);
+                }
             }
             catch(Exception e)
             {
-                TOWCommon.Log("Applydamange: attempted to damage agent, but: " + e.Message, NLog.LogLevel.Error);
+                TOWCommon.Log("ApplyDamage: attempted to damage agent, but: " + e.Message, LogLevel.Error);
             }
         }
 
@@ -164,6 +170,11 @@ namespace TOW_Core.Battle.Extensions
         {
             //Cap healing at the agent's max hit points
             agent.Health = Math.Min(agent.Health + healingAmount, agent.HealthLimit);
+        }
+
+        public static void ApplyStatusEffect(this Agent agent, string effectId)
+        {
+            agent.GetComponent<StatusEffectComponent>().RunStatusEffect(effectId);
         }
     }
 }
