@@ -122,23 +122,28 @@ namespace TOW_Core.Battle.Extensions
         /// <param name="causeStagger">A flag that controls whether the unit receives a blow or direct health manipulation</param>
         public static void ApplyDamage(this Agent agent, int damageAmount, Agent damager = null, bool causeStagger = true)
         {
+            if (agent == null)
+            {
+                TOWCommon.Log("ApplyDamage: attempted to apply damage to a null agent.", LogLevel.Warn);
+                return;
+            }
             try
             {
                 // Registering a blow causes the agent to react/stagger. Manipulate health directly if the damage won't kill the agent.
-                if(!causeStagger && agent.Health > damageAmount)
+                if (!causeStagger && agent.Health > damageAmount)
                 {
                     agent.Health -= damageAmount;
                 }
                 else
                 {
-                    var blow = new Blow();
-                    blow.InflictedDamage = damageAmount;
-                    blow.DefenderStunPeriod = 0;
-                    if (damager != null) blow.OwnerId = damager.Index;
                     bool agentIsActive = agent.State == AgentState.Active;
                     bool agentIsRouted = agent.State == AgentState.Routed;
-                    if (agent != null && (agentIsActive || agentIsRouted))
+                    if (agentIsActive || agentIsRouted)
                     {
+                        var blow = new Blow();
+                        blow.InflictedDamage = damageAmount;
+                        blow.DefenderStunPeriod = 0;
+                        if (damager != null) blow.OwnerId = damager.Index;
                         agent.RegisterBlow(blow);
                     }
                 }
