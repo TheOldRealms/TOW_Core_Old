@@ -141,18 +141,29 @@ namespace TOW_Core.Battle.Extensions
         /// </summary>
         /// <param name="agent">The agent that will be damaged</param>
         /// <param name="damageAmount">How much damage the agent will receive.</param>
-        public static void ApplyDamage(this Agent agent, int damageAmount, Agent damager = null)
+        /// <param name="damager">The agent who is applying the damage</param>
+        /// <param name="causeStagger">A flag that controls whether the unit receives a blow or direct health manipulation</param>
+        public static void ApplyDamage(this Agent agent, int damageAmount, Agent damager = null, bool causeStagger = true)
         {
             try
             {
-                var blow = new Blow();
-                blow.InflictedDamage = damageAmount;
-                if(damager != null) blow.OwnerId = damager.Index;
-                bool agentIsActive = agent.State == AgentState.Active;
-                bool agentIsRouted = agent.State == AgentState.Routed;
-                if (agent != null  && (agentIsActive || agentIsRouted))
+                // Registering a blow causes the agent to react/stagger. Manipulate health directly if the damage won't kill the agent.
+                if(!causeStagger && agent.Health > damageAmount)
                 {
-                    agent.RegisterBlow(blow);
+                    agent.Health -= damageAmount;
+                }
+                else
+                {
+                    var blow = new Blow();
+                    blow.InflictedDamage = damageAmount;
+                    blow.DefenderStunPeriod = 0;
+                    if (damager != null) blow.OwnerId = damager.Index;
+                    bool agentIsActive = agent.State == AgentState.Active;
+                    bool agentIsRouted = agent.State == AgentState.Routed;
+                    if (agent != null && (agentIsActive || agentIsRouted))
+                    {
+                        agent.RegisterBlow(blow);
+                    }
                 }
             }
             catch(Exception e)

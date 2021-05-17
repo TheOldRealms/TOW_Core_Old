@@ -16,6 +16,7 @@ namespace TOW_Core.Battle.AttributeSystem.CustomAgentComponents
     {
         private float _crumbleThreshold = 15f;
         private float _regenThreshold = 30f;
+        private float _timeElapsed = 0;
 
         private MoraleAgentComponent _moraleComponent;
 
@@ -30,24 +31,28 @@ namespace TOW_Core.Battle.AttributeSystem.CustomAgentComponents
         protected override void OnTickAsAI(float dt)
         {
             base.OnTickAsAI(dt);
-            try
+            _timeElapsed += dt;
+            if(_timeElapsed >= 0.5)
             {
-                if (Agent.IsActive() || Agent.IsRetreating())
+                _timeElapsed = 0;
+                try
                 {
-
-                    if (_moraleComponent.Morale < _crumbleThreshold)
+                    if (Agent.IsActive() || Agent.IsRetreating())
                     {
-                        ApplyCrumble();
-                    }
-                    else if (_moraleComponent.Morale > _regenThreshold)
-                    {
-                        ApplyRegeneration();
+                        if (_moraleComponent.Morale < _crumbleThreshold)
+                        {
+                            ApplyCrumble();
+                        }
+                        else if (_moraleComponent.Morale > _regenThreshold)
+                        {
+                            ApplyRegeneration();
+                        }
                     }
                 }
-            }
-            catch (Exception ex)
-            {
-                TOWCommon.Log("Attempted to apply crumbling to agent. Error: " + ex.Message, NLog.LogLevel.Error);
+                catch (Exception ex)
+                {
+                    TOWCommon.Log("Attempted to apply crumbling to agent. Error: " + ex.Message, NLog.LogLevel.Error);
+                }
             }
         }
 

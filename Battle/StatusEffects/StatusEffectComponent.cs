@@ -16,7 +16,7 @@ namespace TOW_Core.Battle.StatusEffects
     public class StatusEffectComponent: AgentComponent
     {
         private float _updateFrequency = 1;
-        private float _deltaSinceLastTick = 0;
+        private float _deltaSinceLastTick = (float)TOWMath.GetRandomDouble(0, 0.1);
         private HashSet<StatusEffect> _currentEffects;
         private EffectAggregate _effectAggregate;
 
@@ -58,9 +58,16 @@ namespace TOW_Core.Battle.StatusEffects
 
             //Temporary method for applying effects from the aggregate. This needs to go to a damage manager/calculator which will use the 
             //aggregated information to determine how much damage to apply to the agent
-            if (_effectAggregate.HealthOverTime != 0 && Agent.IsActive() && Agent != null)
+            if (Agent.IsActive() && Agent != null)
             {
-                Agent.ApplyDamage(-1 * ((int)_effectAggregate.HealthOverTime), Agent);
+                if(_effectAggregate.HealthOverTime < 0)
+                {
+                    Agent.ApplyDamage(-1 * ((int)_effectAggregate.HealthOverTime), Agent, causeStagger: false);
+                }
+                else if(_effectAggregate.HealthOverTime > 0)
+                {
+                    Agent.Heal((int)_effectAggregate.HealthOverTime);
+                }
             }
         }
         
@@ -70,7 +77,7 @@ namespace TOW_Core.Battle.StatusEffects
             _deltaSinceLastTick += dt;
             if(_deltaSinceLastTick > _updateFrequency)
             {
-                _deltaSinceLastTick = 0;
+                _deltaSinceLastTick = (float)TOWMath.GetRandomDouble(0, 0.1);
                 OnElapsed(dt);
             }
         }
