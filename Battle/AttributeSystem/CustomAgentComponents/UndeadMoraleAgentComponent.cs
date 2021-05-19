@@ -15,7 +15,6 @@ namespace TOW_Core.Battle.AttributeSystem.CustomAgentComponents
     public class UndeadMoraleAgentComponent : AgentComponent
     {
         private float _crumbleThreshold = 15f;
-        private float _regenThreshold = 30f;
         private float _timeElapsed = 0;
 
         private CommonAIComponent _moraleComponent;
@@ -43,10 +42,6 @@ namespace TOW_Core.Battle.AttributeSystem.CustomAgentComponents
                         {
                             ApplyCrumble();
                         }
-                        else if (_moraleComponent.Morale > _regenThreshold)
-                        {
-                            ApplyRegeneration();
-                        }
                     }
                 }
                 catch (Exception ex)
@@ -59,11 +54,6 @@ namespace TOW_Core.Battle.AttributeSystem.CustomAgentComponents
         private void ApplyCrumble()
         {
             Agent.ApplyStatusEffect("crumble");
-        }
-
-        private void ApplyRegeneration()
-        {
-            Agent.ApplyStatusEffect("regeneration");
         }
     }
 } 

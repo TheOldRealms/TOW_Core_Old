@@ -29,16 +29,12 @@ namespace TOW_Core.Battle.StatusEffects
         [XmlAttribute("percentage_damage_effect")]
         public float PercentageDamageEffect { get; set; }
         [XmlAttribute("duration")]
-        public float Duration { get; set; }
+        public int Duration { get; set; }
         [XmlAttribute("type")]
         public EffectType Type { get; set; }
 
         [XmlIgnore]
-        public List<ParticleSystem> Particles { get; set; }
-        [XmlIgnore]
-        public bool IsActive{ get; set; }
-        [XmlIgnore]
-        public float CurrentDuration { get; set; }
+        public int CurrentDuration { get; set; }
         [XmlIgnore]
         public Agent Affector { get; set; }
 
@@ -48,11 +44,6 @@ namespace TOW_Core.Battle.StatusEffects
             Health,
             Damage
         };
-
-        public void ResetDuration()
-        {
-            CurrentDuration = Duration;
-        }
 
         public override int GetHashCode()
         {

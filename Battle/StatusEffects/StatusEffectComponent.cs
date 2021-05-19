@@ -17,12 +17,12 @@ namespace TOW_Core.Battle.StatusEffects
     {
         private float _updateFrequency = 1;
         private float _deltaSinceLastTick = (float)TOWMath.GetRandomDouble(0, 0.1);
-        private HashSet<StatusEffect> _currentEffects;
+        private Dictionary<StatusEffect, EffectData> _currentEffects;
         private EffectAggregate _effectAggregate;
 
         public StatusEffectComponent(Agent agent) : base(agent)
         {
-            _currentEffects = new HashSet<StatusEffect>();
+            _currentEffects = new Dictionary<StatusEffect, EffectData>();
             _effectAggregate = new EffectAggregate(); 
         }
 
@@ -31,10 +31,10 @@ namespace TOW_Core.Battle.StatusEffects
             if(Agent == null)
                 return;
 
-            StatusEffect effect = _currentEffects.Where(e => e.Id.Equals(id)).FirstOrDefault();
+            StatusEffect effect = _currentEffects.Keys.Where(e => e.Id.Equals(id)).FirstOrDefault();
             if (effect != null)
             {
-                effect.ResetDuration();
+                _currentEffects[effect].Duration = effect.Duration;
             }
             else
             {
@@ -45,13 +45,12 @@ namespace TOW_Core.Battle.StatusEffects
 
         public void OnElapsed(float dt)
         {
-            foreach (StatusEffect effect in _currentEffects.ToList())
+            foreach (StatusEffect effect in _currentEffects.Keys.ToList())
             {
-                effect.CurrentDuration -= dt;
+                _currentEffects[effect].Duration--;
 
-                if (effect.CurrentDuration <= 0f)
+                if (_currentEffects[effect].Duration <= 0)
                 {
-                    effect.CurrentDuration = effect.Duration;
                     RemoveEffect(effect);
                 }
             }
@@ -84,16 +83,41 @@ namespace TOW_Core.Battle.StatusEffects
 
         private void RemoveEffect(StatusEffect effect)
         {
+            EffectData data = _currentEffects[effect];
+
+            data.ParticleEntities.ForEach(pe =>
+            {
+                pe.RemoveAllParticleSystems();
+                pe = null;
+            });
+            
             _currentEffects.Remove(effect);
-            effect.Particles = null;
             _effectAggregate.RemoveEffect(effect);
         }
 
         private void AddEffect(StatusEffect effect)
         {
-            _currentEffects.Add(effect);
-            effect.Particles = TOWParticleSystem.ApplyParticleToAgent(Agent, effect.ParticleId, effect.ParticleIntensity);
+            List<GameEntity> childEntities;
+            TOWParticleSystem.ApplyParticleToAgent(Agent, effect.ParticleId, out childEntities, effect.ParticleIntensity);
+
+            EffectData data = new EffectData(effect);
+            data.ParticleEntities = childEntities;
+
+            _currentEffects.Add(effect, data);
             _effectAggregate.AddEffect(effect);
+        }
+
+        private class EffectData
+        {
+            public EffectData(StatusEffect effect)
+            {
+                Duration = effect.Duration;
+                Effect = effect;
+            }
+
+            public int Duration { get; set; }
+            public List<GameEntity> ParticleEntities { get; set; }
+            public StatusEffect Effect { get; set; }
         }
 
         private class EffectAggregate

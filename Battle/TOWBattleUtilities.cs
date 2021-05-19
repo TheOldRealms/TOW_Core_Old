@@ -33,7 +33,24 @@ namespace TOW_Core.Battle
                     agent.ApplyDamage(TOW_Core.Utilities.TOWMath.GetRandomInt(minDamage, maxDamage), damager);
                 }
             }
-            
+        }
+
+        public static void ApplyStatusEffectToAgentsInArea(Vec2 center, float radius, string effectId, Agent damager = null, bool enemyOnly = false)
+        {
+            var list = new List<Agent>();
+            if (enemyOnly && damager != null)
+            {
+                list = Mission.Current.GetNearbyEnemyAgents(center, radius, damager.Team).ToList();
+            }
+            else
+            {
+                list = Mission.Current.GetNearbyAgents(center, radius).ToList();
+            }
+            foreach (var agent in list)
+            {
+                agent.ApplyStatusEffect(effectId);
+            }
+
         }
     }
 }

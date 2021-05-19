@@ -24,7 +24,7 @@ namespace TOW_Core.Abilities
 
         protected override void OnUse(Agent casterAgent)
         {
-            if(casterAgent.IsActive() && casterAgent.Health > 0 && casterAgent.GetMorale() > 1 && casterAgent.IsAbilityUser())
+            if(casterAgent.IsActive() && casterAgent.Health > 0 && (casterAgent.GetMorale() > 1 || casterAgent.IsPlayerControlled) && casterAgent.IsAbilityUser())
             {
                 var scene = Mission.Current.Scene;
                 var offset = 1f;
