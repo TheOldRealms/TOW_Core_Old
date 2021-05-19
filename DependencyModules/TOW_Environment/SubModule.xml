@@ -1,14 +1,14 @@
 ﻿<Module>
   <Name value="TOW Environment"/>
   <Id value="TOW_Environment"/>
-  <Version value="v1.5.9"/>
+  <Version value="v1.5.10"/>
   <SingleplayerModule value="true"/>
   <MultiplayerModule value="false"/>
   <DependedModules>
-    <DependedModule Id="Native" DependentVersion="e1.5.9"/>
-    <DependedModule Id="SandBoxCore" DependentVersion="e1.5.9"/>
-    <DependedModule Id="Sandbox" DependentVersion="e1.5.9"/>
-    <DependedModule Id="StoryMode" DependentVersion="e1.5.9"/>
+    <DependedModule Id="Native" DependentVersion="e1.5.10"/>
+    <DependedModule Id="SandBoxCore" DependentVersion="e1.5.10"/>
+    <DependedModule Id="Sandbox" DependentVersion="e1.5.10"/>
+    <DependedModule Id="StoryMode" DependentVersion="e1.5.10"/>
   </DependedModules>
   <SubModules />
   <Xmls/>

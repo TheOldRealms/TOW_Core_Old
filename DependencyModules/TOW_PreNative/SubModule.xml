@@ -1,7 +1,7 @@
 ﻿<Module>
   <Name value="TOW Pre Native"/>
   <Id value="TOW_PreNative"/>
-  <Version value="v1.5.9"/>
+  <Version value="v1.5.10"/>
   <SingleplayerModule value="true"/>
   <MultiplayerModule value="false"/>
   <DependedModules />

@@ -20,6 +20,13 @@ using TaleWorlds.Engine.GauntletUI;
 using TaleWorlds.TwoDimension;
 using TOW_Core.Abilities;
 using TOW_Core.CharacterCreation;
+using TaleWorlds.CampaignSystem;
+using TaleWorlds.CampaignSystem.SandBox.CampaignBehaviors;
+using TaleWorlds.Localization;
+using System;
+using SandBox;
+using SandBox.View;
+using TaleWorlds.Engine.Screens;
 
 namespace TOW_Core
 {
@@ -39,7 +46,10 @@ namespace TOW_Core
             //This has to be here.
             AbilityManager.LoadAbilities();
             LoadAttributes();
-            LoadSprites();
+            
+
+            //ref https://forums.taleworlds.com/index.php?threads/ui-widget-modification.441516/ 
+            UIConfig.DoNotUseGeneratedPrefabs = true;
         }
 
         /// <summary>
@@ -50,16 +60,17 @@ namespace TOW_Core
         {
             TOWTextManager.LoadAdditionalTexts();
             TOWTextManager.LoadTextOverrides();
-            if(game.GameType.GetType() == typeof(CustomGame))
+            LoadSprites();
+            if (game.GameType.GetType() == typeof(CustomGame))
             {
                 CustomBattleTroopManager.LoadCustomBattleTroops();
             }
-            //LoadSprites();
         }
 
         private void LoadSprites()
         {
             UIResourceManager.SpriteData.SpriteCategories["tow_spritesheet"].Load(UIResourceManager.ResourceContext, UIResourceManager.UIResourceDepot);
+            UIResourceManager.SpriteData.SpriteCategories["tow_gamemenu_backgrounds"].Load(UIResourceManager.ResourceContext, UIResourceManager.UIResourceDepot);
         }
 
         protected override void OnGameStart(Game game, IGameStarter gameStarterObject)
@@ -70,14 +81,19 @@ namespace TOW_Core
                 gameStarterObject.Models.RemoveAllOfType(typeof(CustomBattleMoraleModel));
                 gameStarterObject.AddModel(new TOWBattleMoraleModel());
             }
+            else if(game.GameType is Campaign)
+            {
+                CampaignGameStarter starter = gameStarterObject as CampaignGameStarter;
+                starter.CampaignBehaviors.RemoveAllOfType(typeof(BackstoryCampaignBehavior));
+            }
         }
 
         public override void OnMissionBehaviourInitialize(Mission mission)
         {
             base.OnMissionBehaviourInitialize(mission);
             mission.AddMissionBehaviour(new AttributeSystemMissionLogic());
-            mission.AddMissionBehaviour(new Abilities.AbilityManagerMissionLogic());
-            mission.AddMissionBehaviour(new Abilities.AbilityHUDMissionView());
+            mission.AddMissionBehaviour(new AbilityManagerMissionLogic());
+            mission.AddMissionBehaviour(new AbilityHUDMissionView());
             mission.AddMissionBehaviour(new Battle.FireArms.MusketFireEffectMissionLogic());
         }
 

@@ -1,4 +1,4 @@
-<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <!-- Main Project Properties -->
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -308,10 +308,12 @@
     <Compile Include="HarmonyPatches\CharacterCreationPatches.cs" />
     <Compile Include="HarmonyPatches\CrossHairPatch.cs" />
     <Compile Include="HarmonyPatches\CustomBattlePatches.cs" />
+    <Compile Include="HarmonyPatches\CampaignPatches.cs" />
     <Compile Include="HarmonyPatches\UndeadBleedParticlePatch.cs" />
     <Compile Include="HarmonyPatches\FindGameTextPatch.cs" />
     <Compile Include="HarmonyPatches\LoadingScreenTempPatch.cs" />
     <Compile Include="HarmonyPatches\RotatingMainMenuPatch.cs" />
+    <Compile Include="HarmonyPatches\WorldMapDebugPatch.cs" />
     <Compile Include="SubModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\Extensions\ListExtensions.cs" />
@@ -350,8 +352,15 @@
     <Content Include="DependencyModules\TOW_PreNative\ModuleData\tow_action_sets.xml" />
     <Content Include="DependencyModules\TOW_PreNative\ModuleData\tow_action_types.xml" />
     <Content Include="DependencyModules\TOW_PreNative\SubModule.xml" />
+    <Content Include="ModuleData\tow_campaign_lords.xml" />
     <Content Include="ModuleData\tow_cc_options.xml" />
+    <Content Include="ModuleData\tow_clans.xml" />
+    <Content Include="ModuleData\tow_heroes.xml" />
+    <Content Include="ModuleData\tow_kingdoms.xml" />
+    <Content Include="ModuleData\tow_partytemplates.xml" />
+    <Content Include="ModuleData\tow_settlements.xml" />
     <Content Include="StaticGUI\Prefabs\AbilityHUD.xml" />
+    <Content Include="StaticGUI\Prefabs\InitialScreen.xml" />
     <Content Include="StaticGUI\towSpriteData.xml" />
     <Content Include="StaticPrefabs\spelleffects_prefab.xml" />
     <Content Include="DependencyModules\TOW_Environment\SubModule.xml" />
