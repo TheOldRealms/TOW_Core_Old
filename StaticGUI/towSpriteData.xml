@@ -11,12 +11,12 @@
 			<SpriteSheetCount>3</SpriteSheetCount>
 			<SpriteSheetSize ID="1" Width="445" Height="805"/>
 			<SpriteSheetSize ID="2" Width="445" Height="805"/>
-    <SpriteCategory>
-      <Name>tow_fonts</Name>
-      <SpriteSheetCount>1</SpriteSheetCount>
-      <SpriteSheetSize ID="1" Width="1024" Height="1024" />
-    </SpriteCategory>
 			<SpriteSheetSize ID="3" Width="445" Height="805"/>
+		</SpriteCategory>
+		<SpriteCategory>
+			<Name>tow_fonts</Name>
+			<SpriteSheetCount>1</SpriteSheetCount>
+			<SpriteSheetSize ID="1" Width="1024" Height="1024" />
 		</SpriteCategory>
 	</SpriteCategories>
 	<SpriteParts>
@@ -47,15 +47,6 @@
 			<SheetY>0</SheetY>
 			<CategoryName>tow_gamemenu_backgrounds</CategoryName>
 		</SpritePart>
-    <SpritePart>
-      <SheetID>1</SheetID>
-      <Name>CasablancaAntique</Name>
-      <Width>1024</Width>
-      <Height>1024</Height>
-      <SheetX>0</SheetX>
-      <SheetY>0</SheetY>
-      <CategoryName>tow_fonts</CategoryName>
-    </SpritePart>
 		<SpritePart>
 			<SheetID>2</SheetID>
 			<Name>empire_village_background</Name>
@@ -73,6 +64,15 @@
 			<SheetX>0</SheetX>
 			<SheetY>0</SheetY>
 			<CategoryName>tow_gamemenu_backgrounds</CategoryName>
+		</SpritePart>
+		<SpritePart>
+			<SheetID>1</SheetID>
+			<Name>CasablancaAntique</Name>
+			<Width>1024</Width>
+			<Height>1024</Height>
+			<SheetX>0</SheetX>
+			<SheetY>0</SheetY>
+			<CategoryName>tow_fonts</CategoryName>
 		</SpritePart>
 	</SpriteParts>
 	<Sprites>
@@ -96,9 +96,9 @@
 			<Name>empire_city_background</Name>
 			<SpritePartName>empire_city_background</SpritePartName>
 		</GenericSprite>
-    <GenericSprite>
-      <Name>CasablancaAntique</Name>
-      <SpritePartName>CasablancaAntique</SpritePartName>
-    </GenericSprite>
+		<GenericSprite>
+			<Name>CasablancaAntique</Name>
+			<SpritePartName>CasablancaAntique</SpritePartName>
+		</GenericSprite>
 	</Sprites>
 </SpriteData>
