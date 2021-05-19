@@ -300,7 +300,6 @@
     <Compile Include="Battle\FireArms\MusketFireEffectMissionLogic.cs" />
     <Compile Include="Battle\StatusEffects\StatusEffect.cs" />
     <Compile Include="Battle\StatusEffects\StatusEffectComponent.cs" />
-    <Compile Include="Battle\StatusEffects\StatusEffectList.cs" />
     <Compile Include="Battle\StatusEffects\StatusEffectManager.cs" />
     <Compile Include="Battle\StatusEffects\StatusEffectMissionLogic.cs" />
     <Compile Include="Battle\TOWBattleUtilities.cs" />

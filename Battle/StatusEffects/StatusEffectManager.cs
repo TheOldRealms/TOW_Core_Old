@@ -25,13 +25,13 @@ namespace TOW_Core.Battle.StatusEffects
         public void LoadStatusEffects()
         {
             var files = Directory.GetFiles(ModuleHelper.GetModuleFullPath(ModuleName), EffectsFileName, SearchOption.AllDirectories);
-            XmlSerializer serializer = new XmlSerializer(typeof(StatusEffectList));
-            StatusEffectList effectList;
+            XmlSerializer serializer = new XmlSerializer(typeof(List<StatusEffect>), new XmlRootAttribute("StatusEffects"));
+            List<StatusEffect> effectList;
             using(FileStream fs = new FileStream(files[0], FileMode.Open))
             {
-                effectList = (StatusEffectList)serializer.Deserialize(fs);
+                effectList = (List<StatusEffect>)serializer.Deserialize(fs);
             }
-            foreach(StatusEffect effect in effectList.StatusEffects)
+            foreach(StatusEffect effect in effectList)
             {
                 _idToStatusEffect.Add(effect.Id, effect);
             }
