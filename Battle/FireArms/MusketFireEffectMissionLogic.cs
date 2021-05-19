@@ -44,6 +44,9 @@ namespace TOW_Core.Battle.FireArms
                     int selected = this._random.Next(0, this._soundIndex.Length - 1);
                     Mission.MakeSound(this._soundIndex[selected], position, false, true, -1, -1);
                 }
+
+                //shooterAgent.GetComponent<StatusEffectComponent>().RunStatusEffect(1);
+
             }
             
         }

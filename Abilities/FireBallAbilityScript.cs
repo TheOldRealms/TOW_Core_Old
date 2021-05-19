@@ -16,12 +16,13 @@ namespace TOW_Core.Abilities
     {
         private Agent _casterAgent;
         private float _radius = 5f;
-        private int _minDamage = 60;
-        private int _maxDamage = 100;
+        private int _minDamage = 20;
+        private int _maxDamage = 30;
         private bool _hasCollided;
         private float _speed = 40f;
         private FireBallAbility _ability;
         private float _abilitylife = -1f;
+        private float _collisionRadius = 2f;
         private bool _isFading;
         private int _movingSoundindex;
         private int _explosionSoundindex;
@@ -57,8 +58,14 @@ namespace TOW_Core.Abilities
         protected override void OnTick(float dt)
         {
             base.OnTick(dt);
-
             var frame = base.GameEntity.GetGlobalFrame();
+
+            if (CollidedWithAgent())
+            {
+                HandleCollision(frame.origin, frame.origin.NormalizedCopy());
+            }
+
+            
             var newframe = frame.Advance(_speed * dt);
             base.GameEntity.SetGlobalFrame(newframe);
             base.GameEntity.GetBodyShape().ManualInvalidate();
@@ -90,20 +97,23 @@ namespace TOW_Core.Abilities
         protected override void OnPhysicsCollision(ref PhysicsContact contact)
         {
             base.OnPhysicsCollision(ref contact);
+            HandleCollision(contact.ContactPair0.Contact0.Position, contact.ContactPair0.Contact0.Normal);
+        }
+
+        private void HandleCollision(Vec3 collisionPoint, Vec3 collisionNormal)
+        {
             if (!_hasCollided)
             {
                 //start fading out for the projectile
                 base.GameEntity.FadeOut(0.1f, true);
                 _isFading = true;
-                //get collision data
-                var collisionPoint = contact.ContactPair0.Contact0.Position;
-                var collisionNormal = contact.ContactPair0.Contact0.Normal;
                 //apply AOE damage
                 TOWBattleUtilities.DamageAgentsInArea(collisionPoint.AsVec2, _radius, _minDamage, _maxDamage, _casterAgent, true);
+                TOWBattleUtilities.ApplyStatusEffectToAgentsInArea(collisionPoint.AsVec2, _radius, "fireball_dot", _casterAgent, true);
                 //create visual explosion
                 var explosion = GameEntity.CreateEmpty(Scene);
                 MatrixFrame frame = MatrixFrame.Identity;
-                var psys = ParticleSystem.CreateParticleSystemAttachedToEntity("psys_burning_projectile_default_coll", explosion, ref frame);
+                ParticleSystem.CreateParticleSystemAttachedToEntity("psys_burning_projectile_default_coll", explosion, ref frame);
                 var globalFrame = new MatrixFrame(Mat3.CreateMat3WithForward(in collisionNormal), collisionPoint);
                 explosion.SetGlobalFrame(globalFrame);
                 explosion.FadeOut(3, true);
@@ -114,5 +124,11 @@ namespace TOW_Core.Abilities
             }
         }
 
+        private bool CollidedWithAgent()
+        {
+            return Mission.Current.GetAgentsInRange(GameEntity.GetGlobalFrame().origin.AsVec2, _collisionRadius)
+                .Where(agent => Math.Abs(GameEntity.GetGlobalFrame().origin.Z - agent.Position.Z) < _collisionRadius)
+                .Any();
+        }
     }
 }

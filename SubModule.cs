@@ -20,6 +20,7 @@ using TaleWorlds.Engine.GauntletUI;
 using TaleWorlds.TwoDimension;
 using TOW_Core.Abilities;
 using TOW_Core.CharacterCreation;
+using TOW_Core.Battle.StatusEffects;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.SandBox.CampaignBehaviors;
 using TaleWorlds.Localization;
@@ -46,6 +47,8 @@ namespace TOW_Core
             //This has to be here.
             AbilityManager.LoadAbilities();
             LoadAttributes();
+            LoadStatusEffects();
+            LoadSprites();
             
 
             //ref https://forums.taleworlds.com/index.php?threads/ui-widget-modification.441516/ 
@@ -92,8 +95,9 @@ namespace TOW_Core
         {
             base.OnMissionBehaviourInitialize(mission);
             mission.AddMissionBehaviour(new AttributeSystemMissionLogic());
-            mission.AddMissionBehaviour(new AbilityManagerMissionLogic());
-            mission.AddMissionBehaviour(new AbilityHUDMissionView());
+            mission.AddMissionBehaviour(new StatusEffectMissionLogic());
+            mission.AddMissionBehaviour(new Abilities.AbilityManagerMissionLogic());
+            mission.AddMissionBehaviour(new Abilities.AbilityHUDMissionView());
             mission.AddMissionBehaviour(new Battle.FireArms.MusketFireEffectMissionLogic());
         }
 
@@ -101,6 +105,12 @@ namespace TOW_Core
         {
             AttributeManager attributeManager = new AttributeManager();
             attributeManager.LoadAttributes();
+        }
+
+        private void LoadStatusEffects()
+        {
+            StatusEffectManager effectManager = new StatusEffectManager();
+            effectManager.LoadStatusEffects();
         }
 
         private static void ConfigureLogging()
