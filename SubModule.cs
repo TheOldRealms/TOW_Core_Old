@@ -53,6 +53,12 @@ namespace TOW_Core
 
             //ref https://forums.taleworlds.com/index.php?threads/ui-widget-modification.441516/ 
             UIConfig.DoNotUseGeneratedPrefabs = true;
+            LoadFontAssets();
+        }
+
+        public void LoadFontAssets()
+		{
+            UIResourceManager.SpriteData.SpriteCategories["tow_fonts"].Load(UIResourceManager.ResourceContext, UIResourceManager.UIResourceDepot);
         }
 
         /// <summary>
@@ -74,7 +80,7 @@ namespace TOW_Core
         {
             UIResourceManager.SpriteData.SpriteCategories["tow_spritesheet"].Load(UIResourceManager.ResourceContext, UIResourceManager.UIResourceDepot);
             UIResourceManager.SpriteData.SpriteCategories["tow_gamemenu_backgrounds"].Load(UIResourceManager.ResourceContext, UIResourceManager.UIResourceDepot);
-        }
+		}
 
         protected override void OnGameStart(Game game, IGameStarter gameStarterObject)
         {
