@@ -17,9 +17,6 @@ namespace TOW_Core.HarmonyPatches
         [HarmonyPatch(typeof(MissionGauntletCrosshair), "GetShouldCrosshairBeVisible")]
         public static void PostFix(ref bool  __result)
         {
-            if (!Mission.Current.IsLoadingFinished)
-                return;
-
             if (Mission.Current.MainAgent !=null && Mission.Current.MainAgent.WieldedWeapon.Ammo>0)
             {
                 __result = true;
@@ -28,9 +25,6 @@ namespace TOW_Core.HarmonyPatches
             {
                 __result = false;
             }
-
-
-
         }
         
     }
