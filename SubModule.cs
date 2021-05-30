@@ -28,6 +28,7 @@ using System;
 using SandBox;
 using SandBox.View;
 using TaleWorlds.Engine.Screens;
+using TOW_Core.Battle.Voices;
 
 namespace TOW_Core
 {
@@ -48,6 +49,7 @@ namespace TOW_Core
             AbilityManager.LoadAbilities();
             LoadAttributes();
             LoadStatusEffects();
+            LoadVoices();
             LoadSprites();
             
 
@@ -105,12 +107,19 @@ namespace TOW_Core
             mission.AddMissionBehaviour(new Abilities.AbilityManagerMissionLogic());
             mission.AddMissionBehaviour(new Abilities.AbilityHUDMissionView());
             mission.AddMissionBehaviour(new Battle.FireArms.MusketFireEffectMissionLogic());
+            mission.AddMissionBehaviour(new CustomVoicesMissionBehavior());
         }
 
         private void LoadAttributes()
         {
             AttributeManager attributeManager = new AttributeManager();
             attributeManager.LoadAttributes();
+        }
+
+        private void LoadVoices()
+        {
+            CustomVoiceManager voiceManager = new CustomVoiceManager();
+            voiceManager.LoadVoices();
         }
 
         private void LoadStatusEffects()

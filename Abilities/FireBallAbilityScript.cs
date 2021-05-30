@@ -127,7 +127,7 @@ namespace TOW_Core.Abilities
         private bool CollidedWithAgent()
         {
             return Mission.Current.GetAgentsInRange(GameEntity.GetGlobalFrame().origin.AsVec2, _collisionRadius)
-                .Where(agent => Math.Abs(GameEntity.GetGlobalFrame().origin.Z - agent.Position.Z) < _collisionRadius)
+                .Where(agent => agent != Agent.Main && Math.Abs(GameEntity.GetGlobalFrame().origin.Z - agent.Position.Z) < _collisionRadius)
                 .Any();
         }
     }

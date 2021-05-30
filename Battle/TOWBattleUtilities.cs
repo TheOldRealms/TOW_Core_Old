@@ -50,7 +50,6 @@ namespace TOW_Core.Battle
             {
                 agent.ApplyStatusEffect(effectId);
             }
-
         }
     }
 }

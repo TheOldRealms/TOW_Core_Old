@@ -19,7 +19,9 @@ namespace TOW_Core.Battle.Extensions
         /// Maps all character IDs to a list of attributes for that character. For example, <"skeleton_warrior" <=> {"Expendable", "Undead"}>
         /// </summary>
         private static Dictionary<string, List<string>> CharacterIDToAttributeMap = new Dictionary<string, List<string>>();
+        private static Dictionary<string, string> CharacterIDToVoiceClassNameMap = new Dictionary<string, string>();
         private static bool _attributesAreInitialized = false;
+        private static bool _voicesAreInitialized = false;
 
         public static bool IsExpendable(this Agent agent)
         {
@@ -105,6 +107,18 @@ namespace TOW_Core.Battle.Extensions
             _attributesAreInitialized = true;
         }
 
+        public static void SetVoicesDictionary(Dictionary<string, string> dict)
+        {
+            if(_voicesAreInitialized)
+            {
+                TOWCommon.Log("Attempted to set agent attributes dictionary, but it was already initialized.", LogLevel.Warn);
+                return;
+            }
+
+            CharacterIDToVoiceClassNameMap = dict;
+            _voicesAreInitialized = true;
+        }
+
         public static void RemoveComponentIfNotNull(this Agent agent, AgentComponent component)
         {
             if (component != null)
@@ -169,5 +183,38 @@ namespace TOW_Core.Battle.Extensions
         {
             agent.GetComponent<StatusEffectComponent>().RunStatusEffect(effectId);
         }
+
+        #region voice
+        public static void SetAgentVoiceByClassName(this Agent agent, string className)
+        {
+            int num = SkinVoiceManager.GetVoiceDefinitionCountWithMonsterSoundAndCollisionInfoClassName(className);
+            int[] array = new int[num];
+            SkinVoiceManager.GetVoiceDefinitionListWithMonsterSoundAndCollisionInfoClassName(className, array);
+            MBAgentVisuals mbagentVisuals = (agent != null) ? agent.AgentVisuals : null;
+            if (mbagentVisuals != null && array.Length > 0)
+            {
+                int index = TOWMath.GetRandomInt(0, array.Length);
+                int seed = MBRandom.RandomInt();
+                int pitchModifier = Math.Abs(seed);
+                float voicePitch = (float)pitchModifier * 4.656613E-10f;
+                mbagentVisuals.SetVoiceDefinitionIndex(array[index], voicePitch);
+            }
+        }
+
+        public static string GetAgentVoiceClassName(this Agent agent)
+        {
+            if (agent != null && agent.Character != null)
+            {
+                string characterName = agent.Character.StringId;
+
+                string voiceClass; 
+                if (CharacterIDToVoiceClassNameMap.TryGetValue(characterName, out voiceClass))
+                {
+                    return voiceClass;
+                }
+            }
+            return null;
+        }
+        #endregion
     }
 }
