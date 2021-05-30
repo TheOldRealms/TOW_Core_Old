@@ -1,13 +1,19 @@
-﻿using TaleWorlds.CampaignSystem;
+﻿using System;
+using System.Runtime.Remoting.Channels;
+using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.SandBox.CampaignBehaviors;
+using TaleWorlds.Core;
 using TOW_Core.Utilities;
 
 namespace TOW_Core.CampaignMode
 {
-    
+    using static CampaignEvents;
+
+ 
+
     public  class Tow_CampaignManager
     {
-        public static readonly Tow_CampaignManager instance;
+        private static readonly Tow_CampaignManager instance;
         
         private Tow_CampaignManager(){}
 
@@ -18,10 +24,27 @@ namespace TOW_Core.CampaignMode
         public static Tow_CampaignManager Instance => instance;
 
 
-
+        public void Initialize()
+        {
+            Utilities.TOWCommon.Say("initialized");
+            AttributeSystemManager.Instance.InitalizeAttributes();
+            
+        }
+        
         public void Hello()
         {
-            Utilities.TOWCommon.Say("Hello");
+            if (GameStateManager.Current.ActiveState.IsMission)
+            {
+                Utilities.TOWCommon.Say("Hello im in a mission");
+                
+            }
+                
+            else
+            {
+                AttributeSystemManager.Instance.Update();
+                Utilities.TOWCommon.Say("Hello im in the World");
+            }
+            
         }
         
         

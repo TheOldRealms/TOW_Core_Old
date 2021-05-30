@@ -5,17 +5,15 @@ using TOW_Core.CampaignMode;
 namespace TOW_Core.HarmonyPatches
 {
     [HarmonyPatch]
-    public static class OnCampaignMapInitalizerPatch
+    public static class OnGameStateChangePatch
     {
         [HarmonyPostfix]
-        [HarmonyPatch(typeof(CampaignEvents), "OnGameLoaded")]
+        [HarmonyPatch(typeof(Campaign), "OnStateChanged")]
         public static void PostFix()
         {
-            Tow_CampaignManager.Instance.Initialize();
+            if(Tow_CampaignManager.Instance!=null)
+                Tow_CampaignManager.Instance.Hello();
         }
     }
-
-   
     
 }
-
