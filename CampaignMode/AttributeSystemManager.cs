@@ -11,7 +11,7 @@ namespace TOW_Core.CampaignMode
     {
         private static readonly AttributeSystemManager instance;
         //private Dictionary<MobileParty> parties = new List<MobileParty>();
-        
+        WorldMapAttribute worldMapAttribute = new WorldMapAttribute();
         private AttributeSystemManager(){}
 
         static AttributeSystemManager()
@@ -29,7 +29,7 @@ namespace TOW_Core.CampaignMode
             
             foreach (var party in Campaign.Current.MobileParties)
             {
-                WorldMapAttribute worldMapAttribute = new WorldMapAttribute();
+               
                 worldMapAttribute.Initialize(party);
             }
             TOWCommon.Say("there are currently " + Campaign.Current.Parties.Count +" active Parties in the world with active WorldMapAttribute");
@@ -46,9 +46,11 @@ namespace TOW_Core.CampaignMode
         {
             if (Campaign.Current.MobileParties.Contains(party))
             {
-                
                 TOWCommon.Say("party already existed");
-
+                if (party.PartyComponent.ToString() == worldMapAttribute.ToString())
+                    TOWCommon.Say("we could find the Party component");
+                else
+                    TOWCommon.Say(party.PartyComponent.ToString() +" Party component not found " + "(" +worldMapAttribute.ToString()+ ")");
                 return;
             }
             
