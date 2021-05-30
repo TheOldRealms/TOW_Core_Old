@@ -5,6 +5,16 @@
   <SingleplayerModule value="true"/>
   <MultiplayerModule value="false"/>
   <DependedModules />
-  <SubModules />
+  <SubModules>
+    <SubModule>
+      <Name value="TOW_PreNative"/>
+      <DLLName value="TOW_PreNative.dll"/>
+      <SubModuleClassType value="TOW_PreNative.PreNativeSubModule"/>
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+  </SubModules>
   <Xmls/>
 </Module>
