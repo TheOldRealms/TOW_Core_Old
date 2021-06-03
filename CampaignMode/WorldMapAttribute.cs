@@ -1,18 +1,31 @@
-﻿using System.Diagnostics;
+﻿using System.Collections.Generic;
+using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using SandBox;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.Core;
 using TaleWorlds.Localization;
 using TaleWorlds.MountAndBlade;
+using TaleWorlds.ObjectSystem;
+using TaleWorlds.SaveSystem;
 
 namespace TOW_Core.CampaignMode
 {
     public class WorldMapAttribute
     {
-        public Agent Agent;
-        public string id; 
-       
-        
+        [SaveableField(1)]
+        public Hero Leader;
+        [SaveableField(2)]
+        public string id;
+
+        public WorldMapAttribute(string id)
+        {
+            this.id = id;
+        }
+
+        public WorldMapAttribute()
+        {
+
+        }
     }
 }

@@ -303,6 +303,10 @@
     <Compile Include="Battle\StatusEffects\StatusEffectManager.cs" />
     <Compile Include="Battle\StatusEffects\StatusEffectMissionLogic.cs" />
     <Compile Include="Battle\TOWBattleUtilities.cs" />
+    <Compile Include="CampaignMode\AttributeSystemManager.cs" />
+    <Compile Include="CampaignMode\CampaignAttributesBehavior.cs" />
+    <Compile Include="CampaignMode\Tow_CampaignManager.cs" />
+    <Compile Include="CampaignMode\WorldMapAttribute.cs" />
     <Compile Include="CharacterCreation\CharacterCreationOption.cs" />
     <Compile Include="CharacterCreation\TOWCharacterCreationContent.cs" />
     <Compile Include="CustomBattles\CustomBattleFormationTemplate.cs" />
