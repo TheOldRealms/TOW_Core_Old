@@ -13,14 +13,19 @@ namespace TOW_Core.CampaignMode
 {
     public class WorldMapAttribute
     {
+        [SaveableField(1)]
+        public Hero Leader;
+        [SaveableField(2)]
+        public string id;
 
         public WorldMapAttribute(string id)
         {
             this.id = id;
         }
-        [SaveableField(1)]
-        public Hero Leader;
-        [SaveableField(2)]
-        public string id; 
+
+        public WorldMapAttribute()
+        {
+
+        }
     }
 }
