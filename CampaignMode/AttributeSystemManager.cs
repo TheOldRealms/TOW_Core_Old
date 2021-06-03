@@ -1,6 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
+using SandBox;
 using TaleWorlds.CampaignSystem;
+using TaleWorlds.Core;
 using TaleWorlds.LinQuick;
 using TaleWorlds.MountAndBlade;
 using TOW_Core.Utilities;
@@ -8,63 +12,89 @@ using TOW_Core.Utilities;
 namespace TOW_Core.CampaignMode
 {
     public class AttributeSystemManager
+    { 
+    private bool isFilling;
+    private static readonly AttributeSystemManager instance;
+    private Dictionary<string, WorldMapAttribute> parties = new Dictionary<string, WorldMapAttribute>();
+
+    private AttributeSystemManager()
     {
-        private static readonly AttributeSystemManager instance;
-        //private Dictionary<MobileParty> parties = new List<MobileParty>();
-        WorldMapAttribute worldMapAttribute = new WorldMapAttribute();
-        private AttributeSystemManager(){}
+    }
 
-        static AttributeSystemManager()
-        {
-            instance = new AttributeSystemManager();
-        }
-        public static AttributeSystemManager Instance => instance;
+    static AttributeSystemManager()
+    {
+        instance = new AttributeSystemManager();
         
-        public void InitalizeAttributes()
+    }
+
+    public static AttributeSystemManager Instance => instance;
+
+
+    private async void Initialize()
+    {
+    }
+
+    public async void InitalizeAttributes(Game game, object obj)
+    {
+        
+       
+        TOWCommon.Say("initalizing");
+        
+       await Task.Run(() => GameManagerBase.Current.OnGameLoaded(game,obj));
+       if (isFilling)
+       {
+           return;
+       }
+       isFilling = true;
+        // CampaignEventDispatcher.Instance.OnMobilePartyCreated += CreatedParty;
+
+        TOWCommon.Say("SaveGameLoaded");
+        
+        foreach (var party in Campaign.Current.MobileParties)
         {
-           // CampaignEventDispatcher.Instance.OnMobilePartyCreated += CreatedParty;
-            
-            TOWCommon.Say("initalized");
-           
-            
-            foreach (var party in Campaign.Current.MobileParties)
+            isFilling = true;
+            WorldMapAttribute worldMapAttribute = new WorldMapAttribute();
+            worldMapAttribute.id = party.Id.ToString();
+            if (parties.ContainsKey(party.Id.ToString()))
             {
+                TOWCommon.Say("Found double!!!");
+                continue;
+            }
                
-                worldMapAttribute.Initialize(party);
-            }
-            TOWCommon.Say("there are currently " + Campaign.Current.Parties.Count +" active Parties in the world with active WorldMapAttribute");
+            //worldMapAttribute.id = party.Id.ToString();
+            parties.Add(worldMapAttribute.id, worldMapAttribute);
+            //TOWCommon.Say(worldMapAttribute.id + " was add to the parties");
         }
+        TOWCommon.Say("Finished adding");
+        //  TOWCommon.Say("initalized");
+    }
+    
 
 
-        public void CreatedParty(MobileParty party)
+
+
+    public void CreatedParty(MobileParty party)
+    {
+
+    }
+
+
+    public void RegisterParty(MobileParty party)
+    {
+        if (parties.ContainsKey(party.Id.ToString()))
         {
-            
-        }
-
-
-        public void RegisterParty(MobileParty party)
-        {
-            if (Campaign.Current.MobileParties.Contains(party))
-            {
-                TOWCommon.Say("party already existed");
-                if (party.PartyComponent.ToString() == worldMapAttribute.ToString())
-                    TOWCommon.Say("we could find the Party component");
-                else
-                    TOWCommon.Say(party.PartyComponent.ToString() +" Party component not found " + "(" +worldMapAttribute.ToString()+ ")");
-                return;
-            }
-            
-            
-            
-            TOWCommon.Say("party registered: " + party.Name  + " current number" + Campaign.Current.MobileParties.Count);
+            TOWCommon.Say("Already added");
         }
 
 
 
-        public void Update()
-        {
-            TOWCommon.Say("there are currently " + Campaign.Current.Parties.Count +"active in the world");
-        }
-        
+        //  TOWCommon.Say("party registered: " + party.Name  + " current number" + Campaign.Current.MobileParties.Count);
+    }
+
+
+    
+    public void RegisterEvents()
+    {
+    }
     }
 }

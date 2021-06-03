@@ -11,7 +11,7 @@ namespace TOW_Core.HarmonyPatches
         [HarmonyPatch(typeof(CampaignEvents), "OnGameLoaded")]
         public static void PostFix()
         {
-            Tow_CampaignManager.Instance.Initialize();
+        //    Tow_CampaignManager.Instance.Initialize();
         }
     }
 

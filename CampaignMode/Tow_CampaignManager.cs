@@ -26,8 +26,8 @@ namespace TOW_Core.CampaignMode
 
         public void Initialize()
         {
-            Utilities.TOWCommon.Say("initialized");
-            AttributeSystemManager.Instance.InitalizeAttributes();
+           // Utilities.TOWCommon.Say("initialized");
+          //  AttributeSystemManager.Instance.InitalizeAttributes();
             
         }
         
@@ -41,7 +41,6 @@ namespace TOW_Core.CampaignMode
                 
             else
             {
-                AttributeSystemManager.Instance.Update();
                 Utilities.TOWCommon.Say("Hello im in the World");
             }
             

@@ -2,27 +2,17 @@
 using System.Runtime.CompilerServices;
 using SandBox;
 using TaleWorlds.CampaignSystem;
+using TaleWorlds.Core;
 using TaleWorlds.Localization;
 using TaleWorlds.MountAndBlade;
 
 namespace TOW_Core.CampaignMode
 {
-    public class WorldMapAttribute : PartyComponent
+    public class WorldMapAttribute
     {
+        public Agent Agent;
+        public string id; 
        
-        internal void Initialize(MobileParty party)
-        {
-            this.OnInitialize();
-            
-            Utilities.TOWCommon.Say("hello im"+ party.Id);
-        }
         
-        private void UpdateArmorValue()
-        {
-            
-        }
-
-
-        public override TextObject Name { get; }
     }
 }
