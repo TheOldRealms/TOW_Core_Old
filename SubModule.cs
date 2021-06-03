@@ -93,6 +93,7 @@ namespace TOW_Core
             }
             else if(game.GameType is Campaign)
             {
+                AttributeSystemManager.Instance.InitalizeAttributes(game, gameStarterObject);
                 CampaignGameStarter starter = gameStarterObject as CampaignGameStarter;
                 starter.CampaignBehaviors.RemoveAllOfType(typeof(BackstoryCampaignBehavior));
                 starter.CampaignBehaviors.Add(new CampaignAttributesBehavior());

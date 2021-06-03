@@ -313,6 +313,9 @@
     <Compile Include="CustomBattles\CustomBattleTroopManager.cs" />
     <Compile Include="GameTexts\TOWTextManager.cs" />
     <Compile Include="GameTexts\TOWTextOverride.cs" />
+    <Compile Include="HarmonyPatches\CampaignPatches\ChangedGameStatePatch.cs" />
+    <Compile Include="HarmonyPatches\CampaignPatches\MobilePartyPatch.cs" />
+    <Compile Include="HarmonyPatches\CampaignPatches\OnCampaignMapInitalizer.cs" />
     <Compile Include="HarmonyPatches\CharacterCreationPatches.cs" />
     <Compile Include="HarmonyPatches\CrossHairPatch.cs" />
     <Compile Include="HarmonyPatches\CustomBattlePatches.cs" />
