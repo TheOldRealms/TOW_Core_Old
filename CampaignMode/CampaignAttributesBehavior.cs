@@ -16,7 +16,7 @@ namespace TOW_Core.CampaignMode
 
         public override void RegisterEvents()
         {
-            CampaignEvents.OnGameLoadedEvent.AddNonSerializedListener(this, new Action<CampaignGameStarter>(this.OnGameLoaded));
+            CampaignEvents.MobilePartyCreated.AddNonSerializedListener((object) this, new Action<MobileParty>(this.OnPartySpawned));
             CampaignEvents.OnNewGameCreatedPartialFollowUpEndEvent.AddNonSerializedListener(this, new Action<CampaignGameStarter>(this.OnNewGameCreatedPartialFollowUpEnd));
         }
 
@@ -31,6 +31,11 @@ namespace TOW_Core.CampaignMode
             {
                 TOWCommon.Say("Loaded attribute for party with leader " + attribute.Leader.Name.ToString());
             }
+        }
+
+        private void OnPartySpawned()
+        {
+            
         }
 
         private void OnNewGameCreatedPartialFollowUpEnd(CampaignGameStarter campaignGameStarter)

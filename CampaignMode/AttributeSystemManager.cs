@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using SandBox;
 using TaleWorlds.CampaignSystem;
+using TaleWorlds.CampaignSystem.Actions;
+using TaleWorlds.CampaignSystem.SandBox.CampaignBehaviors;
 using TaleWorlds.Core;
 using TaleWorlds.LinQuick;
 using TaleWorlds.MountAndBlade;
@@ -11,24 +13,12 @@ using TOW_Core.Utilities;
 
 namespace TOW_Core.CampaignMode
 {
-    public class AttributeSystemManager
+    public class AttributeSystemManager: CampaignBehaviorBase
     { 
     private bool isFilling;
-    private static readonly AttributeSystemManager instance;
-    private Dictionary<string, WorldMapAttribute> parties = new Dictionary<string, WorldMapAttribute>();
+    private Dictionary<string, WorldMapAttribute> _partyAttributes = new Dictionary<string, WorldMapAttribute>();
 
-    private AttributeSystemManager()
-    {
-    }
-
-    static AttributeSystemManager()
-    {
-        instance = new AttributeSystemManager();
-        
-    }
-
-    public static AttributeSystemManager Instance => instance;
-
+    
 
     private async void Initialize()
     {
@@ -55,14 +45,14 @@ namespace TOW_Core.CampaignMode
             isFilling = true;
             WorldMapAttribute worldMapAttribute = new WorldMapAttribute();
             worldMapAttribute.id = party.Id.ToString();
-            if (parties.ContainsKey(party.Id.ToString()))
+            if (_partyAttributes.ContainsKey(party.Id.ToString()))
             {
                 TOWCommon.Say("Found double!!!");
                 continue;
             }
                
             //worldMapAttribute.id = party.Id.ToString();
-            parties.Add(worldMapAttribute.id, worldMapAttribute);
+            _partyAttributes.Add(worldMapAttribute.id, worldMapAttribute);
             //TOWCommon.Say(worldMapAttribute.id + " was add to the parties");
         }
         TOWCommon.Say("Finished adding");
@@ -81,20 +71,59 @@ namespace TOW_Core.CampaignMode
 
     public void RegisterParty(MobileParty party)
     {
-        if (parties.ContainsKey(party.Id.ToString()))
+        if (_partyAttributes.ContainsKey(party.Id.ToString()))
         {
+            //potential check if the object pooled party is really from the same kind
             TOWCommon.Say("Already added");
+            return;
         }
-
-
-
-        //  TOWCommon.Say("party registered: " + party.Name  + " current number" + Campaign.Current.MobileParties.Count);
+        else
+        {
+            
+        }
+        
     }
 
-
-    
-    public void RegisterEvents()
+    private void OnGameLoaded(CampaignGameStarter campaignGameStarter)
     {
+        foreach(WorldMapAttribute attribute in _partyAttributes.Values)
+        {
+            TOWCommon.Say("Loaded attribute for party with leader " + attribute.Leader.Name.ToString());
+        }
+    }
+    
+    
+    public override void  RegisterEvents()
+    {
+        CampaignEvents.MobilePartyCreated.AddNonSerializedListener(this,RegisterParty);
+        CampaignEvents.CompanionRemoved.AddNonSerializedListener(this, new Action<Hero>(this.OnPartySpawned));
+        CampaignEvents.OnGameLoadedEvent.AddNonSerializedListener(this, OnGameLoaded);
+        CampaignEvents.OnNewGameCreatedPartialFollowUpEndEvent.AddNonSerializedListener(this,OnNewGameCreatedPartialFollowUpEnd);
+    }
+
+    private void OnPartySpawned(Hero obj)
+    {
+        throw new NotImplementedException();
+    }
+
+    private void OnNewGameCreatedPartialFollowUpEnd(CampaignGameStarter campaignGameStarter)
+    {
+        int id = 0;
+        foreach (MobileParty party in Campaign.Current.MobileParties)
+        {
+            if (party.IsLordParty)
+            {
+                WorldMapAttribute attribute = new WorldMapAttribute(id++.ToString());
+                attribute.Leader = party.LeaderHero;
+                attribute.id = (id++).ToString();
+                _partyAttributes.Add(party.Id.ToString(), attribute);
+            }
+        }
+    }
+
+    public override void SyncData(IDataStore dataStore)
+    {
+        dataStore.SyncData("_partyAttributes", ref _partyAttributes);
     }
     }
 }
