@@ -20,6 +20,11 @@ namespace TOW_Core.CampaignMode
             CampaignEvents.OnNewGameCreatedPartialFollowUpEndEvent.AddNonSerializedListener(this, new Action<CampaignGameStarter>(this.OnNewGameCreatedPartialFollowUpEnd));
         }
 
+        private void OnPartySpawned(MobileParty party)
+        {
+            
+        }
+
         public override void SyncData(IDataStore dataStore)
         {
             dataStore.SyncData("_partyAttributes", ref _partyAttributes);
@@ -33,10 +38,7 @@ namespace TOW_Core.CampaignMode
             }
         }
 
-        private void OnPartySpawned()
-        {
-            
-        }
+        
 
         private void OnNewGameCreatedPartialFollowUpEnd(CampaignGameStarter campaignGameStarter)
         {
@@ -51,6 +53,7 @@ namespace TOW_Core.CampaignMode
                     _partyAttributes.Add(party.Id.ToString(), attribute);
                 }
             }
+            TOWCommon.Say(_partyAttributes.Count.ToString() + " are in the game");
         }
     }
 

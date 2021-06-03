@@ -91,12 +91,15 @@ namespace TOW_Core
                 gameStarterObject.Models.RemoveAllOfType(typeof(CustomBattleMoraleModel));
                 gameStarterObject.AddModel(new TOWBattleMoraleModel());
             }
-            else if(game.GameType is Campaign)
+            else if (game.GameType is Campaign)
             {
-                AttributeSystemManager.Instance.InitalizeAttributes(game, gameStarterObject);
+                
                 CampaignGameStarter starter = gameStarterObject as CampaignGameStarter;
                 starter.CampaignBehaviors.RemoveAllOfType(typeof(BackstoryCampaignBehavior));
+                
                 starter.CampaignBehaviors.Add(new CampaignAttributesBehavior());
+                AttributeSystemManager attributeSystemManager = new AttributeSystemManager();
+                starter.CampaignBehaviors.Add(attributeSystemManager);
             }
         }
 

@@ -24,10 +24,11 @@ namespace TOW_Core.CampaignMode
     {
     }
 
-    public async void InitalizeAttributes(Game game, object obj)
+    public static async void InitalizeAttributes(Game game, object obj)
     {
         
        
+        /*
         TOWCommon.Say("initalizing");
         
        await Task.Run(() => GameManagerBase.Current.OnGameLoaded(game,obj));
@@ -56,7 +57,7 @@ namespace TOW_Core.CampaignMode
             //TOWCommon.Say(worldMapAttribute.id + " was add to the parties");
         }
         TOWCommon.Say("Finished adding");
-        //  TOWCommon.Say("initalized");
+        //  TOWCommon.Say("initalized");*/
     }
     
 
@@ -86,17 +87,13 @@ namespace TOW_Core.CampaignMode
 
     private void OnGameLoaded(CampaignGameStarter campaignGameStarter)
     {
-        foreach(WorldMapAttribute attribute in _partyAttributes.Values)
-        {
-            TOWCommon.Say("Loaded attribute for party with leader " + attribute.Leader.Name.ToString());
-        }
+       InitalizeAttributes();
     }
     
     
     public override void  RegisterEvents()
     {
         CampaignEvents.MobilePartyCreated.AddNonSerializedListener(this,RegisterParty);
-        CampaignEvents.CompanionRemoved.AddNonSerializedListener(this, new Action<Hero>(this.OnPartySpawned));
         CampaignEvents.OnGameLoadedEvent.AddNonSerializedListener(this, OnGameLoaded);
         CampaignEvents.OnNewGameCreatedPartialFollowUpEndEvent.AddNonSerializedListener(this,OnNewGameCreatedPartialFollowUpEnd);
     }
@@ -108,6 +105,12 @@ namespace TOW_Core.CampaignMode
 
     private void OnNewGameCreatedPartialFollowUpEnd(CampaignGameStarter campaignGameStarter)
     {
+        InitalizeAttributes();
+    }
+
+    private void InitalizeAttributes()
+    {
+        TOWCommon.Say("Initialize attributes");
         int id = 0;
         foreach (MobileParty party in Campaign.Current.MobileParties)
         {
