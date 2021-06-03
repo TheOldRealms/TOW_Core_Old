@@ -28,6 +28,7 @@ using System;
 using SandBox;
 using SandBox.View;
 using TaleWorlds.Engine.Screens;
+using TOW_Core.CampaignMode;
 
 namespace TOW_Core
 {
@@ -94,6 +95,7 @@ namespace TOW_Core
             {
                 CampaignGameStarter starter = gameStarterObject as CampaignGameStarter;
                 starter.CampaignBehaviors.RemoveAllOfType(typeof(BackstoryCampaignBehavior));
+                starter.CampaignBehaviors.Add(new CampaignAttributesBehavior());
             }
         }
 
