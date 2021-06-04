@@ -46,4 +46,86 @@
 			<PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.tow_empire_archer_vc" />
 		</stacks>
 	</MBPartyTemplate>
+	
+	<!-- use id of existing bandit party to override -->
+	<MBPartyTemplate id="looters_quest_template" >
+		<stacks>
+			<PartyTemplateStack min_value="15" max_value="15" troop="NPCCharacter.looter" />
+		</stacks>
+	</MBPartyTemplate>
+	<MBPartyTemplate id="looters_template" >
+		<stacks>
+			<PartyTemplateStack min_value="4" max_value="36" troop="NPCCharacter.looter" />
+		</stacks>
+	</MBPartyTemplate>
+	<MBPartyTemplate id="sea_raiders_template" >
+		<stacks>
+			<PartyTemplateStack min_value="2" max_value="18" troop="NPCCharacter.sea_raiders_bandit" />
+			<PartyTemplateStack min_value="0" max_value="6" troop="NPCCharacter.sea_raiders_raider" />
+			<PartyTemplateStack min_value="0" max_value="3" troop="NPCCharacter.sea_raiders_chief" />
+		</stacks>
+	</MBPartyTemplate>
+	<MBPartyTemplate id="sea_raiders_boss_party_template" >
+		<stacks>
+			<PartyTemplateStack min_value="2" max_value="4" troop="NPCCharacter.sea_raiders_raider" />
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.sea_raiders_chief" />
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.sea_raiders_boss" />
+		</stacks>
+	</MBPartyTemplate>
+	<MBPartyTemplate id="mountain_bandits_template" >
+		<stacks>
+			<PartyTemplateStack min_value="2" max_value="18" troop="NPCCharacter.mountain_bandits_bandit" />
+			<PartyTemplateStack min_value="0" max_value="6" troop="NPCCharacter.mountain_bandits_raider" />
+			<PartyTemplateStack min_value="0" max_value="3" troop="NPCCharacter.mountain_bandits_chief" />
+		</stacks>
+	</MBPartyTemplate>
+	<MBPartyTemplate id="mountain_bandits_boss_party_template" >
+		<stacks>
+			<PartyTemplateStack min_value="2" max_value="4" troop="NPCCharacter.mountain_bandits_raider" />
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.mountain_bandits_chief" />
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.mountain_bandits_boss" />
+		</stacks>
+	</MBPartyTemplate>
+	<MBPartyTemplate id="forest_bandits_template" >
+		<stacks>
+			<PartyTemplateStack min_value="2" max_value="18" troop="NPCCharacter.forest_bandits_bandit" />
+			<PartyTemplateStack min_value="0" max_value="6" troop="NPCCharacter.forest_bandits_raider" />
+			<PartyTemplateStack min_value="0" max_value="3" troop="NPCCharacter.forest_bandits_chief" />
+		</stacks>
+	</MBPartyTemplate>
+	<MBPartyTemplate id="forest_bandits_boss_party_template" >
+		<stacks>
+			<PartyTemplateStack min_value="2" max_value="4" troop="NPCCharacter.forest_bandits_raider" />
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.forest_bandits_chief" />
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.forest_bandits_boss" />
+		</stacks>
+	</MBPartyTemplate>
+	<MBPartyTemplate id="desert_bandits_template" >
+		<stacks>
+			<PartyTemplateStack min_value="2" max_value="18" troop="NPCCharacter.desert_bandits_bandit" />
+			<PartyTemplateStack min_value="0" max_value="6" troop="NPCCharacter.desert_bandits_raider" />
+			<PartyTemplateStack min_value="0" max_value="3" troop="NPCCharacter.desert_bandits_chief" />
+		</stacks>
+	</MBPartyTemplate>
+	<MBPartyTemplate id="desert_bandits_boss_party_template" >
+		<stacks>
+			<PartyTemplateStack min_value="2" max_value="4" troop="NPCCharacter.desert_bandits_raider" />
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.desert_bandits_chief" />
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.desert_bandits_boss" />
+		</stacks>
+	</MBPartyTemplate>
+	<MBPartyTemplate id="steppe_bandits_template" >
+		<stacks>
+			<PartyTemplateStack min_value="2" max_value="18" troop="NPCCharacter.steppe_bandits_bandit" />
+			<PartyTemplateStack min_value="0" max_value="6" troop="NPCCharacter.steppe_bandits_raider" />
+			<PartyTemplateStack min_value="0" max_value="3" troop="NPCCharacter.steppe_bandits_chief" />
+		</stacks>
+	</MBPartyTemplate>
+	<MBPartyTemplate id="steppe_bandits_boss_party_template" >
+		<stacks>
+			<PartyTemplateStack min_value="2" max_value="4" troop="NPCCharacter.steppe_bandits_raider" />
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.steppe_bandits_chief" />
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.steppe_bandits_boss" />
+		</stacks>
+	</MBPartyTemplate>
 </partyTemplates>
