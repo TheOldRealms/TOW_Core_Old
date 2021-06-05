@@ -72,56 +72,84 @@ namespace TOW_Core.CampaignMode
 
     public void RegisterParty(MobileParty party)
     {
-        if (_partyAttributes.ContainsKey(party.Id.ToString()))
+        if (!_partyAttributes.ContainsKey(party.Party.Id.ToString()))
         {
+            WorldMapAttribute attribute = new WorldMapAttribute {id = party.Id.ToString()};
+            _partyAttributes.Add(attribute.id, attribute);
             //potential check if the object pooled party is really from the same kind
-            TOWCommon.Say("Already added");
+            TOWCommon.Say("added new party : " + attribute.id); 
             return;
         }
         else
         {
-            
+            TOWCommon.Say("Already added"); 
         }
         
     }
 
+    public void DeRegisterParty(MobileParty party, PartyBase partyBase)
+    {
+        if(_partyAttributes.ContainsKey(party.Id.ToString()))
+        {
+            _partyAttributes.Remove(party.ToString());
+            TOWCommon.Say("Removed + " + party.Id.ToString()); 
+        }
+    }
+
     private void OnGameLoaded(CampaignGameStarter campaignGameStarter)
     {
-       InitalizeAttributes();
+        InitalizeAttributes();
     }
+    
+    
     
     
     public override void  RegisterEvents()
     {
+        
+        CampaignEvents.OnGameLoadFinishedEvent.AddNonSerializedListener(this, OnGameLoaded);
+        //CampaignEvents.OnGameLoadedEvent.AddNonSerializedListener(this, OnGameLoaded);
         CampaignEvents.MobilePartyCreated.AddNonSerializedListener(this,RegisterParty);
-        CampaignEvents.OnGameLoadedEvent.AddNonSerializedListener(this, OnGameLoaded);
+        CampaignEvents.MobilePartyDestroyed.AddNonSerializedListener(this,DeRegisterParty);
+       // CampaignEvents.OnGameLoadedEvent.AddNonSerializedListener(this, OnGameLoaded);
         CampaignEvents.OnNewGameCreatedPartialFollowUpEndEvent.AddNonSerializedListener(this,OnNewGameCreatedPartialFollowUpEnd);
     }
 
-    private void OnPartySpawned(Hero obj)
-    {
-        throw new NotImplementedException();
-    }
-
-    private void OnNewGameCreatedPartialFollowUpEnd(CampaignGameStarter campaignGameStarter)
+    private void OnGameLoaded()
     {
         InitalizeAttributes();
     }
 
+  
+
+    private void OnNewGameCreatedPartialFollowUpEnd(CampaignGameStarter campaignGameStarter)
+    {
+       // InitalizeAttributes();
+    }
+
     private void InitalizeAttributes()
     {
-        TOWCommon.Say("Initialize attributes");
-        int id = 0;
-        foreach (MobileParty party in Campaign.Current.MobileParties)
+        var parties = Campaign.Current.MobileParties;
+        TOWCommon.Say("Initialize attributes" + Campaign.Current.MobileParties.Count);
+        
+        foreach (MobileParty party in parties)
         {
-            if (party.IsLordParty)
+            
+            TOWCommon.Say(party.Party.Id);
+            if (_partyAttributes.ContainsKey(party.Id.ToString()))
             {
-                WorldMapAttribute attribute = new WorldMapAttribute(id++.ToString());
-                attribute.Leader = party.LeaderHero;
-                attribute.id = (id++).ToString();
-                _partyAttributes.Add(party.Id.ToString(), attribute);
+                TOWCommon.Say(party.Id.ToString()+  " was already there");
+                continue;
             }
+            WorldMapAttribute attribute = new WorldMapAttribute();
+            attribute.id = party.Id.ToString();
+            attribute.Leader = party.LeaderHero;
+        
+            _partyAttributes.Add(attribute.id, attribute);
+            
+            
         }
+        TOWCommon.Say(_partyAttributes.Count + "of "+  parties.Count+ " were initalized");
     }
 
     public override void SyncData(IDataStore dataStore)
