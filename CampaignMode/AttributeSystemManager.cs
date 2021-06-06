@@ -9,6 +9,9 @@ using TaleWorlds.CampaignSystem.SandBox.CampaignBehaviors;
 using TaleWorlds.Core;
 using TaleWorlds.LinQuick;
 using TaleWorlds.MountAndBlade;
+using TaleWorlds.SaveSystem;
+using TaleWorlds.SaveSystem.Definition;
+using TaleWorlds.SaveSystem.Load;
 using TOW_Core.Utilities;
 
 namespace TOW_Core.CampaignMode
@@ -63,13 +66,7 @@ namespace TOW_Core.CampaignMode
 
 
 
-
-    public void CreatedParty(MobileParty party)
-    {
-
-    }
-
-
+    
     public void RegisterParty(MobileParty party)
     {
         if (!_partyAttributes.ContainsKey(party.Party.Id.ToString()))
@@ -111,20 +108,31 @@ namespace TOW_Core.CampaignMode
         //CampaignEvents.OnGameLoadedEvent.AddNonSerializedListener(this, OnGameLoaded);
         CampaignEvents.MobilePartyCreated.AddNonSerializedListener(this,RegisterParty);
         CampaignEvents.MobilePartyDestroyed.AddNonSerializedListener(this,DeRegisterParty);
+        CampaignEvents.OnBeforeSaveEvent.AddNonSerializedListener(this, OnGameSaving());
        // CampaignEvents.OnGameLoadedEvent.AddNonSerializedListener(this, OnGameLoaded);
         CampaignEvents.OnNewGameCreatedPartialFollowUpEndEvent.AddNonSerializedListener(this,OnNewGameCreatedPartialFollowUpEnd);
     }
 
     private void OnGameLoaded()
     {
-        InitalizeAttributes();
+        TOWCommon.Say("save game restored with "+ _partyAttributes.Count + "parties in the dictionary");
+    }
+    
+    private Action OnGameSaving()
+    {
+        
+        return new Action(Action);
     }
 
-  
+    private void Action()
+    {
+        TOWCommon.Say("save game stored with "+ _partyAttributes.Count + "parties in the dictionary");
+    }
+
 
     private void OnNewGameCreatedPartialFollowUpEnd(CampaignGameStarter campaignGameStarter)
     {
-       // InitalizeAttributes();
+        InitalizeAttributes();
     }
 
     private void InitalizeAttributes()
@@ -134,7 +142,6 @@ namespace TOW_Core.CampaignMode
         
         foreach (MobileParty party in parties)
         {
-            
             TOWCommon.Say(party.Party.Id);
             if (_partyAttributes.ContainsKey(party.Id.ToString()))
             {
