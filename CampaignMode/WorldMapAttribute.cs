@@ -18,6 +18,13 @@ namespace TOW_Core.CampaignMode
         [SaveableField(2)]
         public string id;
 
+        public string culture;
+
+        public bool MagicUsers;
+        public float WindsOfMagic;
+        
+        
+
         public WorldMapAttribute(string id)
         {
             this.id = id;
